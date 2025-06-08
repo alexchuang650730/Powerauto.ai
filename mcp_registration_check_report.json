@@ -1,0 +1,2964 @@
+{
+  "status": "success",
+  "timestamp": "2025-06-08T13:25:04.729197",
+  "summary": {
+    "total_potential_mcps": 82,
+    "registered_mcps": 12,
+    "unregistered_mcps": 82,
+    "naming_issues": 11,
+    "registration_rate": 14.634146341463413
+  },
+  "registered_mcps": [
+    "class_name",
+    "name",
+    "failed_adapter_list",
+    "class",
+    "failed_adapters",
+    "registered_adapters",
+    "registered_at",
+    "available_adapters",
+    "module_name",
+    "status",
+    "category",
+    "total_core_adapters"
+  ],
+  "unregistered_mcps": [
+    {
+      "file_path": "mcptool/adapters/context_monitor_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/context_monitor_mcp.py",
+      "file_name": "context_monitor_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 33386,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/release_manager_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/release_manager_mcp.py",
+      "file_name": "release_manager_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 22281,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/core/unified_adapter_registry.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/unified_adapter_registry.py",
+      "file_name": "unified_adapter_registry.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": true,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 16607,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/base_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/base_mcp.py",
+      "file_name": "base_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 4909,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/interfaces/adapter_interfaces.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/interfaces/adapter_interfaces.py",
+      "file_name": "adapter_interfaces.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": true,
+      "matched_indicators": [
+        "def get_capabilities"
+      ],
+      "estimated_type": "用戶界面",
+      "file_size": 6467,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/core/safe_mcp_registry.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/safe_mcp_registry.py",
+      "file_name": "safe_mcp_registry.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 9158,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/sequential_thinking_adapter/__init__.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/sequential_thinking_adapter/__init__.py",
+      "file_name": "__init__.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "mcp.*adapter"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 40,
+      "is_registered": false
+    },
+    {
+      "file_path": "quick_mcp_analysis.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/quick_mcp_analysis.py",
+      "file_name": "quick_mcp_analysis.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "def process"
+      ],
+      "estimated_type": "用戶界面",
+      "file_size": 2421,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/fixed_base_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/fixed_base_mcp.py",
+      "file_name": "fixed_base_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 7934,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/unified_mcp_manager.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/unified_mcp_manager.py",
+      "file_name": "unified_mcp_manager.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 5969,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/agent/context_matching_optimization_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/context_matching_optimization_mcp.py",
+      "file_name": "context_matching_optimization_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 16838,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/mcp_registry_integration_manager.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/mcp_registry_integration_manager.py",
+      "file_name": "mcp_registry_integration_manager.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 42562,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/core/webagent_core.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/webagent_core.py",
+      "file_name": "webagent_core.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "網頁/搜索",
+      "file_size": 18653,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/mcp_planner.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_planner.py",
+      "file_name": "mcp_planner.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 8386,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/enhanced_mcp_planner.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/enhanced_mcp_planner.py",
+      "file_name": "enhanced_mcp_planner.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 6098,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/cli/safe_unified_mcp_cli.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/safe_unified_mcp_cli.py",
+      "file_name": "safe_unified_mcp_cli.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "用戶界面",
+      "file_size": 7653,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/core/serializable_mcp_types.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/serializable_mcp_types.py",
+      "file_name": "serializable_mcp_types.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 2490,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/agent/ui_journey_optimization_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/ui_journey_optimization_mcp.py",
+      "file_name": "ui_journey_optimization_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process"
+      ],
+      "estimated_type": "用戶界面",
+      "file_size": 8391,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/mcp_brainstorm.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_brainstorm.py",
+      "file_name": "mcp_brainstorm.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP"
+      ],
+      "estimated_type": "AI模型適配器",
+      "file_size": 15427,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/arxiv_integration.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/arxiv_integration.py",
+      "file_name": "arxiv_integration.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 5889,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/infinite_context_adapter_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/infinite_context_adapter_mcp.py",
+      "file_name": "infinite_context_adapter_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": true,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 26256,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/rl_srt_dataflow_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/rl_srt_dataflow_mcp.py",
+      "file_name": "rl_srt_dataflow_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "數據處理",
+      "file_size": 25577,
+      "is_registered": false
+    },
+    {
+      "file_path": "powerautomation_mcp_integration.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/powerautomation_mcp_integration.py",
+      "file_name": "powerautomation_mcp_integration.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process"
+      ],
+      "estimated_type": "工作流自動化",
+      "file_size": 9889,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/mcp_tool_engine_server.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_tool_engine_server.py",
+      "file_name": "mcp_tool_engine_server.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 15144,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/enhanced_aci_dev_adapter/aci_dev_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/enhanced_aci_dev_adapter/aci_dev_mcp.py",
+      "file_name": "aci_dev_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 23128,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/interfaces/ai_module_interface.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/interfaces/ai_module_interface.py",
+      "file_name": "ai_module_interface.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "def process",
+        "def get_capabilities"
+      ],
+      "estimated_type": "AI模型適配器",
+      "file_size": 11358,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/zapier_adapter/zapier_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/zapier_adapter/zapier_mcp.py",
+      "file_name": "zapier_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 26282,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/simple_smart_tool_engine.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_smart_tool_engine.py",
+      "file_name": "simple_smart_tool_engine.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "def process"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 6849,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/agent/content_template_optimization_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/content_template_optimization_mcp.py",
+      "file_name": "content_template_optimization_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 13842,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/mcp_central_coordinator.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_central_coordinator.py",
+      "file_name": "mcp_central_coordinator.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 7672,
+      "is_registered": false
+    },
+    {
+      "file_path": "intelligent_mcp_selector.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/intelligent_mcp_selector.py",
+      "file_name": "intelligent_mcp_selector.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 16765,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/intelligent_workflow_engine_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/intelligent_workflow_engine_mcp.py",
+      "file_name": "intelligent_workflow_engine_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 66927,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/enhanced_mcp_planner.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_mcp_planner.py",
+      "file_name": "enhanced_mcp_planner.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 6098,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/rl_srt/rl_srt_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/rl_srt/rl_srt_mcp.py",
+      "file_name": "rl_srt_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "強化學習",
+      "file_size": 15042,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/unified_config_manager/config_manager_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_config_manager/config_manager_mcp.py",
+      "file_name": "config_manager_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process",
+        "def get_capabilities"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 25196,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/webagent_adapter.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/webagent_adapter.py",
+      "file_name": "webagent_adapter.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": true,
+      "matched_indicators": [
+        "mcp.*adapter"
+      ],
+      "estimated_type": "網頁/搜索",
+      "file_size": 6985,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/cloud_edge_data_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/cloud_edge_data_mcp.py",
+      "file_name": "cloud_edge_data_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "數據處理",
+      "file_size": 19331,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/agent/context_memory_optimization_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/context_memory_optimization_mcp.py",
+      "file_name": "context_memory_optimization_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process"
+      ],
+      "estimated_type": "記憶/知識系統",
+      "file_size": 9574,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/simple_gemini_adapter.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_gemini_adapter.py",
+      "file_name": "simple_gemini_adapter.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": true,
+      "matched_indicators": [
+        "def process"
+      ],
+      "estimated_type": "AI模型適配器",
+      "file_size": 2386,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/claude_adapter/claude_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/claude_adapter/claude_mcp.py",
+      "file_name": "claude_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process",
+        "def get_capabilities"
+      ],
+      "estimated_type": "AI模型適配器",
+      "file_size": 11428,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/interfaces/adapter_interface.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/interfaces/adapter_interface.py",
+      "file_name": "adapter_interface.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": true,
+      "matched_indicators": [
+        "def get_capabilities"
+      ],
+      "estimated_type": "用戶界面",
+      "file_size": 3249,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/supermemory_adapter/supermemory_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/supermemory_adapter/supermemory_mcp.py",
+      "file_name": "supermemory_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process",
+        "def get_capabilities"
+      ],
+      "estimated_type": "記憶/知識系統",
+      "file_size": 16920,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/automatic_tool_creation_engine.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/automatic_tool_creation_engine.py",
+      "file_name": "automatic_tool_creation_engine.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 31446,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/dev_deploy_loop_coordinator_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/dev_deploy_loop_coordinator_mcp.py",
+      "file_name": "dev_deploy_loop_coordinator_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 56964,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/gemini_adapter/gemini_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/gemini_adapter/gemini_mcp.py",
+      "file_name": "gemini_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process",
+        "def get_capabilities"
+      ],
+      "estimated_type": "AI模型適配器",
+      "file_size": 11665,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/unified_smart_tool_engine_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_smart_tool_engine_mcp.py",
+      "file_name": "unified_smart_tool_engine_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 26202,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/sequential_thinking_adapter/sequential_thinking_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/sequential_thinking_adapter/sequential_thinking_mcp.py",
+      "file_name": "sequential_thinking_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 42711,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/infinite_context_adapter/infinite_context_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/infinite_context_adapter/infinite_context_mcp.py",
+      "file_name": "infinite_context_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 36651,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/enhanced_mcp_brainstorm.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_mcp_brainstorm.py",
+      "file_name": "enhanced_mcp_brainstorm.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter"
+      ],
+      "estimated_type": "AI模型適配器",
+      "file_size": 6312,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/intelligent_intent_processor.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/intelligent_intent_processor.py",
+      "file_name": "intelligent_intent_processor.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "數據處理",
+      "file_size": 36422,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/smart_routing_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/smart_routing_mcp.py",
+      "file_name": "smart_routing_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 48797,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcp_registration_checker.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcp_registration_checker.py",
+      "file_name": "mcp_registration_checker.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 14348,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/unified_smart_tool_engine/smart_tool_engine_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_smart_tool_engine/smart_tool_engine_mcp.py",
+      "file_name": "smart_tool_engine_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 38228,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/agent/prompt_optimization_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/prompt_optimization_mcp.py",
+      "file_name": "prompt_optimization_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 7169,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/qwen3_8b_local_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/qwen3_8b_local_mcp.py",
+      "file_name": "qwen3_8b_local_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "AI模型適配器",
+      "file_size": 13624,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/mcp_http_api_server.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_http_api_server.py",
+      "file_name": "mcp_http_api_server.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 21545,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/enhanced_mcp_brainstorm.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/enhanced_mcp_brainstorm.py",
+      "file_name": "enhanced_mcp_brainstorm.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter"
+      ],
+      "estimated_type": "AI模型適配器",
+      "file_size": 6312,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/cli/unified_mcp_cli.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/unified_mcp_cli.py",
+      "file_name": "unified_mcp_cli.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter"
+      ],
+      "estimated_type": "用戶界面",
+      "file_size": 34393,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/simple_webagent.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_webagent.py",
+      "file_name": "simple_webagent.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "def process"
+      ],
+      "estimated_type": "網頁/搜索",
+      "file_size": 4807,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/simple_kilocode_adapter.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_kilocode_adapter.py",
+      "file_name": "simple_kilocode_adapter.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": true,
+      "matched_indicators": [
+        "def process"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 9355,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/cli/fixed_unified_mcp_cli.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/fixed_unified_mcp_cli.py",
+      "file_name": "fixed_unified_mcp_cli.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "用戶界面",
+      "file_size": 7358,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/development_tools/agent_problem_solver_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/development_tools/agent_problem_solver_mcp.py",
+      "file_name": "agent_problem_solver_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 14975,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/simple_claude_adapter.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_claude_adapter.py",
+      "file_name": "simple_claude_adapter.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": true,
+      "matched_indicators": [
+        "def process"
+      ],
+      "estimated_type": "AI模型適配器",
+      "file_size": 2508,
+      "is_registered": false
+    },
+    {
+      "file_path": "unified_developer_tool_manager.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/unified_developer_tool_manager.py",
+      "file_name": "unified_developer_tool_manager.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 14552,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/cli/mcp_core_cli.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/mcp_core_cli.py",
+      "file_name": "mcp_core_cli.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter"
+      ],
+      "estimated_type": "用戶界面",
+      "file_size": 9323,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/cli/enhanced_mcp_cli.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/enhanced_mcp_cli.py",
+      "file_name": "enhanced_mcp_cli.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP"
+      ],
+      "estimated_type": "用戶界面",
+      "file_size": 13201,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcp_analyzer.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcp_analyzer.py",
+      "file_name": "mcp_analyzer.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP"
+      ],
+      "estimated_type": "數據處理",
+      "file_size": 7861,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/unified_memory_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_memory_mcp.py",
+      "file_name": "unified_memory_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "記憶/知識系統",
+      "file_size": 29000,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/simple_sequential_thinking.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_sequential_thinking.py",
+      "file_name": "simple_sequential_thinking.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "def process"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 5398,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/mcp_core_loader.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_core_loader.py",
+      "file_name": "mcp_core_loader.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "mcp.*adapter"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 10268,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/development_tools/thought_action_recorder_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/development_tools/thought_action_recorder_mcp.py",
+      "file_name": "thought_action_recorder_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 19608,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/agent_problem_solver_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/agent_problem_solver_mcp.py",
+      "file_name": "agent_problem_solver_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 15005,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/thought_action_recorder_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/thought_action_recorder_mcp.py",
+      "file_name": "thought_action_recorder_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 22903,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/core/development_tools/release_manager_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/development_tools/release_manager_mcp.py",
+      "file_name": "release_manager_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 22251,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/base_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/base_mcp.py",
+      "file_name": "base_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 9384,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/kilocode_adapter/kilocode_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/kilocode_adapter/kilocode_mcp.py",
+      "file_name": "kilocode_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process",
+        "def get_capabilities",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 12136,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/unified_smart_tool_engine/mcp_so_tools_engine.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_smart_tool_engine/mcp_so_tools_engine.py",
+      "file_name": "mcp_so_tools_engine.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 15666,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/multi_adapter_synthesizer.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/multi_adapter_synthesizer.py",
+      "file_name": "multi_adapter_synthesizer.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": true,
+      "matched_indicators": [
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 28844,
+      "is_registered": false
+    },
+    {
+      "file_path": "simple_mcp_selector.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/simple_mcp_selector.py",
+      "file_name": "simple_mcp_selector.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "def process"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 11197,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/error_handler.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/error_handler.py",
+      "file_name": "error_handler.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 13409,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/release_discovery_mcp.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/release_discovery_mcp.py",
+      "file_name": "release_discovery_mcp.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 12715,
+      "is_registered": false
+    },
+    {
+      "file_path": "mcptool/adapters/mcp_registration_fix.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/mcp_registration_fix.py",
+      "file_name": "mcp_registration_fix.py",
+      "has_mcp_suffix": true,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 5337,
+      "is_registered": false
+    }
+  ],
+  "unregistered_by_type": {
+    "未知類型": [
+      {
+        "file_path": "mcptool/adapters/context_monitor_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/context_monitor_mcp.py",
+        "file_name": "context_monitor_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 33386,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/release_manager_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/release_manager_mcp.py",
+        "file_name": "release_manager_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 22281,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/core/unified_adapter_registry.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/unified_adapter_registry.py",
+        "file_name": "unified_adapter_registry.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": true,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 16607,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/base_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/base_mcp.py",
+        "file_name": "base_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 4909,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/core/safe_mcp_registry.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/safe_mcp_registry.py",
+        "file_name": "safe_mcp_registry.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 9158,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/sequential_thinking_adapter/__init__.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/sequential_thinking_adapter/__init__.py",
+        "file_name": "__init__.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "mcp.*adapter"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 40,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/fixed_base_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/fixed_base_mcp.py",
+        "file_name": "fixed_base_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 7934,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/unified_mcp_manager.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/unified_mcp_manager.py",
+        "file_name": "unified_mcp_manager.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 5969,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/agent/context_matching_optimization_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/context_matching_optimization_mcp.py",
+        "file_name": "context_matching_optimization_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 16838,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/mcp_registry_integration_manager.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/mcp_registry_integration_manager.py",
+        "file_name": "mcp_registry_integration_manager.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 42562,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/mcp_planner.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_planner.py",
+        "file_name": "mcp_planner.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 8386,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/enhanced_mcp_planner.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/enhanced_mcp_planner.py",
+        "file_name": "enhanced_mcp_planner.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 6098,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/core/serializable_mcp_types.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/serializable_mcp_types.py",
+        "file_name": "serializable_mcp_types.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 2490,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/arxiv_integration.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/arxiv_integration.py",
+        "file_name": "arxiv_integration.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 5889,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/infinite_context_adapter_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/infinite_context_adapter_mcp.py",
+        "file_name": "infinite_context_adapter_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": true,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 26256,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/enhanced_aci_dev_adapter/aci_dev_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/enhanced_aci_dev_adapter/aci_dev_mcp.py",
+        "file_name": "aci_dev_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 23128,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/zapier_adapter/zapier_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/zapier_adapter/zapier_mcp.py",
+        "file_name": "zapier_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 26282,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/agent/content_template_optimization_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/content_template_optimization_mcp.py",
+        "file_name": "content_template_optimization_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 13842,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/mcp_central_coordinator.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_central_coordinator.py",
+        "file_name": "mcp_central_coordinator.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 7672,
+        "is_registered": false
+      },
+      {
+        "file_path": "intelligent_mcp_selector.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/intelligent_mcp_selector.py",
+        "file_name": "intelligent_mcp_selector.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 16765,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/enhanced_mcp_planner.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_mcp_planner.py",
+        "file_name": "enhanced_mcp_planner.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 6098,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/unified_config_manager/config_manager_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_config_manager/config_manager_mcp.py",
+        "file_name": "config_manager_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process",
+          "def get_capabilities"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 25196,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/dev_deploy_loop_coordinator_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/dev_deploy_loop_coordinator_mcp.py",
+        "file_name": "dev_deploy_loop_coordinator_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 56964,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/sequential_thinking_adapter/sequential_thinking_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/sequential_thinking_adapter/sequential_thinking_mcp.py",
+        "file_name": "sequential_thinking_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 42711,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/infinite_context_adapter/infinite_context_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/infinite_context_adapter/infinite_context_mcp.py",
+        "file_name": "infinite_context_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 36651,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/smart_routing_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/smart_routing_mcp.py",
+        "file_name": "smart_routing_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 48797,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcp_registration_checker.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcp_registration_checker.py",
+        "file_name": "mcp_registration_checker.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 14348,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/agent/prompt_optimization_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/prompt_optimization_mcp.py",
+        "file_name": "prompt_optimization_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 7169,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/mcp_http_api_server.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_http_api_server.py",
+        "file_name": "mcp_http_api_server.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 21545,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/development_tools/agent_problem_solver_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/development_tools/agent_problem_solver_mcp.py",
+        "file_name": "agent_problem_solver_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 14975,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/simple_sequential_thinking.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_sequential_thinking.py",
+        "file_name": "simple_sequential_thinking.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "def process"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 5398,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/mcp_core_loader.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_core_loader.py",
+        "file_name": "mcp_core_loader.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "mcp.*adapter"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 10268,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/development_tools/thought_action_recorder_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/development_tools/thought_action_recorder_mcp.py",
+        "file_name": "thought_action_recorder_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 19608,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/agent_problem_solver_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/agent_problem_solver_mcp.py",
+        "file_name": "agent_problem_solver_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 15005,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/thought_action_recorder_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/thought_action_recorder_mcp.py",
+        "file_name": "thought_action_recorder_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 22903,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/development_tools/release_manager_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/development_tools/release_manager_mcp.py",
+        "file_name": "release_manager_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 22251,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/base_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/base_mcp.py",
+        "file_name": "base_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 9384,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/multi_adapter_synthesizer.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/multi_adapter_synthesizer.py",
+        "file_name": "multi_adapter_synthesizer.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": true,
+        "matched_indicators": [
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 28844,
+        "is_registered": false
+      },
+      {
+        "file_path": "simple_mcp_selector.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/simple_mcp_selector.py",
+        "file_name": "simple_mcp_selector.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 11197,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/error_handler.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/error_handler.py",
+        "file_name": "error_handler.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 13409,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/release_discovery_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/release_discovery_mcp.py",
+        "file_name": "release_discovery_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 12715,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/mcp_registration_fix.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/mcp_registration_fix.py",
+        "file_name": "mcp_registration_fix.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 5337,
+        "is_registered": false
+      }
+    ],
+    "用戶界面": [
+      {
+        "file_path": "mcptool/adapters/interfaces/adapter_interfaces.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/interfaces/adapter_interfaces.py",
+        "file_name": "adapter_interfaces.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": true,
+        "matched_indicators": [
+          "def get_capabilities"
+        ],
+        "estimated_type": "用戶界面",
+        "file_size": 6467,
+        "is_registered": false
+      },
+      {
+        "file_path": "quick_mcp_analysis.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/quick_mcp_analysis.py",
+        "file_name": "quick_mcp_analysis.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "def process"
+        ],
+        "estimated_type": "用戶界面",
+        "file_size": 2421,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/cli/safe_unified_mcp_cli.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/safe_unified_mcp_cli.py",
+        "file_name": "safe_unified_mcp_cli.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "用戶界面",
+        "file_size": 7653,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/agent/ui_journey_optimization_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/ui_journey_optimization_mcp.py",
+        "file_name": "ui_journey_optimization_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process"
+        ],
+        "estimated_type": "用戶界面",
+        "file_size": 8391,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/interfaces/adapter_interface.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/interfaces/adapter_interface.py",
+        "file_name": "adapter_interface.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": true,
+        "matched_indicators": [
+          "def get_capabilities"
+        ],
+        "estimated_type": "用戶界面",
+        "file_size": 3249,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/cli/unified_mcp_cli.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/unified_mcp_cli.py",
+        "file_name": "unified_mcp_cli.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter"
+        ],
+        "estimated_type": "用戶界面",
+        "file_size": 34393,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/cli/fixed_unified_mcp_cli.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/fixed_unified_mcp_cli.py",
+        "file_name": "fixed_unified_mcp_cli.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "用戶界面",
+        "file_size": 7358,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/cli/mcp_core_cli.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/mcp_core_cli.py",
+        "file_name": "mcp_core_cli.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter"
+        ],
+        "estimated_type": "用戶界面",
+        "file_size": 9323,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/cli/enhanced_mcp_cli.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/enhanced_mcp_cli.py",
+        "file_name": "enhanced_mcp_cli.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP"
+        ],
+        "estimated_type": "用戶界面",
+        "file_size": 13201,
+        "is_registered": false
+      }
+    ],
+    "網頁/搜索": [
+      {
+        "file_path": "mcptool/adapters/core/webagent_core.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/webagent_core.py",
+        "file_name": "webagent_core.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "網頁/搜索",
+        "file_size": 18653,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/webagent_adapter.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/webagent_adapter.py",
+        "file_name": "webagent_adapter.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": true,
+        "matched_indicators": [
+          "mcp.*adapter"
+        ],
+        "estimated_type": "網頁/搜索",
+        "file_size": 6985,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/simple_webagent.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_webagent.py",
+        "file_name": "simple_webagent.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "def process"
+        ],
+        "estimated_type": "網頁/搜索",
+        "file_size": 4807,
+        "is_registered": false
+      }
+    ],
+    "AI模型適配器": [
+      {
+        "file_path": "mcptool/core/mcp_brainstorm.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_brainstorm.py",
+        "file_name": "mcp_brainstorm.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP"
+        ],
+        "estimated_type": "AI模型適配器",
+        "file_size": 15427,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/interfaces/ai_module_interface.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/interfaces/ai_module_interface.py",
+        "file_name": "ai_module_interface.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "def process",
+          "def get_capabilities"
+        ],
+        "estimated_type": "AI模型適配器",
+        "file_size": 11358,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/simple_gemini_adapter.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_gemini_adapter.py",
+        "file_name": "simple_gemini_adapter.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": true,
+        "matched_indicators": [
+          "def process"
+        ],
+        "estimated_type": "AI模型適配器",
+        "file_size": 2386,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/claude_adapter/claude_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/claude_adapter/claude_mcp.py",
+        "file_name": "claude_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process",
+          "def get_capabilities"
+        ],
+        "estimated_type": "AI模型適配器",
+        "file_size": 11428,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/gemini_adapter/gemini_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/gemini_adapter/gemini_mcp.py",
+        "file_name": "gemini_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process",
+          "def get_capabilities"
+        ],
+        "estimated_type": "AI模型適配器",
+        "file_size": 11665,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/enhanced_mcp_brainstorm.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_mcp_brainstorm.py",
+        "file_name": "enhanced_mcp_brainstorm.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter"
+        ],
+        "estimated_type": "AI模型適配器",
+        "file_size": 6312,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/qwen3_8b_local_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/qwen3_8b_local_mcp.py",
+        "file_name": "qwen3_8b_local_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "AI模型適配器",
+        "file_size": 13624,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/enhanced_mcp_brainstorm.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/enhanced_mcp_brainstorm.py",
+        "file_name": "enhanced_mcp_brainstorm.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter"
+        ],
+        "estimated_type": "AI模型適配器",
+        "file_size": 6312,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/simple_claude_adapter.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_claude_adapter.py",
+        "file_name": "simple_claude_adapter.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": true,
+        "matched_indicators": [
+          "def process"
+        ],
+        "estimated_type": "AI模型適配器",
+        "file_size": 2508,
+        "is_registered": false
+      }
+    ],
+    "數據處理": [
+      {
+        "file_path": "mcptool/adapters/rl_srt_dataflow_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/rl_srt_dataflow_mcp.py",
+        "file_name": "rl_srt_dataflow_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "數據處理",
+        "file_size": 25577,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/cloud_edge_data_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/cloud_edge_data_mcp.py",
+        "file_name": "cloud_edge_data_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "數據處理",
+        "file_size": 19331,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/intelligent_intent_processor.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/intelligent_intent_processor.py",
+        "file_name": "intelligent_intent_processor.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "數據處理",
+        "file_size": 36422,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcp_analyzer.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcp_analyzer.py",
+        "file_name": "mcp_analyzer.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP"
+        ],
+        "estimated_type": "數據處理",
+        "file_size": 7861,
+        "is_registered": false
+      }
+    ],
+    "工作流自動化": [
+      {
+        "file_path": "powerautomation_mcp_integration.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/powerautomation_mcp_integration.py",
+        "file_name": "powerautomation_mcp_integration.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process"
+        ],
+        "estimated_type": "工作流自動化",
+        "file_size": 9889,
+        "is_registered": false
+      }
+    ],
+    "工具引擎": [
+      {
+        "file_path": "mcptool/core/mcp_tool_engine_server.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_tool_engine_server.py",
+        "file_name": "mcp_tool_engine_server.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 15144,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/simple_smart_tool_engine.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_smart_tool_engine.py",
+        "file_name": "simple_smart_tool_engine.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "def process"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 6849,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/intelligent_workflow_engine_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/intelligent_workflow_engine_mcp.py",
+        "file_name": "intelligent_workflow_engine_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 66927,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/core/automatic_tool_creation_engine.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/automatic_tool_creation_engine.py",
+        "file_name": "automatic_tool_creation_engine.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 31446,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/unified_smart_tool_engine_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_smart_tool_engine_mcp.py",
+        "file_name": "unified_smart_tool_engine_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 26202,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/unified_smart_tool_engine/smart_tool_engine_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_smart_tool_engine/smart_tool_engine_mcp.py",
+        "file_name": "smart_tool_engine_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 38228,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/simple_kilocode_adapter.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_kilocode_adapter.py",
+        "file_name": "simple_kilocode_adapter.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": true,
+        "matched_indicators": [
+          "def process"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 9355,
+        "is_registered": false
+      },
+      {
+        "file_path": "unified_developer_tool_manager.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/unified_developer_tool_manager.py",
+        "file_name": "unified_developer_tool_manager.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 14552,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/kilocode_adapter/kilocode_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/kilocode_adapter/kilocode_mcp.py",
+        "file_name": "kilocode_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process",
+          "def get_capabilities",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 12136,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/unified_smart_tool_engine/mcp_so_tools_engine.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_smart_tool_engine/mcp_so_tools_engine.py",
+        "file_name": "mcp_so_tools_engine.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 15666,
+        "is_registered": false
+      }
+    ],
+    "強化學習": [
+      {
+        "file_path": "mcptool/adapters/rl_srt/rl_srt_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/rl_srt/rl_srt_mcp.py",
+        "file_name": "rl_srt_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "強化學習",
+        "file_size": 15042,
+        "is_registered": false
+      }
+    ],
+    "記憶/知識系統": [
+      {
+        "file_path": "mcptool/adapters/agent/context_memory_optimization_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/context_memory_optimization_mcp.py",
+        "file_name": "context_memory_optimization_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process"
+        ],
+        "estimated_type": "記憶/知識系統",
+        "file_size": 9574,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/supermemory_adapter/supermemory_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/supermemory_adapter/supermemory_mcp.py",
+        "file_name": "supermemory_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "def process",
+          "def get_capabilities"
+        ],
+        "estimated_type": "記憶/知識系統",
+        "file_size": 16920,
+        "is_registered": false
+      },
+      {
+        "file_path": "mcptool/adapters/unified_memory_mcp.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_memory_mcp.py",
+        "file_name": "unified_memory_mcp.py",
+        "has_mcp_suffix": true,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "記憶/知識系統",
+        "file_size": 29000,
+        "is_registered": false
+      }
+    ]
+  },
+  "naming_issues": [
+    {
+      "file_path": "mcptool/adapters/sequential_thinking_adapter/__init__.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/sequential_thinking_adapter/__init__.py",
+      "file_name": "__init__.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "mcp.*adapter"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 40,
+      "is_registered": false,
+      "naming_issues": [
+        "缺少mcp或adapter後綴"
+      ]
+    },
+    {
+      "file_path": "mcptool/adapters/core/webagent_core.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/webagent_core.py",
+      "file_name": "webagent_core.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "def get_capabilities",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "網頁/搜索",
+      "file_size": 18653,
+      "is_registered": false,
+      "naming_issues": [
+        "缺少mcp或adapter後綴"
+      ]
+    },
+    {
+      "file_path": "mcptool/adapters/arxiv_integration.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/arxiv_integration.py",
+      "file_name": "arxiv_integration.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "mcp.*adapter"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 5889,
+      "is_registered": false,
+      "naming_issues": [
+        "缺少mcp或adapter後綴"
+      ]
+    },
+    {
+      "file_path": "mcptool/adapters/interfaces/ai_module_interface.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/interfaces/ai_module_interface.py",
+      "file_name": "ai_module_interface.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "def process",
+        "def get_capabilities"
+      ],
+      "estimated_type": "AI模型適配器",
+      "file_size": 11358,
+      "is_registered": false,
+      "naming_issues": [
+        "缺少mcp或adapter後綴"
+      ]
+    },
+    {
+      "file_path": "mcptool/adapters/simple_smart_tool_engine.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_smart_tool_engine.py",
+      "file_name": "simple_smart_tool_engine.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "def process"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 6849,
+      "is_registered": false,
+      "naming_issues": [
+        "缺少mcp或adapter後綴"
+      ]
+    },
+    {
+      "file_path": "mcptool/core/automatic_tool_creation_engine.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/automatic_tool_creation_engine.py",
+      "file_name": "automatic_tool_creation_engine.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 31446,
+      "is_registered": false,
+      "naming_issues": [
+        "缺少mcp或adapter後綴"
+      ]
+    },
+    {
+      "file_path": "mcptool/adapters/intelligent_intent_processor.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/intelligent_intent_processor.py",
+      "file_name": "intelligent_intent_processor.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "class.*MCP",
+        "BaseMCP",
+        "def process",
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "數據處理",
+      "file_size": 36422,
+      "is_registered": false,
+      "naming_issues": [
+        "缺少mcp或adapter後綴"
+      ]
+    },
+    {
+      "file_path": "mcptool/adapters/simple_webagent.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_webagent.py",
+      "file_name": "simple_webagent.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "def process"
+      ],
+      "estimated_type": "網頁/搜索",
+      "file_size": 4807,
+      "is_registered": false,
+      "naming_issues": [
+        "缺少mcp或adapter後綴"
+      ]
+    },
+    {
+      "file_path": "unified_developer_tool_manager.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/unified_developer_tool_manager.py",
+      "file_name": "unified_developer_tool_manager.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "工具引擎",
+      "file_size": 14552,
+      "is_registered": false,
+      "naming_issues": [
+        "缺少mcp或adapter後綴"
+      ]
+    },
+    {
+      "file_path": "mcptool/adapters/simple_sequential_thinking.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_sequential_thinking.py",
+      "file_name": "simple_sequential_thinking.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "def process"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 5398,
+      "is_registered": false,
+      "naming_issues": [
+        "缺少mcp或adapter後綴"
+      ]
+    },
+    {
+      "file_path": "mcptool/adapters/error_handler.py",
+      "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/error_handler.py",
+      "file_name": "error_handler.py",
+      "has_mcp_suffix": false,
+      "has_adapter_suffix": false,
+      "matched_indicators": [
+        "mcp.*adapter",
+        "adapter.*mcp"
+      ],
+      "estimated_type": "未知類型",
+      "file_size": 13409,
+      "is_registered": false,
+      "naming_issues": [
+        "缺少mcp或adapter後綴"
+      ]
+    }
+  ],
+  "naming_issues_by_type": {
+    "缺少mcp或adapter後綴": [
+      {
+        "file_path": "mcptool/adapters/sequential_thinking_adapter/__init__.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/sequential_thinking_adapter/__init__.py",
+        "file_name": "__init__.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "mcp.*adapter"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 40,
+        "is_registered": false,
+        "naming_issues": [
+          "缺少mcp或adapter後綴"
+        ]
+      },
+      {
+        "file_path": "mcptool/adapters/core/webagent_core.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/webagent_core.py",
+        "file_name": "webagent_core.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "def get_capabilities",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "網頁/搜索",
+        "file_size": 18653,
+        "is_registered": false,
+        "naming_issues": [
+          "缺少mcp或adapter後綴"
+        ]
+      },
+      {
+        "file_path": "mcptool/adapters/arxiv_integration.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/arxiv_integration.py",
+        "file_name": "arxiv_integration.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "mcp.*adapter"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 5889,
+        "is_registered": false,
+        "naming_issues": [
+          "缺少mcp或adapter後綴"
+        ]
+      },
+      {
+        "file_path": "mcptool/adapters/interfaces/ai_module_interface.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/interfaces/ai_module_interface.py",
+        "file_name": "ai_module_interface.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "def process",
+          "def get_capabilities"
+        ],
+        "estimated_type": "AI模型適配器",
+        "file_size": 11358,
+        "is_registered": false,
+        "naming_issues": [
+          "缺少mcp或adapter後綴"
+        ]
+      },
+      {
+        "file_path": "mcptool/adapters/simple_smart_tool_engine.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_smart_tool_engine.py",
+        "file_name": "simple_smart_tool_engine.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "def process"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 6849,
+        "is_registered": false,
+        "naming_issues": [
+          "缺少mcp或adapter後綴"
+        ]
+      },
+      {
+        "file_path": "mcptool/core/automatic_tool_creation_engine.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/core/automatic_tool_creation_engine.py",
+        "file_name": "automatic_tool_creation_engine.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 31446,
+        "is_registered": false,
+        "naming_issues": [
+          "缺少mcp或adapter後綴"
+        ]
+      },
+      {
+        "file_path": "mcptool/adapters/intelligent_intent_processor.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/intelligent_intent_processor.py",
+        "file_name": "intelligent_intent_processor.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "class.*MCP",
+          "BaseMCP",
+          "def process",
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "數據處理",
+        "file_size": 36422,
+        "is_registered": false,
+        "naming_issues": [
+          "缺少mcp或adapter後綴"
+        ]
+      },
+      {
+        "file_path": "mcptool/adapters/simple_webagent.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_webagent.py",
+        "file_name": "simple_webagent.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "def process"
+        ],
+        "estimated_type": "網頁/搜索",
+        "file_size": 4807,
+        "is_registered": false,
+        "naming_issues": [
+          "缺少mcp或adapter後綴"
+        ]
+      },
+      {
+        "file_path": "unified_developer_tool_manager.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/unified_developer_tool_manager.py",
+        "file_name": "unified_developer_tool_manager.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "工具引擎",
+        "file_size": 14552,
+        "is_registered": false,
+        "naming_issues": [
+          "缺少mcp或adapter後綴"
+        ]
+      },
+      {
+        "file_path": "mcptool/adapters/simple_sequential_thinking.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/simple_sequential_thinking.py",
+        "file_name": "simple_sequential_thinking.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "def process"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 5398,
+        "is_registered": false,
+        "naming_issues": [
+          "缺少mcp或adapter後綴"
+        ]
+      },
+      {
+        "file_path": "mcptool/adapters/error_handler.py",
+        "full_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/error_handler.py",
+        "file_name": "error_handler.py",
+        "has_mcp_suffix": false,
+        "has_adapter_suffix": false,
+        "matched_indicators": [
+          "mcp.*adapter",
+          "adapter.*mcp"
+        ],
+        "estimated_type": "未知類型",
+        "file_size": 13409,
+        "is_registered": false,
+        "naming_issues": [
+          "缺少mcp或adapter後綴"
+        ]
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "type": "registration",
+      "priority": "high",
+      "title": "註冊未註冊的MCP",
+      "description": "有 82 個MCP未註冊到系統中",
+      "action": "將這些MCP添加到safe_mcp_registry.py中"
+    },
+    {
+      "type": "naming",
+      "priority": "medium",
+      "title": "修復檔名問題",
+      "description": "有 11 個文件存在檔名問題",
+      "action": "重命名文件以符合MCP命名規範"
+    },
+    {
+      "type": "category",
+      "priority": "medium",
+      "title": "批量處理未知類型",
+      "description": "有 42 個未知類型未註冊",
+      "action": "統一處理未知類型的註冊和集成"
+    },
+    {
+      "type": "category",
+      "priority": "medium",
+      "title": "批量處理用戶界面",
+      "description": "有 9 個用戶界面未註冊",
+      "action": "統一處理用戶界面的註冊和集成"
+    },
+    {
+      "type": "category",
+      "priority": "medium",
+      "title": "批量處理網頁/搜索",
+      "description": "有 3 個網頁/搜索未註冊",
+      "action": "統一處理網頁/搜索的註冊和集成"
+    },
+    {
+      "type": "category",
+      "priority": "medium",
+      "title": "批量處理AI模型適配器",
+      "description": "有 9 個AI模型適配器未註冊",
+      "action": "統一處理AI模型適配器的註冊和集成"
+    },
+    {
+      "type": "category",
+      "priority": "medium",
+      "title": "批量處理數據處理",
+      "description": "有 4 個數據處理未註冊",
+      "action": "統一處理數據處理的註冊和集成"
+    },
+    {
+      "type": "category",
+      "priority": "medium",
+      "title": "批量處理工具引擎",
+      "description": "有 10 個工具引擎未註冊",
+      "action": "統一處理工具引擎的註冊和集成"
+    },
+    {
+      "type": "category",
+      "priority": "medium",
+      "title": "批量處理記憶/知識系統",
+      "description": "有 3 個記憶/知識系統未註冊",
+      "action": "統一處理記憶/知識系統的註冊和集成"
+    }
+  ]
+}
