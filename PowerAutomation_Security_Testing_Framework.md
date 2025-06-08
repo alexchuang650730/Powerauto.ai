@@ -350,7 +350,7 @@ def test_manual_penetration_testing(self):
 ```bash
 # 在.env文件中發現明文API密鑰
 CLAUDE_API_KEY=your_claude_api_key_here
-GEMINI_API_KEY=AIzaSyBjQOKRMz0uTGnvDe9CDE5BmAwlY0_rCMw
+GEMINI_API_KEY=your_gemini_api_key_here
 GITHUB_TOKEN=your_github_token_here
 
 # 風險：API密鑰可能被洩露到版本控制系統

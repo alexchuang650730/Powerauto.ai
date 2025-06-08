@@ -46,7 +46,7 @@ class EnhancedMCPCLI:
         
         # 從之前的配置加載已知的API密鑰
         known_keys = {
-            "GEMINI_API_KEY": "AIzaSyBjQOKRMz0uTGnvDe9CDE5BmAwlY0_rCMw",
+            "GEMINI_API_KEY": "your_gemini_api_key_here",
             "CLAUDE_API_KEY": "your_claude_api_key_here",
             "KILO_API_KEY": "your_claude_api_key_here",
             "SUPERMEMORY_API_KEY": "sm_ohYKVYxdyurx5qGri5VqCi_iIsxIrnpbPeXAivFKEgGIpqonwNUiHIaqTjKmxZFEzekkmXbkuGZNVykhgqCxogP",

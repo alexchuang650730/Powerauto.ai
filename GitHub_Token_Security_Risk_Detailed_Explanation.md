@@ -48,10 +48,8 @@ curl -H "Authorization: token your_github_token_here" \
      https://api.github.com/user
 
 # 克隆您的私有倉庫
-git clone https://alexchuang650730:your_github_token_here@github.com/alexchuang650730/private-repo.git
-
-# 推送惡意代碼
-git push https://alexchuang650730:your_github_token_here@github.com/alexchuang650730/Powerauto.ai.git
+origin  https://alexchuang650730:[GITHUB_TOKEN]@github.com/alexchuang650730/Powerauto.ai.git (fetch)
+origin  https://alexchuang650730:[GITHUB_TOKEN]@github.com/alexchuang650730/Powerauto.ai.git (push)
 ```
 
 ### **2. 潛在攻擊場景**
@@ -109,7 +107,7 @@ git remote -v
 ### **第1步：撤銷暴露的Token (最緊急)**
 
 1. **登錄GitHub**：https://github.com/settings/tokens
-2. **找到Token**：查找名稱或部分字符串 `github_pat_11AA3YQQA00XKrtzUH1IQ6_`
+2. **找到Token**：查找名稱或部分字符串 `your_github_token_here`
 3. **立即刪除**：點擊 "Delete" 或 "Revoke"
 
 **為什麼這是最重要的？**

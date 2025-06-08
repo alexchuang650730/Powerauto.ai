@@ -30,7 +30,7 @@ class RealAPIGAIATester:
     def __init__(self):
         self.adapter_manager = get_safe_adapter_manager()
         self.api_keys = {
-            "GEMINI_API_KEY": "AIzaSyBjQOKRMz0uTGnvDe9CDE5BmAwlY0_rCMw",
+            "GEMINI_API_KEY": "your_gemini_api_key_here",
             "CLAUDE_API_KEY": "your_claude_api_key_here"
         }
     
