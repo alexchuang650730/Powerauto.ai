@@ -1,0 +1,46 @@
+{
+  "interaction_id": "96d64a2c-bb8d-4ea4-ac9f-507f117c6298",
+  "session_id": "0d014bc7-58e4-468d-9d96-37e25d0e1e5d",
+  "timestamp": "2025-06-08T17:30:49.896124+00:00",
+  "command": "python enhanced_mcp_cli.py",
+  "user_hash": null,
+  "arguments": {
+    "gaia": true,
+    "level": 1,
+    "max-tasks": 5
+  },
+  "context": {
+    "test_mode": true,
+    "target_accuracy": 0.9
+  },
+  "task_type": "mcp_management",
+  "task_subcategory": "general",
+  "complexity_level": "moderate",
+  "execution_time": 45.2,
+  "tools_used": [
+    "claude_mcp",
+    "gemini_mcp",
+    "webagent_core"
+  ],
+  "mcp_adapters_involved": [
+    "claude_adapter",
+    "gemini_adapter"
+  ],
+  "result_status": "success_partial",
+  "output_data": {
+    "accuracy": 0.6,
+    "correct_answers": 3,
+    "total_questions": 5
+  },
+  "error_info": null,
+  "accuracy_score": 0.6,
+  "user_satisfaction": 4,
+  "learning_value": "high_value",
+  "system_version": "1.0.0",
+  "environment_info": {
+    "python_version": "3.11",
+    "platform": "posix",
+    "working_directory": "/home/ubuntu/Powerauto.ai",
+    "timestamp": "2025-06-08T17:30:49.896153+00:00"
+  }
+}

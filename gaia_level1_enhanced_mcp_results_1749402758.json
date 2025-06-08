@@ -1,0 +1,56 @@
+{
+  "test_info": {
+    "level": 1,
+    "total_questions": 5,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "target_achieved": false
+  },
+  "results": [
+    {
+      "question_id": 1,
+      "question": "If Eliud Kipchoge could maintain his record-making marathon pace indefinitely, how many thousand hours would it take him to run the distance between the Earth and the Moon its closest approach? Please use the minimum perigee value on the Wikipedia page for the Moon when carrying out your calculation. Round your result to the nearest 1000 hours and do not use any comma separators if necessary.",
+      "ai_answer": "42",
+      "expected_answer": "17",
+      "is_correct": false,
+      "processing_time": 6.9141387939453125e-06,
+      "has_file": false
+    },
+    {
+      "question_id": 2,
+      "question": "How many studio albums were published by Mercedes Sosa between 2000 and 2009 (included)? You can use the latest 2022 version of english wikipedia.",
+      "ai_answer": "42",
+      "expected_answer": "3",
+      "is_correct": false,
+      "processing_time": 1.6689300537109375e-06,
+      "has_file": false
+    },
+    {
+      "question_id": 3,
+      "question": "Here's a fun riddle that I think you'll enjoy.\n\nYou have been selected to play the final round of the hit new game show \"Pick That Ping-Pong\". In this round, you will be competing for a large cash prize. Your job will be to pick one of several different numbered ping-pong balls, and then the game will commence. The host describes how the game works.\n\nA device consisting of a winding clear ramp and a series of pistons controls the outcome of the game. The ramp feeds balls onto a platform. The platform has room for three ping-pong balls at a time. The three balls on the platform are each aligned with one of three pistons. At each stage of the game, one of the three pistons will randomly fire, ejecting the ball it strikes. If the piston ejects the ball in the first position on the platform the balls in the second and third position on the platform each advance one space, and the next ball on the ramp advances to the third position. If the piston ejects the ball in the second position, the ball in the first position is released and rolls away, the ball in the third position advances two spaces to occupy the first position, and the next two balls on the ramp advance to occupy the second and third positions on the platform. If the piston ejects the ball in the third position, the ball in the first position is released and rolls away, the ball in the second position advances one space to occupy the first position, and the next two balls on the ramp advance to occupy the second and third positions on the platform.\n\nThe ramp begins with 100 numbered ping-pong balls, arranged in ascending order from 1 to 100. The host activates the machine and the first three balls, numbered 1, 2, and 3, advance to the platform. Before the random firing of the pistons begins, you are asked which of the 100 balls you would like to pick. If your pick is ejected by one of the pistons, you win the grand prize, $10,000.\n\nWhich ball should you choose to maximize your odds of winning the big prize? Please provide your answer as the number of the ball selected.",
+      "ai_answer": "基於MCP分析的答案",
+      "expected_answer": "3",
+      "is_correct": false,
+      "processing_time": 1.5497207641601562e-05,
+      "has_file": false
+    },
+    {
+      "question_id": 4,
+      "question": "What was the volume in m^3 of the fish bag that was calculated in the University of Leicester paper \"Can Hiccup Supply Enough Fish to Maintain a Dragon’s Diet?\"",
+      "ai_answer": "基於MCP分析的答案",
+      "expected_answer": "0.1777",
+      "is_correct": false,
+      "processing_time": 1.6689300537109375e-05,
+      "has_file": false
+    },
+    {
+      "question_id": 5,
+      "question": "In the video https://www.youtube.com/watch?v=L1vXCYZAYYM, what is the highest number of bird species to be on camera simultaneously?",
+      "ai_answer": "根據分析得出的答案",
+      "expected_answer": "3",
+      "is_correct": false,
+      "processing_time": 2.86102294921875e-06,
+      "has_file": false
+    }
+  ]
+}

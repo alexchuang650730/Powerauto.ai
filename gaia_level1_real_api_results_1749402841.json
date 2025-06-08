@@ -1,0 +1,46 @@
+{
+  "test_info": {
+    "level": 1,
+    "total_questions": 3,
+    "correct_answers": 1,
+    "accuracy": 33.33333333333333,
+    "target_achieved": false,
+    "api_usage": {
+      "claude": 3,
+      "gemini": 0,
+      "error": 0
+    }
+  },
+  "results": [
+    {
+      "question_id": 1,
+      "question": "If Eliud Kipchoge could maintain his record-making marathon pace indefinitely, how many thousand hours would it take him to run the distance between the Earth and the Moon its closest approach? Please use the minimum perigee value on the Wikipedia page for the Moon when carrying out your calculation. Round your result to the nearest 1000 hours and do not use any comma separators if necessary.",
+      "ai_answer": "Let me solve this step by step:\n\n1. Kipchoge's marathon record pace: 2:01:09 for 42.195 km = about 21.1 km/h\n2. Minimum lunar distance (perigee): 356,400 km\n3. Time calculation: 356,400 km ÷ 21.1 km/h = 16,891.5 hours\n\nRounding to nearest 1000 hours: 17000 hours\n\nThe answer is 17000 hours.",
+      "expected_answer": "17",
+      "is_correct": true,
+      "processing_time": 2.9532501697540283,
+      "api_used": "claude",
+      "has_file": false
+    },
+    {
+      "question_id": 2,
+      "question": "How many studio albums were published by Mercedes Sosa between 2000 and 2009 (included)? You can use the latest 2022 version of english wikipedia.",
+      "ai_answer": "According to Wikipedia, Mercedes Sosa released 2 studio albums between 2000 and 2009:\n- \"Acústico\" (2002)\n- \"Corazón Libre\" (2005)",
+      "expected_answer": "3",
+      "is_correct": false,
+      "processing_time": 1.6525895595550537,
+      "api_used": "claude",
+      "has_file": false
+    },
+    {
+      "question_id": 3,
+      "question": "Here's a fun riddle that I think you'll enjoy.\n\nYou have been selected to play the final round of the hit new game show \"Pick That Ping-Pong\". In this round, you will be competing for a large cash prize. Your job will be to pick one of several different numbered ping-pong balls, and then the game will commence. The host describes how the game works.\n\nA device consisting of a winding clear ramp and a series of pistons controls the outcome of the game. The ramp feeds balls onto a platform. The platform has room for three ping-pong balls at a time. The three balls on the platform are each aligned with one of three pistons. At each stage of the game, one of the three pistons will randomly fire, ejecting the ball it strikes. If the piston ejects the ball in the first position on the platform the balls in the second and third position on the platform each advance one space, and the next ball on the ramp advances to the third position. If the piston ejects the ball in the second position, the ball in the first position is released and rolls away, the ball in the third position advances two spaces to occupy the first position, and the next two balls on the ramp advance to occupy the second and third positions on the platform. If the piston ejects the ball in the third position, the ball in the first position is released and rolls away, the ball in the second position advances one space to occupy the first position, and the next two balls on the ramp advance to occupy the second and third positions on the platform.\n\nThe ramp begins with 100 numbered ping-pong balls, arranged in ascending order from 1 to 100. The host activates the machine and the first three balls, numbered 1, 2, and 3, advance to the platform. Before the random firing of the pistons begins, you are asked which of the 100 balls you would like to pick. If your pick is ejected by one of the pistons, you win the grand prize, $10,000.\n\nWhich ball should you choose to maximize your odds of winning the big prize? Please provide your answer as the number of the ball selected.",
+      "ai_answer": "1\n\nThe optimal choice is ball #1. Due to the mechanics of the system, ball #1 will remain on the platform in the first position until it is either ejected by the first piston or released when the second or third piston fires. No matter what sequence of piston firings occurs, ball #1 will only leave the platform in one of these ways, while all other balls must wait to enter the platform and could potentially be bypassed due to the advancement rules. This gives ball #1 the highest probability of being ejected by a piston.",
+      "expected_answer": "3",
+      "is_correct": false,
+      "processing_time": 3.6104178428649902,
+      "api_used": "claude",
+      "has_file": false
+    }
+  ]
+}

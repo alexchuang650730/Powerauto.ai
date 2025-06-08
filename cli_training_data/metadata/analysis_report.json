@@ -1,0 +1,156 @@
+{
+  "overview": {
+    "total_interactions": 1,
+    "time_range": {
+      "start": "2025-06-08T17:30:49.896124+00:00",
+      "end": "2025-06-08T17:30:49.896124+00:00",
+      "duration_days": 0
+    },
+    "task_type_distribution": {
+      "mcp_management": 1
+    },
+    "complexity_distribution": {
+      "moderate": 1
+    },
+    "result_status_distribution": {
+      "success_partial": 1
+    },
+    "learning_value_distribution": {
+      "high_value": 1
+    }
+  },
+  "task_analysis": {
+    "mcp_management": {
+      "total_interactions": 1,
+      "success_rate": 1.0,
+      "average_execution_time": 45.2,
+      "average_accuracy": 0.6,
+      "complexity_distribution": {
+        "moderate": 1
+      },
+      "common_tools": {
+        "claude_mcp": 1,
+        "gemini_mcp": 1,
+        "webagent_core": 1
+      }
+    }
+  },
+  "performance_analysis": {
+    "accuracy_statistics": {
+      "mean": 0.6,
+      "median": 0.6,
+      "std": 0.0,
+      "min": 0.6,
+      "max": 0.6,
+      "count": 1
+    },
+    "execution_time_statistics": {
+      "mean": 45.2,
+      "median": 45.2,
+      "std": 0.0,
+      "min": 45.2,
+      "max": 45.2,
+      "count": 1
+    },
+    "user_satisfaction_statistics": {
+      "mean": 4.0,
+      "median": 4.0,
+      "distribution": {
+        "4": 1
+      },
+      "count": 1
+    }
+  },
+  "learning_value_analysis": {
+    "high_value": {
+      "count": 1,
+      "percentage": 100.0,
+      "task_distribution": {
+        "mcp_management": 1
+      },
+      "complexity_distribution": {
+        "moderate": 1
+      },
+      "success_rate": 1.0
+    }
+  },
+  "tool_usage_analysis": {
+    "tool_statistics": {
+      "claude_mcp": {
+        "usage_count": 1,
+        "success_rate": 1.0,
+        "average_accuracy": 0.6,
+        "average_execution_time": 45.2
+      },
+      "gemini_mcp": {
+        "usage_count": 1,
+        "success_rate": 1.0,
+        "average_accuracy": 0.6,
+        "average_execution_time": 45.2
+      },
+      "webagent_core": {
+        "usage_count": 1,
+        "success_rate": 1.0,
+        "average_accuracy": 0.6,
+        "average_execution_time": 45.2
+      }
+    },
+    "most_used_tools": {
+      "claude_mcp": {
+        "usage_count": 1,
+        "success_rate": 1.0,
+        "average_accuracy": 0.6,
+        "average_execution_time": 45.2
+      },
+      "gemini_mcp": {
+        "usage_count": 1,
+        "success_rate": 1.0,
+        "average_accuracy": 0.6,
+        "average_execution_time": 45.2
+      },
+      "webagent_core": {
+        "usage_count": 1,
+        "success_rate": 1.0,
+        "average_accuracy": 0.6,
+        "average_execution_time": 45.2
+      }
+    },
+    "most_successful_tools": {},
+    "total_unique_tools": 3
+  },
+  "temporal_analysis": {
+    "hourly_distribution": {
+      "17": 1
+    },
+    "daily_usage": {
+      "2025-06-08": 1
+    },
+    "usage_trend": "stable",
+    "peak_hour": 17
+  },
+  "quality_metrics": {
+    "completeness": {
+      "accuracy_score": 1.0,
+      "user_satisfaction": 1.0,
+      "tools_used": 1.0,
+      "execution_time": 1.0
+    },
+    "consistency": {
+      "result_accuracy_alignment": 1.0
+    },
+    "overall_quality_score": 1.0
+  },
+  "training_readiness": {
+    "high_value_samples": 1,
+    "medium_value_samples": 0,
+    "task_balance_score": 1.0,
+    "complexity_balance_score": 1.0,
+    "success_ratio": 1.0,
+    "overall_readiness_score": 0.506,
+    "readiness_level": "fair",
+    "recommendations": [
+      "需要更多高價值數據樣本（當前：1，建議：50+）",
+      "某些任務類型數據不足（最少：1，建議：10+）"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "dataset_overview": {
+    "available_splits": [
+      "test",
+      "validation"
+    ],
+    "total_size": 466
+  },
+  "split_sizes": {
+    "test": 301,
+    "validation": 165
+  },
+  "level_distribution": {
+    "test": {
+      "Level 1": 93,
+      "Level 2": 159,
+      "Level 3": 49
+    },
+    "validation": {
+      "Level 2": 86,
+      "Level 1": 53,
+      "Level 3": 26
+    }
+  },
+  "file_attachment_stats": {
+    "test": {
+      "with_files": 71,
+      "without_files": 230,
+      "total": 301
+    },
+    "validation": {
+      "with_files": 38,
+      "without_files": 127,
+      "total": 165
+    }
+  },
+  "question_length_stats": {
+    "test": {
+      "average": 283.5548172757475,
+      "min": 60,
+      "max": 2454
+    },
+    "validation": {
+      "average": 299.56363636363636,
+      "min": 63,
+      "max": 2062
+    }
+  }
+}

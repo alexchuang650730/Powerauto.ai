@@ -1,0 +1,102 @@
+{
+  "KiloCode MCP": {
+    "name": "KiloCode MCP",
+    "module_path": "mcptool.adapters.kilocode_adapter.kilocode_mcp",
+    "import_success": false,
+    "class_found": false,
+    "init_success": false,
+    "methods": [],
+    "error": "導入失敗: No module named 'mcptool'",
+    "class_name": null
+  },
+  "RL-SRT MCP": {
+    "name": "RL-SRT MCP",
+    "module_path": "mcptool.adapters.rl_srt.rl_srt_mcp",
+    "import_success": false,
+    "class_found": false,
+    "init_success": false,
+    "methods": [],
+    "error": "導入失敗: No module named 'mcptool'",
+    "class_name": null
+  },
+  "Claude MCP": {
+    "name": "Claude MCP",
+    "module_path": "mcptool.adapters.claude_adapter.claude_mcp",
+    "import_success": false,
+    "class_found": false,
+    "init_success": false,
+    "methods": [],
+    "error": "導入失敗: No module named 'mcptool'",
+    "class_name": null
+  },
+  "Gemini MCP": {
+    "name": "Gemini MCP",
+    "module_path": "mcptool.adapters.gemini_adapter.gemini_mcp",
+    "import_success": false,
+    "class_found": false,
+    "init_success": false,
+    "methods": [],
+    "error": "導入失敗: No module named 'mcptool'",
+    "class_name": null
+  },
+  "Smart Routing MCP": {
+    "name": "Smart Routing MCP",
+    "module_path": "mcptool.adapters.smart_routing_mcp",
+    "import_success": false,
+    "class_found": false,
+    "init_success": false,
+    "methods": [],
+    "error": "導入失敗: No module named 'mcptool'",
+    "class_name": null
+  },
+  "Unified Memory MCP": {
+    "name": "Unified Memory MCP",
+    "module_path": "mcptool.adapters.unified_memory_mcp",
+    "import_success": false,
+    "class_found": false,
+    "init_success": false,
+    "methods": [],
+    "error": "導入失敗: No module named 'mcptool'",
+    "class_name": null
+  },
+  "Sequential Thinking MCP": {
+    "name": "Sequential Thinking MCP",
+    "module_path": "mcptool.adapters.sequential_thinking_adapter.sequential_thinking_mcp",
+    "import_success": false,
+    "class_found": false,
+    "init_success": false,
+    "methods": [],
+    "error": "導入失敗: No module named 'mcptool'",
+    "class_name": null
+  },
+  "SuperMemory MCP": {
+    "name": "SuperMemory MCP",
+    "module_path": "mcptool.adapters.supermemory_adapter.supermemory_mcp",
+    "import_success": false,
+    "class_found": false,
+    "init_success": false,
+    "methods": [],
+    "error": "導入失敗: No module named 'mcptool'",
+    "class_name": null
+  },
+  "Context Monitor MCP": {
+    "name": "Context Monitor MCP",
+    "module_path": "mcptool.adapters.context_monitor_mcp",
+    "import_success": false,
+    "class_found": false,
+    "init_success": false,
+    "methods": [],
+    "error": "導入失敗: No module named 'mcptool'",
+    "class_name": null
+  },
+  "Thought Action Recorder MCP": {
+    "name": "Thought Action Recorder MCP",
+    "module_path": "mcptool.adapters.thought_action_recorder_mcp",
+    "import_success": false,
+    "class_found": false,
+    "init_success": false,
+    "methods": [],
+    "error": "導入失敗: No module named 'mcptool'",
+    "class_name": null
+  }
+}
