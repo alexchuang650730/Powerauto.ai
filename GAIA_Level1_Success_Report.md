@@ -31,7 +31,7 @@
 ```bash
 # 成功配置的API密鑰
 CLAUDE_API_KEY=your_claude_api_key_here
-GEMINI_API_KEY=AIzaSyBjQOKRMz0uTGnvDe9CDE5BmAwlY0_rCMw
+GEMINI_API_KEY=your_gemini_api_key_here
 SUPERMEMORY_API_KEY=sm_ohYKVYxdyurx5qGri5VqCi_iIsxIrnpbPeXAivFKEgGIpqonwNUiHIaqTjKmxZFEzekkmXbkuGZNVykhgqCxogP
 GITHUB_TOKEN=your_github_token_here
 HUGGINGFACE_TOKEN=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
