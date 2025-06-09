@@ -1,0 +1,10 @@
+{
+  "dynamic_automation_tool": {
+    "name": "dynamic_automation_tool",
+    "tool_name": "automation-tool",
+    "platform": "zapier.com",
+    "api_endpoint": "https://api.zapier.com/tools/automation-tool",
+    "install_command": "zapier connect automation-tool",
+    "confidence": 0.9
+  }
+}

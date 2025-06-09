@@ -1,0 +1,75 @@
+{
+  "timestamp": "2025-06-08T18:01:55.114189",
+  "error_summary": {
+    "total_errors": 3,
+    "recent_errors": [
+      {
+        "timestamp": "2025-06-08T18:01:52.608615",
+        "error_type": "ValueError",
+        "error_message": "測試錯誤",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_error_handling.py\", line 155, in wrapper\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_error_handling.py\", line 398, in test_function\n    raise ValueError(\"測試錯誤\")\nValueError: 測試錯誤\n",
+        "context_stack": [
+          {
+            "timestamp": "2025-06-08T18:01:52.608556",
+            "context": {
+              "test": "decorator"
+            }
+          },
+          {
+            "timestamp": "2025-06-08T18:01:52.608563",
+            "context": {
+              "function": "test_function",
+              "module": "__main__",
+              "args_count": 1,
+              "kwargs_keys": []
+            }
+          }
+        ],
+        "additional_info": {
+          "function": "test_function",
+          "execution_time": 6.198883056640625e-06,
+          "args_types": [
+            "bool"
+          ],
+          "kwargs": {}
+        }
+      },
+      {
+        "timestamp": "2025-06-08T18:01:52.612325",
+        "error_type": "ConnectionError",
+        "error_message": "嘗試 1 失敗",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_error_handling.py\", line 217, in safe_call\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_error_handling.py\", line 418, in unreliable_function\n    raise ConnectionError(f\"嘗試 {attempt_count[0]} 失敗\")\nConnectionError: 嘗試 1 失敗\n",
+        "context_stack": [],
+        "additional_info": {
+          "function": "unreliable_function",
+          "attempt": 1,
+          "max_retries": 3
+        }
+      },
+      {
+        "timestamp": "2025-06-08T18:01:53.613109",
+        "error_type": "ConnectionError",
+        "error_message": "嘗試 2 失敗",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_error_handling.py\", line 217, in safe_call\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_error_handling.py\", line 418, in unreliable_function\n    raise ConnectionError(f\"嘗試 {attempt_count[0]} 失敗\")\nConnectionError: 嘗試 2 失敗\n",
+        "context_stack": [],
+        "additional_info": {
+          "function": "unreliable_function",
+          "attempt": 2,
+          "max_retries": 3
+        }
+      }
+    ],
+    "error_types": [
+      "ValueError",
+      "ConnectionError"
+    ],
+    "first_error": "2025-06-08T18:01:52.608615",
+    "last_error": "2025-06-08T18:01:53.613109"
+  },
+  "system_info": {
+    "python_version": "3.11.0rc1 (main, Aug 12 2022, 10:02:14) [GCC 11.2.0]",
+    "platform": "linux",
+    "current_working_directory": "/home/ubuntu/Powerauto.ai"
+  },
+  "context_stack": []
+}

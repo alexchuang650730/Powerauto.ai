@@ -1,0 +1,75 @@
+{
+  "test_time": "2025-06-08T12:53:47.260140",
+  "platform": "linux",
+  "is_wsl": false,
+  "total_tests": 4,
+  "passed": 2,
+  "failed": 0,
+  "limited": 2,
+  "results": [
+    {
+      "name": "Qwen MCP",
+      "status": "needs_setup",
+      "details": {
+        "file_exists": true,
+        "import_success": true,
+        "instance_created": true,
+        "ollama_available": false,
+        "message": "需要安裝Ollama"
+      },
+      "recommendations": [
+        "運行: curl -fsSL https://ollama.ai/install.sh | sh",
+        "然後: ollama pull qwen2.5:8b"
+      ]
+    },
+    {
+      "name": "RL_SRT MCP",
+      "status": "limited",
+      "details": {
+        "files_exist": {
+          "/home/ubuntu/Powerauto.ai/mcptool/adapters/rl_srt/rl_srt_mcp.py": true,
+          "/home/ubuntu/Powerauto.ai/mcptool/adapters/rl_srt_dataflow_mcp.py": true
+        },
+        "pytorch_available": false,
+        "import_success": true,
+        "instance_created": true,
+        "message": "RL_SRT可用但功能受限（無PyTorch）"
+      },
+      "recommendations": [
+        "安裝PyTorch: pip install torch"
+      ]
+    },
+    {
+      "name": "異步RL",
+      "status": "available",
+      "details": {
+        "asyncio_available": true,
+        "dataflow_file_exists": true,
+        "async_test_passed": true,
+        "message": "異步RL功能可用"
+      },
+      "recommendations": []
+    },
+    {
+      "name": "終端兼容性",
+      "status": "linux_compatible",
+      "details": {
+        "environment": {
+          "TERM": "xterm-256color",
+          "SHELL": "/bin/bash",
+          "PATH": 10,
+          "PYTHON_PATH": "/usr/bin/python"
+        },
+        "python_version": "3.11.0",
+        "platform": {
+          "system": "linux",
+          "is_wsl": false,
+          "architecture": "x86_64",
+          "processor": "x86_64"
+        },
+        "message": "Linux環境兼容"
+      },
+      "recommendations": []
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "moved_to_core": [
+    {
+      "file": "base_mcp.py",
+      "from": "/home/ubuntu/Powerauto.ai/mcptool/adapters/base_mcp.py",
+      "to": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/base_mcp.py"
+    },
+    {
+      "file": "adapter_interface.py",
+      "from": "/home/ubuntu/Powerauto.ai/mcptool/adapters/interfaces/adapter_interface.py",
+      "to": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/adapter_interface.py"
+    },
+    {
+      "file": "ai_module_interface.py",
+      "from": "/home/ubuntu/Powerauto.ai/mcptool/adapters/interfaces/ai_module_interface.py",
+      "to": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/ai_module_interface.py"
+    },
+    {
+      "file": "adapter_interfaces.py",
+      "from": "/home/ubuntu/Powerauto.ai/mcptool/adapters/interfaces/adapter_interfaces.py",
+      "to": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/adapter_interfaces.py"
+    },
+    {
+      "file": "mcp_registry_integration_manager.py",
+      "from": "/home/ubuntu/Powerauto.ai/mcptool/adapters/mcp_registry_integration_manager.py",
+      "to": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/mcp_registry_integration_manager.py"
+    },
+    {
+      "file": "error_handler.py",
+      "from": "/home/ubuntu/Powerauto.ai/mcptool/adapters/error_handler.py",
+      "to": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/error_handler.py"
+    },
+    {
+      "file": "memory_query_engine.py",
+      "from": "/home/ubuntu/Powerauto.ai/memory-system/memory_query_engine.py",
+      "to": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/memory_query_engine.py"
+    },
+    {
+      "file": "intelligent_intent_processor.py",
+      "from": "/home/ubuntu/Powerauto.ai/mcptool/adapters/intelligent_intent_processor.py",
+      "to": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/intelligent_intent_processor.py"
+    }
+  ],
+  "core_components_count": 8,
+  "tool_components_count": 17,
+  "reorganization_complete": true
+}

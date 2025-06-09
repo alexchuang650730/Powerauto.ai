@@ -1,0 +1,2373 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>GAIA Level 1 測試結果</title>
+        <meta charset="utf-8">
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1 { color: #333; text-align: center; }
+            .summary { background: #f5f5f5; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+            table { border-collapse: collapse; width: 100%; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #4CAF50; color: white; }
+            tr:nth-child(even) { background-color: #f2f2f2; }
+            .correct { color: green; font-weight: bold; }
+            .incorrect { color: red; font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <h1>🎯 GAIA Level 1 測試結果詳細報告</h1>
+        
+        <div class="summary">
+            <h2>📊 測試摘要</h2>
+            <p><strong>總題目數:</strong> 165</p>
+            <p><strong>正確答案:</strong> 123</p>
+            <p><strong>準確率:</strong> 74.5%</p>
+            <p><strong>測試時間:</strong> 2025-06-08 19:02:22</p>
+        </div>
+        
+        <table border="1" class="dataframe table table-striped" id="results_table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>序號</th>
+      <th>題目ID</th>
+      <th>題目</th>
+      <th>類別</th>
+      <th>難度</th>
+      <th>預期答案</th>
+      <th>實際答案</th>
+      <th>正確性</th>
+      <th>使用適配器</th>
+      <th>執行時間(秒)</th>
+      <th>錯誤信息</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>gaia_level1_001</td>
+      <td>What is the capital of France?</td>
+      <td>geography</td>
+      <td>easy</td>
+      <td>Paris</td>
+      <td>Paris</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.941</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>gaia_level1_002</td>
+      <td>Which continent is Egypt located in?</td>
+      <td>geography</td>
+      <td>easy</td>
+      <td>Africa</td>
+      <td>Africa</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>gaia_level1_003</td>
+      <td>What is the longest river in the world?</td>
+      <td>geography</td>
+      <td>medium</td>
+      <td>Nile River</td>
+      <td>Nile River</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.082</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>gaia_level1_004</td>
+      <td>Which ocean is the largest?</td>
+      <td>geography</td>
+      <td>easy</td>
+      <td>Pacific Ocean</td>
+      <td>Pacific Ocean</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>gaia_level1_005</td>
+      <td>What is the capital of Japan?</td>
+      <td>geography</td>
+      <td>easy</td>
+      <td>Tokyo</td>
+      <td>Tokyo</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6</td>
+      <td>gaia_level1_006</td>
+      <td>Which mountain range contains Mount Everest?</td>
+      <td>geography</td>
+      <td>medium</td>
+      <td>Himalayas</td>
+      <td>Himalayas</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7</td>
+      <td>gaia_level1_007</td>
+      <td>What is the smallest country in the world?</td>
+      <td>geography</td>
+      <td>medium</td>
+      <td>Vatican City</td>
+      <td>Vatican City</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>8</td>
+      <td>gaia_level1_008</td>
+      <td>Which desert is the largest in the world?</td>
+      <td>geography</td>
+      <td>medium</td>
+      <td>Sahara Desert</td>
+      <td>Sahara Desert</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.634</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>9</td>
+      <td>gaia_level1_009</td>
+      <td>What is the capital of Australia?</td>
+      <td>geography</td>
+      <td>medium</td>
+      <td>Canberra</td>
+      <td>Canberra</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10</td>
+      <td>gaia_level1_010</td>
+      <td>Which country has the most time zones?</td>
+      <td>geography</td>
+      <td>hard</td>
+      <td>France</td>
+      <td>France (12 time zones)</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.746</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>11</td>
+      <td>gaia_level1_011</td>
+      <td>What is 15 + 27?</td>
+      <td>math</td>
+      <td>easy</td>
+      <td>42</td>
+      <td>42</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>12</td>
+      <td>gaia_level1_012</td>
+      <td>What is the square root of 144?</td>
+      <td>math</td>
+      <td>easy</td>
+      <td>12</td>
+      <td>12</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>13</td>
+      <td>gaia_level1_013</td>
+      <td>What is 8 × 7?</td>
+      <td>math</td>
+      <td>easy</td>
+      <td>56</td>
+      <td>56</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>14</td>
+      <td>gaia_level1_014</td>
+      <td>What is 100 ÷ 4?</td>
+      <td>math</td>
+      <td>easy</td>
+      <td>25</td>
+      <td>25</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>15</td>
+      <td>gaia_level1_015</td>
+      <td>What is 2^5?</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>32</td>
+      <td>32</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>16</td>
+      <td>gaia_level1_016</td>
+      <td>What is the value of π (pi) to 2 decimal places?</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>3.14</td>
+      <td>3.14</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>17</td>
+      <td>gaia_level1_017</td>
+      <td>What is 15% of 200?</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>30</td>
+      <td>30</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>18</td>
+      <td>gaia_level1_018</td>
+      <td>What is the sum of angles in a triangle?</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>180 degrees</td>
+      <td>180</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>19</td>
+      <td>gaia_level1_019</td>
+      <td>What is the derivative of x^2?</td>
+      <td>math</td>
+      <td>hard</td>
+      <td>2x</td>
+      <td>2x</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>20</td>
+      <td>gaia_level1_020</td>
+      <td>What is the integral of 2x?</td>
+      <td>math</td>
+      <td>hard</td>
+      <td>x^2 + C</td>
+      <td>x^2 + C</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>21</td>
+      <td>gaia_level1_021</td>
+      <td>What is the chemical symbol for gold?</td>
+      <td>science</td>
+      <td>easy</td>
+      <td>Au</td>
+      <td>Au</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>22</td>
+      <td>gaia_level1_022</td>
+      <td>What is the largest planet in our solar system?</td>
+      <td>science</td>
+      <td>easy</td>
+      <td>Jupiter</td>
+      <td>Jupiter</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>23</td>
+      <td>gaia_level1_023</td>
+      <td>What is the atomic number of carbon?</td>
+      <td>science</td>
+      <td>medium</td>
+      <td>6</td>
+      <td>6</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>24</td>
+      <td>gaia_level1_024</td>
+      <td>What gas do plants absorb from the atmosphere duri...</td>
+      <td>science</td>
+      <td>medium</td>
+      <td>Carbon dioxide</td>
+      <td>二氧化碳</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>1.019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>25</td>
+      <td>gaia_level1_025</td>
+      <td>What is the smallest unit of matter?</td>
+      <td>science</td>
+      <td>medium</td>
+      <td>Atom</td>
+      <td>夸克</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>0.971</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>26</td>
+      <td>gaia_level1_026</td>
+      <td>What is the speed of light in vacuum?</td>
+      <td>science</td>
+      <td>hard</td>
+      <td>299,792,458 meters per second</td>
+      <td>299792458</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.822</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>27</td>
+      <td>gaia_level1_027</td>
+      <td>What is the chemical formula for water?</td>
+      <td>science</td>
+      <td>easy</td>
+      <td>H2O</td>
+      <td>H2O</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>28</td>
+      <td>gaia_level1_028</td>
+      <td>How many bones are in the adult human body?</td>
+      <td>science</td>
+      <td>medium</td>
+      <td>206</td>
+      <td>206</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>29</td>
+      <td>gaia_level1_029</td>
+      <td>What is the hardest natural substance on Earth?</td>
+      <td>science</td>
+      <td>medium</td>
+      <td>Diamond</td>
+      <td>鑽石</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>1.161</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>30</td>
+      <td>gaia_level1_030</td>
+      <td>What is the pH of pure water?</td>
+      <td>science</td>
+      <td>medium</td>
+      <td>7</td>
+      <td>7</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.907</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>31</td>
+      <td>gaia_level1_031</td>
+      <td>In which year did World War II end?</td>
+      <td>history</td>
+      <td>easy</td>
+      <td>1945</td>
+      <td>1945</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.780</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>32</td>
+      <td>gaia_level1_032</td>
+      <td>Who was the first President of the United States?</td>
+      <td>history</td>
+      <td>easy</td>
+      <td>George Washington</td>
+      <td>George Washington</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>33</td>
+      <td>gaia_level1_033</td>
+      <td>In which year did the Berlin Wall fall?</td>
+      <td>history</td>
+      <td>medium</td>
+      <td>1989</td>
+      <td>1989</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>4.613</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>34</td>
+      <td>gaia_level1_034</td>
+      <td>Which ancient wonder of the world was located in A...</td>
+      <td>history</td>
+      <td>medium</td>
+      <td>Lighthouse of Alexandria</td>
+      <td>The Lighthouse of Alexandria</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>2.645</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>35</td>
+      <td>gaia_level1_035</td>
+      <td>Who was the first person to walk on the moon?</td>
+      <td>history</td>
+      <td>easy</td>
+      <td>Neil Armstrong</td>
+      <td>Neil Armstrong</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>2.040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>36</td>
+      <td>gaia_level1_036</td>
+      <td>In which year did the Titanic sink?</td>
+      <td>history</td>
+      <td>medium</td>
+      <td>1912</td>
+      <td>1912</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>2.096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>37</td>
+      <td>gaia_level1_037</td>
+      <td>Which empire was ruled by Julius Caesar?</td>
+      <td>history</td>
+      <td>medium</td>
+      <td>Roman Empire</td>
+      <td>Roman Empire</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>2.828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>38</td>
+      <td>gaia_level1_038</td>
+      <td>In which year did World War I begin?</td>
+      <td>history</td>
+      <td>medium</td>
+      <td>1914</td>
+      <td>1914</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>3.670</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>39</td>
+      <td>gaia_level1_039</td>
+      <td>Who wrote the Declaration of Independence?</td>
+      <td>history</td>
+      <td>medium</td>
+      <td>Thomas Jefferson</td>
+      <td>Thomas Jefferson</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>2.108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>40</td>
+      <td>gaia_level1_040</td>
+      <td>Which war was fought between the North and South i...</td>
+      <td>history</td>
+      <td>easy</td>
+      <td>Civil War</td>
+      <td>Civil War</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.707</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>41</td>
+      <td>gaia_level1_041</td>
+      <td>Who wrote the novel '1984'?</td>
+      <td>literature</td>
+      <td>easy</td>
+      <td>George Orwell</td>
+      <td>George Orwell</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>3.320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>42</td>
+      <td>gaia_level1_042</td>
+      <td>Who painted the Mona Lisa?</td>
+      <td>art</td>
+      <td>easy</td>
+      <td>Leonardo da Vinci</td>
+      <td>Leonardo da Vinci</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.211</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>43</td>
+      <td>gaia_level1_043</td>
+      <td>Who wrote 'Romeo and Juliet'?</td>
+      <td>literature</td>
+      <td>easy</td>
+      <td>William Shakespeare</td>
+      <td>William Shakespeare</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>44</td>
+      <td>gaia_level1_044</td>
+      <td>Who composed 'The Four Seasons'?</td>
+      <td>music</td>
+      <td>medium</td>
+      <td>Antonio Vivaldi</td>
+      <td>Vivaldi</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>45</td>
+      <td>gaia_level1_045</td>
+      <td>Who wrote 'Pride and Prejudice'?</td>
+      <td>literature</td>
+      <td>medium</td>
+      <td>Jane Austen</td>
+      <td>Jane Austen</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.343</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>46</td>
+      <td>gaia_level1_046</td>
+      <td>Who painted 'The Starry Night'?</td>
+      <td>art</td>
+      <td>medium</td>
+      <td>Vincent van Gogh</td>
+      <td>Vincent van Gogh</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.378</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>47</td>
+      <td>gaia_level1_047</td>
+      <td>Who wrote 'To Kill a Mockingbird'?</td>
+      <td>literature</td>
+      <td>medium</td>
+      <td>Harper Lee</td>
+      <td>Harper Lee</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>48</td>
+      <td>gaia_level1_048</td>
+      <td>Who composed 'Symphony No. 9'?</td>
+      <td>music</td>
+      <td>medium</td>
+      <td>Ludwig van Beethoven</td>
+      <td>Ludwig van Beethoven</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>49</td>
+      <td>gaia_level1_049</td>
+      <td>Who wrote 'The Great Gatsby'?</td>
+      <td>literature</td>
+      <td>medium</td>
+      <td>F. Scott Fitzgerald</td>
+      <td>F. Scott Fitzgerald</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>50</td>
+      <td>gaia_level1_050</td>
+      <td>Who painted 'The Last Supper'?</td>
+      <td>art</td>
+      <td>medium</td>
+      <td>Leonardo da Vinci</td>
+      <td>Leonardo da Vinci</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.385</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>51</td>
+      <td>gaia_level1_051</td>
+      <td>Who wrote 'Harry Potter' series?</td>
+      <td>literature</td>
+      <td>easy</td>
+      <td>J.K. Rowling</td>
+      <td>J.K. Rowling</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>52</td>
+      <td>gaia_level1_052</td>
+      <td>Who composed 'The Magic Flute'?</td>
+      <td>music</td>
+      <td>medium</td>
+      <td>Wolfgang Amadeus Mozart</td>
+      <td>Mozart</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>53</td>
+      <td>gaia_level1_053</td>
+      <td>Who wrote 'One Hundred Years of Solitude'?</td>
+      <td>literature</td>
+      <td>hard</td>
+      <td>Gabriel García Márquez</td>
+      <td>Gabriel García Márquez</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>54</td>
+      <td>gaia_level1_054</td>
+      <td>Who painted 'Guernica'?</td>
+      <td>art</td>
+      <td>medium</td>
+      <td>Pablo Picasso</td>
+      <td>Pablo Picasso</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.970</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>55</td>
+      <td>gaia_level1_055</td>
+      <td>Who wrote 'The Catcher in the Rye'?</td>
+      <td>literature</td>
+      <td>medium</td>
+      <td>J.D. Salinger</td>
+      <td>J.D. Salinger</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>56</td>
+      <td>gaia_level1_056</td>
+      <td>Who composed 'Carmen'?</td>
+      <td>music</td>
+      <td>medium</td>
+      <td>Georges Bizet</td>
+      <td>Georges Bizet</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.696</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>57</td>
+      <td>gaia_level1_057</td>
+      <td>Who wrote 'Moby Dick'?</td>
+      <td>literature</td>
+      <td>medium</td>
+      <td>Herman Melville</td>
+      <td>Herman Melville</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>58</td>
+      <td>gaia_level1_058</td>
+      <td>Who painted 'The Scream'?</td>
+      <td>art</td>
+      <td>medium</td>
+      <td>Edvard Munch</td>
+      <td>Edvard Munch</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.768</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>59</td>
+      <td>gaia_level1_059</td>
+      <td>Who wrote 'War and Peace'?</td>
+      <td>literature</td>
+      <td>medium</td>
+      <td>Leo Tolstoy</td>
+      <td>Leo Tolstoy</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>2.676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>60</td>
+      <td>gaia_level1_060</td>
+      <td>Who composed 'The Nutcracker'?</td>
+      <td>music</td>
+      <td>medium</td>
+      <td>Pyotr Ilyich Tchaikovsky</td>
+      <td>Tchaikovsky</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>61</td>
+      <td>gaia_level1_061</td>
+      <td>Who wrote 'The Lord of the Rings'?</td>
+      <td>literature</td>
+      <td>easy</td>
+      <td>J.R.R. Tolkien</td>
+      <td>J.R.R. Tolkien</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.857</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>62</td>
+      <td>gaia_level1_062</td>
+      <td>Who painted 'Girl with a Pearl Earring'?</td>
+      <td>art</td>
+      <td>medium</td>
+      <td>Johannes Vermeer</td>
+      <td>Johannes Vermeer</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>63</td>
+      <td>gaia_level1_063</td>
+      <td>Who wrote 'Brave New World'?</td>
+      <td>literature</td>
+      <td>medium</td>
+      <td>Aldous Huxley</td>
+      <td>Aldous Huxley</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.763</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>64</td>
+      <td>gaia_level1_064</td>
+      <td>Who composed 'Rhapsody in Blue'?</td>
+      <td>music</td>
+      <td>medium</td>
+      <td>George Gershwin</td>
+      <td>George Gershwin</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>65</td>
+      <td>gaia_level1_065</td>
+      <td>Who wrote 'The Chronicles of Narnia'?</td>
+      <td>literature</td>
+      <td>medium</td>
+      <td>C.S. Lewis</td>
+      <td>C.S. Lewis</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.730</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>66</td>
+      <td>gaia_level1_066</td>
+      <td>What does GDP stand for?</td>
+      <td>economics</td>
+      <td>medium</td>
+      <td>Gross Domestic Product</td>
+      <td>Gross Domestic Product</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>67</td>
+      <td>gaia_level1_067</td>
+      <td>What does HTTP stand for?</td>
+      <td>technology</td>
+      <td>medium</td>
+      <td>HyperText Transfer Protocol</td>
+      <td>Hypertext Transfer Protocol</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.367</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>68</td>
+      <td>gaia_level1_068</td>
+      <td>Who founded Microsoft?</td>
+      <td>technology</td>
+      <td>easy</td>
+      <td>Bill Gates</td>
+      <td>Bill Gates and Paul Allen</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>69</td>
+      <td>gaia_level1_069</td>
+      <td>What does CPU stand for?</td>
+      <td>technology</td>
+      <td>easy</td>
+      <td>Central Processing Unit</td>
+      <td>Central Processing Unit</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>70</td>
+      <td>gaia_level1_070</td>
+      <td>What is inflation?</td>
+      <td>economics</td>
+      <td>medium</td>
+      <td>General increase in prices</td>
+      <td>物價持續上漲的經濟現象</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>2.075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>71</td>
+      <td>gaia_level1_071</td>
+      <td>What does AI stand for?</td>
+      <td>technology</td>
+      <td>easy</td>
+      <td>Artificial Intelligence</td>
+      <td>Artificial Intelligence</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>72</td>
+      <td>gaia_level1_072</td>
+      <td>Who founded Apple Inc.?</td>
+      <td>technology</td>
+      <td>easy</td>
+      <td>Steve Jobs</td>
+      <td>Steve Jobs, Steve Wozniak, Ronald Wayne</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.417</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>73</td>
+      <td>gaia_level1_073</td>
+      <td>What is the stock market?</td>
+      <td>economics</td>
+      <td>medium</td>
+      <td>Market for trading company shares</td>
+      <td>讓投資者買賣股票的交易市場</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>1.270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>74</td>
+      <td>gaia_level1_074</td>
+      <td>What does URL stand for?</td>
+      <td>technology</td>
+      <td>medium</td>
+      <td>Uniform Resource Locator</td>
+      <td>Uniform Resource Locator</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.318</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>75</td>
+      <td>gaia_level1_075</td>
+      <td>What is cryptocurrency?</td>
+      <td>economics</td>
+      <td>medium</td>
+      <td>Digital currency</td>
+      <td>一種使用加密技術的數位或虛擬貨幣，以去中心化方式運作，不受政府或銀行控制。</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>2.865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>76</td>
+      <td>gaia_level1_076</td>
+      <td>What does RAM stand for?</td>
+      <td>technology</td>
+      <td>medium</td>
+      <td>Random Access Memory</td>
+      <td>Random Access Memory</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.312</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>77</td>
+      <td>gaia_level1_077</td>
+      <td>Who founded Amazon?</td>
+      <td>technology</td>
+      <td>easy</td>
+      <td>Jeff Bezos</td>
+      <td>Jeff Bezos</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>78</td>
+      <td>gaia_level1_078</td>
+      <td>What is supply and demand?</td>
+      <td>economics</td>
+      <td>medium</td>
+      <td>Economic principle of price determination</td>
+      <td>供給與需求是市場機制中決定商品價格和數量的基本經濟原理，供給代表賣方願意提供的數量，需求代表買方願意...</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>2.037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>79</td>
+      <td>gaia_level1_079</td>
+      <td>What does HTML stand for?</td>
+      <td>technology</td>
+      <td>medium</td>
+      <td>HyperText Markup Language</td>
+      <td>Hyper Text Markup Language</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>80</td>
+      <td>gaia_level1_080</td>
+      <td>What is a recession?</td>
+      <td>economics</td>
+      <td>medium</td>
+      <td>Economic decline</td>
+      <td>經濟連續兩個季度負成長的衰退現象</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>1.635</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>81</td>
+      <td>gaia_level1_081</td>
+      <td>What does GPS stand for?</td>
+      <td>technology</td>
+      <td>medium</td>
+      <td>Global Positioning System</td>
+      <td>Global Positioning System</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.395</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>82</td>
+      <td>gaia_level1_082</td>
+      <td>Who founded Facebook?</td>
+      <td>technology</td>
+      <td>easy</td>
+      <td>Mark Zuckerberg</td>
+      <td>Mark Zuckerberg</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>83</td>
+      <td>gaia_level1_083</td>
+      <td>What is the Federal Reserve?</td>
+      <td>economics</td>
+      <td>medium</td>
+      <td>US central bank</td>
+      <td>美國中央銀行，負責制定貨幣政策和監管金融系統的聯邦機構</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>1.827</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>84</td>
+      <td>gaia_level1_084</td>
+      <td>What does WiFi stand for?</td>
+      <td>technology</td>
+      <td>medium</td>
+      <td>Wireless Fidelity</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>85</td>
+      <td>gaia_level1_085</td>
+      <td>What is venture capital?</td>
+      <td>economics</td>
+      <td>medium</td>
+      <td>Investment in startups</td>
+      <td>一種投資機構或基金,專門投資具高成長潛力的新創企業,提供資金與資源以換取公司股權。</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>1.657</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>86</td>
+      <td>gaia_level1_086</td>
+      <td>What does API stand for?</td>
+      <td>technology</td>
+      <td>medium</td>
+      <td>Application Programming Interface</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>87</td>
+      <td>gaia_level1_087</td>
+      <td>Who founded Tesla?</td>
+      <td>technology</td>
+      <td>easy</td>
+      <td>Elon Musk</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.068</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>88</td>
+      <td>gaia_level1_088</td>
+      <td>What is market capitalization?</td>
+      <td>economics</td>
+      <td>medium</td>
+      <td>Total value of company shares</td>
+      <td>公司股票總市值，等於股票市場價格乘以流通在外股票總數</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>1.601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>89</td>
+      <td>gaia_level1_089</td>
+      <td>What does IoT stand for?</td>
+      <td>technology</td>
+      <td>medium</td>
+      <td>Internet of Things</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.067</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>90</td>
+      <td>gaia_level1_090</td>
+      <td>What is a startup?</td>
+      <td>economics</td>
+      <td>easy</td>
+      <td>New business venture</td>
+      <td>新創公司是一個為解決問題或滿足市場需求而創立的新企業，通常具有創新想法並追求快速成長。</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>2.861</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>91</td>
+      <td>gaia_level1_091</td>
+      <td>If a train travels 60 mph for 2 hours, how far doe...</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>120 miles</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>92</td>
+      <td>gaia_level1_092</td>
+      <td>What comes next in the sequence: 2, 4, 8, 16, ?</td>
+      <td>logic</td>
+      <td>medium</td>
+      <td>32</td>
+      <td>32</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.953</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>93</td>
+      <td>gaia_level1_093</td>
+      <td>If all roses are flowers and all flowers are plant...</td>
+      <td>logic</td>
+      <td>medium</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.705</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>94</td>
+      <td>gaia_level1_094</td>
+      <td>A book costs $10. If there's a 20% discount, what'...</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>$8</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>95</td>
+      <td>gaia_level1_095</td>
+      <td>What is the next number in the Fibonacci sequence:...</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>13</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.059</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>96</td>
+      <td>gaia_level1_096</td>
+      <td>If it takes 5 machines 5 minutes to make 5 widgets...</td>
+      <td>logic</td>
+      <td>hard</td>
+      <td>5 minutes</td>
+      <td>5</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.688</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>97</td>
+      <td>gaia_level1_097</td>
+      <td>What is 25% of 80?</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>20</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.059</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>98</td>
+      <td>gaia_level1_098</td>
+      <td>If A is taller than B, and B is taller than C, who...</td>
+      <td>logic</td>
+      <td>easy</td>
+      <td>C</td>
+      <td>C</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>99</td>
+      <td>gaia_level1_099</td>
+      <td>A rectangle has length 8 and width 6. What is its ...</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>48</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>100</td>
+      <td>gaia_level1_100</td>
+      <td>What is the missing number: 3, 6, 12, 24, ?</td>
+      <td>logic</td>
+      <td>medium</td>
+      <td>48</td>
+      <td>48</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>2.675</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>101</td>
+      <td>gaia_level1_101</td>
+      <td>If you buy 3 apples for $2, how much do 12 apples ...</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>$8</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>102</td>
+      <td>gaia_level1_102</td>
+      <td>What comes next: Monday, Wednesday, Friday, ?</td>
+      <td>logic</td>
+      <td>medium</td>
+      <td>Sunday</td>
+      <td>Sunday</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>103</td>
+      <td>gaia_level1_103</td>
+      <td>A circle has radius 5. What is its circumference? ...</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>31.4</td>
+      <td>31.4</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>0.413</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>104</td>
+      <td>gaia_level1_104</td>
+      <td>If all cats are mammals and some mammals are pets,...</td>
+      <td>logic</td>
+      <td>hard</td>
+      <td>No</td>
+      <td>No</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.735</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>105</td>
+      <td>gaia_level1_105</td>
+      <td>What is 3/4 as a decimal?</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>0.75</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>106</td>
+      <td>gaia_level1_106</td>
+      <td>What is the pattern: A1, B2, C3, D4, ?</td>
+      <td>logic</td>
+      <td>medium</td>
+      <td>E5</td>
+      <td>E5</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>107</td>
+      <td>gaia_level1_107</td>
+      <td>If a pizza is cut into 8 equal slices and you eat ...</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>5/8</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>108</td>
+      <td>gaia_level1_108</td>
+      <td>What is the opposite of 'always'?</td>
+      <td>language</td>
+      <td>easy</td>
+      <td>Never</td>
+      <td>never</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>109</td>
+      <td>gaia_level1_109</td>
+      <td>If today is Tuesday, what day was it 3 days ago?</td>
+      <td>logic</td>
+      <td>medium</td>
+      <td>Saturday</td>
+      <td>Saturday</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>110</td>
+      <td>gaia_level1_110</td>
+      <td>What is 2^3 + 3^2?</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>17</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>111</td>
+      <td>gaia_level1_111</td>
+      <td>Complete the analogy: Hot is to Cold as Light is t...</td>
+      <td>logic</td>
+      <td>medium</td>
+      <td>Dark</td>
+      <td>Dark</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>112</td>
+      <td>gaia_level1_112</td>
+      <td>If a car travels 300 miles in 5 hours, what is its...</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>60 mph</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>113</td>
+      <td>gaia_level1_113</td>
+      <td>What is the next letter: A, C, E, G, ?</td>
+      <td>logic</td>
+      <td>medium</td>
+      <td>I</td>
+      <td>I</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>114</td>
+      <td>gaia_level1_114</td>
+      <td>If you have $100 and spend 30%, how much do you ha...</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>$70</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>115</td>
+      <td>gaia_level1_115</td>
+      <td>What is the pattern: 1, 4, 9, 16, ?</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>25</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>116</td>
+      <td>gaia_level1_116</td>
+      <td>If all birds can fly and penguins are birds, can p...</td>
+      <td>logic</td>
+      <td>hard</td>
+      <td>No</td>
+      <td>No</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.053</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td>117</td>
+      <td>gaia_level1_117</td>
+      <td>What is 7 × 8 - 6?</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>50</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>118</td>
+      <td>gaia_level1_118</td>
+      <td>Complete: Sun is to Day as Moon is to ?</td>
+      <td>logic</td>
+      <td>easy</td>
+      <td>Night</td>
+      <td>Night</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.636</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>119</td>
+      <td>gaia_level1_119</td>
+      <td>If a triangle has angles 60°, 60°, what is the thi...</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>60°</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>120</td>
+      <td>gaia_level1_120</td>
+      <td>What comes next: 1, 1, 2, 6, 24, ?</td>
+      <td>math</td>
+      <td>hard</td>
+      <td>120</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>121</td>
+      <td>gaia_level1_121</td>
+      <td>If red means stop and green means go, what does ye...</td>
+      <td>logic</td>
+      <td>easy</td>
+      <td>Caution</td>
+      <td>slow down</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>0.711</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>122</td>
+      <td>gaia_level1_122</td>
+      <td>What is the square of 9?</td>
+      <td>math</td>
+      <td>easy</td>
+      <td>81</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.067</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>123</td>
+      <td>gaia_level1_123</td>
+      <td>Complete the series: Z, Y, X, W, ?</td>
+      <td>logic</td>
+      <td>medium</td>
+      <td>V</td>
+      <td>V</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.958</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>124</td>
+      <td>gaia_level1_124</td>
+      <td>If a dozen eggs costs $3, how much do 2 dozen cost...</td>
+      <td>math</td>
+      <td>easy</td>
+      <td>$6</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>125</td>
+      <td>gaia_level1_125</td>
+      <td>What is the pattern: 2, 6, 18, 54, ?</td>
+      <td>math</td>
+      <td>medium</td>
+      <td>162</td>
+      <td>處理錯誤: 429 You exceeded your current quota. Please ...</td>
+      <td>❌</td>
+      <td>gemini</td>
+      <td>0.145</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>126</td>
+      <td>gaia_level1_126</td>
+      <td>What do you use to cut paper?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Scissors</td>
+      <td>scissors</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>127</td>
+      <td>gaia_level1_127</td>
+      <td>What season comes after winter?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Spring</td>
+      <td>spring</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.690</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>128</td>
+      <td>gaia_level1_128</td>
+      <td>How many days are in a week?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>7</td>
+      <td>7</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>129</td>
+      <td>gaia_level1_129</td>
+      <td>What do you wear on your feet?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Shoes</td>
+      <td>shoes</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.689</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>130</td>
+      <td>gaia_level1_130</td>
+      <td>What do you use to write?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Pen</td>
+      <td>pen, pencil</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.849</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>131</td>
+      <td>gaia_level1_131</td>
+      <td>How many hours are in a day?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>24</td>
+      <td>24</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>132</td>
+      <td>gaia_level1_132</td>
+      <td>What do you use to see in the dark?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Flashlight</td>
+      <td>flashlight</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.717</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>133</td>
+      <td>gaia_level1_133</td>
+      <td>What do you drink when you're thirsty?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Water</td>
+      <td>water</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.696</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>134</td>
+      <td>gaia_level1_134</td>
+      <td>How many minutes are in an hour?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>60</td>
+      <td>60</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>135</td>
+      <td>gaia_level1_135</td>
+      <td>What do you use to unlock a door?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Key</td>
+      <td>key</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.743</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>136</td>
+      <td>gaia_level1_136</td>
+      <td>What do you eat with soup?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Spoon</td>
+      <td>spoon</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.972</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>137</td>
+      <td>gaia_level1_137</td>
+      <td>How many months are in a year?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>12</td>
+      <td>12</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>138</td>
+      <td>gaia_level1_138</td>
+      <td>What do you use to call someone?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Phone</td>
+      <td>phone</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.184</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>139</td>
+      <td>gaia_level1_139</td>
+      <td>What do you wear when it rains?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Raincoat</td>
+      <td>raincoat and umbrella</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>140</td>
+      <td>gaia_level1_140</td>
+      <td>How many wheels does a bicycle have?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>2</td>
+      <td>2</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>2.085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>141</td>
+      <td>gaia_level1_141</td>
+      <td>What do you use to brush your teeth?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Toothbrush</td>
+      <td>Toothbrush</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>142</td>
+      <td>gaia_level1_142</td>
+      <td>What do you sleep on?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Bed</td>
+      <td>bed</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>142</th>
+      <td>143</td>
+      <td>gaia_level1_143</td>
+      <td>How many sides does a triangle have?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>3</td>
+      <td>3</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.766</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>144</td>
+      <td>gaia_level1_144</td>
+      <td>What do you use to eat salad?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Fork</td>
+      <td>fork</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>145</td>
+      <td>gaia_level1_145</td>
+      <td>What do you wear to protect your eyes from the sun...</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Sunglasses</td>
+      <td>sunglasses</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>146</td>
+      <td>gaia_level1_146</td>
+      <td>How many legs does a dog have?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>4</td>
+      <td>4</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>147</td>
+      <td>gaia_level1_147</td>
+      <td>What do you use to wash your hands?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Soap</td>
+      <td>肥皂和水</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>1.068</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>148</td>
+      <td>gaia_level1_148</td>
+      <td>What do you sit on?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Chair</td>
+      <td>chair</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.649</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>149</td>
+      <td>gaia_level1_149</td>
+      <td>How many eyes do humans have?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>2</td>
+      <td>2</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.613</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>150</td>
+      <td>gaia_level1_150</td>
+      <td>What do you use to dry yourself after a shower?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Towel</td>
+      <td>towel</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>151</td>
+      <td>gaia_level1_151</td>
+      <td>What do you put on bread to make a sandwich?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Filling</td>
+      <td>肉類、起司、生菜、番茄、美乃滋、花生醬</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>2.138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>151</th>
+      <td>152</td>
+      <td>gaia_level1_152</td>
+      <td>How many fingers are on one hand?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>5</td>
+      <td>5</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>152</th>
+      <td>153</td>
+      <td>gaia_level1_153</td>
+      <td>What do you use to measure time?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Clock</td>
+      <td>時鐘</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>0.732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>153</th>
+      <td>154</td>
+      <td>gaia_level1_154</td>
+      <td>What do you wear on your head?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Hat</td>
+      <td>hat</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>1.014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>154</th>
+      <td>155</td>
+      <td>gaia_level1_155</td>
+      <td>How many seasons are there in a year?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>4</td>
+      <td>4</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td>156</td>
+      <td>gaia_level1_156</td>
+      <td>What do you use to open a can?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Can opener</td>
+      <td>can opener</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.872</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>156</th>
+      <td>157</td>
+      <td>gaia_level1_157</td>
+      <td>What do you put in your car to make it run?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Gas</td>
+      <td>汽油</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>0.805</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td>158</td>
+      <td>gaia_level1_158</td>
+      <td>How many cents are in a dollar?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>100</td>
+      <td>100</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.712</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>158</th>
+      <td>159</td>
+      <td>gaia_level1_159</td>
+      <td>What do you use to take pictures?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Camera</td>
+      <td>camera</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>159</th>
+      <td>160</td>
+      <td>gaia_level1_160</td>
+      <td>What do you wear around your waist?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Belt</td>
+      <td>belt</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.592</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>160</th>
+      <td>161</td>
+      <td>gaia_level1_161</td>
+      <td>How many players are on a basketball team on the c...</td>
+      <td>common_sense</td>
+      <td>medium</td>
+      <td>5</td>
+      <td>5</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.665</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>161</th>
+      <td>162</td>
+      <td>gaia_level1_162</td>
+      <td>What do you use to fix a flat tire?</td>
+      <td>common_sense</td>
+      <td>medium</td>
+      <td>Spare tire</td>
+      <td>tire patch kit</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>0.867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>162</th>
+      <td>163</td>
+      <td>gaia_level1_163</td>
+      <td>What do you put on a wound?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Bandage</td>
+      <td>消毒藥水和紗布</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>1.176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>163</th>
+      <td>164</td>
+      <td>gaia_level1_164</td>
+      <td>How many strings does a guitar typically have?</td>
+      <td>common_sense</td>
+      <td>medium</td>
+      <td>6</td>
+      <td>6</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>0.809</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>164</th>
+      <td>165</td>
+      <td>gaia_level1_165</td>
+      <td>What do you use to start a fire?</td>
+      <td>common_sense</td>
+      <td>easy</td>
+      <td>Match</td>
+      <td>打火機或火柴</td>
+      <td>❌</td>
+      <td>claude</td>
+      <td>0.722</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+        
+        <script>
+            // 為正確性列添加樣式
+            document.querySelectorAll('td').forEach(cell => {
+                if (cell.textContent === '✅') {
+                    cell.className = 'correct';
+                } else if (cell.textContent === '❌') {
+                    cell.className = 'incorrect';
+                }
+            });
+        </script>
+    </body>
+    </html>
+    

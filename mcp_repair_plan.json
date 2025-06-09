@@ -1,0 +1,811 @@
+{
+  "categories": {
+    "core_functionality": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_core_loader.py",
+        "relative_path": "mcptool/core/mcp_core_loader.py"
+      }
+    ],
+    "ai_models": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/claude_adapter/claude_mcp.py",
+        "relative_path": "mcptool/adapters/claude_adapter/claude_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/gemini_adapter/gemini_mcp.py",
+        "relative_path": "mcptool/adapters/gemini_adapter/gemini_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/qwen3_8b_local_mcp.py",
+        "relative_path": "mcptool/adapters/qwen3_8b_local_mcp.py"
+      }
+    ],
+    "tools_engines": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/intelligent_workflow_engine_mcp.py",
+        "relative_path": "mcptool/adapters/intelligent_workflow_engine_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/kilocode_adapter/kilocode_mcp.py",
+        "relative_path": "mcptool/adapters/kilocode_adapter/kilocode_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/smart_routing_mcp.py",
+        "relative_path": "mcptool/adapters/smart_routing_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_smart_tool_engine/mcp_so_tools_engine.py",
+        "relative_path": "mcptool/adapters/unified_smart_tool_engine/mcp_so_tools_engine.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_smart_tool_engine/smart_tool_engine_mcp.py",
+        "relative_path": "mcptool/adapters/unified_smart_tool_engine/smart_tool_engine_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_smart_tool_engine_mcp.py",
+        "relative_path": "mcptool/adapters/unified_smart_tool_engine_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_tool_engine_server.py",
+        "relative_path": "mcptool/core/mcp_tool_engine_server.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/test/integration/mcptool_kilocode_integration.py",
+        "relative_path": "test/integration/mcptool_kilocode_integration.py"
+      }
+    ],
+    "memory_systems": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/context_memory_optimization_mcp.py",
+        "relative_path": "mcptool/adapters/agent/context_memory_optimization_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/supermemory_adapter/supermemory_mcp.py",
+        "relative_path": "mcptool/adapters/supermemory_adapter/supermemory_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_memory_mcp.py",
+        "relative_path": "mcptool/adapters/unified_memory_mcp.py"
+      }
+    ],
+    "workflow_automation": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/sequential_thinking_adapter/sequential_thinking_mcp.py",
+        "relative_path": "mcptool/adapters/sequential_thinking_adapter/sequential_thinking_mcp.py"
+      }
+    ],
+    "data_processing": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/cloud_edge_data_mcp.py",
+        "relative_path": "mcptool/adapters/cloud_edge_data_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/rl_srt/rl_srt_mcp.py",
+        "relative_path": "mcptool/adapters/rl_srt/rl_srt_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/rl_srt_dataflow_mcp.py",
+        "relative_path": "mcptool/adapters/rl_srt_dataflow_mcp.py"
+      }
+    ],
+    "integration": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/safe_mcp_registry.py",
+        "relative_path": "mcptool/adapters/core/safe_mcp_registry.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/mcp_registry_integration_manager.py",
+        "relative_path": "mcptool/adapters/mcp_registry_integration_manager.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/zapier_adapter/zapier_mcp.py",
+        "relative_path": "mcptool/adapters/zapier_adapter/zapier_mcp.py"
+      }
+    ],
+    "development_tools": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/dev_deploy_loop_coordinator_mcp.py",
+        "relative_path": "mcptool/adapters/dev_deploy_loop_coordinator_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/enhanced_aci_dev_adapter/aci_dev_mcp.py",
+        "relative_path": "mcptool/adapters/enhanced_aci_dev_adapter/aci_dev_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/release_discovery_mcp.py",
+        "relative_path": "mcptool/adapters/release_discovery_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/agent_problem_solver_mcp.py",
+        "relative_path": "mcptool/core/agent_problem_solver_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/development_tools/agent_problem_solver_mcp.py",
+        "relative_path": "mcptool/core/development_tools/agent_problem_solver_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/development_tools/release_manager_mcp.py",
+        "relative_path": "mcptool/core/development_tools/release_manager_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/release_manager_mcp.py",
+        "relative_path": "mcptool/core/release_manager_mcp.py"
+      }
+    ],
+    "optimization": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcp_repair_planner.py",
+        "relative_path": "mcp_repair_planner.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/content_template_optimization_mcp.py",
+        "relative_path": "mcptool/adapters/agent/content_template_optimization_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/context_matching_optimization_mcp.py",
+        "relative_path": "mcptool/adapters/agent/context_matching_optimization_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/prompt_optimization_mcp.py",
+        "relative_path": "mcptool/adapters/agent/prompt_optimization_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/ui_journey_optimization_mcp.py",
+        "relative_path": "mcptool/adapters/agent/ui_journey_optimization_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/enhanced_mcp_brainstorm.py",
+        "relative_path": "mcptool/adapters/enhanced_mcp_brainstorm.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/enhanced_mcp_planner.py",
+        "relative_path": "mcptool/adapters/enhanced_mcp_planner.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/enhanced_mcp_cli.py",
+        "relative_path": "mcptool/cli/enhanced_mcp_cli.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_mcp_brainstorm.py",
+        "relative_path": "mcptool/core/enhanced_mcp_brainstorm.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_mcp_planner.py",
+        "relative_path": "mcptool/core/enhanced_mcp_planner.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_brainstorm.py",
+        "relative_path": "mcptool/core/mcp_brainstorm.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_planner.py",
+        "relative_path": "mcptool/core/mcp_planner.py"
+      }
+    ],
+    "testing": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/test/mcp_confidence_calculator.py",
+        "relative_path": "test/mcp_confidence_calculator.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/test/mcp_integrity_test.py",
+        "relative_path": "test/mcp_integrity_test.py"
+      }
+    ],
+    "cli_interfaces": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_config_manager/config_manager_mcp.py",
+        "relative_path": "mcptool/adapters/unified_config_manager/config_manager_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/fixed_unified_mcp_cli.py",
+        "relative_path": "mcptool/cli/fixed_unified_mcp_cli.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/mcp_core_cli.py",
+        "relative_path": "mcptool/cli/mcp_core_cli.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/safe_unified_mcp_cli.py",
+        "relative_path": "mcptool/cli/safe_unified_mcp_cli.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/unified_mcp_cli.py",
+        "relative_path": "mcptool/cli/unified_mcp_cli.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/cli_testing/mcpcoordinator_cli.py",
+        "relative_path": "mcptool/cli_testing/mcpcoordinator_cli.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_central_coordinator.py",
+        "relative_path": "mcptool/core/mcp_central_coordinator.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_http_api_server.py",
+        "relative_path": "mcptool/core/mcp_http_api_server.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/unified_mcp_manager.py",
+        "relative_path": "mcptool/core/unified_mcp_manager.py"
+      }
+    ],
+    "abstract_base": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/base_mcp.py",
+        "relative_path": "mcptool/adapters/base_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/base_mcp.py",
+        "relative_path": "mcptool/core/base_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/test/unit/adapters/test_base_mcp.py",
+        "relative_path": "test/unit/adapters/test_base_mcp.py"
+      }
+    ],
+    "unknown": [
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcp_analyzer.py",
+        "relative_path": "mcp_analyzer.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/context_monitor_mcp.py",
+        "relative_path": "mcptool/adapters/context_monitor_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/serializable_mcp_types.py",
+        "relative_path": "mcptool/adapters/core/serializable_mcp_types.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/infinite_context_adapter/infinite_context_mcp.py",
+        "relative_path": "mcptool/adapters/infinite_context_adapter/infinite_context_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/infinite_context_adapter_mcp.py",
+        "relative_path": "mcptool/adapters/infinite_context_adapter_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/mcp_registration_fix.py",
+        "relative_path": "mcptool/adapters/mcp_registration_fix.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/thought_action_recorder_mcp.py",
+        "relative_path": "mcptool/adapters/thought_action_recorder_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/development_tools/thought_action_recorder_mcp.py",
+        "relative_path": "mcptool/core/development_tools/thought_action_recorder_mcp.py"
+      },
+      {
+        "file_path": "/home/ubuntu/Powerauto.ai/quick_mcp_analysis.py",
+        "relative_path": "quick_mcp_analysis.py"
+      }
+    ]
+  },
+  "repair_plan": [
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/base_mcp.py",
+      "relative_path": "mcptool/adapters/base_mcp.py",
+      "file_name": "base_mcp.py",
+      "category": "abstract_base",
+      "priority": 1,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/base_mcp.py",
+      "relative_path": "mcptool/core/base_mcp.py",
+      "file_name": "base_mcp.py",
+      "category": "abstract_base",
+      "priority": 1,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_core_loader.py",
+      "relative_path": "mcptool/core/mcp_core_loader.py",
+      "file_name": "mcp_core_loader.py",
+      "category": "core_functionality",
+      "priority": 1,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/test/unit/adapters/test_base_mcp.py",
+      "relative_path": "test/unit/adapters/test_base_mcp.py",
+      "file_name": "test_base_mcp.py",
+      "category": "abstract_base",
+      "priority": 1,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/claude_adapter/claude_mcp.py",
+      "relative_path": "mcptool/adapters/claude_adapter/claude_mcp.py",
+      "file_name": "claude_mcp.py",
+      "category": "ai_models",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/context_memory_optimization_mcp.py",
+      "relative_path": "mcptool/adapters/agent/context_memory_optimization_mcp.py",
+      "file_name": "context_memory_optimization_mcp.py",
+      "category": "memory_systems",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/gemini_adapter/gemini_mcp.py",
+      "relative_path": "mcptool/adapters/gemini_adapter/gemini_mcp.py",
+      "file_name": "gemini_mcp.py",
+      "category": "ai_models",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/intelligent_workflow_engine_mcp.py",
+      "relative_path": "mcptool/adapters/intelligent_workflow_engine_mcp.py",
+      "file_name": "intelligent_workflow_engine_mcp.py",
+      "category": "tools_engines",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/kilocode_adapter/kilocode_mcp.py",
+      "relative_path": "mcptool/adapters/kilocode_adapter/kilocode_mcp.py",
+      "file_name": "kilocode_mcp.py",
+      "category": "tools_engines",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_smart_tool_engine/mcp_so_tools_engine.py",
+      "relative_path": "mcptool/adapters/unified_smart_tool_engine/mcp_so_tools_engine.py",
+      "file_name": "mcp_so_tools_engine.py",
+      "category": "tools_engines",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_tool_engine_server.py",
+      "relative_path": "mcptool/core/mcp_tool_engine_server.py",
+      "file_name": "mcp_tool_engine_server.py",
+      "category": "tools_engines",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/test/integration/mcptool_kilocode_integration.py",
+      "relative_path": "test/integration/mcptool_kilocode_integration.py",
+      "file_name": "mcptool_kilocode_integration.py",
+      "category": "tools_engines",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/qwen3_8b_local_mcp.py",
+      "relative_path": "mcptool/adapters/qwen3_8b_local_mcp.py",
+      "file_name": "qwen3_8b_local_mcp.py",
+      "category": "ai_models",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/smart_routing_mcp.py",
+      "relative_path": "mcptool/adapters/smart_routing_mcp.py",
+      "file_name": "smart_routing_mcp.py",
+      "category": "tools_engines",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_smart_tool_engine/smart_tool_engine_mcp.py",
+      "relative_path": "mcptool/adapters/unified_smart_tool_engine/smart_tool_engine_mcp.py",
+      "file_name": "smart_tool_engine_mcp.py",
+      "category": "tools_engines",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/supermemory_adapter/supermemory_mcp.py",
+      "relative_path": "mcptool/adapters/supermemory_adapter/supermemory_mcp.py",
+      "file_name": "supermemory_mcp.py",
+      "category": "memory_systems",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_memory_mcp.py",
+      "relative_path": "mcptool/adapters/unified_memory_mcp.py",
+      "file_name": "unified_memory_mcp.py",
+      "category": "memory_systems",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_smart_tool_engine_mcp.py",
+      "relative_path": "mcptool/adapters/unified_smart_tool_engine_mcp.py",
+      "file_name": "unified_smart_tool_engine_mcp.py",
+      "category": "tools_engines",
+      "priority": 2,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/cloud_edge_data_mcp.py",
+      "relative_path": "mcptool/adapters/cloud_edge_data_mcp.py",
+      "file_name": "cloud_edge_data_mcp.py",
+      "category": "data_processing",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/context_monitor_mcp.py",
+      "relative_path": "mcptool/adapters/context_monitor_mcp.py",
+      "file_name": "context_monitor_mcp.py",
+      "category": "unknown",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/infinite_context_adapter_mcp.py",
+      "relative_path": "mcptool/adapters/infinite_context_adapter_mcp.py",
+      "file_name": "infinite_context_adapter_mcp.py",
+      "category": "unknown",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/infinite_context_adapter/infinite_context_mcp.py",
+      "relative_path": "mcptool/adapters/infinite_context_adapter/infinite_context_mcp.py",
+      "file_name": "infinite_context_mcp.py",
+      "category": "unknown",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcp_analyzer.py",
+      "relative_path": "mcp_analyzer.py",
+      "file_name": "mcp_analyzer.py",
+      "category": "unknown",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/mcp_registration_fix.py",
+      "relative_path": "mcptool/adapters/mcp_registration_fix.py",
+      "file_name": "mcp_registration_fix.py",
+      "category": "unknown",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/mcp_registry_integration_manager.py",
+      "relative_path": "mcptool/adapters/mcp_registry_integration_manager.py",
+      "file_name": "mcp_registry_integration_manager.py",
+      "category": "integration",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/quick_mcp_analysis.py",
+      "relative_path": "quick_mcp_analysis.py",
+      "file_name": "quick_mcp_analysis.py",
+      "category": "unknown",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/rl_srt_dataflow_mcp.py",
+      "relative_path": "mcptool/adapters/rl_srt_dataflow_mcp.py",
+      "file_name": "rl_srt_dataflow_mcp.py",
+      "category": "data_processing",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/rl_srt/rl_srt_mcp.py",
+      "relative_path": "mcptool/adapters/rl_srt/rl_srt_mcp.py",
+      "file_name": "rl_srt_mcp.py",
+      "category": "data_processing",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/safe_mcp_registry.py",
+      "relative_path": "mcptool/adapters/core/safe_mcp_registry.py",
+      "file_name": "safe_mcp_registry.py",
+      "category": "integration",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/sequential_thinking_adapter/sequential_thinking_mcp.py",
+      "relative_path": "mcptool/adapters/sequential_thinking_adapter/sequential_thinking_mcp.py",
+      "file_name": "sequential_thinking_mcp.py",
+      "category": "workflow_automation",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/core/serializable_mcp_types.py",
+      "relative_path": "mcptool/adapters/core/serializable_mcp_types.py",
+      "file_name": "serializable_mcp_types.py",
+      "category": "unknown",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/thought_action_recorder_mcp.py",
+      "relative_path": "mcptool/adapters/thought_action_recorder_mcp.py",
+      "file_name": "thought_action_recorder_mcp.py",
+      "category": "unknown",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/development_tools/thought_action_recorder_mcp.py",
+      "relative_path": "mcptool/core/development_tools/thought_action_recorder_mcp.py",
+      "file_name": "thought_action_recorder_mcp.py",
+      "category": "unknown",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/zapier_adapter/zapier_mcp.py",
+      "relative_path": "mcptool/adapters/zapier_adapter/zapier_mcp.py",
+      "file_name": "zapier_mcp.py",
+      "category": "integration",
+      "priority": 3,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/enhanced_aci_dev_adapter/aci_dev_mcp.py",
+      "relative_path": "mcptool/adapters/enhanced_aci_dev_adapter/aci_dev_mcp.py",
+      "file_name": "aci_dev_mcp.py",
+      "category": "development_tools",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/agent_problem_solver_mcp.py",
+      "relative_path": "mcptool/core/agent_problem_solver_mcp.py",
+      "file_name": "agent_problem_solver_mcp.py",
+      "category": "development_tools",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/development_tools/agent_problem_solver_mcp.py",
+      "relative_path": "mcptool/core/development_tools/agent_problem_solver_mcp.py",
+      "file_name": "agent_problem_solver_mcp.py",
+      "category": "development_tools",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/unified_config_manager/config_manager_mcp.py",
+      "relative_path": "mcptool/adapters/unified_config_manager/config_manager_mcp.py",
+      "file_name": "config_manager_mcp.py",
+      "category": "cli_interfaces",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/content_template_optimization_mcp.py",
+      "relative_path": "mcptool/adapters/agent/content_template_optimization_mcp.py",
+      "file_name": "content_template_optimization_mcp.py",
+      "category": "optimization",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/context_matching_optimization_mcp.py",
+      "relative_path": "mcptool/adapters/agent/context_matching_optimization_mcp.py",
+      "file_name": "context_matching_optimization_mcp.py",
+      "category": "optimization",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/dev_deploy_loop_coordinator_mcp.py",
+      "relative_path": "mcptool/adapters/dev_deploy_loop_coordinator_mcp.py",
+      "file_name": "dev_deploy_loop_coordinator_mcp.py",
+      "category": "development_tools",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/enhanced_mcp_brainstorm.py",
+      "relative_path": "mcptool/adapters/enhanced_mcp_brainstorm.py",
+      "file_name": "enhanced_mcp_brainstorm.py",
+      "category": "optimization",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_mcp_brainstorm.py",
+      "relative_path": "mcptool/core/enhanced_mcp_brainstorm.py",
+      "file_name": "enhanced_mcp_brainstorm.py",
+      "category": "optimization",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/enhanced_mcp_cli.py",
+      "relative_path": "mcptool/cli/enhanced_mcp_cli.py",
+      "file_name": "enhanced_mcp_cli.py",
+      "category": "optimization",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/enhanced_mcp_planner.py",
+      "relative_path": "mcptool/adapters/enhanced_mcp_planner.py",
+      "file_name": "enhanced_mcp_planner.py",
+      "category": "optimization",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/enhanced_mcp_planner.py",
+      "relative_path": "mcptool/core/enhanced_mcp_planner.py",
+      "file_name": "enhanced_mcp_planner.py",
+      "category": "optimization",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/fixed_unified_mcp_cli.py",
+      "relative_path": "mcptool/cli/fixed_unified_mcp_cli.py",
+      "file_name": "fixed_unified_mcp_cli.py",
+      "category": "cli_interfaces",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_brainstorm.py",
+      "relative_path": "mcptool/core/mcp_brainstorm.py",
+      "file_name": "mcp_brainstorm.py",
+      "category": "optimization",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_central_coordinator.py",
+      "relative_path": "mcptool/core/mcp_central_coordinator.py",
+      "file_name": "mcp_central_coordinator.py",
+      "category": "cli_interfaces",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/mcp_core_cli.py",
+      "relative_path": "mcptool/cli/mcp_core_cli.py",
+      "file_name": "mcp_core_cli.py",
+      "category": "cli_interfaces",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_http_api_server.py",
+      "relative_path": "mcptool/core/mcp_http_api_server.py",
+      "file_name": "mcp_http_api_server.py",
+      "category": "cli_interfaces",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/mcp_planner.py",
+      "relative_path": "mcptool/core/mcp_planner.py",
+      "file_name": "mcp_planner.py",
+      "category": "optimization",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcp_repair_planner.py",
+      "relative_path": "mcp_repair_planner.py",
+      "file_name": "mcp_repair_planner.py",
+      "category": "optimization",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/cli_testing/mcpcoordinator_cli.py",
+      "relative_path": "mcptool/cli_testing/mcpcoordinator_cli.py",
+      "file_name": "mcpcoordinator_cli.py",
+      "category": "cli_interfaces",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/prompt_optimization_mcp.py",
+      "relative_path": "mcptool/adapters/agent/prompt_optimization_mcp.py",
+      "file_name": "prompt_optimization_mcp.py",
+      "category": "optimization",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/release_discovery_mcp.py",
+      "relative_path": "mcptool/adapters/release_discovery_mcp.py",
+      "file_name": "release_discovery_mcp.py",
+      "category": "development_tools",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/development_tools/release_manager_mcp.py",
+      "relative_path": "mcptool/core/development_tools/release_manager_mcp.py",
+      "file_name": "release_manager_mcp.py",
+      "category": "development_tools",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/release_manager_mcp.py",
+      "relative_path": "mcptool/core/release_manager_mcp.py",
+      "file_name": "release_manager_mcp.py",
+      "category": "development_tools",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/safe_unified_mcp_cli.py",
+      "relative_path": "mcptool/cli/safe_unified_mcp_cli.py",
+      "file_name": "safe_unified_mcp_cli.py",
+      "category": "cli_interfaces",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/adapters/agent/ui_journey_optimization_mcp.py",
+      "relative_path": "mcptool/adapters/agent/ui_journey_optimization_mcp.py",
+      "file_name": "ui_journey_optimization_mcp.py",
+      "category": "optimization",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/cli/unified_mcp_cli.py",
+      "relative_path": "mcptool/cli/unified_mcp_cli.py",
+      "file_name": "unified_mcp_cli.py",
+      "category": "cli_interfaces",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/mcptool/core/unified_mcp_manager.py",
+      "relative_path": "mcptool/core/unified_mcp_manager.py",
+      "file_name": "unified_mcp_manager.py",
+      "category": "cli_interfaces",
+      "priority": 4,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/test/mcp_confidence_calculator.py",
+      "relative_path": "test/mcp_confidence_calculator.py",
+      "file_name": "mcp_confidence_calculator.py",
+      "category": "testing",
+      "priority": 5,
+      "status": "pending"
+    },
+    {
+      "file_path": "/home/ubuntu/Powerauto.ai/test/mcp_integrity_test.py",
+      "relative_path": "test/mcp_integrity_test.py",
+      "file_name": "mcp_integrity_test.py",
+      "category": "testing",
+      "priority": 5,
+      "status": "pending"
+    }
+  ],
+  "summary": {
+    "total_files": 64,
+    "categories_count": 13,
+    "priority_distribution": {
+      "1": 4,
+      "2": 14,
+      "3": 16,
+      "4": 28,
+      "5": 2
+    }
+  }
+}

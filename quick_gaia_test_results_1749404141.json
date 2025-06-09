@@ -1,0 +1,45 @@
+{
+  "test_info": {
+    "total_questions": 3,
+    "correct_answers": 1,
+    "accuracy": 33.33333333333333,
+    "total_time": 0.00019431114196777344,
+    "available_adapters": [
+      "gemini",
+      "claude",
+      "smart_tool_engine",
+      "webagent",
+      "sequential_thinking",
+      "kilocode",
+      "unified_memory",
+      "cloud_edge_data",
+      "context_monitor"
+    ]
+  },
+  "results": [
+    {
+      "question": "What is 2 + 2 * 3?",
+      "expected": "8",
+      "answer": "文本分析完成，長度: 18字符",
+      "adapter": "smart_tool_engine",
+      "is_correct": true,
+      "processing_time": 4.506111145019531e-05
+    },
+    {
+      "question": "What is the capital of France?",
+      "expected": "Paris",
+      "answer": "Claude適配器未正確初始化",
+      "adapter": "claude",
+      "is_correct": false,
+      "processing_time": 1.9073486328125e-06
+    },
+    {
+      "question": "Calculate the area of a circle with radius 5",
+      "expected": "78.54",
+      "answer": "無法識別數學表達式",
+      "adapter": "smart_tool_engine",
+      "is_correct": false,
+      "processing_time": 0.00014734268188476562
+    }
+  ]
+}

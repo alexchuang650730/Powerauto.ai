@@ -1,8 +1,26 @@
-# Python
+# 敏感文件忽略列表
+.env
+*.key
+*.pem
+*.p12
+*.pfx
+memory-system/github_credentials.json
+memory-system/*_credentials.json
+data/kilorag.db
+*.db
+*.sqlite
+*.sqlite3
+
+# 日誌文件
+*.log
+logs/
+/tmp/
+
+# 緩存文件
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
+*.pyc
+*.pyo
+*.pyd
 .Python
 build/
 develop-eggs/
@@ -19,48 +37,27 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
 
-# Virtual Environment
-venv/
-env/
-ENV/
-
-# IDE
+# IDE文件
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# OS
+# 系統文件
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-logs/
+# 測試文件
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
 
-# Test Results
-test/results/*.json
-test/results/*.html
-test/results/*.xml
+# 環境文件
+.env.local
+.env.development
+.env.test
+.env.production
 
-# Backup
-backup_*/
-*.backup
-
-# Temporary
-tmp/
-temp/
-*.tmp
-
-# Config
-config/local_*.json
-config/secrets.json
-
-# Generated
-mcptool/adapters/generated/
-*.generated.*
-enhanced_gaia_system/gaia_dataset_processor.py
-*.token
-**/secure_tokens.*
