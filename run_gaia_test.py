@@ -1,65 +1,54 @@
 #!/usr/bin/env python3
 """
-配置環境變量並運行GAIA測試
+GAIA測試運行器
+用於執行GAIA基準測試的主要腳本
+
+使用方法:
+python3 run_gaia_test.py
 """
 
 import os
 import sys
-import subprocess
 from pathlib import Path
 
-def setup_environment():
-    """設置環境變量"""
-    # 設置API密鑰
-    os.environ["GEMINI_API_KEY"] = "AIzaSyBjQOKRMz0uTGnvDe9CDE5BmAwlY0_rCMw"
-    os.environ["CLAUDE_API_KEY"] = "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"
-    
-    # 設置Python路徑
-    project_root = Path(__file__).parent
-    if str(project_root) not in sys.path:
-        sys.path.insert(0, str(project_root))
-    
-    print("✅ 環境配置完成")
+# 添加項目根目錄到Python路徑
+project_root = Path(__file__).parent
+sys.path.insert(0, str(project_root))
 
-def run_gaia_test():
-    """運行GAIA測試"""
-    setup_environment()
+# 從環境變數獲取API密鑰
+ANTHROPIC_API_KEY = os.getenv('ANTHROPIC_API_KEY', 'your_api_key_here')
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', 'your_api_key_here')
+
+def main():
+    """主函數"""
+    print("🚀 啟動GAIA測試...")
     
-    print("\\n🚀 開始運行GAIA Level 1測試...")
+    # 檢查API密鑰配置
+    if ANTHROPIC_API_KEY == 'your_api_key_here':
+        print("⚠️ 請配置ANTHROPIC_API_KEY環境變數")
+        return
+    
+    if GEMINI_API_KEY == 'your_api_key_here':
+        print("⚠️ 請配置GEMINI_API_KEY環境變數")
+        return
     
     try:
-        # 運行CLI命令
-        cmd = [
-            sys.executable, 
-            "mcptool/cli/safe_unified_mcp_cli.py", 
-            "gaia", 
-            "--level", "1", 
-            "--max-tasks", "10"
-        ]
+        # 導入GAIA測試模組
+        from test.level9.gaia import GAIATester
         
-        result = subprocess.run(
-            cmd,
-            cwd="/home/ubuntu/Powerauto.ai",
-            env=os.environ.copy(),
-            capture_output=True,
-            text=True,
-            timeout=600  # 10分鐘超時
-        )
+        # 創建測試器實例
+        tester = GAIATester()
         
-        print("STDOUT:")
-        print(result.stdout)
+        # 運行測試
+        results = tester.run_tests()
         
-        if result.stderr:
-            print("STDERR:")
-            print(result.stderr)
+        print(f"✅ GAIA測試完成，結果: {results}")
         
-        print(f"\\n返回碼: {result.returncode}")
-        
-    except subprocess.TimeoutExpired:
-        print("❌ 測試超時（10分鐘）")
+    except ImportError as e:
+        print(f"❌ 導入錯誤: {e}")
     except Exception as e:
-        print(f"❌ 測試執行失敗: {e}")
+        print(f"❌ 測試執行錯誤: {e}")
 
 if __name__ == "__main__":
-    run_gaia_test()
+    main()
 

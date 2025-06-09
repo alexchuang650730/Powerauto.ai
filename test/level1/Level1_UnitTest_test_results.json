@@ -1,0 +1,17 @@
+{
+  "name": "Level1_UnitTest",
+  "description": "基礎層單元測試和代碼質量檢查",
+  "summary": {
+    "total_tests": 204,
+    "passed_tests": 133,
+    "failed_tests": 71,
+    "error_tests": 0,
+    "pass_rate": 0.6519607843137255,
+    "overall_score": 60.32983152468444,
+    "total_time": 0.4243347644805908
+  },
+  "results": [
+    {
+      "test_name": "test_unit_basic_methods",
+      "adapter_name": "simple_gemini",
+      "status": 
