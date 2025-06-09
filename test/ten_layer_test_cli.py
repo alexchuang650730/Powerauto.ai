@@ -59,7 +59,10 @@ class TenLayerTestCLI:
         self.implemented_frameworks = {
             1: "test.level1.enhanced_unit_test_framework",
             2: "test.level2.enhanced_integration_test_framework", 
-            3: "test.level3.enhanced_mcp_compliance_framework"
+            3: "test.level3.enhanced_mcp_compliance_framework",
+            6: "test.level6.enterprise_security_framework",
+            9: "test.level9.gaia",
+            10: "test.level10.ai_capability_evaluator"
         }
     
     def run_level_test(self, level: int, adapter_name: Optional[str] = None) -> Dict[str, Any]:
@@ -91,6 +94,15 @@ class TenLayerTestCLI:
             elif level == 3:
                 from test.level3.enhanced_mcp_compliance_framework import Level3MCPComplianceFramework
                 framework = Level3MCPComplianceFramework()
+            elif level == 6:
+                from test.level6.enterprise_security_framework import EnterpriseSecurityFramework
+                framework = EnterpriseSecurityFramework()
+            elif level == 9:
+                from test.level9.gaia import GAIATestFramework
+                framework = GAIATestFramework()
+            elif level == 10:
+                from test.level10.ai_capability_evaluator import AICapabilityEvaluator
+                framework = AICapabilityEvaluator()
             else:
                 raise ImportError(f"未找到Level {level}的測試框架")
             
