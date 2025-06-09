@@ -1,0 +1,67 @@
+{
+  "benchmark": "GSM8K",
+  "description": "小學數學測試",
+  "sample_size": 100,
+  "questions": [
+    {
+      "id": "gsm8k_1",
+      "question": "小學數學問題 1: 應用題求解",
+      "answer": "1",
+      "type": "elementary_math"
+    },
+    {
+      "id": "gsm8k_2",
+      "question": "小學數學問題 2: 應用題求解",
+      "answer": "2",
+      "type": "elementary_math"
+    },
+    {
+      "id": "gsm8k_3",
+      "question": "小學數學問題 3: 應用題求解",
+      "answer": "3",
+      "type": "elementary_math"
+    },
+    {
+      "id": "gsm8k_4",
+      "question": "小學數學問題 4: 應用題求解",
+      "answer": "4",
+      "type": "elementary_math"
+    },
+    {
+      "id": "gsm8k_5",
+      "question": "小學數學問題 5: 應用題求解",
+      "answer": "5",
+      "type": "elementary_math"
+    },
+    {
+      "id": "gsm8k_6",
+      "question": "小學數學問題 6: 應用題求解",
+      "answer": "6",
+      "type": "elementary_math"
+    },
+    {
+      "id": "gsm8k_7",
+      "question": "小學數學問題 7: 應用題求解",
+      "answer": "7",
+      "type": "elementary_math"
+    },
+    {
+      "id": "gsm8k_8",
+      "question": "小學數學問題 8: 應用題求解",
+      "answer": "8",
+      "type": "elementary_math"
+    },
+    {
+      "id": "gsm8k_9",
+      "question": "小學數學問題 9: 應用題求解",
+      "answer": "9",
+      "type": "elementary_math"
+    },
+    {
+      "id": "gsm8k_10",
+      "question": "小學數學問題 10: 應用題求解",
+      "answer": "10",
+      "type": "elementary_math"
+    }
+  ]
+}

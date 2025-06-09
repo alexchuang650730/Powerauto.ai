@@ -1,0 +1,67 @@
+{
+  "benchmark": "MATH",
+  "description": "數學推理測試",
+  "sample_size": 100,
+  "questions": [
+    {
+      "id": "math_1",
+      "question": "數學問題 1: 求解複雜數學表達式",
+      "answer": "1",
+      "type": "mathematical_reasoning"
+    },
+    {
+      "id": "math_2",
+      "question": "數學問題 2: 求解複雜數學表達式",
+      "answer": "2",
+      "type": "mathematical_reasoning"
+    },
+    {
+      "id": "math_3",
+      "question": "數學問題 3: 求解複雜數學表達式",
+      "answer": "3",
+      "type": "mathematical_reasoning"
+    },
+    {
+      "id": "math_4",
+      "question": "數學問題 4: 求解複雜數學表達式",
+      "answer": "4",
+      "type": "mathematical_reasoning"
+    },
+    {
+      "id": "math_5",
+      "question": "數學問題 5: 求解複雜數學表達式",
+      "answer": "5",
+      "type": "mathematical_reasoning"
+    },
+    {
+      "id": "math_6",
+      "question": "數學問題 6: 求解複雜數學表達式",
+      "answer": "6",
+      "type": "mathematical_reasoning"
+    },
+    {
+      "id": "math_7",
+      "question": "數學問題 7: 求解複雜數學表達式",
+      "answer": "7",
+      "type": "mathematical_reasoning"
+    },
+    {
+      "id": "math_8",
+      "question": "數學問題 8: 求解複雜數學表達式",
+      "answer": "8",
+      "type": "mathematical_reasoning"
+    },
+    {
+      "id": "math_9",
+      "question": "數學問題 9: 求解複雜數學表達式",
+      "answer": "9",
+      "type": "mathematical_reasoning"
+    },
+    {
+      "id": "math_10",
+      "question": "數學問題 10: 求解複雜數學表達式",
+      "answer": "10",
+      "type": "mathematical_reasoning"
+    }
+  ]
+}

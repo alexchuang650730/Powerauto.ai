@@ -1,0 +1,67 @@
+{
+  "benchmark": "MBPP",
+  "description": "代碼生成測試",
+  "sample_size": 50,
+  "questions": [
+    {
+      "id": "mbpp_1",
+      "question": "編寫一個Python函數來解決問題 1",
+      "answer": "def solution_1():\n    return 'solution'",
+      "type": "code_generation"
+    },
+    {
+      "id": "mbpp_2",
+      "question": "編寫一個Python函數來解決問題 2",
+      "answer": "def solution_2():\n    return 'solution'",
+      "type": "code_generation"
+    },
+    {
+      "id": "mbpp_3",
+      "question": "編寫一個Python函數來解決問題 3",
+      "answer": "def solution_3():\n    return 'solution'",
+      "type": "code_generation"
+    },
+    {
+      "id": "mbpp_4",
+      "question": "編寫一個Python函數來解決問題 4",
+      "answer": "def solution_4():\n    return 'solution'",
+      "type": "code_generation"
+    },
+    {
+      "id": "mbpp_5",
+      "question": "編寫一個Python函數來解決問題 5",
+      "answer": "def solution_5():\n    return 'solution'",
+      "type": "code_generation"
+    },
+    {
+      "id": "mbpp_6",
+      "question": "編寫一個Python函數來解決問題 6",
+      "answer": "def solution_6():\n    return 'solution'",
+      "type": "code_generation"
+    },
+    {
+      "id": "mbpp_7",
+      "question": "編寫一個Python函數來解決問題 7",
+      "answer": "def solution_7():\n    return 'solution'",
+      "type": "code_generation"
+    },
+    {
+      "id": "mbpp_8",
+      "question": "編寫一個Python函數來解決問題 8",
+      "answer": "def solution_8():\n    return 'solution'",
+      "type": "code_generation"
+    },
+    {
+      "id": "mbpp_9",
+      "question": "編寫一個Python函數來解決問題 9",
+      "answer": "def solution_9():\n    return 'solution'",
+      "type": "code_generation"
+    },
+    {
+      "id": "mbpp_10",
+      "question": "編寫一個Python函數來解決問題 10",
+      "answer": "def solution_10():\n    return 'solution'",
+      "type": "code_generation"
+    }
+  ]
+}

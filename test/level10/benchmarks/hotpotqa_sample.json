@@ -1,0 +1,67 @@
+{
+  "benchmark": "HotPotQA",
+  "description": "多跳推理測試",
+  "sample_size": 100,
+  "questions": [
+    {
+      "id": "hotpot_1",
+      "question": "多跳推理問題 1: 需要通過多個步驟推理得出答案",
+      "answer": "答案 1",
+      "type": "multi_hop_reasoning"
+    },
+    {
+      "id": "hotpot_2",
+      "question": "多跳推理問題 2: 需要通過多個步驟推理得出答案",
+      "answer": "答案 2",
+      "type": "multi_hop_reasoning"
+    },
+    {
+      "id": "hotpot_3",
+      "question": "多跳推理問題 3: 需要通過多個步驟推理得出答案",
+      "answer": "答案 3",
+      "type": "multi_hop_reasoning"
+    },
+    {
+      "id": "hotpot_4",
+      "question": "多跳推理問題 4: 需要通過多個步驟推理得出答案",
+      "answer": "答案 4",
+      "type": "multi_hop_reasoning"
+    },
+    {
+      "id": "hotpot_5",
+      "question": "多跳推理問題 5: 需要通過多個步驟推理得出答案",
+      "answer": "答案 5",
+      "type": "multi_hop_reasoning"
+    },
+    {
+      "id": "hotpot_6",
+      "question": "多跳推理問題 6: 需要通過多個步驟推理得出答案",
+      "answer": "答案 6",
+      "type": "multi_hop_reasoning"
+    },
+    {
+      "id": "hotpot_7",
+      "question": "多跳推理問題 7: 需要通過多個步驟推理得出答案",
+      "answer": "答案 7",
+      "type": "multi_hop_reasoning"
+    },
+    {
+      "id": "hotpot_8",
+      "question": "多跳推理問題 8: 需要通過多個步驟推理得出答案",
+      "answer": "答案 8",
+      "type": "multi_hop_reasoning"
+    },
+    {
+      "id": "hotpot_9",
+      "question": "多跳推理問題 9: 需要通過多個步驟推理得出答案",
+      "answer": "答案 9",
+      "type": "multi_hop_reasoning"
+    },
+    {
+      "id": "hotpot_10",
+      "question": "多跳推理問題 10: 需要通過多個步驟推理得出答案",
+      "answer": "答案 10",
+      "type": "multi_hop_reasoning"
+    }
+  ]
+}

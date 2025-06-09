@@ -1,0 +1,67 @@
+{
+  "benchmark": "HellaSwag",
+  "description": "常識推理測試",
+  "sample_size": 100,
+  "questions": [
+    {
+      "id": "hellaswag_1",
+      "question": "常識推理問題 1: 選擇最合理的後續情況",
+      "answer": "選項 1",
+      "type": "commonsense_reasoning"
+    },
+    {
+      "id": "hellaswag_2",
+      "question": "常識推理問題 2: 選擇最合理的後續情況",
+      "answer": "選項 2",
+      "type": "commonsense_reasoning"
+    },
+    {
+      "id": "hellaswag_3",
+      "question": "常識推理問題 3: 選擇最合理的後續情況",
+      "answer": "選項 3",
+      "type": "commonsense_reasoning"
+    },
+    {
+      "id": "hellaswag_4",
+      "question": "常識推理問題 4: 選擇最合理的後續情況",
+      "answer": "選項 4",
+      "type": "commonsense_reasoning"
+    },
+    {
+      "id": "hellaswag_5",
+      "question": "常識推理問題 5: 選擇最合理的後續情況",
+      "answer": "選項 5",
+      "type": "commonsense_reasoning"
+    },
+    {
+      "id": "hellaswag_6",
+      "question": "常識推理問題 6: 選擇最合理的後續情況",
+      "answer": "選項 6",
+      "type": "commonsense_reasoning"
+    },
+    {
+      "id": "hellaswag_7",
+      "question": "常識推理問題 7: 選擇最合理的後續情況",
+      "answer": "選項 7",
+      "type": "commonsense_reasoning"
+    },
+    {
+      "id": "hellaswag_8",
+      "question": "常識推理問題 8: 選擇最合理的後續情況",
+      "answer": "選項 8",
+      "type": "commonsense_reasoning"
+    },
+    {
+      "id": "hellaswag_9",
+      "question": "常識推理問題 9: 選擇最合理的後續情況",
+      "answer": "選項 9",
+      "type": "commonsense_reasoning"
+    },
+    {
+      "id": "hellaswag_10",
+      "question": "常識推理問題 10: 選擇最合理的後續情況",
+      "answer": "選項 10",
+      "type": "commonsense_reasoning"
+    }
+  ]
+}

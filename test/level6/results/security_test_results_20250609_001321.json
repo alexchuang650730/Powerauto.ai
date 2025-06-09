@@ -1,0 +1,164 @@
+{
+  "test_id": "enhanced_security_test_1749442402",
+  "test_name": "enhanced_security_test",
+  "test_level": 6,
+  "start_time": "2025-06-09T00:13:22.039174",
+  "modules": {
+    "api_key_security": {
+      "module": "api_key_security",
+      "start_time": "2025-06-09T00:13:22.039222",
+      "tests": {
+        "plaintext_check": {
+          "test_name": "plaintext_api_keys_check",
+          "passed": true,
+          "details": {
+            "plaintext_keys_found": []
+          },
+          "issues": []
+        },
+        "encryption_check": {
+          "test_name": "encryption_storage_check",
+          "passed": true,
+          "details": {
+            "encryption_working": true
+          },
+          "issues": []
+        },
+        "rotation_check": {
+          "test_name": "key_rotation_check",
+          "passed": true,
+          "details": {
+            "rotation_policy": "90天輪換週期"
+          },
+          "issues": []
+        },
+        "access_control_check": {
+          "test_name": "access_control_check",
+          "passed": true,
+          "details": {
+            "access_control_enabled": true
+          },
+          "issues": []
+        }
+      },
+      "score": 100,
+      "status": "passed",
+      "critical_issues": [],
+      "recommendations": [
+        "定期輪換API密鑰",
+        "實施API密鑰訪問審計",
+        "建立API密鑰洩露響應流程"
+      ],
+      "end_time": "2025-06-09T00:13:22.039244",
+      "execution_time": 2.5987625122070312e-05
+    },
+    "rbac_security": {
+      "module": "rbac_security",
+      "start_time": "2025-06-09T00:13:22.039280",
+      "tests": {},
+      "score": 85,
+      "status": "passed",
+      "critical_issues": [],
+      "recommendations": [
+        "實施細粒度權限控制",
+        "加強角色分離"
+      ],
+      "end_time": "2025-06-09T00:13:22.039283",
+      "execution_time": 6.198883056640625e-06
+    },
+    "multi_agent_security": {
+      "module": "multi_agent_security",
+      "start_time": "2025-06-09T00:13:22.039316",
+      "tests": {},
+      "score": 80,
+      "status": "passed",
+      "critical_issues": [],
+      "recommendations": [
+        "實施智能體身份驗證",
+        "加強協作通信安全"
+      ],
+      "end_time": "2025-06-09T00:13:22.039319",
+      "execution_time": 5.245208740234375e-06
+    },
+    "compliance_validation": {
+      "module": "compliance_validation",
+      "start_time": "2025-06-09T00:13:22.039356",
+      "tests": {},
+      "score": 75,
+      "status": "passed",
+      "critical_issues": [],
+      "recommendations": [
+        "完善合規文檔",
+        "實施定期合規檢查"
+      ],
+      "end_time": "2025-06-09T00:13:22.039358",
+      "execution_time": 5.245208740234375e-06
+    },
+    "vulnerability_scanning": {
+      "module": "vulnerability_scanning",
+      "start_time": "2025-06-09T00:13:22.039389",
+      "tests": {},
+      "score": 90,
+      "status": "passed",
+      "critical_issues": [],
+      "recommendations": [
+        "定期更新依賴包",
+        "實施自動化漏洞掃描"
+      ],
+      "end_time": "2025-06-09T00:13:22.039392",
+      "execution_time": 4.76837158203125e-06
+    },
+    "audit_logging": {
+      "module": "audit_logging",
+      "start_time": "2025-06-09T00:13:22.039422",
+      "tests": {},
+      "score": 80,
+      "status": "passed",
+      "critical_issues": [],
+      "recommendations": [
+        "完善日誌記錄",
+        "實施日誌分析"
+      ],
+      "end_time": "2025-06-09T00:13:22.039425",
+      "execution_time": 4.5299530029296875e-06
+    }
+  },
+  "overall_status": "good",
+  "security_score": 85,
+  "critical_issues": [],
+  "recommendations": [
+    "實施API密鑰訪問審計",
+    "定期更新依賴包",
+    "建立事件響應流程",
+    "實施細粒度權限控制",
+    "加強角色分離",
+    "定期輪換API密鑰",
+    "建立API密鑰洩露響應流程",
+    "實施智能體身份驗證",
+    "加強協作通信安全",
+    "完善合規文檔",
+    "定期更新所有依賴包到最新版本",
+    "實施日誌分析",
+    "定期進行滲透測試",
+    "實施定期安全培訓計劃",
+    "完善日誌記錄",
+    "實施自動化漏洞掃描",
+    "實施定期合規檢查"
+  ],
+  "compliance_status": {
+    "ISO27001": "compliant",
+    "SOC2": "compliant",
+    "GDPR": "non_compliant"
+  },
+  "performance_metrics": {
+    "total_tests_run": 6,
+    "total_execution_time": 5.1975250244140625e-05,
+    "average_test_time": 8.662541707356771e-06,
+    "fastest_module": "audit_logging",
+    "slowest_module": "api_key_security"
+  },
+  "end_time": "2025-06-09T00:13:22.039509",
+  "total_execution_time": 0.039511919021606445,
+  "validation_passed": false,
+  "cleanup_success": true
+}
