@@ -1,0 +1,245 @@
+{
+  "summary": {
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "category_stats": {
+      "geography": {
+        "total": 3,
+        "correct": 3,
+        "accuracy": 1.0
+      },
+      "math": {
+        "total": 2,
+        "correct": 2,
+        "accuracy": 1.0
+      },
+      "literature": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "science": {
+        "total": 2,
+        "correct": 2,
+        "accuracy": 1.0
+      },
+      "history": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "economics": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      }
+    },
+    "adapter_stats": {
+      "claude": {
+        "total": 8,
+        "correct": 8,
+        "accuracy": 1.0
+      },
+      "gemini": {
+        "total": 2,
+        "correct": 2,
+        "accuracy": 1.0
+      }
+    },
+    "timestamp": "2025-06-08T18:25:46.700160",
+    "test_version": "robust_v1.0"
+  },
+  "detailed_results": [
+    {
+      "question_id": "gaia_001",
+      "question": "What is the capital of France?",
+      "expected_answer": "Paris",
+      "actual_answer": "Paris",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0048015117645264,
+      "raw_response": {
+        "success": true,
+        "data": "Paris",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Paris"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_002",
+      "question": "What is 15 + 27?",
+      "expected_answer": "42",
+      "actual_answer": "42",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.3157680034637451,
+      "raw_response": {
+        "success": true,
+        "data": "42",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "42"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_003",
+      "question": "Who wrote the novel '1984'?",
+      "expected_answer": "George Orwell",
+      "actual_answer": "George Orwell",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.9678559303283691,
+      "raw_response": {
+        "success": true,
+        "data": "George Orwell",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "George Orwell"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_004",
+      "question": "What is the chemical symbol for gold?",
+      "expected_answer": "Au",
+      "actual_answer": "Au",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8679375648498535,
+      "raw_response": {
+        "success": true,
+        "data": "Au",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Au"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_005",
+      "question": "In which year did World War II end?",
+      "expected_answer": "1945",
+      "actual_answer": "1945",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.2734270095825195,
+      "raw_response": {
+        "success": true,
+        "data": "1945",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "1945"
+      },
+      "success": true,
+      "category": "history",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_006",
+      "question": "What is the largest planet in our solar system?",
+      "expected_answer": "Jupiter",
+      "actual_answer": "Jupiter",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.1648330688476562,
+      "raw_response": {
+        "success": true,
+        "data": "Jupiter",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Jupiter"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_007",
+      "question": "What is the square root of 144?",
+      "expected_answer": "12",
+      "actual_answer": "12",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.2984921932220459,
+      "raw_response": {
+        "success": true,
+        "data": "12",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "12"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_008",
+      "question": "Which continent is Egypt located in?",
+      "expected_answer": "Africa",
+      "actual_answer": "Africa",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.7395882606506348,
+      "raw_response": {
+        "success": true,
+        "data": "Africa",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Africa"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_009",
+      "question": "What does GDP stand for?",
+      "expected_answer": "Gross Domestic Product",
+      "actual_answer": "Gross Domestic Product",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.1192967891693115,
+      "raw_response": {
+        "success": true,
+        "data": "Gross Domestic Product",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gross Domestic Product"
+      },
+      "success": true,
+      "category": "economics",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_010",
+      "question": "What is the longest river in the world?",
+      "expected_answer": "Nile River",
+      "actual_answer": "Nile River",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7322473526000977,
+      "raw_response": {
+        "success": true,
+        "data": "Nile River",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Nile River"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "medium"
+    }
+  ]
+}

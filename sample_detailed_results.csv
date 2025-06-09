@@ -1,0 +1,3 @@
+﻿序號,題目ID,題目,類別,難度,預期答案,真實答案,是否正確,使用適配器,適配器類型,執行時間(秒),成功狀態,錯誤信息,置信度,響應長度,處理層級,工具分類
+1,gaia_001,What is the capital of France?,geography,easy,Paris,Paris,✅,claude,AI模型,1.234,成功,,0.0,5,LLM層,語言模型
+2,gaia_002,What is 15 + 27?,math,easy,42,42,✅,gemini,AI模型,0.856,成功,,0.0,2,LLM層,語言模型

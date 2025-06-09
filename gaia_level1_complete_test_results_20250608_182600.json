@@ -1,0 +1,3563 @@
+{
+  "metadata": {
+    "test_name": "GAIA Level 1 Complete Test",
+    "start_time": "2025-06-08T18:24:38.037713",
+    "end_time": "2025-06-08T18:26:00.629870",
+    "total_duration": 82.592157,
+    "questions_source": "gaia_level1_complete_dataset.json"
+  },
+  "summary": {
+    "total_questions": 165,
+    "correct_answers": 1,
+    "accuracy": 0.006060606060606061,
+    "average_execution_time": 0.00010816256205240886,
+    "total_execution_time": 0.01784682273864746
+  },
+  "statistics": {
+    "by_category": {
+      "geography": {
+        "total": 10,
+        "correct": 0
+      },
+      "math": {
+        "total": 29,
+        "correct": 0
+      },
+      "science": {
+        "total": 10,
+        "correct": 0
+      },
+      "history": {
+        "total": 10,
+        "correct": 0
+      },
+      "literature": {
+        "total": 13,
+        "correct": 0
+      },
+      "art": {
+        "total": 6,
+        "correct": 0
+      },
+      "music": {
+        "total": 6,
+        "correct": 0
+      },
+      "economics": {
+        "total": 10,
+        "correct": 0
+      },
+      "technology": {
+        "total": 15,
+        "correct": 0
+      },
+      "logic": {
+        "total": 15,
+        "correct": 1
+      },
+      "language": {
+        "total": 1,
+        "correct": 0
+      },
+      "common_sense": {
+        "total": 40,
+        "correct": 0
+      }
+    },
+    "by_adapter": {
+      "claude": {
+        "total": 103,
+        "correct": 0
+      },
+      "gemini": {
+        "total": 47,
+        "correct": 1
+      },
+      "smart_tool_engine": {
+        "total": 15,
+        "correct": 0
+      }
+    },
+    "by_difficulty": {
+      "easy": {
+        "total": 71,
+        "correct": 0
+      },
+      "medium": {
+        "total": 85,
+        "correct": 1
+      },
+      "hard": {
+        "total": 9,
+        "correct": 0
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "question_id": "gaia_level1_001",
+      "question": "What is the capital of France?",
+      "category": "geography",
+      "difficulty": "easy",
+      "expected_answer": "Paris",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 8.559226989746094e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:38.038042",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_002",
+      "question": "Which continent is Egypt located in?",
+      "category": "geography",
+      "difficulty": "easy",
+      "expected_answer": "Africa",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010514259338378906,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:38.538619",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_003",
+      "question": "What is the longest river in the world?",
+      "category": "geography",
+      "difficulty": "medium",
+      "expected_answer": "Nile River",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010466575622558594,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:39.039230",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_004",
+      "question": "Which ocean is the largest?",
+      "category": "geography",
+      "difficulty": "easy",
+      "expected_answer": "Pacific Ocean",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.000102996826171875,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:39.539860",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_005",
+      "question": "What is the capital of Japan?",
+      "category": "geography",
+      "difficulty": "easy",
+      "expected_answer": "Tokyo",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.894371032714844e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:40.040475",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_006",
+      "question": "Which mountain range contains Mount Everest?",
+      "category": "geography",
+      "difficulty": "medium",
+      "expected_answer": "Himalayas",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.965896606445312e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:40.540978",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_007",
+      "question": "What is the smallest country in the world?",
+      "category": "geography",
+      "difficulty": "medium",
+      "expected_answer": "Vatican City",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010251998901367188,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:41.041544",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_008",
+      "question": "Which desert is the largest in the world?",
+      "category": "geography",
+      "difficulty": "medium",
+      "expected_answer": "Sahara Desert",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010919570922851562,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:41.542070",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_009",
+      "question": "What is the capital of Australia?",
+      "category": "geography",
+      "difficulty": "medium",
+      "expected_answer": "Canberra",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00011277198791503906,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:42.042685",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_010",
+      "question": "Which country has the most time zones?",
+      "category": "geography",
+      "difficulty": "hard",
+      "expected_answer": "France",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.489059448242188e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:42.543259",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_011",
+      "question": "What is 15 + 27?",
+      "category": "math",
+      "difficulty": "easy",
+      "expected_answer": "42",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00012135505676269531,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:43.043834",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_012",
+      "question": "What is the square root of 144?",
+      "category": "math",
+      "difficulty": "easy",
+      "expected_answer": "12",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.489059448242188e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:43.544417",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_013",
+      "question": "What is 8 × 7?",
+      "category": "math",
+      "difficulty": "easy",
+      "expected_answer": "56",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.5367431640625e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:44.044999",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_014",
+      "question": "What is 100 ÷ 4?",
+      "category": "math",
+      "difficulty": "easy",
+      "expected_answer": "25",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.775161743164062e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:44.545467",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_015",
+      "question": "What is 2^5?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "32",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00032401084899902344,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:45.046173",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_016",
+      "question": "What is the value of π (pi) to 2 decimal places?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "3.14",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010919570922851562,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:45.546793",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_017",
+      "question": "What is 15% of 200?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "30",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.989738464355469e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:46.047262",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_018",
+      "question": "What is the sum of angles in a triangle?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "180 degrees",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00011301040649414062,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:46.547789",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_019",
+      "question": "What is the derivative of x^2?",
+      "category": "math",
+      "difficulty": "hard",
+      "expected_answer": "2x",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.0001010894775390625,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:47.048373",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_020",
+      "question": "What is the integral of 2x?",
+      "category": "math",
+      "difficulty": "hard",
+      "expected_answer": "x^2 + C",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.131431579589844e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:47.548807",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_021",
+      "question": "What is the chemical symbol for gold?",
+      "category": "science",
+      "difficulty": "easy",
+      "expected_answer": "Au",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00011992454528808594,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:48.049325",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_022",
+      "question": "What is the largest planet in our solar system?",
+      "category": "science",
+      "difficulty": "easy",
+      "expected_answer": "Jupiter",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00011277198791503906,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:48.549877",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_023",
+      "question": "What is the atomic number of carbon?",
+      "category": "science",
+      "difficulty": "medium",
+      "expected_answer": "6",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.000118255615234375,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:49.050480",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_024",
+      "question": "What gas do plants absorb from the atmosphere during photosynthesis?",
+      "category": "science",
+      "difficulty": "medium",
+      "expected_answer": "Carbon dioxide",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.608268737792969e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:49.551062",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_025",
+      "question": "What is the smallest unit of matter?",
+      "category": "science",
+      "difficulty": "medium",
+      "expected_answer": "Atom",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010061264038085938,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:50.051622",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_026",
+      "question": "What is the speed of light in vacuum?",
+      "category": "science",
+      "difficulty": "hard",
+      "expected_answer": "299,792,458 meters per second",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010037422180175781,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:50.552253",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_027",
+      "question": "What is the chemical formula for water?",
+      "category": "science",
+      "difficulty": "easy",
+      "expected_answer": "H2O",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.72747802734375e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:51.052809",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_028",
+      "question": "How many bones are in the adult human body?",
+      "category": "science",
+      "difficulty": "medium",
+      "expected_answer": "206",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010609626770019531,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:51.553425",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_029",
+      "question": "What is the hardest natural substance on Earth?",
+      "category": "science",
+      "difficulty": "medium",
+      "expected_answer": "Diamond",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.72747802734375e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:52.053975",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_030",
+      "question": "What is the pH of pure water?",
+      "category": "science",
+      "difficulty": "medium",
+      "expected_answer": "7",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.751319885253906e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:52.554509",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_031",
+      "question": "In which year did World War II end?",
+      "category": "history",
+      "difficulty": "easy",
+      "expected_answer": "1945",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.000110626220703125,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:53.055008",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_032",
+      "question": "Who was the first President of the United States?",
+      "category": "history",
+      "difficulty": "easy",
+      "expected_answer": "George Washington",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.775161743164062e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:53.555568",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_033",
+      "question": "In which year did the Berlin Wall fall?",
+      "category": "history",
+      "difficulty": "medium",
+      "expected_answer": "1989",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.989738464355469e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:54.056137",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_034",
+      "question": "Which ancient wonder of the world was located in Alexandria?",
+      "category": "history",
+      "difficulty": "medium",
+      "expected_answer": "Lighthouse of Alexandria",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010848045349121094,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:54.556724",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_035",
+      "question": "Who was the first person to walk on the moon?",
+      "category": "history",
+      "difficulty": "easy",
+      "expected_answer": "Neil Armstrong",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.894371032714844e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:55.057208",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_036",
+      "question": "In which year did the Titanic sink?",
+      "category": "history",
+      "difficulty": "medium",
+      "expected_answer": "1912",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.799003601074219e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:55.557807",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_037",
+      "question": "Which empire was ruled by Julius Caesar?",
+      "category": "history",
+      "difficulty": "medium",
+      "expected_answer": "Roman Empire",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.703636169433594e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:56.058387",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_038",
+      "question": "In which year did World War I begin?",
+      "category": "history",
+      "difficulty": "medium",
+      "expected_answer": "1914",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.298324584960938e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:56.558849",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_039",
+      "question": "Who wrote the Declaration of Independence?",
+      "category": "history",
+      "difficulty": "medium",
+      "expected_answer": "Thomas Jefferson",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.965896606445312e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:57.059332",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_040",
+      "question": "Which war was fought between the North and South in America?",
+      "category": "history",
+      "difficulty": "easy",
+      "expected_answer": "Civil War",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00012373924255371094,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:57.559984",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_041",
+      "question": "Who wrote the novel '1984'?",
+      "category": "literature",
+      "difficulty": "easy",
+      "expected_answer": "George Orwell",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.989738464355469e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:58.060599",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_042",
+      "question": "Who painted the Mona Lisa?",
+      "category": "art",
+      "difficulty": "easy",
+      "expected_answer": "Leonardo da Vinci",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010228157043457031,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:58.561229",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_043",
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "category": "literature",
+      "difficulty": "easy",
+      "expected_answer": "William Shakespeare",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.000102996826171875,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:59.061836",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_044",
+      "question": "Who composed 'The Four Seasons'?",
+      "category": "music",
+      "difficulty": "medium",
+      "expected_answer": "Antonio Vivaldi",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.894371032714844e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:24:59.562355",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_045",
+      "question": "Who wrote 'Pride and Prejudice'?",
+      "category": "literature",
+      "difficulty": "medium",
+      "expected_answer": "Jane Austen",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.393692016601562e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:00.062847",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_046",
+      "question": "Who painted 'The Starry Night'?",
+      "category": "art",
+      "difficulty": "medium",
+      "expected_answer": "Vincent van Gogh",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00015211105346679688,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:00.563468",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_047",
+      "question": "Who wrote 'To Kill a Mockingbird'?",
+      "category": "literature",
+      "difficulty": "medium",
+      "expected_answer": "Harper Lee",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.870529174804688e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:01.064059",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_048",
+      "question": "Who composed 'Symphony No. 9'?",
+      "category": "music",
+      "difficulty": "medium",
+      "expected_answer": "Ludwig van Beethoven",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010538101196289062,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:01.564669",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_049",
+      "question": "Who wrote 'The Great Gatsby'?",
+      "category": "literature",
+      "difficulty": "medium",
+      "expected_answer": "F. Scott Fitzgerald",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00013136863708496094,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:02.065343",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_050",
+      "question": "Who painted 'The Last Supper'?",
+      "category": "art",
+      "difficulty": "medium",
+      "expected_answer": "Leonardo da Vinci",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010371208190917969,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:02.565997",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_051",
+      "question": "Who wrote 'Harry Potter' series?",
+      "category": "literature",
+      "difficulty": "easy",
+      "expected_answer": "J.K. Rowling",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010037422180175781,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:03.066672",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_052",
+      "question": "Who composed 'The Magic Flute'?",
+      "category": "music",
+      "difficulty": "medium",
+      "expected_answer": "Wolfgang Amadeus Mozart",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.679794311523438e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:03.567214",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_053",
+      "question": "Who wrote 'One Hundred Years of Solitude'?",
+      "category": "literature",
+      "difficulty": "hard",
+      "expected_answer": "Gabriel García Márquez",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00011491775512695312,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:04.067746",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_054",
+      "question": "Who painted 'Guernica'?",
+      "category": "art",
+      "difficulty": "medium",
+      "expected_answer": "Pablo Picasso",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.894371032714844e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:04.568352",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_055",
+      "question": "Who wrote 'The Catcher in the Rye'?",
+      "category": "literature",
+      "difficulty": "medium",
+      "expected_answer": "J.D. Salinger",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.489059448242188e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:05.068865",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_056",
+      "question": "Who composed 'Carmen'?",
+      "category": "music",
+      "difficulty": "medium",
+      "expected_answer": "Georges Bizet",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.965896606445312e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:05.569438",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_057",
+      "question": "Who wrote 'Moby Dick'?",
+      "category": "literature",
+      "difficulty": "medium",
+      "expected_answer": "Herman Melville",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010704994201660156,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:06.070064",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_058",
+      "question": "Who painted 'The Scream'?",
+      "category": "art",
+      "difficulty": "medium",
+      "expected_answer": "Edvard Munch",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.0001068115234375,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:06.570644",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_059",
+      "question": "Who wrote 'War and Peace'?",
+      "category": "literature",
+      "difficulty": "medium",
+      "expected_answer": "Leo Tolstoy",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010418891906738281,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:07.071294",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_060",
+      "question": "Who composed 'The Nutcracker'?",
+      "category": "music",
+      "difficulty": "medium",
+      "expected_answer": "Pyotr Ilyich Tchaikovsky",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.000133514404296875,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:07.571905",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_061",
+      "question": "Who wrote 'The Lord of the Rings'?",
+      "category": "literature",
+      "difficulty": "easy",
+      "expected_answer": "J.R.R. Tolkien",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00011730194091796875,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:08.072578",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_062",
+      "question": "Who painted 'Girl with a Pearl Earring'?",
+      "category": "art",
+      "difficulty": "medium",
+      "expected_answer": "Johannes Vermeer",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00011324882507324219,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:08.573217",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_063",
+      "question": "Who wrote 'Brave New World'?",
+      "category": "literature",
+      "difficulty": "medium",
+      "expected_answer": "Aldous Huxley",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00014257431030273438,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:09.073751",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_064",
+      "question": "Who composed 'Rhapsody in Blue'?",
+      "category": "music",
+      "difficulty": "medium",
+      "expected_answer": "George Gershwin",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010180473327636719,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:09.574271",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_065",
+      "question": "Who wrote 'The Chronicles of Narnia'?",
+      "category": "literature",
+      "difficulty": "medium",
+      "expected_answer": "C.S. Lewis",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00011682510375976562,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:10.074776",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_066",
+      "question": "What does GDP stand for?",
+      "category": "economics",
+      "difficulty": "medium",
+      "expected_answer": "Gross Domestic Product",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010037422180175781,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:10.575244",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_067",
+      "question": "What does HTTP stand for?",
+      "category": "technology",
+      "difficulty": "medium",
+      "expected_answer": "HyperText Transfer Protocol",
+      "actual_answer": "執行網頁搜索並分析結果...",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 0.00010919570922851562,
+      "raw_response": {
+        "success": true,
+        "data": "執行網頁搜索並分析結果...",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "執行網頁搜索並分析結果..."
+      },
+      "timestamp": "2025-06-08T18:25:11.075857",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_068",
+      "question": "Who founded Microsoft?",
+      "category": "technology",
+      "difficulty": "easy",
+      "expected_answer": "Bill Gates",
+      "actual_answer": "文本分析完成，長度: 22字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 0.00012612342834472656,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 22字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 22字符"
+      },
+      "timestamp": "2025-06-08T18:25:11.576512",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_069",
+      "question": "What does CPU stand for?",
+      "category": "technology",
+      "difficulty": "easy",
+      "expected_answer": "Central Processing Unit",
+      "actual_answer": "文本分析完成，長度: 24字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 8.416175842285156e-05,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 24字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 24字符"
+      },
+      "timestamp": "2025-06-08T18:25:12.076980",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_070",
+      "question": "What is inflation?",
+      "category": "economics",
+      "difficulty": "medium",
+      "expected_answer": "General increase in prices",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010704994201660156,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:12.577457",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_071",
+      "question": "What does AI stand for?",
+      "category": "technology",
+      "difficulty": "easy",
+      "expected_answer": "Artificial Intelligence",
+      "actual_answer": "文本分析完成，長度: 23字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 0.00011134147644042969,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 23字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 23字符"
+      },
+      "timestamp": "2025-06-08T18:25:13.078074",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_072",
+      "question": "Who founded Apple Inc.?",
+      "category": "technology",
+      "difficulty": "easy",
+      "expected_answer": "Steve Jobs",
+      "actual_answer": "文本分析完成，長度: 23字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 8.893013000488281e-05,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 23字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 23字符"
+      },
+      "timestamp": "2025-06-08T18:25:13.578515",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_073",
+      "question": "What is the stock market?",
+      "category": "economics",
+      "difficulty": "medium",
+      "expected_answer": "Market for trading company shares",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010395050048828125,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:14.079054",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_074",
+      "question": "What does URL stand for?",
+      "category": "technology",
+      "difficulty": "medium",
+      "expected_answer": "Uniform Resource Locator",
+      "actual_answer": "執行網頁搜索並分析結果...",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 8.249282836914062e-05,
+      "raw_response": {
+        "success": true,
+        "data": "執行網頁搜索並分析結果...",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "執行網頁搜索並分析結果..."
+      },
+      "timestamp": "2025-06-08T18:25:14.579531",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_075",
+      "question": "What is cryptocurrency?",
+      "category": "economics",
+      "difficulty": "medium",
+      "expected_answer": "Digital currency",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010085105895996094,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:15.080075",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_076",
+      "question": "What does RAM stand for?",
+      "category": "technology",
+      "difficulty": "medium",
+      "expected_answer": "Random Access Memory",
+      "actual_answer": "文本分析完成，長度: 24字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 9.369850158691406e-05,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 24字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 24字符"
+      },
+      "timestamp": "2025-06-08T18:25:15.580551",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_077",
+      "question": "Who founded Amazon?",
+      "category": "technology",
+      "difficulty": "easy",
+      "expected_answer": "Jeff Bezos",
+      "actual_answer": "文本分析完成，長度: 19字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 9.632110595703125e-05,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 19字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 19字符"
+      },
+      "timestamp": "2025-06-08T18:25:16.081027",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_078",
+      "question": "What is supply and demand?",
+      "category": "economics",
+      "difficulty": "medium",
+      "expected_answer": "Economic principle of price determination",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00012421607971191406,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:16.581587",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_079",
+      "question": "What does HTML stand for?",
+      "category": "technology",
+      "difficulty": "medium",
+      "expected_answer": "HyperText Markup Language",
+      "actual_answer": "文本分析完成，長度: 25字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 9.608268737792969e-05,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 25字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 25字符"
+      },
+      "timestamp": "2025-06-08T18:25:17.082095",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_080",
+      "question": "What is a recession?",
+      "category": "economics",
+      "difficulty": "medium",
+      "expected_answer": "Economic decline",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010251998901367188,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:17.582551",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_081",
+      "question": "What does GPS stand for?",
+      "category": "technology",
+      "difficulty": "medium",
+      "expected_answer": "Global Positioning System",
+      "actual_answer": "文本分析完成，長度: 24字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 9.34600830078125e-05,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 24字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 24字符"
+      },
+      "timestamp": "2025-06-08T18:25:18.083112",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_082",
+      "question": "Who founded Facebook?",
+      "category": "technology",
+      "difficulty": "easy",
+      "expected_answer": "Mark Zuckerberg",
+      "actual_answer": "文本分析完成，長度: 21字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 8.177757263183594e-05,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 21字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 21字符"
+      },
+      "timestamp": "2025-06-08T18:25:18.583630",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_083",
+      "question": "What is the Federal Reserve?",
+      "category": "economics",
+      "difficulty": "medium",
+      "expected_answer": "US central bank",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00012302398681640625,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:19.084232",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_084",
+      "question": "What does WiFi stand for?",
+      "category": "technology",
+      "difficulty": "medium",
+      "expected_answer": "Wireless Fidelity",
+      "actual_answer": "文本分析完成，長度: 25字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 7.843971252441406e-05,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 25字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 25字符"
+      },
+      "timestamp": "2025-06-08T18:25:19.584788",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_085",
+      "question": "What is venture capital?",
+      "category": "economics",
+      "difficulty": "medium",
+      "expected_answer": "Investment in startups",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010132789611816406,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:20.085312",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_086",
+      "question": "What does API stand for?",
+      "category": "technology",
+      "difficulty": "medium",
+      "expected_answer": "Application Programming Interface",
+      "actual_answer": "文本分析完成，長度: 24字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 7.963180541992188e-05,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 24字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 24字符"
+      },
+      "timestamp": "2025-06-08T18:25:20.585907",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_087",
+      "question": "Who founded Tesla?",
+      "category": "technology",
+      "difficulty": "easy",
+      "expected_answer": "Elon Musk",
+      "actual_answer": "文本分析完成，長度: 18字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 9.655952453613281e-05,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 18字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 18字符"
+      },
+      "timestamp": "2025-06-08T18:25:21.086456",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_088",
+      "question": "What is market capitalization?",
+      "category": "economics",
+      "difficulty": "medium",
+      "expected_answer": "Total value of company shares",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00012302398681640625,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:21.587098",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_089",
+      "question": "What does IoT stand for?",
+      "category": "technology",
+      "difficulty": "medium",
+      "expected_answer": "Internet of Things",
+      "actual_answer": "文本分析完成，長度: 24字符",
+      "correct": false,
+      "success": true,
+      "adapter_used": "smart_tool_engine",
+      "execution_time": 9.298324584960938e-05,
+      "raw_response": {
+        "success": true,
+        "data": "文本分析完成，長度: 24字符",
+        "confidence": 0.5,
+        "adapter_type": "general",
+        "raw_response": "文本分析完成，長度: 24字符"
+      },
+      "timestamp": "2025-06-08T18:25:22.087609",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_090",
+      "question": "What is a startup?",
+      "category": "economics",
+      "difficulty": "easy",
+      "expected_answer": "New business venture",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.560585021972656e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:22.588067",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_091",
+      "question": "If a train travels 60 mph for 2 hours, how far does it go?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "120 miles",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00012350082397460938,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:23.088628",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_092",
+      "question": "What comes next in the sequence: 2, 4, 8, 16, ?",
+      "category": "logic",
+      "difficulty": "medium",
+      "expected_answer": "32",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.942054748535156e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:23.589142",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_093",
+      "question": "If all roses are flowers and all flowers are plants, are all roses plants?",
+      "category": "logic",
+      "difficulty": "medium",
+      "expected_answer": "Yes",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010418891906738281,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:24.089685",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_094",
+      "question": "A book costs $10. If there's a 20% discount, what's the final price?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "$8",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010132789611816406,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:24.590193",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_095",
+      "question": "What is the next number in the Fibonacci sequence: 1, 1, 2, 3, 5, 8, ?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "13",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00011205673217773438,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:25.090730",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_096",
+      "question": "If it takes 5 machines 5 minutes to make 5 widgets, how long does it take 100 machines to make 100 widgets?",
+      "category": "logic",
+      "difficulty": "hard",
+      "expected_answer": "5 minutes",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010275840759277344,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:25.591294",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_097",
+      "question": "What is 25% of 80?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "20",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00016355514526367188,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:26.091963",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_098",
+      "question": "If A is taller than B, and B is taller than C, who is the shortest?",
+      "category": "logic",
+      "difficulty": "easy",
+      "expected_answer": "C",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010633468627929688,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:26.592561",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_099",
+      "question": "A rectangle has length 8 and width 6. What is its area?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "48",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.0001010894775390625,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:27.093084",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_100",
+      "question": "What is the missing number: 3, 6, 12, 24, ?",
+      "category": "logic",
+      "difficulty": "medium",
+      "expected_answer": "48",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.989738464355469e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:27.593565",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_101",
+      "question": "If you buy 3 apples for $2, how much do 12 apples cost?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "$8",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.72747802734375e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:28.094101",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_102",
+      "question": "What comes next: Monday, Wednesday, Friday, ?",
+      "category": "logic",
+      "difficulty": "medium",
+      "expected_answer": "Sunday",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010013580322265625,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:28.594558",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_103",
+      "question": "A circle has radius 5. What is its circumference? (Use π = 3.14)",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "31.4",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010967254638671875,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:29.095043",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_104",
+      "question": "If all cats are mammals and some mammals are pets, can we conclude that some cats are pets?",
+      "category": "logic",
+      "difficulty": "hard",
+      "expected_answer": "No",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010061264038085938,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:29.595638",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_105",
+      "question": "What is 3/4 as a decimal?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "0.75",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.0001049041748046875,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:30.096262",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_106",
+      "question": "What is the pattern: A1, B2, C3, D4, ?",
+      "category": "logic",
+      "difficulty": "medium",
+      "expected_answer": "E5",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00011134147644042969,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:30.596813",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_107",
+      "question": "If a pizza is cut into 8 equal slices and you eat 3, what fraction remains?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "5/8",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010371208190917969,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:31.097398",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_108",
+      "question": "What is the opposite of 'always'?",
+      "category": "language",
+      "difficulty": "easy",
+      "expected_answer": "Never",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.512901306152344e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:31.597859",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_109",
+      "question": "If today is Tuesday, what day was it 3 days ago?",
+      "category": "logic",
+      "difficulty": "medium",
+      "expected_answer": "Saturday",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010466575622558594,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:32.098372",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_110",
+      "question": "What is 2^3 + 3^2?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "17",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.0001361370086669922,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:32.599054",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_111",
+      "question": "Complete the analogy: Hot is to Cold as Light is to ?",
+      "category": "logic",
+      "difficulty": "medium",
+      "expected_answer": "Dark",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.512901306152344e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:33.099590",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_112",
+      "question": "If a car travels 300 miles in 5 hours, what is its average speed?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "60 mph",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010466575622558594,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:33.600132",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_113",
+      "question": "What is the next letter: A, C, E, G, ?",
+      "category": "logic",
+      "difficulty": "medium",
+      "expected_answer": "I",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": true,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00011491775512695312,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:34.100762",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_114",
+      "question": "If you have $100 and spend 30%, how much do you have left?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "$70",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010251998901367188,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:34.601315",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_115",
+      "question": "What is the pattern: 1, 4, 9, 16, ?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "25",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.0001010894775390625,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:35.101892",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_116",
+      "question": "If all birds can fly and penguins are birds, can penguins fly?",
+      "category": "logic",
+      "difficulty": "hard",
+      "expected_answer": "No",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.942054748535156e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:35.602420",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_117",
+      "question": "What is 7 × 8 - 6?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "50",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.560585021972656e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:36.102864",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_118",
+      "question": "Complete: Sun is to Day as Moon is to ?",
+      "category": "logic",
+      "difficulty": "easy",
+      "expected_answer": "Night",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.489059448242188e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:36.603376",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_119",
+      "question": "If a triangle has angles 60°, 60°, what is the third angle?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "60°",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 9.799003601074219e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:37.103901",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_120",
+      "question": "What comes next: 1, 1, 2, 6, 24, ?",
+      "category": "math",
+      "difficulty": "hard",
+      "expected_answer": "120",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.989738464355469e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:37.604337",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_121",
+      "question": "If red means stop and green means go, what does yellow mean?",
+      "category": "logic",
+      "difficulty": "easy",
+      "expected_answer": "Caution",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.0001049041748046875,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:38.104967",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_122",
+      "question": "What is the square of 9?",
+      "category": "math",
+      "difficulty": "easy",
+      "expected_answer": "81",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010442733764648438,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:38.605552",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_123",
+      "question": "Complete the series: Z, Y, X, W, ?",
+      "category": "logic",
+      "difficulty": "medium",
+      "expected_answer": "V",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010561943054199219,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:39.106122",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_124",
+      "question": "If a dozen eggs costs $3, how much do 2 dozen cost?",
+      "category": "math",
+      "difficulty": "easy",
+      "expected_answer": "$6",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010085105895996094,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:39.606685",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_125",
+      "question": "What is the pattern: 2, 6, 18, 54, ?",
+      "category": "math",
+      "difficulty": "medium",
+      "expected_answer": "162",
+      "actual_answer": "Gemini適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.00010895729064941406,
+      "raw_response": {
+        "success": true,
+        "data": "Gemini適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gemini適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:40.107289",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_126",
+      "question": "What do you use to cut paper?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Scissors",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010514259338378906,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:40.607901",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_127",
+      "question": "What season comes after winter?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Spring",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010442733764648438,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:41.108431",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_128",
+      "question": "How many days are in a week?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "7",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00011467933654785156,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:41.609105",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_129",
+      "question": "What do you wear on your feet?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Shoes",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.751319885253906e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:42.109605",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_130",
+      "question": "What do you use to write?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Pen",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00012111663818359375,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:42.610157",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_131",
+      "question": "How many hours are in a day?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "24",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010919570922851562,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:43.110693",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_132",
+      "question": "What do you use to see in the dark?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Flashlight",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010418891906738281,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:43.611198",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_133",
+      "question": "What do you drink when you're thirsty?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Water",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.0001220703125,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:44.111792",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_134",
+      "question": "How many minutes are in an hour?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "60",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010251998901367188,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:44.612298",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_135",
+      "question": "What do you use to unlock a door?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Key",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.775161743164062e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:45.112829",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_136",
+      "question": "What do you eat with soup?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Spoon",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.894371032714844e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:45.613272",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_137",
+      "question": "How many months are in a year?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "12",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00011563301086425781,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:46.113777",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_138",
+      "question": "What do you use to call someone?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Phone",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010824203491210938,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:46.614289",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_139",
+      "question": "What do you wear when it rains?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Raincoat",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010251998901367188,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:47.114861",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_140",
+      "question": "How many wheels does a bicycle have?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "2",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010323524475097656,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:47.615507",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_141",
+      "question": "What do you use to brush your teeth?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Toothbrush",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.72747802734375e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:48.116134",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_142",
+      "question": "What do you sleep on?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Bed",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010514259338378906,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:48.616674",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_143",
+      "question": "How many sides does a triangle have?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "3",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010371208190917969,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:49.117160",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_144",
+      "question": "What do you use to eat salad?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Fork",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010442733764648438,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:49.617639",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_145",
+      "question": "What do you wear to protect your eyes from the sun?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Sunglasses",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010085105895996094,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:50.118131",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_146",
+      "question": "How many legs does a dog have?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "4",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 9.775161743164062e-05,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:50.618584",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_147",
+      "question": "What do you use to wash your hands?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Soap",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010180473327636719,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:51.119088",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_148",
+      "question": "What do you sit on?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Chair",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010037422180175781,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:51.619565",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_149",
+      "question": "How many eyes do humans have?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "2",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00012969970703125,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:52.120213",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_150",
+      "question": "What do you use to dry yourself after a shower?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Towel",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010156631469726562,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:52.620824",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_151",
+      "question": "What do you put on bread to make a sandwich?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Filling",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00011444091796875,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:53.121430",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_152",
+      "question": "How many fingers are on one hand?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "5",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010538101196289062,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:53.621930",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_153",
+      "question": "What do you use to measure time?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Clock",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.0001277923583984375,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:54.122549",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_154",
+      "question": "What do you wear on your head?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Hat",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010418891906738281,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:54.623149",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_155",
+      "question": "How many seasons are there in a year?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "4",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.000118255615234375,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:55.123729",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_156",
+      "question": "What do you use to open a can?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Can opener",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.0001049041748046875,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:55.624287",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_157",
+      "question": "What do you put in your car to make it run?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Gas",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00011086463928222656,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:56.124775",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_158",
+      "question": "How many cents are in a dollar?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "100",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010347366333007812,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:56.625307",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_159",
+      "question": "What do you use to take pictures?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Camera",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010824203491210938,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:57.125828",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_160",
+      "question": "What do you wear around your waist?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Belt",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00039386749267578125,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:57.626900",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_161",
+      "question": "How many players are on a basketball team on the court?",
+      "category": "common_sense",
+      "difficulty": "medium",
+      "expected_answer": "5",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010704994201660156,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:58.127470",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_162",
+      "question": "What do you use to fix a flat tire?",
+      "category": "common_sense",
+      "difficulty": "medium",
+      "expected_answer": "Spare tire",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00010156631469726562,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:58.628077",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_163",
+      "question": "What do you put on a wound?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Bandage",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.0001010894775390625,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:59.128652",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_164",
+      "question": "How many strings does a guitar typically have?",
+      "category": "common_sense",
+      "difficulty": "medium",
+      "expected_answer": "6",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.0001049041748046875,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:25:59.629215",
+      "error": ""
+    },
+    {
+      "question_id": "gaia_level1_165",
+      "question": "What do you use to start a fire?",
+      "category": "common_sense",
+      "difficulty": "easy",
+      "expected_answer": "Match",
+      "actual_answer": "Claude適配器未正確初始化",
+      "correct": false,
+      "success": true,
+      "adapter_used": "claude",
+      "execution_time": 0.00011348724365234375,
+      "raw_response": {
+        "success": true,
+        "data": "Claude適配器未正確初始化",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Claude適配器未正確初始化"
+      },
+      "timestamp": "2025-06-08T18:26:00.129702",
+      "error": ""
+    }
+  ]
+}

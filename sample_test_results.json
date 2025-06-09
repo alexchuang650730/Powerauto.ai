@@ -1,0 +1,33 @@
+{
+  "summary": {
+    "total_questions": 5,
+    "correct_answers": 4,
+    "accuracy": 0.8
+  },
+  "detailed_results": [
+    {
+      "question_id": "gaia_001",
+      "question": "What is the capital of France?",
+      "expected_answer": "Paris",
+      "actual_answer": "Paris",
+      "correct": true,
+      "adapter_used": "claude",
+      "execution_time": 1.234,
+      "success": true,
+      "category": "geography",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_002",
+      "question": "What is 15 + 27?",
+      "expected_answer": "42",
+      "actual_answer": "42",
+      "correct": true,
+      "adapter_used": "gemini",
+      "execution_time": 0.856,
+      "success": true,
+      "category": "math",
+      "difficulty": "easy"
+    }
+  ]
+}
