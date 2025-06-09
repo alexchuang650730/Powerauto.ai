@@ -1,0 +1,50 @@
+{
+  "test_time": "2025-06-08 22:23:09",
+  "total_adapters": 0,
+  "tested_adapters": 0,
+  "passed_adapters": 0,
+  "overall_compliance": 0.0,
+  "test_results": {
+    "protocol": {
+      "error": "'MCPProtocolValidator' object has no attribute 'run_validation_tests'"
+    },
+    "standardization": {
+      "status": "completed",
+      "results_count": 0,
+      "compliance_score": 0.0,
+      "report_file": "standardization_test_report.md"
+    },
+    "performance": {
+      "status": "completed",
+      "results_count": 0,
+      "passed_count": 0,
+      "pass_rate": 0,
+      "report_file": "performance_compliance_report.md"
+    },
+    "error_handling": {
+      "status": "completed",
+      "results_count": 0,
+      "passed_count": 0,
+      "handled_count": 0,
+      "pass_rate": 0,
+      "handle_rate": 0,
+      "report_file": "error_handling_test_report.md"
+    },
+    "capability": {
+      "status": "completed",
+      "results_count": 0,
+      "valid_count": 0,
+      "validity_rate": 0,
+      "avg_compliance": 0,
+      "report_file": "capability_standardization_report.md"
+    }
+  },
+  "recommendations": [
+    "修復 protocol 測試模組的問題: 'MCPProtocolValidator' object has no attribute 'run_validation_tests'",
+    "統一適配器接口標準，實施標準化測試框架",
+    "優化適配器性能，確保響應時間和吞吐量達到標準",
+    "完善錯誤處理機制，提高錯誤處理的正確性",
+    "增強錯誤檢測和處理能力，確保系統穩定性",
+    "標準化能力聲明格式，完善能力文檔和驗證"
+  ]
+}
