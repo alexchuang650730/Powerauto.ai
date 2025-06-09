@@ -96,9 +96,9 @@ class UrgentSecurityFix:
         """啟用ZIP加密存儲"""
         # 將敏感API密鑰存儲到加密ZIP中
         api_keys = {
-            "CLAUDE_API_KEY": "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",
-            "GEMINI_API_KEY": "AIzaSyBjQOKRMz0uTGnvDe9CDE5BmAwlY0_rCMw",
-            "GITHUB_TOKEN": "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"
+            "CLAUDE_API_KEY": "your_claude_api_key_here",
+            "GEMINI_API_KEY": "your_gemini_api_key_here",
+            "GITHUB_TOKEN": "your_github_token_here"
         }
         
         encryption_results = []
