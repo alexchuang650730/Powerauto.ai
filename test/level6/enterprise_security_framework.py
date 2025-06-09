@@ -75,9 +75,11 @@ class EnterpriseSecurityFramework(BaseTestFramework):
         self.security_score = 0.0
         self.vulnerabilities = []
     
-    def run_tests(self) -> Dict[str, Any]:
-        """實現抽象方法"""
-        return self.run_all_tests()
+    def run_tests(self, adapter_name: Optional[str] = None, **kwargs) -> List[TestResult]:
+        """實現標準化測試接口"""
+        result_dict = self.run_all_tests()
+        # 返回標準化的TestResult列表
+        return self.test_results
         
     def _load_config(self) -> SecurityTestConfig:
         """加載安全測試配置"""
