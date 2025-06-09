@@ -96,7 +96,7 @@ class TenLayerTestCLI:
                 "status": "✅ 已實現"
             },
             9: {
-                "module": "test.level9.gaia",
+                "module": "test.level9.gaia_enhanced",
                 "class": "GAIATestFramework",
                 "status": "✅ 已實現"
             },
