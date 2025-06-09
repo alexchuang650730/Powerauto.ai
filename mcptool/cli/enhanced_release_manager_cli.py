@@ -231,7 +231,7 @@ class EnhancedReleaseManager:
             }
         
         # 設置Git認證
-        self._setup_git_auth(token)
+        original_url = self._setup_git_auth(token)
         
         # 執行推送
         for attempt in range(self.max_retries):
@@ -254,6 +254,16 @@ class EnhancedReleaseManager:
                 
                 if result.returncode == 0:
                     self.logger.info("✅ Git推送成功")
+                    
+                    # 恢復原始URL
+                    if original_url:
+                        try:
+                            subprocess.run([
+                                'git', 'remote', 'set-url', 'origin', original_url
+                            ], cwd=self.project_dir, check=True)
+                            self.logger.info("✅ 遠程URL已恢復")
+                        except Exception as e:
+                            self.logger.warning(f"⚠️ 恢復遠程URL失敗: {e}")
                     
                     # 記錄成功
                     self.upload_history.append({
@@ -313,20 +323,35 @@ class EnhancedReleaseManager:
     def _setup_git_auth(self, token: str):
         """設置Git認證"""
         try:
-            # 設置Git配置
-            subprocess.run([
-                'git', 'config', '--local', 'credential.helper', 'store'
-            ], cwd=self.project_dir, check=True)
+            # 獲取遠程URL
+            result = subprocess.run([
+                'git', 'remote', 'get-url', 'origin'
+            ], cwd=self.project_dir, capture_output=True, text=True)
             
-            # 設置環境變數
-            os.environ['GIT_ASKPASS'] = 'echo'
-            os.environ['GIT_USERNAME'] = token
-            os.environ['GIT_PASSWORD'] = ''
+            if result.returncode == 0:
+                original_url = result.stdout.strip()
+                
+                # 如果是HTTPS URL，修改為包含token的格式
+                if original_url.startswith('https://github.com/'):
+                    # 提取倉庫路徑
+                    repo_path = original_url.replace('https://github.com/', '')
+                    # 創建包含token的URL
+                    auth_url = f'https://{token}@github.com/{repo_path}'
+                    
+                    # 臨時設置遠程URL
+                    subprocess.run([
+                        'git', 'remote', 'set-url', 'origin', auth_url
+                    ], cwd=self.project_dir, check=True)
+                    
+                    self.logger.info("✅ Git認證URL設置完成")
+                    return original_url  # 返回原始URL以便恢復
             
-            self.logger.info("✅ Git認證設置完成")
+            self.logger.warning("⚠️ 無法獲取遠程URL，使用環境變數認證")
+            os.environ['GITHUB_TOKEN'] = token
             
         except Exception as e:
             self.logger.error(f"❌ Git認證設置失敗: {e}")
+            return None
     
     def _is_auth_error(self, error_msg: str) -> bool:
         """檢查是否是認證錯誤"""
