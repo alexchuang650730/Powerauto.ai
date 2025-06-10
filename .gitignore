@@ -1,0 +1,63 @@
+# 敏感文件忽略列表
+.env
+*.key
+*.pem
+*.p12
+*.pfx
+memory-system/github_credentials.json
+memory-system/*_credentials.json
+data/kilorag.db
+*.db
+*.sqlite
+*.sqlite3
+
+# 日誌文件
+*.log
+logs/
+/tmp/
+
+# 緩存文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系統文件
+.DS_Store
+Thumbs.db
+
+# 測試文件
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# 環境文件
+.env.local
+.env.development
+.env.test
+.env.production
+

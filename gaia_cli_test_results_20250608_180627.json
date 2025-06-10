@@ -1,0 +1,162 @@
+{
+  "summary": {
+    "total_questions": 5,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "category_stats": {
+      "geography": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "math": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "literature": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "science": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "history": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    },
+    "adapter_stats": {
+      "claude": {
+        "total": 4,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "gemini": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    },
+    "available_adapters": [
+      "claude",
+      "gemini",
+      "smart_tool_engine",
+      "webagent",
+      "unified_memory"
+    ],
+    "timestamp": "2025-06-08T18:06:27.171348",
+    "test_version": "cli_v1.0"
+  },
+  "detailed_results": [
+    {
+      "question_id": "gaia_001",
+      "question": "What is the capital of France?",
+      "expected_answer": "Paris",
+      "actual_answer": null,
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 0.07926392555236816,
+      "success": false,
+      "error": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'claude' (choose from 'list', 'test', 'gaia')\n",
+      "category": "geography",
+      "difficulty": "easy",
+      "cli_response": {
+        "success": false,
+        "error": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'claude' (choose from 'list', 'test', 'gaia')\n",
+        "execution_time": 0.07926392555236816,
+        "return_code": 2,
+        "raw_stdout": "",
+        "raw_stderr": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'claude' (choose from 'list', 'test', 'gaia')\n"
+      }
+    },
+    {
+      "question_id": "gaia_002",
+      "question": "What is 15 + 27?",
+      "expected_answer": "42",
+      "actual_answer": null,
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.0799398422241211,
+      "success": false,
+      "error": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'gemini' (choose from 'list', 'test', 'gaia')\n",
+      "category": "math",
+      "difficulty": "easy",
+      "cli_response": {
+        "success": false,
+        "error": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'gemini' (choose from 'list', 'test', 'gaia')\n",
+        "execution_time": 0.0799398422241211,
+        "return_code": 2,
+        "raw_stdout": "",
+        "raw_stderr": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'gemini' (choose from 'list', 'test', 'gaia')\n"
+      }
+    },
+    {
+      "question_id": "gaia_003",
+      "question": "Who wrote the novel '1984'?",
+      "expected_answer": "George Orwell",
+      "actual_answer": null,
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 0.08049345016479492,
+      "success": false,
+      "error": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'claude' (choose from 'list', 'test', 'gaia')\n",
+      "category": "literature",
+      "difficulty": "easy",
+      "cli_response": {
+        "success": false,
+        "error": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'claude' (choose from 'list', 'test', 'gaia')\n",
+        "execution_time": 0.08049345016479492,
+        "return_code": 2,
+        "raw_stdout": "",
+        "raw_stderr": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'claude' (choose from 'list', 'test', 'gaia')\n"
+      }
+    },
+    {
+      "question_id": "gaia_004",
+      "question": "What is the chemical symbol for gold?",
+      "expected_answer": "Au",
+      "actual_answer": null,
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 0.0789799690246582,
+      "success": false,
+      "error": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'claude' (choose from 'list', 'test', 'gaia')\n",
+      "category": "science",
+      "difficulty": "easy",
+      "cli_response": {
+        "success": false,
+        "error": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'claude' (choose from 'list', 'test', 'gaia')\n",
+        "execution_time": 0.0789799690246582,
+        "return_code": 2,
+        "raw_stdout": "",
+        "raw_stderr": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'claude' (choose from 'list', 'test', 'gaia')\n"
+      }
+    },
+    {
+      "question_id": "gaia_005",
+      "question": "In which year did World War II end?",
+      "expected_answer": "1945",
+      "actual_answer": null,
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 0.08015012741088867,
+      "success": false,
+      "error": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'claude' (choose from 'list', 'test', 'gaia')\n",
+      "category": "history",
+      "difficulty": "easy",
+      "cli_response": {
+        "success": false,
+        "error": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'claude' (choose from 'list', 'test', 'gaia')\n",
+        "execution_time": 0.08015012741088867,
+        "return_code": 2,
+        "raw_stdout": "",
+        "raw_stderr": "usage: safe_unified_mcp_cli.py [-h] {list,test,gaia} ...\nsafe_unified_mcp_cli.py: error: argument command: invalid choice: 'claude' (choose from 'list', 'test', 'gaia')\n"
+      }
+    }
+  ]
+}

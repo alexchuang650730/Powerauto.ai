@@ -1,0 +1,145 @@
+{
+  "summary": {
+    "total_questions": 5,
+    "correct_answers": 5,
+    "accuracy": 1.0,
+    "category_stats": {
+      "geography": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "math": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "literature": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "science": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "history": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      }
+    },
+    "adapter_stats": {
+      "claude": {
+        "total": 4,
+        "correct": 4,
+        "accuracy": 1.0
+      },
+      "gemini": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      }
+    },
+    "timestamp": "2025-06-08T18:04:32.608733",
+    "test_version": "robust_v1.0"
+  },
+  "detailed_results": [
+    {
+      "question_id": "gaia_001",
+      "question": "What is the capital of France?",
+      "expected_answer": "Paris",
+      "actual_answer": "Paris",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.9615840911865234,
+      "raw_response": {
+        "success": true,
+        "data": "Paris",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Paris"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_002",
+      "question": "What is 15 + 27?",
+      "expected_answer": "42",
+      "actual_answer": "42",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.3281128406524658,
+      "raw_response": {
+        "success": true,
+        "data": "42",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "42"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_003",
+      "question": "Who wrote the novel '1984'?",
+      "expected_answer": "George Orwell",
+      "actual_answer": "George Orwell",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8649778366088867,
+      "raw_response": {
+        "success": true,
+        "data": "George Orwell",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "George Orwell"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_004",
+      "question": "What is the chemical symbol for gold?",
+      "expected_answer": "Au",
+      "actual_answer": "Au",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8114979267120361,
+      "raw_response": {
+        "success": true,
+        "data": "Au",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Au"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_005",
+      "question": "In which year did World War II end?",
+      "expected_answer": "1945",
+      "actual_answer": "1945",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8028819561004639,
+      "raw_response": {
+        "success": true,
+        "data": "1945",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "1945"
+      },
+      "success": true,
+      "category": "history",
+      "difficulty": "easy"
+    }
+  ]
+}

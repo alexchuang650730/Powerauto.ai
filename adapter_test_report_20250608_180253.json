@@ -1,0 +1,2211 @@
+{
+  "gemini": {
+    "adapter_name": "gemini",
+    "adapter_info": {
+      "adapter_name": "gemini",
+      "adapter_type": "ai_model",
+      "call_method": "process",
+      "available_methods": [
+        "api_key",
+        "model",
+        "model_name",
+        "process",
+        "test_connection"
+      ],
+      "adapter_class": "SimpleGeminiAdapter"
+    },
+    "success": true,
+    "success_rate": 1.0,
+    "successful_tests": 14,
+    "total_tests": 14,
+    "test_results": [
+      {
+        "test_name": "basic_hello",
+        "query": "Hello",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.00020313262939453125,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "basic_math",
+        "query": "What is 2+2?",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.00015282630920410156,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "basic_question",
+        "query": "What is the capital of France?",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.00016355514526367188,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "ai_reasoning",
+        "query": "Explain why the sky is blue in simple terms",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.0001468658447265625,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "ai_creative",
+        "query": "Write a short poem about technology",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.00013566017150878906,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "tool_analysis",
+        "query": "Analyze this text: 'Hello World'",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.00013518333435058594,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "tool_processing",
+        "query": "Process data: [1, 2, 3, 4, 5]",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.000133514404296875,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "memory_query",
+        "query": "Search for information about Python",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.00016117095947265625,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "memory_store",
+        "query": "Store this information: Test data",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.0001380443572998047,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "web_search",
+        "query": "Search for latest news about AI",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.00013399124145507812,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "web_task",
+        "query": "Find information about weather",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.00013113021850585938,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "empty_query",
+        "query": "",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.00030231475830078125,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "long_query",
+        "query": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.00016427040100097656,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "special_chars",
+        "query": "Test with special chars: @#$%^&*()",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Gemini適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Gemini適配器未正確初始化"
+        },
+        "execution_time": 0.0001392364501953125,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      }
+    ],
+    "timestamp": "2025-06-08T18:02:53.444263"
+  },
+  "claude": {
+    "adapter_name": "claude",
+    "adapter_info": {
+      "adapter_name": "claude",
+      "adapter_type": "ai_model",
+      "call_method": "process",
+      "available_methods": [
+        "api_key",
+        "client",
+        "model_name",
+        "process",
+        "test_connection"
+      ],
+      "adapter_class": "SimpleClaudeAdapter"
+    },
+    "success": true,
+    "success_rate": 1.0,
+    "successful_tests": 14,
+    "total_tests": 14,
+    "test_results": [
+      {
+        "test_name": "basic_hello",
+        "query": "Hello",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.00016117095947265625,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "basic_math",
+        "query": "What is 2+2?",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.00013971328735351562,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "basic_question",
+        "query": "What is the capital of France?",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.00013136863708496094,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "ai_reasoning",
+        "query": "Explain why the sky is blue in simple terms",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.00012183189392089844,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "ai_creative",
+        "query": "Write a short poem about technology",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.00013113021850585938,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "tool_analysis",
+        "query": "Analyze this text: 'Hello World'",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.0001347064971923828,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "tool_processing",
+        "query": "Process data: [1, 2, 3, 4, 5]",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.00012087821960449219,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "memory_query",
+        "query": "Search for information about Python",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.0001232624053955078,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "memory_store",
+        "query": "Store this information: Test data",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.00011849403381347656,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "web_search",
+        "query": "Search for latest news about AI",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.00012183189392089844,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "web_task",
+        "query": "Find information about weather",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.00012922286987304688,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "empty_query",
+        "query": "",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.00012302398681640625,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "long_query",
+        "query": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.00011897087097167969,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "special_chars",
+        "query": "Test with special chars: @#$%^&*()",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "Claude適配器未正確初始化",
+          "confidence": 0.8,
+          "adapter_type": "ai_model",
+          "raw_response": "Claude適配器未正確初始化"
+        },
+        "execution_time": 0.0001266002655029297,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      }
+    ],
+    "timestamp": "2025-06-08T18:02:53.447310"
+  },
+  "smart_tool_engine": {
+    "adapter_name": "smart_tool_engine",
+    "adapter_info": {
+      "adapter_name": "smart_tool_engine",
+      "adapter_type": "general",
+      "call_method": "process",
+      "available_methods": [
+        "config",
+        "get_tools_info",
+        "performance_metrics",
+        "process",
+        "test_connection",
+        "tools_registry"
+      ],
+      "adapter_class": "SimpleSmartToolEngine"
+    },
+    "success": true,
+    "success_rate": 1.0,
+    "successful_tests": 14,
+    "total_tests": 14,
+    "test_results": [
+      {
+        "test_name": "basic_hello",
+        "query": "Hello",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 5字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 5字符"
+        },
+        "execution_time": 0.00013780593872070312,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "basic_math",
+        "query": "What is 2+2?",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 12字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 12字符"
+        },
+        "execution_time": 0.00011301040649414062,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "basic_question",
+        "query": "What is the capital of France?",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 30字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 30字符"
+        },
+        "execution_time": 0.0001068115234375,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "ai_reasoning",
+        "query": "Explain why the sky is blue in simple terms",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 43字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 43字符"
+        },
+        "execution_time": 0.00010704994201660156,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "ai_creative",
+        "query": "Write a short poem about technology",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 35字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 35字符"
+        },
+        "execution_time": 0.00010323524475097656,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "tool_analysis",
+        "query": "Analyze this text: 'Hello World'",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 32字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 32字符"
+        },
+        "execution_time": 0.00010275840759277344,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "tool_processing",
+        "query": "Process data: [1, 2, 3, 4, 5]",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 29字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 29字符"
+        },
+        "execution_time": 0.00010514259338378906,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "memory_query",
+        "query": "Search for information about Python",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 35字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 35字符"
+        },
+        "execution_time": 0.0001163482666015625,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "memory_store",
+        "query": "Store this information: Test data",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 33字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 33字符"
+        },
+        "execution_time": 0.00010657310485839844,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "web_search",
+        "query": "Search for latest news about AI",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 31字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 31字符"
+        },
+        "execution_time": 0.00010228157043457031,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "web_task",
+        "query": "Find information about weather",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 30字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 30字符"
+        },
+        "execution_time": 9.942054748535156e-05,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "empty_query",
+        "query": "",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 0字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 0字符"
+        },
+        "execution_time": 9.870529174804688e-05,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "long_query",
+        "query": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 1000字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 1000字符"
+        },
+        "execution_time": 0.00014662742614746094,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "special_chars",
+        "query": "Test with special chars: @#$%^&*()",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "文本分析完成，長度: 34字符",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": "文本分析完成，長度: 34字符"
+        },
+        "execution_time": 0.0001010894775390625,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      }
+    ],
+    "timestamp": "2025-06-08T18:02:53.450068"
+  },
+  "webagent": {
+    "adapter_name": "webagent",
+    "adapter_info": {
+      "adapter_name": "webagent",
+      "adapter_type": "web_agent",
+      "call_method": "process",
+      "available_methods": [
+        "config",
+        "get_performance_metrics",
+        "performance_metrics",
+        "process",
+        "session",
+        "test_connection"
+      ],
+      "adapter_class": "SimpleWebAgent"
+    },
+    "success": true,
+    "success_rate": 1.0,
+    "successful_tests": 14,
+    "total_tests": 14,
+    "test_results": [
+      {
+        "test_name": "basic_hello",
+        "query": "Hello",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.00014543533325195312,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "basic_math",
+        "query": "What is 2+2?",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.00018668174743652344,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "basic_question",
+        "query": "What is the capital of France?",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.00012969970703125,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "ai_reasoning",
+        "query": "Explain why the sky is blue in simple terms",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.00012183189392089844,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "ai_creative",
+        "query": "Write a short poem about technology",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.00011920928955078125,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "tool_analysis",
+        "query": "Analyze this text: 'Hello World'",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.0001201629638671875,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "tool_processing",
+        "query": "Process data: [1, 2, 3, 4, 5]",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.00012826919555664062,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "memory_query",
+        "query": "Search for information about Python",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.00012350082397460938,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "memory_store",
+        "query": "Store this information: Test data",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.00012183189392089844,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "web_search",
+        "query": "Search for latest news about AI",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.00011730194091796875,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "web_task",
+        "query": "Find information about weather",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.00011849403381347656,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "empty_query",
+        "query": "",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.00012135505676269531,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "long_query",
+        "query": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.00011515617370605469,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "special_chars",
+        "query": "Test with special chars: @#$%^&*()",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "網頁處理錯誤: 'dict' object has no attribute 'lower'",
+          "confidence": 0.7,
+          "adapter_type": "web_agent",
+          "raw_response": "網頁處理錯誤: 'dict' object has no attribute 'lower'"
+        },
+        "execution_time": 0.0001163482666015625,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      }
+    ],
+    "timestamp": "2025-06-08T18:02:53.453037"
+  },
+  "unified_memory": {
+    "adapter_name": "unified_memory",
+    "adapter_info": {
+      "adapter_name": "unified_memory",
+      "adapter_type": "memory_system",
+      "call_method": "process",
+      "available_methods": [
+        "backup_memory",
+        "config",
+        "delete_memory",
+        "export_memory",
+        "get_memory_stats",
+        "index_memory",
+        "insert_memory",
+        "logger",
+        "memory_dir",
+        "memory_engine",
+        "name",
+        "operations",
+        "optimize_memory",
+        "process",
+        "query_memory",
+        "search_memory",
+        "stats",
+        "sync_memory",
+        "update_memory",
+        "validate_memory"
+      ],
+      "adapter_class": "UnifiedMemoryMCP"
+    },
+    "success": true,
+    "success_rate": 1.0,
+    "successful_tests": 14,
+    "total_tests": 14,
+    "test_results": [
+      {
+        "test_name": "basic_hello",
+        "query": "Hello",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 0.00010657310485839844,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "basic_math",
+        "query": "What is 2+2?",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 0.00010466575622558594,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "basic_question",
+        "query": "What is the capital of France?",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 0.00010728836059570312,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "ai_reasoning",
+        "query": "Explain why the sky is blue in simple terms",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 9.679794311523438e-05,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "ai_creative",
+        "query": "Write a short poem about technology",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 0.00010323524475097656,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "tool_analysis",
+        "query": "Analyze this text: 'Hello World'",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 0.00010180473327636719,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "tool_processing",
+        "query": "Process data: [1, 2, 3, 4, 5]",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 0.00010275840759277344,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "memory_query",
+        "query": "Search for information about Python",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 0.00010371208190917969,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "memory_store",
+        "query": "Store this information: Test data",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 0.00010752677917480469,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "web_search",
+        "query": "Search for latest news about AI",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 9.799003601074219e-05,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "web_task",
+        "query": "Find information about weather",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 9.703636169433594e-05,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "empty_query",
+        "query": "",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 0.00010180473327636719,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "long_query",
+        "query": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 0.00010323524475097656,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "special_chars",
+        "query": "Test with special chars: @#$%^&*()",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'error', 'message': '不支持的操作: search', 'available_operations': ['query_memory', 'insert_memory', 'update_memory', 'delete_memory', 'backup_memory', 'sync_memory', 'index_memory', 'search_memory', 'get_memory_stats', 'optimize_memory', 'validate_memory', 'export_memory']}",
+          "confidence": 0.6,
+          "adapter_type": "memory_system",
+          "raw_response": {
+            "status": "error",
+            "message": "不支持的操作: search",
+            "available_operations": [
+              "query_memory",
+              "insert_memory",
+              "update_memory",
+              "delete_memory",
+              "backup_memory",
+              "sync_memory",
+              "index_memory",
+              "search_memory",
+              "get_memory_stats",
+              "optimize_memory",
+              "validate_memory",
+              "export_memory"
+            ]
+          }
+        },
+        "execution_time": 0.00010180473327636719,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      }
+    ],
+    "timestamp": "2025-06-08T18:02:53.455641"
+  },
+  "context_monitor": {
+    "adapter_name": "context_monitor",
+    "adapter_info": {
+      "adapter_name": "context_monitor",
+      "adapter_type": "general",
+      "call_method": "process",
+      "available_methods": [
+        "alert_history",
+        "check_context_usage",
+        "check_interval",
+        "config",
+        "configure_monitoring",
+        "context_monitor",
+        "current_alert_level",
+        "export_monitoring_metrics",
+        "get_alert_history",
+        "get_monitoring_status",
+        "get_usage_history",
+        "logger",
+        "max_context_chars",
+        "monitoring_active",
+        "monitoring_mode",
+        "monitoring_task",
+        "name",
+        "operations",
+        "optimization_suggestions",
+        "optimize_context",
+        "predict_context_usage",
+        "process",
+        "reset_statistics",
+        "set_thresholds",
+        "start_monitoring",
+        "stats",
+        "stop_monitoring",
+        "thresholds",
+        "usage_history"
+      ],
+      "adapter_class": "ContextMonitorMCP"
+    },
+    "success": true,
+    "success_rate": 1.0,
+    "successful_tests": 14,
+    "total_tests": 14,
+    "test_results": [
+      {
+        "test_name": "basic_hello",
+        "query": "Hello",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.0002715587615966797,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "basic_math",
+        "query": "What is 2+2?",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.00022101402282714844,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "basic_question",
+        "query": "What is the capital of France?",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.0002448558807373047,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "ai_reasoning",
+        "query": "Explain why the sky is blue in simple terms",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.0002498626708984375,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "ai_creative",
+        "query": "Write a short poem about technology",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.0002231597900390625,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "tool_analysis",
+        "query": "Analyze this text: 'Hello World'",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.00023627281188964844,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "tool_processing",
+        "query": "Process data: [1, 2, 3, 4, 5]",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.00022983551025390625,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "memory_query",
+        "query": "Search for information about Python",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.0002315044403076172,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "memory_store",
+        "query": "Store this information: Test data",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.0002143383026123047,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "web_search",
+        "query": "Search for latest news about AI",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.00022792816162109375,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "web_task",
+        "query": "Find information about weather",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.00021529197692871094,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "empty_query",
+        "query": "",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.0002951622009277344,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "long_query",
+        "query": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.0002582073211669922,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      },
+      {
+        "test_name": "special_chars",
+        "query": "Test with special chars: @#$%^&*()",
+        "success": true,
+        "response": {
+          "success": true,
+          "data": "{'status': 'success', 'monitoring_active': False, 'current_alert_level': 'normal', 'monitoring_mode': 'active', 'check_interval': 30, 'thresholds': {'warning': 0.8, 'critical': 0.9, 'emergency': 0.95}, 'statistics': {'total_checks': 0, 'warnings_triggered': 0, 'critical_alerts': 0, 'emergency_alerts': 0, 'auto_backups_triggered': 0, 'optimizations_applied': 0}, 'last_check': None}",
+          "confidence": 0.5,
+          "adapter_type": "general",
+          "raw_response": {
+            "status": "success",
+            "monitoring_active": false,
+            "current_alert_level": "normal",
+            "monitoring_mode": "active",
+            "check_interval": 30,
+            "thresholds": {
+              "warning": 0.8,
+              "critical": 0.9,
+              "emergency": 0.95
+            },
+            "statistics": {
+              "total_checks": 0,
+              "warnings_triggered": 0,
+              "critical_alerts": 0,
+              "emergency_alerts": 0,
+              "auto_backups_triggered": 0,
+              "optimizations_applied": 0
+            },
+            "last_check": null
+          }
+        },
+        "execution_time": 0.0002162456512451172,
+        "validation": {
+          "valid": true,
+          "issues": []
+        },
+        "error": null
+      }
+    ],
+    "timestamp": "2025-06-08T18:02:53.460223"
+  }
+}

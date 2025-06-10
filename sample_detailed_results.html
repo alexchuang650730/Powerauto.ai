@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAIA Level 1 詳細測試結果</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background-color: #f0f8ff; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        .stats { background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .correct { color: green; font-weight: bold; }
+        .incorrect { color: red; font-weight: bold; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .summary-card { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 15px; }
+        .summary-card h3 { margin-top: 0; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 GAIA Level 1 完整測試結果報告</h1>
+        <p><strong>生成時間:</strong> 2025-06-08 19:01:50</p>
+        <p><strong>測試題目:</strong> 2 題</p>
+        <p><strong>總體準確率:</strong> 100.0%</p>
+    </div>
+    
+    <div class="summary">
+        <div class="summary-card">
+            <h3>📊 總體統計</h3>
+            <p><strong>總題目數:</strong> 2</p>
+            <p><strong>正確答案數:</strong> 2</p>
+            <p><strong>準確率:</strong> 100.0%</p>
+            <p><strong>平均執行時間:</strong> 1.045秒</p>
+            <p><strong>總執行時間:</strong> 2.090秒</p>
+        </div>
+    </div>
+    
+    <h2>📋 詳細測試結果</h2>
+    <table border="1" class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th>序號</th>
+      <th>題目ID</th>
+      <th>題目</th>
+      <th>類別</th>
+      <th>難度</th>
+      <th>預期答案</th>
+      <th>真實答案</th>
+      <th>是否正確</th>
+      <th>使用適配器</th>
+      <th>適配器類型</th>
+      <th>執行時間(秒)</th>
+      <th>成功狀態</th>
+      <th>錯誤信息</th>
+      <th>置信度</th>
+      <th>響應長度</th>
+      <th>處理層級</th>
+      <th>工具分類</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>gaia_001</td>
+      <td>What is the capital of France?</td>
+      <td>geography</td>
+      <td>easy</td>
+      <td>Paris</td>
+      <td>Paris</td>
+      <td>✅</td>
+      <td>claude</td>
+      <td>AI模型</td>
+      <td>1.234</td>
+      <td>成功</td>
+      <td></td>
+      <td>0.0</td>
+      <td>5</td>
+      <td>LLM層</td>
+      <td>語言模型</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>gaia_002</td>
+      <td>What is 15 + 27?</td>
+      <td>math</td>
+      <td>easy</td>
+      <td>42</td>
+      <td>42</td>
+      <td>✅</td>
+      <td>gemini</td>
+      <td>AI模型</td>
+      <td>0.856</td>
+      <td>成功</td>
+      <td></td>
+      <td>0.0</td>
+      <td>2</td>
+      <td>LLM層</td>
+      <td>語言模型</td>
+    </tr>
+  </tbody>
+</table>
+    
+</body>
+</html>
+        

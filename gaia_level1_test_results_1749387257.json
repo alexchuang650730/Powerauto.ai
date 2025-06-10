@@ -1,0 +1,18 @@
+{
+  "test_info": {
+    "level": 1,
+    "total_questions": 0,
+    "correct_answers": 0,
+    "accuracy": 0,
+    "accuracy_percentage": 0,
+    "target_achieved": false
+  },
+  "performance_metrics": {
+    "total_execution_time": 9.356683015823364,
+    "total_processing_time": 0,
+    "average_processing_time": 0,
+    "average_confidence": 0
+  },
+  "detailed_results": [],
+  "timestamp": 1749387257
+}

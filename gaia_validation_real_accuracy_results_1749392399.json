@@ -1,0 +1,161 @@
+{
+  "test_info": {
+    "dataset": "validation",
+    "total_questions": 10,
+    "correct_answers": 2,
+    "accuracy": 0.2,
+    "accuracy_percentage": 20.0,
+    "target_achieved": false
+  },
+  "level_breakdown": {
+    "Level 1": {
+      "total": 3,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "Level 2": {
+      "total": 6,
+      "correct": 2,
+      "accuracy": 0.3333333333333333
+    },
+    "Level 3": {
+      "total": 1,
+      "correct": 0,
+      "accuracy": 0.0
+    }
+  },
+  "performance_metrics": {
+    "total_execution_time": 91.49522542953491,
+    "total_processing_time": 91.17915630340576,
+    "average_processing_time": 9.117915630340576,
+    "average_confidence": 0.8510041852804126
+  },
+  "api_status": {
+    "gemini_available": true,
+    "claude_available": true,
+    "hf_token_available": true
+  },
+  "detailed_results": [
+    {
+      "task_id": "a3fbeb63-0e8c-4a11-bff6-0e3b484c3e9c",
+      "level": "1",
+      "question": "How many slides in this PowerPoint presentation mention crustaceans?",
+      "ai_answer": "我無法知道 PowerPoint 簡報中有多少張投影片提到甲殼類動物，因為我無法存取外部檔案，包括 PowerPoint 簡報。",
+      "expected_answer": "4",
+      "is_correct": false,
+      "confidence": 0.820222489565224,
+      "processing_time": 7.444133281707764,
+      "has_file": true,
+      "file_name": "a3fbeb63-0e8c-4a11-bff6-0e3b484c3e9c.pptx"
+    },
+    {
+      "task_id": "d8152ad6-e4d5-4c12-8bb7-8d57dc10c6de",
+      "level": "2",
+      "question": "I have the Standard plan in the image below, and I just uploaded 60 equally sized files and got a message that I'm 100GB over the limit. I have 980 more files of the same size to upload. What is the a...",
+      "ai_answer": "Okay, I will analyze the problem and provide the answer in the requested format.\n\nHere's the breakdown:\n\n1.  **Current Plan Limit:** The Standard plan has a limit of 2 TB (2000 GB).\n2.  **Overage:** You are 100 GB over the limit, meaning you are currently using 2100 GB of storage.\n3.  **File Size:** 60 files = 100 GB overage. Therefore, each file is approximately 100GB / 60 files = 1.6666666666666667 GB per file.\n4.  **Total Storage Needed:** You want to upload 980 more files. These files will take up 980 files * 1.6666666666666667 GB/file ≈ 1633.3333333333333 GB of space.\n5.  **Total Storage After Upload:** After uploading, you will need 2100 GB + 1633.3333333333333 GB = 3733.3333333333335 GB.\n6.  **Required Plan:** You need to upgrade to the Premium plan, which offers 5 TB (5000 GB) of storage.\n7.  **Upgrade Cost:** The upgrade cost is $20 - $10 = $10.\n8.  **Number of Additional Files:** The files causing you to upgrade are the 980 remaining files plus the amount you already went over.\n9. **Cost per file** 10/980 =  0.0102040816\n10. **Format as Request** 0.01\n\nTherefore, the answer is: 0.01",
+      "expected_answer": "0.03",
+      "is_correct": false,
+      "confidence": 0.8395145690092405,
+      "processing_time": 9.218162775039673,
+      "has_file": true,
+      "file_name": "d8152ad6-e4d5-4c12-8bb7-8d57dc10c6de.png"
+    },
+    {
+      "task_id": "dd3c7503-f62a-4bd0-9f67-1b63b94194cc",
+      "level": "2",
+      "question": "Use density measures from the chemistry materials licensed by Marisa Alviar-Agnew & Henry Agnew under the CK-12 license in LibreText's Introductory Chemistry materials as compiled 08/21/2023.\n\nI have ...",
+      "ai_answer": "Okay, I will use the density information from the specified LibreTexts' Introductory Chemistry materials to solve this problem. Since I don't have direct access to those materials (compiled 08/21/2023), I will use common density values for honey and mayonnaise at 25°C found in reliable online sources, and clearly state my assumptions.\n\n**Here's the approach and solution:**\n\n1.  **Density Assumptions:**\n    *   Honey Density:  Approximately 1.42 g/mL (This can vary depending on the type of honey, but this is a reasonable average)\n    *   Mayonnaise Density: Approximately 0.91 g/mL (This also varies depending on the brand and type of mayonnaise)\n\n2.  **Volume Conversions:**\n    *   1 gallon = 16 cups\n    *   1 cup = 236.588 mL (approximately)\n\n3.  **Calculations:**\n\n    *   **Weight of 1 Gallon of Honey:** (16 cups) \\* (236.588 mL/cup) \\* (1.42 g/mL) = 5371.6 g (approximately)\n    *   **Weight of 1 Gallon of Mayonnaise:** (16 cups) \\* (236.588 mL/cup) \\* (0.91 g/mL) = 3441.7 g (approximately)\n\n4.  **Determining the Number of Cups to Remove:** We want to find out how many cups of honey need to be removed so that the remaining honey weighs less than the mayonnaise.  Let 'x' be the number of cups to remove.\n\n    *   Weight of Honey After Removal:  5371.6 g - (x cups \\* 236.588 mL/cup \\* 1.42 g/mL)\n    *   We want this weight to be less than the weight of the mayonnaise: 5371.6 - (x \\* 236.588 \\* 1.42) < 3441.7\n\n5.  **Solve the Inequality:**\n\n    *   5371.6 - 335.95x < 3441.7\n    *   1929.9 < 335.95x\n    *   x > 1929.9 / 335.95\n    *   x > 5.74\n\n6.  **Conclusion:** Since we can only remove whole cups, we need to remove **6** cups of honey for the remaining honey to weigh less than the gallon of mayonnaise.\n\n**Answer:**\n\nYou will need to remove 6 cups of honey for the remaining honey to weigh less than the gallon of mayonnaise, based on the assumed densities.\n\n**Important Notes:**\n\n*   The accuracy of this answer depends entirely on the accuracy of the density values used. Ideally, I would have directly used the data from the specified LibreTexts materials.\n*   Real-world densities can vary based on temperature, composition, and manufacturer. If higher precision is needed, directly measuring the densities of the specific honey and mayonnaise is recommended.",
+      "expected_answer": "6",
+      "is_correct": true,
+      "confidence": 0.8626054600265132,
+      "processing_time": 16.426057815551758,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "ded28325-3447-4c56-860f-e497d6fb3577",
+      "level": "2",
+      "question": "This is a secret message my friend gave me. It says where we should meet for our picnic on Friday. The only problem is, it’s encrypted in the Caesar cipher, so I can’t read it. Can you tell me what it...",
+      "ai_answer": "The message says: Weekend at William Square.",
+      "expected_answer": "Picnic is in Ploybius Plaza.",
+      "is_correct": false,
+      "confidence": 0.8435182822593508,
+      "processing_time": 7.205319881439209,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "72e110e7-464c-453c-a309-90a95aed6538",
+      "level": "1",
+      "question": "Under DDC 633 on Bielefeld University Library's BASE, as of 2020, from what country was the unknown language article with a flag unique from the others?",
+      "ai_answer": "Based on DDC 633 on Bielefeld University Library's BASE as of 2020, the unknown language article with a unique flag came from **Bosnia and Herzegovina**.",
+      "expected_answer": "Guatemala",
+      "is_correct": false,
+      "confidence": 0.8036538619369885,
+      "processing_time": 7.620994806289673,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "0a3cd321-3e76-4622-911b-0fda2e5d6b1a",
+      "level": "2",
+      "question": "According to the World Bank, which countries had gross savings of over 35% of GDP for every year in the period 2001-2010? Give your answer as a comma-separated list of countries in alphabetical order....",
+      "ai_answer": "Based on World Bank data for the period 2001-2010, the countries with gross savings of over 35% of GDP for *every* year were:\n\nChina, Kuwait, Singapore",
+      "expected_answer": "Brunei, China, Morocco, Singapore",
+      "is_correct": false,
+      "confidence": 0.8606796456437213,
+      "processing_time": 5.4786927700042725,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "023e9d44-96ae-4eed-b912-244ee8c3b994",
+      "level": "2",
+      "question": "It's May 2023, and I'm about to drive across the U.S. from California to Maine. I always recycle my water bottles at the end of a trip, and I drink 5 12-ounce water bottles for every 100 miles I trave...",
+      "ai_answer": "Here's the breakdown of how to solve this problem and the final answer:\n\n1.  **Calculate total distance:**\n    *   LA to Cincinnati (via I-40): Approximately 2,200 miles.\n    *   Cincinnati to Augusta, Maine (via I-90): Approximately 1,100 miles.\n    *   Total distance: 2,200 + 1,100 = 3,300 miles\n\n2.  **Calculate water bottle consumption:**\n    *   Bottles per 100 miles: 5\n    *   Number of 100-mile segments: 3,300 miles / 100 miles/segment = 33 segments\n    *   Total bottles: 33 segments * 5 bottles/segment = 165 bottles\n\n3.  **Determine bottle deposit value:**\n    *   According to Wikipedia, only California, Connecticut, Iowa, Maine, Massachusetts, Michigan, New York, Oregon, and Vermont have bottle bills.\n    *   According to Wikipedia, I-40 and I-90 will only go through New York.\n    *   The average bottle deposit value in New York is $0.05 per bottle.\n\n4.  **Calculate total refund:**\n    *   Total refund: 165 bottles * $0.05/bottle = $8.25\n\n**Answer:** $8.25",
+      "expected_answer": "8",
+      "is_correct": true,
+      "confidence": 0.8983022731282126,
+      "processing_time": 11.428836345672607,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "2a649bb1-795f-4a01-b3be-9a01868dae73",
+      "level": "2",
+      "question": "What are the EC numbers of the two most commonly used chemicals for the virus testing method in the paper about SPFMV and SPCSV in the Pearl Of Africa from 2016? Return the semicolon-separated numbers...",
+      "ai_answer": "由於我無法直接存取或搜尋特定的研究論文，我無法得知 2016 年關於非洲明珠地區 SPFMV 和 SPCSV 的論文中，病毒檢測方法最常用的兩種化學物質及其 EC 編號。\n\n為了回答這個問題，我需要存取該論文或提供論文的連結或引用。 一旦我掌握了這些資訊，我就可以尋找化學物質，確定其 EC 編號，然後按字母順序提供這些編號。",
+      "expected_answer": "3.1.3.1; 1.11.1.7",
+      "is_correct": false,
+      "confidence": 0.8495971941739558,
+      "processing_time": 8.20968770980835,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "da52d699-e8d2-4dc5-9191-a2199e0b6a9b",
+      "level": "3",
+      "question": "The attached spreadsheet contains a list of books I read in the year 2022. What is the title of the book that I read the slowest, using the rate of words per day?",
+      "ai_answer": "I need the spreadsheet to answer your question. Please provide the data. I will then calculate the words per day for each book and identify the book you read the slowest.",
+      "expected_answer": "Out of the Silent Planet",
+      "is_correct": false,
+      "confidence": 0.8519932101359429,
+      "processing_time": 6.299202919006348,
+      "has_file": true,
+      "file_name": "da52d699-e8d2-4dc5-9191-a2199e0b6a9b.xlsx"
+    },
+    {
+      "task_id": "46719c30-f4c3-4cad-be07-d5cb21eee6bb",
+      "level": "1",
+      "question": "Of the authors (First M. Last) that worked on the paper \"Pie Menus or Linear Menus, Which Is Better?\" in 2015, what was the title of the first paper authored by the one that had authored prior papers?",
+      "ai_answer": "這個問題需要找到一篇特定的論文，找出作者，然後找到發表過論文的作者之中，最早發表論文的那一位，並且找出他的第一篇論文標題。這是一個比較複雜的多步驟問題，涉及資訊檢索和分析。\n\n經過搜尋，\"Pie Menus or Linear Menus, Which Is Better?\" 是由 W. Bradbury, R.J.K. Jacob, and J.O. Wobbrock 於 2015 年發表的論文。\n\n*   W. Bradbury: 可以查到一些W. Bradbury的論文，但通常需要更具體的研究領域才能確定是否為同一人。\n*   R.J.K. Jacob: 有很多論文發表記錄。\n*   J.O. Wobbrock: 也有很多論文發表記錄。\n\n因此，需要進一步判斷Jacob和Wobbrock誰更早發表論文。\n\n經過對Jacob和Wobbrock的論文發表記錄的搜尋，發現 Jacob 更早發表論文。\n\n找到 Jacob 的第一篇論文標題非常困難，需要更詳細的資料庫查詢，超出了一般網路搜尋的能力範圍。但是, 如果假設可以 access 相關數據庫，我們會努力查找R.J.K. Jacob最早發表的論文標題。\n\n**由於缺乏足夠的資訊和網路搜尋能力限制，無法提供確切的答案。**\n\n**理想情況下，我需要存取學術論文資料庫才能找到R.J.K. Jacob最早發表的論文標題。**",
+      "expected_answer": "Mapping Human Oriented Information to Software Agents for Online Systems Usage",
+      "is_correct": false,
+      "confidence": 0.8799548669249759,
+      "processing_time": 11.848067998886108,
+      "has_file": false,
+      "file_name": ""
+    }
+  ],
+  "timestamp": 1749392399
+}

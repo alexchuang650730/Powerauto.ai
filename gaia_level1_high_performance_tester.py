@@ -54,6 +54,7 @@ class PowerAutomationGAIALevel1Tester:
         print("📊 正在加載GAIA Level 1數據...")
         
         try:
+<<<<<<< HEAD
             # 首先嘗試從我們剛才提取的真實數據加載
             real_data_path = Path("real_gaia_level1_data.json")
             if real_data_path.exists():
@@ -71,6 +72,8 @@ class PowerAutomationGAIALevel1Tester:
                 
                 return questions
             
+=======
+>>>>>>> 6af444569ed6c361dbe3f9d73a4f244239b0fe5c
             # 嘗試從本地數據加載
             local_data_path = Path("enhanced_gaia_system/gaia_data/2023/test/metadata.jsonl")
             if local_data_path.exists():
@@ -80,8 +83,12 @@ class PowerAutomationGAIALevel1Tester:
                     for line in f:
                         if line.strip():
                             q = json.loads(line)
+<<<<<<< HEAD
                             # 修復：Level可能是字符串'1'或整數1
                             if q.get('Level') in [1, '1']:
+=======
+                            if q.get('Level') == 1:
+>>>>>>> 6af444569ed6c361dbe3f9d73a4f244239b0fe5c
                                 questions.append(q)
                 
                 print(f"✅ 從本地數據加載了 {len(questions)} 個Level 1問題")
@@ -97,10 +104,17 @@ class PowerAutomationGAIALevel1Tester:
             print("🌐 嘗試從Hugging Face加載數據集...")
             dataset = load_dataset("gaia-benchmark/GAIA", "2023_all", trust_remote_code=True)
             
+<<<<<<< HEAD
             # 從測試集中篩選Level 1問題（修復：Level是字符串）
             level1_questions = []
             for q in dataset['test']:
                 if isinstance(q, dict) and q.get('Level') in [1, '1']:
+=======
+            # 從測試集中篩選Level 1問題
+            level1_questions = []
+            for q in dataset['test']:
+                if isinstance(q, dict) and q.get('Level') == 1:
+>>>>>>> 6af444569ed6c361dbe3f9d73a4f244239b0fe5c
                     level1_questions.append(q)
             
             print(f"✅ 從在線數據集加載了 {len(level1_questions)} 個Level 1問題")

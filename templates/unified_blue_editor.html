@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerAutomation - 智能代碼編輯器</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/editor/editor.main.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .editor-container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* 左側狀態區域 - 統一藍色系設計 */
+        .status-sidebar {
+            width: 280px;
+            background: linear-gradient(180deg, #1e40af 0%, #1d4ed8 50%, #2563eb 100%);
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #334155;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .status-sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .platform-badge {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 12px 16px;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .platform-badge .platform-type {
+            font-size: 12px;
+            font-weight: 600;
+            color: #e0f2fe;
+            margin-bottom: 4px;
+        }
+
+        .platform-badge .platform-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+        }
+
+        /* 模型狀態 */
+        .model-status {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .model-status h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #e0f2fe;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .current-model {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .model-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #10b981;
+            box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .model-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .model-type {
+            font-size: 10px;
+            color: #bfdbfe;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        /* 積分狀態 */
+        .credit-status {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .credit-status h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #e0f2fe;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .credit-amount {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fbbf24;
+            margin-bottom: 4px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .credit-label {
+            font-size: 10px;
+            color: #bfdbfe;
+        }
+
+        /* Token節省統計 */
+        .savings-status {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .savings-status h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #e0f2fe;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .savings-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .savings-label {
+            font-size: 11px;
+            color: #bfdbfe;
+        }
+
+        .savings-value {
+            font-size: 13px;
+            font-weight: 600;
+            color: #10b981;
+        }
+
+        .savings-percentage {
+            font-size: 18px;
+            font-weight: 700;
+            color: #10b981;
+            text-align: center;
+            margin-top: 8px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 主編輯區域 */
+        .editor-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: #0f172a;
+        }
+
+        /* 頂部工具欄 */
+        .editor-toolbar {
+            height: 50px;
+            background: #1e293b;
+            border-bottom: 1px solid #334155;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            gap: 15px;
+        }
+
+        .toolbar-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toolbar-button {
+            background: #374151;
+            border: 1px solid #4b5563;
+            color: #e5e7eb;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .toolbar-button:hover {
+            background: #4b5563;
+            border-color: #6b7280;
+        }
+
+        .toolbar-button.active {
+            background: #3b82f6;
+            border-color: #2563eb;
+            color: white;
+        }
+
+        .model-selector {
+            background: #374151;
+            border: 1px solid #4b5563;
+            color: #e5e7eb;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        /* 編輯器區域 */
+        .editor-content {
+            flex: 1;
+            display: flex;
+        }
+
+        .code-editor {
+            flex: 1;
+            background: #0f172a;
+        }
+
+        /* 右側AI助手面板 */
+        .ai-assistant {
+            width: 350px;
+            background: #1e293b;
+            border-left: 1px solid #334155;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .assistant-header {
+            height: 50px;
+            background: #334155;
+            border-bottom: 1px solid #475569;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            font-weight: 600;
+            color: #f1f5f9;
+        }
+
+        .assistant-content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .suggestion-card {
+            background: #374151;
+            border: 1px solid #4b5563;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: all 0.2s ease;
+        }
+
+        .suggestion-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+        }
+
+        .suggestion-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .suggestion-content {
+            font-size: 13px;
+            color: #cbd5e1;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .confidence-bar {
+            height: 4px;
+            background: #374151;
+            border-radius: 2px;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #10b981, #34d399);
+            transition: width 0.3s ease;
+        }
+
+        .confidence-label {
+            font-size: 11px;
+            color: #94a3b8;
+        }
+
+        .suggestion-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .action-button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 11px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .action-button:hover {
+            background: #2563eb;
+        }
+
+        .action-button.secondary {
+            background: #6b7280;
+        }
+
+        .action-button.secondary:hover {
+            background: #4b5563;
+        }
+
+        /* 底部狀態欄 */
+        .status-bar {
+            height: 30px;
+            background: #1e293b;
+            border-top: 1px solid #334155;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 12px;
+            color: #94a3b8;
+            gap: 20px;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .status-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #10b981;
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 1200px) {
+            .status-sidebar {
+                width: 240px;
+            }
+            
+            .ai-assistant {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .status-sidebar {
+                width: 200px;
+            }
+            
+            .ai-assistant {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="editor-container">
+        <!-- 左側狀態區域 -->
+        <div class="status-sidebar">
+            <!-- 平台標識 -->
+            <div class="platform-badge">
+                <div class="platform-type" id="platformType">端側系統</div>
+                <div class="platform-name">PowerAutomation</div>
+            </div>
+
+            <!-- 當前模型狀態 -->
+            <div class="model-status">
+                <h3><i class="fas fa-brain"></i> 當前模型</h3>
+                <div class="current-model">
+                    <div class="model-indicator"></div>
+                    <div>
+                        <div class="model-name" id="currentModel">Qwen3 本地</div>
+                        <div class="model-type" id="modelType">本地推理</div>
+                    </div>
+                </div>
+                <div style="font-size: 10px; color: #bfdbfe; margin-top: 6px;">
+                    <i class="fas fa-tachometer-alt"></i> 響應: <span id="responseTime">1.2s</span>
+                </div>
+            </div>
+
+            <!-- 積分狀態 -->
+            <div class="credit-status">
+                <h3><i class="fas fa-coins"></i> 積分餘額</h3>
+                <div class="credit-amount" id="creditAmount">2,580</div>
+                <div class="credit-label">可用積分</div>
+                <div style="font-size: 10px; color: #bfdbfe; margin-top: 6px;">
+                    <i class="fas fa-sync-alt"></i> 同步: <span id="lastSync">剛剛</span>
+                </div>
+            </div>
+
+            <!-- Token節省統計 -->
+            <div class="savings-status">
+                <h3><i class="fas fa-chart-line"></i> 節省統計</h3>
+                <div class="savings-item">
+                    <span class="savings-label">本地處理</span>
+                    <span class="savings-value" id="localProcessing">73%</span>
+                </div>
+                <div class="savings-item">
+                    <span class="savings-label">雲端處理</span>
+                    <span class="savings-value" id="cloudProcessing">27%</span>
+                </div>
+                <div class="savings-item">
+                    <span class="savings-label">今日節省</span>
+                    <span class="savings-value" id="todaySavings">1,240 tokens</span>
+                </div>
+                <div class="savings-percentage" id="savingsPercentage">45% 節省</div>
+            </div>
+
+            <!-- 連接狀態 -->
+            <div style="margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <div style="display: flex; align-items: center; gap: 6px; font-size: 10px; color: #bfdbfe;">
+                    <div style="width: 6px; height: 6px; background: #10b981; border-radius: 50%; animation: pulse 2s infinite;"></div>
+                    <span>端雲協同已連接</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 主編輯區域 -->
+        <div class="editor-main">
+            <!-- 頂部工具欄 -->
+            <div class="editor-toolbar">
+                <div class="toolbar-section">
+                    <button class="toolbar-button active">
+                        <i class="fas fa-file-code"></i> 新建文件
+                    </button>
+                    <button class="toolbar-button">
+                        <i class="fas fa-folder-open"></i> 打開
+                    </button>
+                    <button class="toolbar-button">
+                        <i class="fas fa-save"></i> 保存
+                    </button>
+                </div>
+                
+                <div class="toolbar-section" style="margin-left: auto;">
+                    <select class="model-selector" id="modelSelector">
+                        <option value="qwen3-local">Qwen3 本地 (推薦)</option>
+                        <option value="qwen8b-cloud">Qwen8B 雲端</option>
+                        <option value="auto">智能自動選擇</option>
+                    </select>
+                    <button class="toolbar-button">
+                        <i class="fas fa-play"></i> 運行
+                    </button>
+                </div>
+            </div>
+
+            <!-- 編輯器內容區域 -->
+            <div class="editor-content">
+                <!-- 代碼編輯器 -->
+                <div class="code-editor" id="codeEditor">
+                    <!-- Monaco編輯器將在這裡初始化 -->
+                </div>
+
+                <!-- 右側AI助手面板 -->
+                <div class="ai-assistant">
+                    <div class="assistant-header">
+                        <i class="fas fa-robot"></i> AI 代碼助手
+                    </div>
+                    <div class="assistant-content">
+                        <!-- AI建議卡片 -->
+                        <div class="suggestion-card">
+                            <div class="suggestion-title">
+                                <i class="fas fa-lightbulb"></i> 函數優化建議
+                            </div>
+                            <div class="suggestion-content">
+                                建議使用列表推導式來簡化這個循環，可以提高代碼的可讀性和性能。
+                            </div>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" style="width: 92%;"></div>
+                            </div>
+                            <div class="confidence-label">置信度: 92%</div>
+                            <div class="suggestion-actions">
+                                <button class="action-button">應用建議</button>
+                                <button class="action-button secondary">查看詳情</button>
+                            </div>
+                        </div>
+
+                        <div class="suggestion-card">
+                            <div class="suggestion-title">
+                                <i class="fas fa-code"></i> 代碼補全
+                            </div>
+                            <div class="suggestion-content">
+                                檢測到您正在編寫數據處理函數，建議添加錯誤處理和類型檢查。
+                            </div>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" style="width: 87%;"></div>
+                            </div>
+                            <div class="confidence-label">置信度: 87%</div>
+                            <div class="suggestion-actions">
+                                <button class="action-button">自動補全</button>
+                                <button class="action-button secondary">忽略</button>
+                            </div>
+                        </div>
+
+                        <div class="suggestion-card">
+                            <div class="suggestion-title">
+                                <i class="fas fa-search"></i> 代碼解釋
+                            </div>
+                            <div class="suggestion-content">
+                                這個函數實現了快速排序算法，時間複雜度為O(n log n)，適用於大數據集排序。
+                            </div>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" style="width: 95%;"></div>
+                            </div>
+                            <div class="confidence-label">置信度: 95%</div>
+                            <div class="suggestion-actions">
+                                <button class="action-button">詳細解釋</button>
+                                <button class="action-button secondary">示例代碼</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部狀態欄 -->
+            <div class="status-bar">
+                <div class="status-item">
+                    <div class="status-indicator"></div>
+                    <span>端雲協同已連接</span>
+                </div>
+                <div class="status-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>響應時間: 1.2s</span>
+                </div>
+                <div class="status-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>本地處理: 73%</span>
+                </div>
+                <div class="status-item">
+                    <i class="fas fa-coins"></i>
+                    <span>積分: 2,580</span>
+                </div>
+                <div class="status-item" style="margin-left: auto;">
+                    <span>Python | UTF-8 | 第 1 行，第 1 列</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js"></script>
+    <script>
+        // 初始化Monaco編輯器
+        require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs' }});
+        require(['vs/editor/editor.main'], function() {
+            const editor = monaco.editor.create(document.getElementById('codeEditor'), {
+                value: `# PowerAutomation 智能代碼編輯器
+# 支持端雲協同AI輔助編程
+
+def quick_sort(arr):
+    """
+    快速排序算法實現
+    時間複雜度: O(n log n)
+    """
+    if len(arr) <= 1:
+        return arr
+    
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    
+    return quick_sort(left) + middle + quick_sort(right)
+
+# 測試數據
+test_data = [64, 34, 25, 12, 22, 11, 90]
+sorted_data = quick_sort(test_data)
+print(f"排序結果: {sorted_data}")`,
+                language: 'python',
+                theme: 'vs-dark',
+                fontSize: 14,
+                minimap: { enabled: true },
+                scrollBeyondLastLine: false,
+                automaticLayout: true
+            });
+
+            // 監聽編輯器變化
+            editor.onDidChangeModelContent(() => {
+                // 模擬AI建議更新
+                updateAISuggestions();
+            });
+        });
+
+        // 動態更新狀態信息
+        function updateStatus() {
+            // 模擬實時數據更新
+            const models = [
+                { name: 'Qwen3 本地', type: '本地推理', time: '1.2s' },
+                { name: 'Qwen8B 雲端', type: '雲端推理', time: '2.8s' }
+            ];
+            
+            const currentModelIndex = Math.random() > 0.7 ? 1 : 0;
+            const model = models[currentModelIndex];
+            
+            document.getElementById('currentModel').textContent = model.name;
+            document.getElementById('modelType').textContent = model.type;
+            document.getElementById('responseTime').textContent = model.time;
+            
+            // 更新積分（模擬消費）
+            const currentCredit = parseInt(document.getElementById('creditAmount').textContent.replace(',', ''));
+            const newCredit = Math.max(0, currentCredit - Math.floor(Math.random() * 3));
+            document.getElementById('creditAmount').textContent = newCredit.toLocaleString();
+            
+            // 更新節省統計
+            const localPercent = Math.floor(Math.random() * 20) + 60; // 60-80%
+            const cloudPercent = 100 - localPercent;
+            const savingsPercent = Math.floor(localPercent * 0.6); // 節省比例
+            
+            document.getElementById('localProcessing').textContent = localPercent + '%';
+            document.getElementById('cloudProcessing').textContent = cloudPercent + '%';
+            document.getElementById('savingsPercentage').textContent = savingsPercent + '% 節省';
+            
+            // 更新今日節省tokens
+            const todaySavings = Math.floor(Math.random() * 500) + 1000;
+            document.getElementById('todaySavings').textContent = todaySavings.toLocaleString() + ' tokens';
+        }
+
+        // 更新AI建議
+        function updateAISuggestions() {
+            // 模擬AI建議更新
+            console.log('AI建議已更新');
+        }
+
+        // 設置平台類型和配置
+        function setPlatformConfig() {
+            fetch('/api/platform-config')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.config) {
+                        document.getElementById('platformType').textContent = data.config.type;
+                        
+                        // 更新用戶積分
+                        if (data.user) {
+                            document.getElementById('creditAmount').textContent = data.user.credits.toLocaleString();
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.log('使用默認配置');
+                    document.getElementById('platformType').textContent = '端側系統';
+                });
+        }
+
+        // 模型選擇器事件
+        document.getElementById('modelSelector').addEventListener('change', function(e) {
+            const selectedModel = e.target.value;
+            let modelName, modelType, responseTime;
+            
+            switch(selectedModel) {
+                case 'qwen3-local':
+                    modelName = 'Qwen3 本地';
+                    modelType = '本地推理';
+                    responseTime = '1.2s';
+                    break;
+                case 'qwen8b-cloud':
+                    modelName = 'Qwen8B 雲端';
+                    modelType = '雲端推理';
+                    responseTime = '2.8s';
+                    break;
+                case 'auto':
+                    modelName = '智能自動';
+                    modelType = '混合推理';
+                    responseTime = '1.8s';
+                    break;
+            }
+            
+            document.getElementById('currentModel').textContent = modelName;
+            document.getElementById('modelType').textContent = modelType;
+            document.getElementById('responseTime').textContent = responseTime;
+        });
+
+        // 初始化
+        setPlatformConfig();
+        updateStatus();
+        
+        // 定期更新狀態
+        setInterval(updateStatus, 8000);
+        
+        // 更新最後同步時間
+        setInterval(() => {
+            const now = new Date();
+            const timeStr = now.getHours().toString().padStart(2, '0') + ':' + 
+                           now.getMinutes().toString().padStart(2, '0');
+            document.getElementById('lastSync').textContent = timeStr;
+        }, 60000);
+    </script>
+</body>
+</html>
+

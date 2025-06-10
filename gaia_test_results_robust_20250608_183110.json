@@ -1,0 +1,3220 @@
+{
+  "summary": {
+    "total_questions": 165,
+    "correct_answers": 123,
+    "accuracy": 0.7454545454545455,
+    "category_stats": {
+      "geography": {
+        "total": 10,
+        "correct": 10,
+        "accuracy": 1.0
+      },
+      "math": {
+        "total": 29,
+        "correct": 12,
+        "accuracy": 0.41379310344827586
+      },
+      "science": {
+        "total": 10,
+        "correct": 7,
+        "accuracy": 0.7
+      },
+      "history": {
+        "total": 10,
+        "correct": 10,
+        "accuracy": 1.0
+      },
+      "literature": {
+        "total": 13,
+        "correct": 13,
+        "accuracy": 1.0
+      },
+      "art": {
+        "total": 6,
+        "correct": 6,
+        "accuracy": 1.0
+      },
+      "music": {
+        "total": 6,
+        "correct": 6,
+        "accuracy": 1.0
+      },
+      "economics": {
+        "total": 10,
+        "correct": 1,
+        "accuracy": 0.1
+      },
+      "technology": {
+        "total": 15,
+        "correct": 10,
+        "accuracy": 0.6666666666666666
+      },
+      "logic": {
+        "total": 15,
+        "correct": 14,
+        "accuracy": 0.9333333333333333
+      },
+      "language": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 1.0
+      },
+      "common_sense": {
+        "total": 40,
+        "correct": 33,
+        "accuracy": 0.825
+      }
+    },
+    "adapter_stats": {
+      "claude": {
+        "total": 121,
+        "correct": 101,
+        "accuracy": 0.8347107438016529
+      },
+      "gemini": {
+        "total": 44,
+        "correct": 22,
+        "accuracy": 0.5
+      }
+    },
+    "timestamp": "2025-06-08T18:31:10.655471",
+    "test_version": "robust_v1.0"
+  },
+  "detailed_results": [
+    {
+      "question_id": "gaia_level1_001",
+      "question": "What is the capital of France?",
+      "expected_answer": "Paris",
+      "actual_answer": "Paris",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.9408433437347412,
+      "raw_response": {
+        "success": true,
+        "data": "Paris",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Paris"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_002",
+      "question": "Which continent is Egypt located in?",
+      "expected_answer": "Africa",
+      "actual_answer": "Africa",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.09476900100708,
+      "raw_response": {
+        "success": true,
+        "data": "Africa",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Africa"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_003",
+      "question": "What is the longest river in the world?",
+      "expected_answer": "Nile River",
+      "actual_answer": "Nile River",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0815725326538086,
+      "raw_response": {
+        "success": true,
+        "data": "Nile River",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Nile River"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_004",
+      "question": "Which ocean is the largest?",
+      "expected_answer": "Pacific Ocean",
+      "actual_answer": "Pacific Ocean",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.3438265323638916,
+      "raw_response": {
+        "success": true,
+        "data": "Pacific Ocean",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Pacific Ocean"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_005",
+      "question": "What is the capital of Japan?",
+      "expected_answer": "Tokyo",
+      "actual_answer": "Tokyo",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0315515995025635,
+      "raw_response": {
+        "success": true,
+        "data": "Tokyo",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Tokyo"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_006",
+      "question": "Which mountain range contains Mount Everest?",
+      "expected_answer": "Himalayas",
+      "actual_answer": "Himalayas",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0155103206634521,
+      "raw_response": {
+        "success": true,
+        "data": "Himalayas",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Himalayas"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_007",
+      "question": "What is the smallest country in the world?",
+      "expected_answer": "Vatican City",
+      "actual_answer": "Vatican City",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.084402084350586,
+      "raw_response": {
+        "success": true,
+        "data": "Vatican City",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Vatican City"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_008",
+      "question": "Which desert is the largest in the world?",
+      "expected_answer": "Sahara Desert",
+      "actual_answer": "Sahara Desert",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.634110689163208,
+      "raw_response": {
+        "success": true,
+        "data": "Sahara Desert",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Sahara Desert"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_009",
+      "question": "What is the capital of Australia?",
+      "expected_answer": "Canberra",
+      "actual_answer": "Canberra",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.908322811126709,
+      "raw_response": {
+        "success": true,
+        "data": "Canberra",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Canberra"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_010",
+      "question": "Which country has the most time zones?",
+      "expected_answer": "France",
+      "actual_answer": "France (12 time zones)",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7460176944732666,
+      "raw_response": {
+        "success": true,
+        "data": "France (12 time zones)",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "France (12 time zones)"
+      },
+      "success": true,
+      "category": "geography",
+      "difficulty": "hard"
+    },
+    {
+      "question_id": "gaia_level1_011",
+      "question": "What is 15 + 27?",
+      "expected_answer": "42",
+      "actual_answer": "42",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.49553942680358887,
+      "raw_response": {
+        "success": true,
+        "data": "42",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "42"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_012",
+      "question": "What is the square root of 144?",
+      "expected_answer": "12",
+      "actual_answer": "12",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.4318356513977051,
+      "raw_response": {
+        "success": true,
+        "data": "12",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "12"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_013",
+      "question": "What is 8 × 7?",
+      "expected_answer": "56",
+      "actual_answer": "56",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.30115485191345215,
+      "raw_response": {
+        "success": true,
+        "data": "56",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "56"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_014",
+      "question": "What is 100 ÷ 4?",
+      "expected_answer": "25",
+      "actual_answer": "25",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.31423354148864746,
+      "raw_response": {
+        "success": true,
+        "data": "25",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "25"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_015",
+      "question": "What is 2^5?",
+      "expected_answer": "32",
+      "actual_answer": "32",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.2942922115325928,
+      "raw_response": {
+        "success": true,
+        "data": "32",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "32"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_016",
+      "question": "What is the value of π (pi) to 2 decimal places?",
+      "expected_answer": "3.14",
+      "actual_answer": "3.14",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.31054186820983887,
+      "raw_response": {
+        "success": true,
+        "data": "3.14",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "3.14"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_017",
+      "question": "What is 15% of 200?",
+      "expected_answer": "30",
+      "actual_answer": "30",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.3468806743621826,
+      "raw_response": {
+        "success": true,
+        "data": "30",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "30"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_018",
+      "question": "What is the sum of angles in a triangle?",
+      "expected_answer": "180 degrees",
+      "actual_answer": "180",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.3831610679626465,
+      "raw_response": {
+        "success": true,
+        "data": "180",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "180"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_019",
+      "question": "What is the derivative of x^2?",
+      "expected_answer": "2x",
+      "actual_answer": "2x",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.274198055267334,
+      "raw_response": {
+        "success": true,
+        "data": "2x",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "2x"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "hard"
+    },
+    {
+      "question_id": "gaia_level1_020",
+      "question": "What is the integral of 2x?",
+      "expected_answer": "x^2 + C",
+      "actual_answer": "x^2 + C",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.29440855979919434,
+      "raw_response": {
+        "success": true,
+        "data": "x^2 + C",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "x^2 + C"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "hard"
+    },
+    {
+      "question_id": "gaia_level1_021",
+      "question": "What is the chemical symbol for gold?",
+      "expected_answer": "Au",
+      "actual_answer": "Au",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.024712085723877,
+      "raw_response": {
+        "success": true,
+        "data": "Au",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Au"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_022",
+      "question": "What is the largest planet in our solar system?",
+      "expected_answer": "Jupiter",
+      "actual_answer": "Jupiter",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.4553728103637695,
+      "raw_response": {
+        "success": true,
+        "data": "Jupiter",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Jupiter"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_023",
+      "question": "What is the atomic number of carbon?",
+      "expected_answer": "6",
+      "actual_answer": "6",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.224902629852295,
+      "raw_response": {
+        "success": true,
+        "data": "6",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "6"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_024",
+      "question": "What gas do plants absorb from the atmosphere during photosynthesis?",
+      "expected_answer": "Carbon dioxide",
+      "actual_answer": "二氧化碳",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 1.0193395614624023,
+      "raw_response": {
+        "success": true,
+        "data": "二氧化碳",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "二氧化碳"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_025",
+      "question": "What is the smallest unit of matter?",
+      "expected_answer": "Atom",
+      "actual_answer": "夸克",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 0.9711344242095947,
+      "raw_response": {
+        "success": true,
+        "data": "夸克",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "夸克"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_026",
+      "question": "What is the speed of light in vacuum?",
+      "expected_answer": "299,792,458 meters per second",
+      "actual_answer": "299792458",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.821868896484375,
+      "raw_response": {
+        "success": true,
+        "data": "299792458",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "299792458"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "hard"
+    },
+    {
+      "question_id": "gaia_level1_027",
+      "question": "What is the chemical formula for water?",
+      "expected_answer": "H2O",
+      "actual_answer": "H2O",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8498368263244629,
+      "raw_response": {
+        "success": true,
+        "data": "H2O",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "H2O"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_028",
+      "question": "How many bones are in the adult human body?",
+      "expected_answer": "206",
+      "actual_answer": "206",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.00553560256958,
+      "raw_response": {
+        "success": true,
+        "data": "206",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "206"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_029",
+      "question": "What is the hardest natural substance on Earth?",
+      "expected_answer": "Diamond",
+      "actual_answer": "鑽石",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 1.1613619327545166,
+      "raw_response": {
+        "success": true,
+        "data": "鑽石",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "鑽石"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_030",
+      "question": "What is the pH of pure water?",
+      "expected_answer": "7",
+      "actual_answer": "7",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.9073832035064697,
+      "raw_response": {
+        "success": true,
+        "data": "7",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "7"
+      },
+      "success": true,
+      "category": "science",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_031",
+      "question": "In which year did World War II end?",
+      "expected_answer": "1945",
+      "actual_answer": "1945",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7801289558410645,
+      "raw_response": {
+        "success": true,
+        "data": "1945",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "1945"
+      },
+      "success": true,
+      "category": "history",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_032",
+      "question": "Who was the first President of the United States?",
+      "expected_answer": "George Washington",
+      "actual_answer": "George Washington",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.6497337818145752,
+      "raw_response": {
+        "success": true,
+        "data": "George Washington",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "George Washington"
+      },
+      "success": true,
+      "category": "history",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_033",
+      "question": "In which year did the Berlin Wall fall?",
+      "expected_answer": "1989",
+      "actual_answer": "1989",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 4.613182783126831,
+      "raw_response": {
+        "success": true,
+        "data": "1989",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "1989"
+      },
+      "success": true,
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_034",
+      "question": "Which ancient wonder of the world was located in Alexandria?",
+      "expected_answer": "Lighthouse of Alexandria",
+      "actual_answer": "The Lighthouse of Alexandria",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 2.644737958908081,
+      "raw_response": {
+        "success": true,
+        "data": "The Lighthouse of Alexandria",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "The Lighthouse of Alexandria"
+      },
+      "success": true,
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_035",
+      "question": "Who was the first person to walk on the moon?",
+      "expected_answer": "Neil Armstrong",
+      "actual_answer": "Neil Armstrong",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 2.0396482944488525,
+      "raw_response": {
+        "success": true,
+        "data": "Neil Armstrong",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Neil Armstrong"
+      },
+      "success": true,
+      "category": "history",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_036",
+      "question": "In which year did the Titanic sink?",
+      "expected_answer": "1912",
+      "actual_answer": "1912",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 2.095656156539917,
+      "raw_response": {
+        "success": true,
+        "data": "1912",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "1912"
+      },
+      "success": true,
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_037",
+      "question": "Which empire was ruled by Julius Caesar?",
+      "expected_answer": "Roman Empire",
+      "actual_answer": "Roman Empire",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 2.8283379077911377,
+      "raw_response": {
+        "success": true,
+        "data": "Roman Empire",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Roman Empire"
+      },
+      "success": true,
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_038",
+      "question": "In which year did World War I begin?",
+      "expected_answer": "1914",
+      "actual_answer": "1914",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 3.6696650981903076,
+      "raw_response": {
+        "success": true,
+        "data": "1914",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "1914"
+      },
+      "success": true,
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_039",
+      "question": "Who wrote the Declaration of Independence?",
+      "expected_answer": "Thomas Jefferson",
+      "actual_answer": "Thomas Jefferson",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 2.1080915927886963,
+      "raw_response": {
+        "success": true,
+        "data": "Thomas Jefferson",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Thomas Jefferson"
+      },
+      "success": true,
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_040",
+      "question": "Which war was fought between the North and South in America?",
+      "expected_answer": "Civil War",
+      "actual_answer": "Civil War",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.706977128982544,
+      "raw_response": {
+        "success": true,
+        "data": "Civil War",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Civil War"
+      },
+      "success": true,
+      "category": "history",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_041",
+      "question": "Who wrote the novel '1984'?",
+      "expected_answer": "George Orwell",
+      "actual_answer": "George Orwell",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 3.320333957672119,
+      "raw_response": {
+        "success": true,
+        "data": "George Orwell",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "George Orwell"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_042",
+      "question": "Who painted the Mona Lisa?",
+      "expected_answer": "Leonardo da Vinci",
+      "actual_answer": "Leonardo da Vinci",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.2105154991149902,
+      "raw_response": {
+        "success": true,
+        "data": "Leonardo da Vinci",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Leonardo da Vinci"
+      },
+      "success": true,
+      "category": "art",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_043",
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "expected_answer": "William Shakespeare",
+      "actual_answer": "William Shakespeare",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.2585418224334717,
+      "raw_response": {
+        "success": true,
+        "data": "William Shakespeare",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "William Shakespeare"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_044",
+      "question": "Who composed 'The Four Seasons'?",
+      "expected_answer": "Antonio Vivaldi",
+      "actual_answer": "Vivaldi",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0633156299591064,
+      "raw_response": {
+        "success": true,
+        "data": "Vivaldi",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Vivaldi"
+      },
+      "success": true,
+      "category": "music",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_045",
+      "question": "Who wrote 'Pride and Prejudice'?",
+      "expected_answer": "Jane Austen",
+      "actual_answer": "Jane Austen",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.3427224159240723,
+      "raw_response": {
+        "success": true,
+        "data": "Jane Austen",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Jane Austen"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_046",
+      "question": "Who painted 'The Starry Night'?",
+      "expected_answer": "Vincent van Gogh",
+      "actual_answer": "Vincent van Gogh",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.3784823417663574,
+      "raw_response": {
+        "success": true,
+        "data": "Vincent van Gogh",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Vincent van Gogh"
+      },
+      "success": true,
+      "category": "art",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_047",
+      "question": "Who wrote 'To Kill a Mockingbird'?",
+      "expected_answer": "Harper Lee",
+      "actual_answer": "Harper Lee",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0019404888153076,
+      "raw_response": {
+        "success": true,
+        "data": "Harper Lee",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Harper Lee"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_048",
+      "question": "Who composed 'Symphony No. 9'?",
+      "expected_answer": "Ludwig van Beethoven",
+      "actual_answer": "Ludwig van Beethoven",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7806510925292969,
+      "raw_response": {
+        "success": true,
+        "data": "Ludwig van Beethoven",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Ludwig van Beethoven"
+      },
+      "success": true,
+      "category": "music",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_049",
+      "question": "Who wrote 'The Great Gatsby'?",
+      "expected_answer": "F. Scott Fitzgerald",
+      "actual_answer": "F. Scott Fitzgerald",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8671627044677734,
+      "raw_response": {
+        "success": true,
+        "data": "F. Scott Fitzgerald",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "F. Scott Fitzgerald"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_050",
+      "question": "Who painted 'The Last Supper'?",
+      "expected_answer": "Leonardo da Vinci",
+      "actual_answer": "Leonardo da Vinci",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.3849208354949951,
+      "raw_response": {
+        "success": true,
+        "data": "Leonardo da Vinci",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Leonardo da Vinci"
+      },
+      "success": true,
+      "category": "art",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_051",
+      "question": "Who wrote 'Harry Potter' series?",
+      "expected_answer": "J.K. Rowling",
+      "actual_answer": "J.K. Rowling",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.012866735458374,
+      "raw_response": {
+        "success": true,
+        "data": "J.K. Rowling",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "J.K. Rowling"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_052",
+      "question": "Who composed 'The Magic Flute'?",
+      "expected_answer": "Wolfgang Amadeus Mozart",
+      "actual_answer": "Mozart",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8954143524169922,
+      "raw_response": {
+        "success": true,
+        "data": "Mozart",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Mozart"
+      },
+      "success": true,
+      "category": "music",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_053",
+      "question": "Who wrote 'One Hundred Years of Solitude'?",
+      "expected_answer": "Gabriel García Márquez",
+      "actual_answer": "Gabriel García Márquez",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.1944847106933594,
+      "raw_response": {
+        "success": true,
+        "data": "Gabriel García Márquez",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gabriel García Márquez"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "hard"
+    },
+    {
+      "question_id": "gaia_level1_054",
+      "question": "Who painted 'Guernica'?",
+      "expected_answer": "Pablo Picasso",
+      "actual_answer": "Pablo Picasso",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.9700431823730469,
+      "raw_response": {
+        "success": true,
+        "data": "Pablo Picasso",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Pablo Picasso"
+      },
+      "success": true,
+      "category": "art",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_055",
+      "question": "Who wrote 'The Catcher in the Rye'?",
+      "expected_answer": "J.D. Salinger",
+      "actual_answer": "J.D. Salinger",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7102560997009277,
+      "raw_response": {
+        "success": true,
+        "data": "J.D. Salinger",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "J.D. Salinger"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_056",
+      "question": "Who composed 'Carmen'?",
+      "expected_answer": "Georges Bizet",
+      "actual_answer": "Georges Bizet",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.6964981555938721,
+      "raw_response": {
+        "success": true,
+        "data": "Georges Bizet",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Georges Bizet"
+      },
+      "success": true,
+      "category": "music",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_057",
+      "question": "Who wrote 'Moby Dick'?",
+      "expected_answer": "Herman Melville",
+      "actual_answer": "Herman Melville",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7747275829315186,
+      "raw_response": {
+        "success": true,
+        "data": "Herman Melville",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Herman Melville"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_058",
+      "question": "Who painted 'The Scream'?",
+      "expected_answer": "Edvard Munch",
+      "actual_answer": "Edvard Munch",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.768355131149292,
+      "raw_response": {
+        "success": true,
+        "data": "Edvard Munch",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Edvard Munch"
+      },
+      "success": true,
+      "category": "art",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_059",
+      "question": "Who wrote 'War and Peace'?",
+      "expected_answer": "Leo Tolstoy",
+      "actual_answer": "Leo Tolstoy",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 2.6762161254882812,
+      "raw_response": {
+        "success": true,
+        "data": "Leo Tolstoy",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Leo Tolstoy"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_060",
+      "question": "Who composed 'The Nutcracker'?",
+      "expected_answer": "Pyotr Ilyich Tchaikovsky",
+      "actual_answer": "Tchaikovsky",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8473711013793945,
+      "raw_response": {
+        "success": true,
+        "data": "Tchaikovsky",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Tchaikovsky"
+      },
+      "success": true,
+      "category": "music",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_061",
+      "question": "Who wrote 'The Lord of the Rings'?",
+      "expected_answer": "J.R.R. Tolkien",
+      "actual_answer": "J.R.R. Tolkien",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.857114315032959,
+      "raw_response": {
+        "success": true,
+        "data": "J.R.R. Tolkien",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "J.R.R. Tolkien"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_062",
+      "question": "Who painted 'Girl with a Pearl Earring'?",
+      "expected_answer": "Johannes Vermeer",
+      "actual_answer": "Johannes Vermeer",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0625734329223633,
+      "raw_response": {
+        "success": true,
+        "data": "Johannes Vermeer",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Johannes Vermeer"
+      },
+      "success": true,
+      "category": "art",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_063",
+      "question": "Who wrote 'Brave New World'?",
+      "expected_answer": "Aldous Huxley",
+      "actual_answer": "Aldous Huxley",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7632968425750732,
+      "raw_response": {
+        "success": true,
+        "data": "Aldous Huxley",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Aldous Huxley"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_064",
+      "question": "Who composed 'Rhapsody in Blue'?",
+      "expected_answer": "George Gershwin",
+      "actual_answer": "George Gershwin",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.1494452953338623,
+      "raw_response": {
+        "success": true,
+        "data": "George Gershwin",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "George Gershwin"
+      },
+      "success": true,
+      "category": "music",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_065",
+      "question": "Who wrote 'The Chronicles of Narnia'?",
+      "expected_answer": "C.S. Lewis",
+      "actual_answer": "C.S. Lewis",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7303266525268555,
+      "raw_response": {
+        "success": true,
+        "data": "C.S. Lewis",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "C.S. Lewis"
+      },
+      "success": true,
+      "category": "literature",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_066",
+      "question": "What does GDP stand for?",
+      "expected_answer": "Gross Domestic Product",
+      "actual_answer": "Gross Domestic Product",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0137238502502441,
+      "raw_response": {
+        "success": true,
+        "data": "Gross Domestic Product",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Gross Domestic Product"
+      },
+      "success": true,
+      "category": "economics",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_067",
+      "question": "What does HTTP stand for?",
+      "expected_answer": "HyperText Transfer Protocol",
+      "actual_answer": "Hypertext Transfer Protocol",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.36739015579223633,
+      "raw_response": {
+        "success": true,
+        "data": "Hypertext Transfer Protocol",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Hypertext Transfer Protocol"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_068",
+      "question": "Who founded Microsoft?",
+      "expected_answer": "Bill Gates",
+      "actual_answer": "Bill Gates and Paul Allen",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.3059544563293457,
+      "raw_response": {
+        "success": true,
+        "data": "Bill Gates and Paul Allen",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Bill Gates and Paul Allen"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_069",
+      "question": "What does CPU stand for?",
+      "expected_answer": "Central Processing Unit",
+      "actual_answer": "Central Processing Unit",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.306812047958374,
+      "raw_response": {
+        "success": true,
+        "data": "Central Processing Unit",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Central Processing Unit"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_070",
+      "question": "What is inflation?",
+      "expected_answer": "General increase in prices",
+      "actual_answer": "物價持續上漲的經濟現象",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 2.075404405593872,
+      "raw_response": {
+        "success": true,
+        "data": "物價持續上漲的經濟現象",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "物價持續上漲的經濟現象"
+      },
+      "success": true,
+      "category": "economics",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_071",
+      "question": "What does AI stand for?",
+      "expected_answer": "Artificial Intelligence",
+      "actual_answer": "Artificial Intelligence",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.28725266456604004,
+      "raw_response": {
+        "success": true,
+        "data": "Artificial Intelligence",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Artificial Intelligence"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_072",
+      "question": "Who founded Apple Inc.?",
+      "expected_answer": "Steve Jobs",
+      "actual_answer": "Steve Jobs, Steve Wozniak, Ronald Wayne",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.41702866554260254,
+      "raw_response": {
+        "success": true,
+        "data": "Steve Jobs, Steve Wozniak, Ronald Wayne",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Steve Jobs, Steve Wozniak, Ronald Wayne"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_073",
+      "question": "What is the stock market?",
+      "expected_answer": "Market for trading company shares",
+      "actual_answer": "讓投資者買賣股票的交易市場",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 1.2703368663787842,
+      "raw_response": {
+        "success": true,
+        "data": "讓投資者買賣股票的交易市場",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "讓投資者買賣股票的交易市場"
+      },
+      "success": true,
+      "category": "economics",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_074",
+      "question": "What does URL stand for?",
+      "expected_answer": "Uniform Resource Locator",
+      "actual_answer": "Uniform Resource Locator",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.317842960357666,
+      "raw_response": {
+        "success": true,
+        "data": "Uniform Resource Locator",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Uniform Resource Locator"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_075",
+      "question": "What is cryptocurrency?",
+      "expected_answer": "Digital currency",
+      "actual_answer": "一種使用加密技術的數位或虛擬貨幣，以去中心化方式運作，不受政府或銀行控制。",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 2.8650848865509033,
+      "raw_response": {
+        "success": true,
+        "data": "一種使用加密技術的數位或虛擬貨幣，以去中心化方式運作，不受政府或銀行控制。",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "一種使用加密技術的數位或虛擬貨幣，以去中心化方式運作，不受政府或銀行控制。"
+      },
+      "success": true,
+      "category": "economics",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_076",
+      "question": "What does RAM stand for?",
+      "expected_answer": "Random Access Memory",
+      "actual_answer": "Random Access Memory",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.3121953010559082,
+      "raw_response": {
+        "success": true,
+        "data": "Random Access Memory",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Random Access Memory"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_077",
+      "question": "Who founded Amazon?",
+      "expected_answer": "Jeff Bezos",
+      "actual_answer": "Jeff Bezos",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.2940680980682373,
+      "raw_response": {
+        "success": true,
+        "data": "Jeff Bezos",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Jeff Bezos"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_078",
+      "question": "What is supply and demand?",
+      "expected_answer": "Economic principle of price determination",
+      "actual_answer": "供給與需求是市場機制中決定商品價格和數量的基本經濟原理，供給代表賣方願意提供的數量，需求代表買方願意購買的數量。",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 2.0369818210601807,
+      "raw_response": {
+        "success": true,
+        "data": "供給與需求是市場機制中決定商品價格和數量的基本經濟原理，供給代表賣方願意提供的數量，需求代表買方願意購買的數量。",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "供給與需求是市場機制中決定商品價格和數量的基本經濟原理，供給代表賣方願意提供的數量，需求代表買方願意購買的數量。"
+      },
+      "success": true,
+      "category": "economics",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_079",
+      "question": "What does HTML stand for?",
+      "expected_answer": "HyperText Markup Language",
+      "actual_answer": "Hyper Text Markup Language",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.28703832626342773,
+      "raw_response": {
+        "success": true,
+        "data": "Hyper Text Markup Language",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Hyper Text Markup Language"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_080",
+      "question": "What is a recession?",
+      "expected_answer": "Economic decline",
+      "actual_answer": "經濟連續兩個季度負成長的衰退現象",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 1.6345012187957764,
+      "raw_response": {
+        "success": true,
+        "data": "經濟連續兩個季度負成長的衰退現象",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "經濟連續兩個季度負成長的衰退現象"
+      },
+      "success": true,
+      "category": "economics",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_081",
+      "question": "What does GPS stand for?",
+      "expected_answer": "Global Positioning System",
+      "actual_answer": "Global Positioning System",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.39504218101501465,
+      "raw_response": {
+        "success": true,
+        "data": "Global Positioning System",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Global Positioning System"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_082",
+      "question": "Who founded Facebook?",
+      "expected_answer": "Mark Zuckerberg",
+      "actual_answer": "Mark Zuckerberg",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.30157470703125,
+      "raw_response": {
+        "success": true,
+        "data": "Mark Zuckerberg",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Mark Zuckerberg"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_083",
+      "question": "What is the Federal Reserve?",
+      "expected_answer": "US central bank",
+      "actual_answer": "美國中央銀行，負責制定貨幣政策和監管金融系統的聯邦機構",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 1.8274683952331543,
+      "raw_response": {
+        "success": true,
+        "data": "美國中央銀行，負責制定貨幣政策和監管金融系統的聯邦機構",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "美國中央銀行，負責制定貨幣政策和監管金融系統的聯邦機構"
+      },
+      "success": true,
+      "category": "economics",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_084",
+      "question": "What does WiFi stand for?",
+      "expected_answer": "Wireless Fidelity",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 51\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.07321023941040039,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 51\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 51\n}\n]"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_085",
+      "question": "What is venture capital?",
+      "expected_answer": "Investment in startups",
+      "actual_answer": "一種投資機構或基金,專門投資具高成長潛力的新創企業,提供資金與資源以換取公司股權。",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 1.6568715572357178,
+      "raw_response": {
+        "success": true,
+        "data": "一種投資機構或基金,專門投資具高成長潛力的新創企業,提供資金與資源以換取公司股權。",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "一種投資機構或基金,專門投資具高成長潛力的新創企業,提供資金與資源以換取公司股權。"
+      },
+      "success": true,
+      "category": "economics",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_086",
+      "question": "What does API stand for?",
+      "expected_answer": "Application Programming Interface",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 50\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.06108689308166504,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 50\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 50\n}\n]"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_087",
+      "question": "Who founded Tesla?",
+      "expected_answer": "Elon Musk",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 50\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.06830668449401855,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 50\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 50\n}\n]"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_088",
+      "question": "What is market capitalization?",
+      "expected_answer": "Total value of company shares",
+      "actual_answer": "公司股票總市值，等於股票市場價格乘以流通在外股票總數",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 1.6010725498199463,
+      "raw_response": {
+        "success": true,
+        "data": "公司股票總市值，等於股票市場價格乘以流通在外股票總數",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "公司股票總市值，等於股票市場價格乘以流通在外股票總數"
+      },
+      "success": true,
+      "category": "economics",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_089",
+      "question": "What does IoT stand for?",
+      "expected_answer": "Internet of Things",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 48\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.06704902648925781,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 48\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 48\n}\n]"
+      },
+      "success": true,
+      "category": "technology",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_090",
+      "question": "What is a startup?",
+      "expected_answer": "New business venture",
+      "actual_answer": "新創公司是一個為解決問題或滿足市場需求而創立的新企業，通常具有創新想法並追求快速成長。",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 2.8608498573303223,
+      "raw_response": {
+        "success": true,
+        "data": "新創公司是一個為解決問題或滿足市場需求而創立的新企業，通常具有創新想法並追求快速成長。",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "新創公司是一個為解決問題或滿足市場需求而創立的新企業，通常具有創新想法並追求快速成長。"
+      },
+      "success": true,
+      "category": "economics",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_091",
+      "question": "If a train travels 60 mph for 2 hours, how far does it go?",
+      "expected_answer": "120 miles",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 45\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.05515909194946289,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 45\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 45\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_092",
+      "question": "What comes next in the sequence: 2, 4, 8, 16, ?",
+      "expected_answer": "32",
+      "actual_answer": "32",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.9530019760131836,
+      "raw_response": {
+        "success": true,
+        "data": "32",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "32"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_093",
+      "question": "If all roses are flowers and all flowers are plants, are all roses plants?",
+      "expected_answer": "Yes",
+      "actual_answer": "Yes",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7054448127746582,
+      "raw_response": {
+        "success": true,
+        "data": "Yes",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Yes"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_094",
+      "question": "A book costs $10. If there's a 20% discount, what's the final price?",
+      "expected_answer": "$8",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 43\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.05511069297790527,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 43\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 43\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_095",
+      "question": "What is the next number in the Fibonacci sequence: 1, 1, 2, 3, 5, 8, ?",
+      "expected_answer": "13",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 43\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.058753013610839844,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 43\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 43\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_096",
+      "question": "If it takes 5 machines 5 minutes to make 5 widgets, how long does it take 100 machines to make 100 widgets?",
+      "expected_answer": "5 minutes",
+      "actual_answer": "5",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.6880519390106201,
+      "raw_response": {
+        "success": true,
+        "data": "5",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "5"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "hard"
+    },
+    {
+      "question_id": "gaia_level1_097",
+      "question": "What is 25% of 80?",
+      "expected_answer": "20",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 43\n}\n]",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.05947256088256836,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 43\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 43\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_098",
+      "question": "If A is taller than B, and B is taller than C, who is the shortest?",
+      "expected_answer": "C",
+      "actual_answer": "C",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0446629524230957,
+      "raw_response": {
+        "success": true,
+        "data": "C",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "C"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_099",
+      "question": "A rectangle has length 8 and width 6. What is its area?",
+      "expected_answer": "48",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 41\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.06076955795288086,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 41\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 41\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_100",
+      "question": "What is the missing number: 3, 6, 12, 24, ?",
+      "expected_answer": "48",
+      "actual_answer": "48",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 2.674973487854004,
+      "raw_response": {
+        "success": true,
+        "data": "48",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "48"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_101",
+      "question": "If you buy 3 apples for $2, how much do 12 apples cost?",
+      "expected_answer": "$8",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 39\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.06137418746948242,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 39\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 39\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_102",
+      "question": "What comes next: Monday, Wednesday, Friday, ?",
+      "expected_answer": "Sunday",
+      "actual_answer": "Sunday",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.253316879272461,
+      "raw_response": {
+        "success": true,
+        "data": "Sunday",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Sunday"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_103",
+      "question": "A circle has radius 5. What is its circumference? (Use π = 3.14)",
+      "expected_answer": "31.4",
+      "actual_answer": "31.4",
+      "adapter_used": "gemini",
+      "correct": true,
+      "execution_time": 0.41283178329467773,
+      "raw_response": {
+        "success": true,
+        "data": "31.4",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "31.4"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_104",
+      "question": "If all cats are mammals and some mammals are pets, can we conclude that some cats are pets?",
+      "expected_answer": "No",
+      "actual_answer": "No",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7348241806030273,
+      "raw_response": {
+        "success": true,
+        "data": "No",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "No"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "hard"
+    },
+    {
+      "question_id": "gaia_level1_105",
+      "question": "What is 3/4 as a decimal?",
+      "expected_answer": "0.75",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 36\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.06442952156066895,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 36\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 36\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_106",
+      "question": "What is the pattern: A1, B2, C3, D4, ?",
+      "expected_answer": "E5",
+      "actual_answer": "E5",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.1599912643432617,
+      "raw_response": {
+        "success": true,
+        "data": "E5",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "E5"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_107",
+      "question": "If a pizza is cut into 8 equal slices and you eat 3, what fraction remains?",
+      "expected_answer": "5/8",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 35\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.07135772705078125,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 35\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 35\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_108",
+      "question": "What is the opposite of 'always'?",
+      "expected_answer": "Never",
+      "actual_answer": "never",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0713675022125244,
+      "raw_response": {
+        "success": true,
+        "data": "never",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "never"
+      },
+      "success": true,
+      "category": "language",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_109",
+      "question": "If today is Tuesday, what day was it 3 days ago?",
+      "expected_answer": "Saturday",
+      "actual_answer": "Saturday",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8278193473815918,
+      "raw_response": {
+        "success": true,
+        "data": "Saturday",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Saturday"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_110",
+      "question": "What is 2^3 + 3^2?",
+      "expected_answer": "17",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 33\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.05522036552429199,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 33\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 33\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_111",
+      "question": "Complete the analogy: Hot is to Cold as Light is to ?",
+      "expected_answer": "Dark",
+      "actual_answer": "Dark",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.13362455368042,
+      "raw_response": {
+        "success": true,
+        "data": "Dark",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Dark"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_112",
+      "question": "If a car travels 300 miles in 5 hours, what is its average speed?",
+      "expected_answer": "60 mph",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 32\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.07116580009460449,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 32\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 32\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_113",
+      "question": "What is the next letter: A, C, E, G, ?",
+      "expected_answer": "I",
+      "actual_answer": "I",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.6513714790344238,
+      "raw_response": {
+        "success": true,
+        "data": "I",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "I"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_114",
+      "question": "If you have $100 and spend 30%, how much do you have left?",
+      "expected_answer": "$70",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 31\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.06467127799987793,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 31\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 31\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_115",
+      "question": "What is the pattern: 1, 4, 9, 16, ?",
+      "expected_answer": "25",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 31\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.05759167671203613,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 31\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 31\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_116",
+      "question": "If all birds can fly and penguins are birds, can penguins fly?",
+      "expected_answer": "No",
+      "actual_answer": "No",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0533180236816406,
+      "raw_response": {
+        "success": true,
+        "data": "No",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "No"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "hard"
+    },
+    {
+      "question_id": "gaia_level1_117",
+      "question": "What is 7 × 8 - 6?",
+      "expected_answer": "50",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 30\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.06479477882385254,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 30\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 30\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_118",
+      "question": "Complete: Sun is to Day as Moon is to ?",
+      "expected_answer": "Night",
+      "actual_answer": "Night",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.6362793445587158,
+      "raw_response": {
+        "success": true,
+        "data": "Night",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Night"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_119",
+      "question": "If a triangle has angles 60°, 60°, what is the third angle?",
+      "expected_answer": "60°",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 29\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.07199788093566895,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 29\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 29\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_120",
+      "question": "What comes next: 1, 1, 2, 6, 24, ?",
+      "expected_answer": "120",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 29\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.13930749893188477,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 29\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 29\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "hard"
+    },
+    {
+      "question_id": "gaia_level1_121",
+      "question": "If red means stop and green means go, what does yellow mean?",
+      "expected_answer": "Caution",
+      "actual_answer": "slow down",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 0.7110142707824707,
+      "raw_response": {
+        "success": true,
+        "data": "slow down",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "slow down"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_122",
+      "question": "What is the square of 9?",
+      "expected_answer": "81",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 28\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.0667421817779541,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 28\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 28\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_123",
+      "question": "Complete the series: Z, Y, X, W, ?",
+      "expected_answer": "V",
+      "actual_answer": "V",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.9583301544189453,
+      "raw_response": {
+        "success": true,
+        "data": "V",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "V"
+      },
+      "success": true,
+      "category": "logic",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_124",
+      "question": "If a dozen eggs costs $3, how much do 2 dozen cost?",
+      "expected_answer": "$6",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 27\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.060385942459106445,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 27\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 27\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_125",
+      "question": "What is the pattern: 2, 6, 18, 54, ?",
+      "expected_answer": "162",
+      "actual_answer": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 27\n}\n]",
+      "adapter_used": "gemini",
+      "correct": false,
+      "execution_time": 0.14459729194641113,
+      "raw_response": {
+        "success": true,
+        "data": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 27\n}\n]",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "處理錯誤: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_requests_per_model\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash-exp\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 27\n}\n]"
+      },
+      "success": true,
+      "category": "math",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_126",
+      "question": "What do you use to cut paper?",
+      "expected_answer": "Scissors",
+      "actual_answer": "scissors",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0836715698242188,
+      "raw_response": {
+        "success": true,
+        "data": "scissors",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "scissors"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_127",
+      "question": "What season comes after winter?",
+      "expected_answer": "Spring",
+      "actual_answer": "spring",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.6897578239440918,
+      "raw_response": {
+        "success": true,
+        "data": "spring",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "spring"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_128",
+      "question": "How many days are in a week?",
+      "expected_answer": "7",
+      "actual_answer": "7",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.6872174739837646,
+      "raw_response": {
+        "success": true,
+        "data": "7",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "7"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_129",
+      "question": "What do you wear on your feet?",
+      "expected_answer": "Shoes",
+      "actual_answer": "shoes",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.6889808177947998,
+      "raw_response": {
+        "success": true,
+        "data": "shoes",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "shoes"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_130",
+      "question": "What do you use to write?",
+      "expected_answer": "Pen",
+      "actual_answer": "pen, pencil",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8489694595336914,
+      "raw_response": {
+        "success": true,
+        "data": "pen, pencil",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "pen, pencil"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_131",
+      "question": "How many hours are in a day?",
+      "expected_answer": "24",
+      "actual_answer": "24",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.6211028099060059,
+      "raw_response": {
+        "success": true,
+        "data": "24",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "24"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_132",
+      "question": "What do you use to see in the dark?",
+      "expected_answer": "Flashlight",
+      "actual_answer": "flashlight",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7167842388153076,
+      "raw_response": {
+        "success": true,
+        "data": "flashlight",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "flashlight"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_133",
+      "question": "What do you drink when you're thirsty?",
+      "expected_answer": "Water",
+      "actual_answer": "water",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.6964724063873291,
+      "raw_response": {
+        "success": true,
+        "data": "water",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "water"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_134",
+      "question": "How many minutes are in an hour?",
+      "expected_answer": "60",
+      "actual_answer": "60",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8043265342712402,
+      "raw_response": {
+        "success": true,
+        "data": "60",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "60"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_135",
+      "question": "What do you use to unlock a door?",
+      "expected_answer": "Key",
+      "actual_answer": "key",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.743039846420288,
+      "raw_response": {
+        "success": true,
+        "data": "key",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "key"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_136",
+      "question": "What do you eat with soup?",
+      "expected_answer": "Spoon",
+      "actual_answer": "spoon",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.9722447395324707,
+      "raw_response": {
+        "success": true,
+        "data": "spoon",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "spoon"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_137",
+      "question": "How many months are in a year?",
+      "expected_answer": "12",
+      "actual_answer": "12",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.9192037582397461,
+      "raw_response": {
+        "success": true,
+        "data": "12",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "12"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_138",
+      "question": "What do you use to call someone?",
+      "expected_answer": "Phone",
+      "actual_answer": "phone",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.1836035251617432,
+      "raw_response": {
+        "success": true,
+        "data": "phone",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "phone"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_139",
+      "question": "What do you wear when it rains?",
+      "expected_answer": "Raincoat",
+      "actual_answer": "raincoat and umbrella",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0281054973602295,
+      "raw_response": {
+        "success": true,
+        "data": "raincoat and umbrella",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "raincoat and umbrella"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_140",
+      "question": "How many wheels does a bicycle have?",
+      "expected_answer": "2",
+      "actual_answer": "2",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 2.084882974624634,
+      "raw_response": {
+        "success": true,
+        "data": "2",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "2"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_141",
+      "question": "What do you use to brush your teeth?",
+      "expected_answer": "Toothbrush",
+      "actual_answer": "Toothbrush",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0849261283874512,
+      "raw_response": {
+        "success": true,
+        "data": "Toothbrush",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "Toothbrush"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_142",
+      "question": "What do you sleep on?",
+      "expected_answer": "Bed",
+      "actual_answer": "bed",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.9084796905517578,
+      "raw_response": {
+        "success": true,
+        "data": "bed",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "bed"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_143",
+      "question": "How many sides does a triangle have?",
+      "expected_answer": "3",
+      "actual_answer": "3",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7656283378601074,
+      "raw_response": {
+        "success": true,
+        "data": "3",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "3"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_144",
+      "question": "What do you use to eat salad?",
+      "expected_answer": "Fork",
+      "actual_answer": "fork",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0604751110076904,
+      "raw_response": {
+        "success": true,
+        "data": "fork",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "fork"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_145",
+      "question": "What do you wear to protect your eyes from the sun?",
+      "expected_answer": "Sunglasses",
+      "actual_answer": "sunglasses",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7571804523468018,
+      "raw_response": {
+        "success": true,
+        "data": "sunglasses",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "sunglasses"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_146",
+      "question": "How many legs does a dog have?",
+      "expected_answer": "4",
+      "actual_answer": "4",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7504196166992188,
+      "raw_response": {
+        "success": true,
+        "data": "4",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "4"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_147",
+      "question": "What do you use to wash your hands?",
+      "expected_answer": "Soap",
+      "actual_answer": "肥皂和水",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 1.068206787109375,
+      "raw_response": {
+        "success": true,
+        "data": "肥皂和水",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "肥皂和水"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_148",
+      "question": "What do you sit on?",
+      "expected_answer": "Chair",
+      "actual_answer": "chair",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.6493182182312012,
+      "raw_response": {
+        "success": true,
+        "data": "chair",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "chair"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_149",
+      "question": "How many eyes do humans have?",
+      "expected_answer": "2",
+      "actual_answer": "2",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.6127409934997559,
+      "raw_response": {
+        "success": true,
+        "data": "2",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "2"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_150",
+      "question": "What do you use to dry yourself after a shower?",
+      "expected_answer": "Towel",
+      "actual_answer": "towel",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.672513484954834,
+      "raw_response": {
+        "success": true,
+        "data": "towel",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "towel"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_151",
+      "question": "What do you put on bread to make a sandwich?",
+      "expected_answer": "Filling",
+      "actual_answer": "肉類、起司、生菜、番茄、美乃滋、花生醬",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 2.13840913772583,
+      "raw_response": {
+        "success": true,
+        "data": "肉類、起司、生菜、番茄、美乃滋、花生醬",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "肉類、起司、生菜、番茄、美乃滋、花生醬"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_152",
+      "question": "How many fingers are on one hand?",
+      "expected_answer": "5",
+      "actual_answer": "5",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.622321367263794,
+      "raw_response": {
+        "success": true,
+        "data": "5",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "5"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_153",
+      "question": "What do you use to measure time?",
+      "expected_answer": "Clock",
+      "actual_answer": "時鐘",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 0.7322087287902832,
+      "raw_response": {
+        "success": true,
+        "data": "時鐘",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "時鐘"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_154",
+      "question": "What do you wear on your head?",
+      "expected_answer": "Hat",
+      "actual_answer": "hat",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 1.0142593383789062,
+      "raw_response": {
+        "success": true,
+        "data": "hat",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "hat"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_155",
+      "question": "How many seasons are there in a year?",
+      "expected_answer": "4",
+      "actual_answer": "4",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.9080209732055664,
+      "raw_response": {
+        "success": true,
+        "data": "4",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "4"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_156",
+      "question": "What do you use to open a can?",
+      "expected_answer": "Can opener",
+      "actual_answer": "can opener",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8718576431274414,
+      "raw_response": {
+        "success": true,
+        "data": "can opener",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "can opener"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_157",
+      "question": "What do you put in your car to make it run?",
+      "expected_answer": "Gas",
+      "actual_answer": "汽油",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 0.8054533004760742,
+      "raw_response": {
+        "success": true,
+        "data": "汽油",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "汽油"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_158",
+      "question": "How many cents are in a dollar?",
+      "expected_answer": "100",
+      "actual_answer": "100",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.7118244171142578,
+      "raw_response": {
+        "success": true,
+        "data": "100",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "100"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_159",
+      "question": "What do you use to take pictures?",
+      "expected_answer": "Camera",
+      "actual_answer": "camera",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.5728371143341064,
+      "raw_response": {
+        "success": true,
+        "data": "camera",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "camera"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_160",
+      "question": "What do you wear around your waist?",
+      "expected_answer": "Belt",
+      "actual_answer": "belt",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.5917975902557373,
+      "raw_response": {
+        "success": true,
+        "data": "belt",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "belt"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_161",
+      "question": "How many players are on a basketball team on the court?",
+      "expected_answer": "5",
+      "actual_answer": "5",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.6645383834838867,
+      "raw_response": {
+        "success": true,
+        "data": "5",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "5"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_162",
+      "question": "What do you use to fix a flat tire?",
+      "expected_answer": "Spare tire",
+      "actual_answer": "tire patch kit",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 0.8670272827148438,
+      "raw_response": {
+        "success": true,
+        "data": "tire patch kit",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "tire patch kit"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_163",
+      "question": "What do you put on a wound?",
+      "expected_answer": "Bandage",
+      "actual_answer": "消毒藥水和紗布",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 1.1756203174591064,
+      "raw_response": {
+        "success": true,
+        "data": "消毒藥水和紗布",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "消毒藥水和紗布"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    },
+    {
+      "question_id": "gaia_level1_164",
+      "question": "How many strings does a guitar typically have?",
+      "expected_answer": "6",
+      "actual_answer": "6",
+      "adapter_used": "claude",
+      "correct": true,
+      "execution_time": 0.8093650341033936,
+      "raw_response": {
+        "success": true,
+        "data": "6",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "6"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "medium"
+    },
+    {
+      "question_id": "gaia_level1_165",
+      "question": "What do you use to start a fire?",
+      "expected_answer": "Match",
+      "actual_answer": "打火機或火柴",
+      "adapter_used": "claude",
+      "correct": false,
+      "execution_time": 0.7215776443481445,
+      "raw_response": {
+        "success": true,
+        "data": "打火機或火柴",
+        "confidence": 0.8,
+        "adapter_type": "ai_model",
+        "raw_response": "打火機或火柴"
+      },
+      "success": true,
+      "category": "common_sense",
+      "difficulty": "easy"
+    }
+  ]
+}
