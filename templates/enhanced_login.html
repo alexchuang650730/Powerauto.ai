@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerAutomation 登錄 - 智能端雲協同系統</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 600px;
+            display: flex;
+        }
+
+        .login-left {
+            flex: 1;
+            background: linear-gradient(45deg, #2c3e50, #3498db);
+            color: white;
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .login-left::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+        }
+
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo i {
+            color: #f39c12;
+            margin-right: 10px;
+        }
+
+        .welcome-text {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .features {
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+
+        .feature i {
+            color: #f39c12;
+            margin-right: 15px;
+            width: 20px;
+        }
+
+        .login-right {
+            flex: 1;
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .login-tabs {
+            display: flex;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .tab.active {
+            border-bottom-color: #3498db;
+            color: #3498db;
+        }
+
+        .tab:hover {
+            background: rgba(52, 152, 219, 0.1);
+        }
+
+        .login-form {
+            display: none;
+        }
+
+        .login-form.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #ecf0f1;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #3498db;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        .form-group i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #7f8c8d;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+        }
+
+        .login-btn:active {
+            transform: translateY(0);
+        }
+
+        .qr-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            border: 3px solid #ecf0f1;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+
+        .qr-status {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .qr-waiting {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
+        .qr-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .qr-expired {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .device-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .remember-me input {
+            margin-right: 10px;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .forgot-password a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #f5c6cb;
+            display: none;
+        }
+
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #c3e6cb;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .login-container {
+                flex-direction: column;
+                max-width: 400px;
+            }
+            
+            .login-left {
+                padding: 40px 30px;
+            }
+            
+            .login-right {
+                padding: 40px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-left">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                PowerAutomation
+            </div>
+            <div class="welcome-text">
+                歡迎使用智能端雲協同系統，體驗下一代AI驅動的自動化平台
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-cloud"></i>
+                    端雲協同智能路由
+                </div>
+                <div class="feature">
+                    <i class="fas fa-brain"></i>
+                    Qwen3本地+雲端8B模型
+                </div>
+                <div class="feature">
+                    <i class="fas fa-code"></i>
+                    智能代碼編輯器協同
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    企業級安全保護
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    實時性能監控
+                </div>
+            </div>
+        </div>
+        
+        <div class="login-right">
+            <div class="login-tabs">
+                <div class="tab active" onclick="switchTab('password')">
+                    <i class="fas fa-key"></i> 密碼登錄
+                </div>
+                <div class="tab" onclick="switchTab('qr')">
+                    <i class="fas fa-qrcode"></i> QR碼登錄
+                </div>
+                <div class="tab" onclick="switchTab('token')">
+                    <i class="fas fa-ticket-alt"></i> Token登錄
+                </div>
+            </div>
+
+            <div class="error-message" id="error-message"></div>
+            <div class="success-message" id="success-message"></div>
+
+            <!-- 密碼登錄表單 -->
+            <form class="login-form active" id="password-form">
+                <div class="device-info">
+                    <i class="fas fa-info-circle"></i>
+                    檢測到設備: <span id="device-type">Windows 11</span> | 
+                    瀏覽器: <span id="browser-type">Chrome 120</span> |
+                    IP: <span id="ip-address">192.168.1.100</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="username">用戶名</label>
+                    <input type="text" id="username" name="username" placeholder="請輸入用戶名" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">密碼</label>
+                    <input type="password" id="password" name="password" placeholder="請輸入密碼" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+                
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">記住我 (7天)</label>
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i> 登錄
+                </button>
+                
+                <div class="forgot-password">
+                    <a href="#" onclick="showForgotPassword()">忘記密碼？</a>
+                </div>
+            </form>
+
+            <!-- QR碼登錄表單 -->
+            <form class="login-form" id="qr-form">
+                <div class="qr-container">
+                    <div class="qr-code">
+                        {% if qr_code_data %}
+                            <img src="{{ qr_code_data }}" alt="QR Code" style="width: 180px; height: 180px;">
+                        {% else %}
+                            <i class="fas fa-qrcode" style="font-size: 60px; color: #bdc3c7;"></i>
+                        {% endif %}
+                    </div>
+                    <div class="qr-status qr-waiting" id="qr-status">
+                        <i class="fas fa-mobile-alt"></i>
+                        請使用手機掃描QR碼登錄
+                    </div>
+                    <button type="button" class="login-btn" onclick="refreshQR()">
+                        <i class="fas fa-sync-alt"></i> 刷新QR碼
+                    </button>
+                </div>
+            </form>
+
+            <!-- Token登錄表單 -->
+            <form class="login-form" id="token-form">
+                <div class="form-group">
+                    <label for="access-token">訪問Token</label>
+                    <input type="text" id="access-token" name="token" placeholder="請輸入JWT訪問Token" required>
+                    <i class="fas fa-key"></i>
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-unlock"></i> Token登錄
+                </button>
+                
+                <div class="device-info">
+                    <i class="fas fa-info-circle"></i>
+                    Token登錄適用於API集成和自動化腳本
+                </div>
+            </form>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <div>正在登錄...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 檢測設備信息
+        function detectDevice() {
+            const userAgent = navigator.userAgent;
+            let deviceType = 'Unknown';
+            let browserType = 'Unknown';
+            
+            // 檢測操作系統
+            if (userAgent.indexOf('Windows') > -1) deviceType = 'Windows';
+            else if (userAgent.indexOf('Mac') > -1) deviceType = 'macOS';
+            else if (userAgent.indexOf('Linux') > -1) deviceType = 'Linux';
+            else if (userAgent.indexOf('Android') > -1) deviceType = 'Android';
+            else if (userAgent.indexOf('iOS') > -1) deviceType = 'iOS';
+            
+            // 檢測瀏覽器
+            if (userAgent.indexOf('Chrome') > -1) browserType = 'Chrome';
+            else if (userAgent.indexOf('Firefox') > -1) browserType = 'Firefox';
+            else if (userAgent.indexOf('Safari') > -1) browserType = 'Safari';
+            else if (userAgent.indexOf('Edge') > -1) browserType = 'Edge';
+            
+            document.getElementById('device-type').textContent = deviceType;
+            document.getElementById('browser-type').textContent = browserType;
+        }
+
+        // 切換登錄標籤
+        function switchTab(tabName) {
+            // 移除所有active類
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.login-form').forEach(form => form.classList.remove('active'));
+            
+            // 添加active類到當前標籤
+            event.target.closest('.tab').classList.add('active');
+            document.getElementById(tabName + '-form').classList.add('active');
+        }
+
+        // 顯示錯誤消息
+        function showError(message) {
+            const errorDiv = document.getElementById('error-message');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+            setTimeout(() => {
+                errorDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        // 顯示成功消息
+        function showSuccess(message) {
+            const successDiv = document.getElementById('success-message');
+            successDiv.textContent = message;
+            successDiv.style.display = 'block';
+            setTimeout(() => {
+                successDiv.style.display = 'none';
+            }, 3000);
+        }
+
+        // 顯示加載狀態
+        function showLoading(show) {
+            document.getElementById('loading').style.display = show ? 'block' : 'none';
+            document.querySelectorAll('.login-btn').forEach(btn => {
+                btn.disabled = show;
+                btn.style.opacity = show ? '0.6' : '1';
+            });
+        }
+
+        // 密碼登錄處理
+        document.getElementById('password-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const remember = document.getElementById('remember').checked;
+            
+            if (!username || !password) {
+                showError('請輸入用戶名和密碼');
+                return;
+            }
+            
+            showLoading(true);
+            
+            try {
+                const response = await fetch('/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        method: 'password',
+                        username: username,
+                        password: password,
+                        remember: remember,
+                        device_info: {
+                            userAgent: navigator.userAgent,
+                            platform: navigator.platform,
+                            language: navigator.language,
+                            screen: {
+                                width: screen.width,
+                                height: screen.height
+                            }
+                        }
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showSuccess('登錄成功，正在跳轉...');
+                    setTimeout(() => {
+                        window.location.href = result.redirect;
+                    }, 1000);
+                } else {
+                    showError(result.error || '登錄失敗');
+                }
+            } catch (error) {
+                showError('網絡錯誤，請稍後重試');
+            } finally {
+                showLoading(false);
+            }
+        });
+
+        // Token登錄處理
+        document.getElementById('token-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const token = document.getElementById('access-token').value;
+            
+            if (!token) {
+                showError('請輸入訪問Token');
+                return;
+            }
+            
+            showLoading(true);
+            
+            try {
+                const response = await fetch('/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        method: 'token',
+                        token: token
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showSuccess('Token驗證成功，正在跳轉...');
+                    setTimeout(() => {
+                        window.location.href = result.redirect;
+                    }, 1000);
+                } else {
+                    showError(result.error || 'Token驗證失敗');
+                }
+            } catch (error) {
+                showError('網絡錯誤，請稍後重試');
+            } finally {
+                showLoading(false);
+            }
+        });
+
+        // QR碼狀態檢查
+        function checkQRStatus() {
+            const qrToken = '{{ qr_token }}';
+            if (!qrToken) return;
+            
+            fetch(`/api/qr-login/${qrToken}`)
+                .then(response => response.json())
+                .then(data => {
+                    const statusDiv = document.getElementById('qr-status');
+                    
+                    if (data.status === 'success') {
+                        statusDiv.className = 'qr-status qr-success';
+                        statusDiv.innerHTML = '<i class="fas fa-check-circle"></i> 登錄成功，正在跳轉...';
+                        setTimeout(() => {
+                            window.location.href = data.redirect;
+                        }, 1000);
+                    } else if (data.status === 'expired') {
+                        statusDiv.className = 'qr-status qr-expired';
+                        statusDiv.innerHTML = '<i class="fas fa-times-circle"></i> QR碼已過期，請刷新';
+                    } else if (data.status === 'waiting') {
+                        setTimeout(checkQRStatus, 2000); // 2秒後再次檢查
+                    }
+                })
+                .catch(error => {
+                    console.error('QR狀態檢查失敗:', error);
+                });
+        }
+
+        // 刷新QR碼
+        function refreshQR() {
+            window.location.reload();
+        }
+
+        // 忘記密碼
+        function showForgotPassword() {
+            alert('請聯繫管理員重置密碼\n郵箱: admin@powerauto.ai');
+        }
+
+        // 頁面加載完成後執行
+        document.addEventListener('DOMContentLoaded', function() {
+            detectDevice();
+            
+            // 如果是QR碼登錄頁面，開始檢查狀態
+            if (document.querySelector('.login-form.active').id === 'qr-form') {
+                checkQRStatus();
+            }
+            
+            // 獲取IP地址
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('ip-address').textContent = data.ip;
+                })
+                .catch(() => {
+                    document.getElementById('ip-address').textContent = '無法獲取';
+                });
+        });
+    </script>
+</body>
+</html>
+

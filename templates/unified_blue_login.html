@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerAutomation - 智能端雲協同系統</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #3b82f6 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+            border-radius: 24px;
+            box-shadow: 0 25px 50px rgba(30, 60, 114, 0.2);
+            overflow: hidden;
+            width: 100%;
+            max-width: 1200px;
+            min-height: 700px;
+            display: flex;
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+
+        /* 左側狀態區域 */
+        .status-sidebar {
+            width: 280px;
+            background: linear-gradient(180deg, #1e40af 0%, #1d4ed8 50%, #2563eb 100%);
+            color: white;
+            padding: 30px 25px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .status-sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .platform-badge {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 12px 16px;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .platform-badge .platform-type {
+            font-size: 14px;
+            font-weight: 600;
+            color: #e0f2fe;
+            margin-bottom: 4px;
+        }
+
+        .platform-badge .platform-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+        }
+
+        /* 模型狀態 */
+        .model-status {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .model-status h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #e0f2fe;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .current-model {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .model-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #10b981;
+            box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .model-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .model-type {
+            font-size: 12px;
+            color: #bfdbfe;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        /* 積分狀態 */
+        .credit-status {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .credit-status h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #e0f2fe;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .credit-amount {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fbbf24;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .credit-label {
+            font-size: 12px;
+            color: #bfdbfe;
+        }
+
+        /* Token節省統計 */
+        .savings-status {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .savings-status h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #e0f2fe;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .savings-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .savings-label {
+            font-size: 13px;
+            color: #bfdbfe;
+        }
+
+        .savings-value {
+            font-size: 15px;
+            font-weight: 600;
+            color: #10b981;
+        }
+
+        .savings-percentage {
+            font-size: 20px;
+            font-weight: 700;
+            color: #10b981;
+            text-align: center;
+            margin-top: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 右側登錄區域 */
+        .login-main {
+            flex: 1;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+
+        .logo i {
+            font-size: 36px;
+            color: white;
+        }
+
+        .login-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 8px;
+        }
+
+        .login-subtitle {
+            font-size: 16px;
+            color: #64748b;
+        }
+
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        .login-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+        }
+
+        .login-options {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .login-option {
+            display: inline-block;
+            margin: 0 15px;
+            color: #3b82f6;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .login-option:hover {
+            color: #1d4ed8;
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            .login-container {
+                flex-direction: column;
+                max-width: 400px;
+            }
+            
+            .status-sidebar {
+                width: 100%;
+                padding: 20px;
+            }
+            
+            .login-main {
+                padding: 40px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- 左側狀態區域 -->
+        <div class="status-sidebar">
+            <!-- 平台標識 -->
+            <div class="platform-badge">
+                <div class="platform-type" id="platformType">端側系統</div>
+                <div class="platform-name">PowerAutomation</div>
+            </div>
+
+            <!-- 當前模型狀態 -->
+            <div class="model-status">
+                <h3><i class="fas fa-brain"></i> 當前模型</h3>
+                <div class="current-model">
+                    <div class="model-indicator"></div>
+                    <div>
+                        <div class="model-name" id="currentModel">Qwen3 本地</div>
+                        <div class="model-type" id="modelType">本地推理</div>
+                    </div>
+                </div>
+                <div style="font-size: 12px; color: #bfdbfe; margin-top: 8px;">
+                    <i class="fas fa-tachometer-alt"></i> 響應時間: <span id="responseTime">1.2s</span>
+                </div>
+            </div>
+
+            <!-- 積分狀態 -->
+            <div class="credit-status">
+                <h3><i class="fas fa-coins"></i> 積分餘額</h3>
+                <div class="credit-amount" id="creditAmount">2,580</div>
+                <div class="credit-label">可用積分</div>
+                <div style="font-size: 12px; color: #bfdbfe; margin-top: 8px;">
+                    <i class="fas fa-sync-alt"></i> 最後同步: <span id="lastSync">剛剛</span>
+                </div>
+            </div>
+
+            <!-- Token節省統計 -->
+            <div class="savings-status">
+                <h3><i class="fas fa-chart-line"></i> 節省統計</h3>
+                <div class="savings-item">
+                    <span class="savings-label">本地處理</span>
+                    <span class="savings-value" id="localProcessing">73%</span>
+                </div>
+                <div class="savings-item">
+                    <span class="savings-label">雲端處理</span>
+                    <span class="savings-value" id="cloudProcessing">27%</span>
+                </div>
+                <div class="savings-item">
+                    <span class="savings-label">今日節省</span>
+                    <span class="savings-value" id="todaySavings">1,240 tokens</span>
+                </div>
+                <div class="savings-percentage" id="savingsPercentage">45% 節省</div>
+            </div>
+
+            <!-- 連接狀態 -->
+            <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #bfdbfe;">
+                    <div style="width: 8px; height: 8px; background: #10b981; border-radius: 50%; animation: pulse 2s infinite;"></div>
+                    <span>端雲協同已連接</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右側登錄區域 -->
+        <div class="login-main">
+            <div class="login-header">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h1 class="login-title">歡迎回來</h1>
+                <p class="login-subtitle">登錄到您的PowerAutomation帳戶</p>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label class="form-label" for="username">用戶名</label>
+                    <input type="text" id="username" class="form-input" placeholder="請輸入用戶名" value="admin" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="password">密碼</label>
+                    <input type="password" id="password" class="form-input" placeholder="請輸入密碼" value="admin123" required>
+                </div>
+
+                <button type="submit" class="login-button">
+                    <i class="fas fa-sign-in-alt"></i> 登錄
+                </button>
+
+                <div class="login-options">
+                    <a href="#" class="login-option">忘記密碼？</a>
+                    <a href="#" class="login-option">QR碼登錄</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // 動態更新狀態信息
+        function updateStatus() {
+            // 模擬實時數據更新
+            const models = [
+                { name: 'Qwen3 本地', type: '本地推理', time: '1.2s' },
+                { name: 'Qwen8B 雲端', type: '雲端推理', time: '2.8s' }
+            ];
+            
+            const currentModelIndex = Math.random() > 0.7 ? 1 : 0;
+            const model = models[currentModelIndex];
+            
+            document.getElementById('currentModel').textContent = model.name;
+            document.getElementById('modelType').textContent = model.type;
+            document.getElementById('responseTime').textContent = model.time;
+            
+            // 更新積分（模擬消費）
+            const currentCredit = parseInt(document.getElementById('creditAmount').textContent.replace(',', ''));
+            const newCredit = Math.max(0, currentCredit - Math.floor(Math.random() * 5));
+            document.getElementById('creditAmount').textContent = newCredit.toLocaleString();
+            
+            // 更新節省統計
+            const localPercent = Math.floor(Math.random() * 20) + 60; // 60-80%
+            const cloudPercent = 100 - localPercent;
+            const savingsPercent = Math.floor(localPercent * 0.6); // 節省比例
+            
+            document.getElementById('localProcessing').textContent = localPercent + '%';
+            document.getElementById('cloudProcessing').textContent = cloudPercent + '%';
+            document.getElementById('savingsPercentage').textContent = savingsPercent + '% 節省';
+            
+            // 更新今日節省tokens
+            const todaySavings = Math.floor(Math.random() * 500) + 1000;
+            document.getElementById('todaySavings').textContent = todaySavings.toLocaleString() + ' tokens';
+        }
+
+        // 設置平台類型和配置
+        function setPlatformConfig() {
+            // 從URL參數或服務器獲取平台配置
+            const urlParams = new URLSearchParams(window.location.search);
+            const platform = urlParams.get('platform') || 'edge';
+            
+            fetch('/api/platform-config')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.config) {
+                        document.getElementById('platformType').textContent = data.config.type;
+                        
+                        // 根據平台調整主題色
+                        const root = document.documentElement;
+                        root.style.setProperty('--platform-color', data.config.theme_color);
+                        
+                        // 更新用戶積分
+                        if (data.user) {
+                            document.getElementById('creditAmount').textContent = data.user.credits.toLocaleString();
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.log('使用默認配置');
+                    setPlatformType('edge');
+                });
+        }
+
+        // 登錄表單處理
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const urlParams = new URLSearchParams(window.location.search);
+            const platform = urlParams.get('platform') || 'edge';
+            
+            // 模擬登錄過程
+            const button = document.querySelector('.login-button');
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 登錄中...';
+            button.disabled = true;
+            
+            // 發送登錄請求
+            fetch('/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    username: username,
+                    password: password,
+                    platform: platform
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // 登錄成功，跳轉到編輯器
+                    window.location.href = data.redirect;
+                } else {
+                    // 登錄失敗
+                    button.innerHTML = '<i class="fas fa-sign-in-alt"></i> 登錄';
+                    button.disabled = false;
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                button.innerHTML = '<i class="fas fa-sign-in-alt"></i> 登錄';
+                button.disabled = false;
+                alert('登錄請求失敗，請重試');
+            });
+        });
+
+        // 初始化
+        setPlatformConfig();
+        updateStatus();
+        
+        // 定期更新狀態
+        setInterval(updateStatus, 5000);
+        
+        // 更新最後同步時間
+        setInterval(() => {
+            const now = new Date();
+            const timeStr = now.getHours().toString().padStart(2, '0') + ':' + 
+                           now.getMinutes().toString().padStart(2, '0');
+            document.getElementById('lastSync').textContent = timeStr;
+        }, 60000);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,9 @@
+{
+  "ipv6_address": "::1",
+  "port": 5002,
+  "interface": "lo",
+  "scope": "host",
+  "is_available": true,
+  "last_check": 1749481195.1777163,
+  "timestamp": 1749481195.1778939
+}
