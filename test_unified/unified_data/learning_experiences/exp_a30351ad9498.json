@@ -1,0 +1,47 @@
+{
+  "experience_id": "exp_a30351ad9498",
+  "timestamp": "2025-06-10T01:27:10.223135",
+  "state": {
+    "user_request": {
+      "text": "並發測試 1",
+      "type": "concurrent_test"
+    },
+    "context": {},
+    "source": "system_internal"
+  },
+  "action": {
+    "response": {
+      "text": "並發響應 1"
+    },
+    "deliverables": [
+      {
+        "deliverable_id": "test_suite_09969d27",
+        "deliverable_type": "test_suite",
+        "name": "concurrent_1.py",
+        "content": "# Concurrent test 1",
+        "file_path": null,
+        "metadata": {
+          "concurrent": true
+        },
+        "template_potential_score": 0.0,
+        "quality_assessment_score": 0.5,
+        "created_at": "2025-06-10T01:27:10.222833"
+      }
+    ],
+    "tools_used": []
+  },
+  "reward": 0.55,
+  "next_state": {
+    "task_completed": true,
+    "deliverable_quality": 0.5,
+    "performance_metrics": {}
+  },
+  "source_interaction_log_id": "log_c1b658ecc589",
+  "metadata": {
+    "tags": [
+      "test_suite",
+      "test"
+    ],
+    "source": "system_internal"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "tool_id": "2fab21297e28",
+  "tool_name": "general_processor",
+  "execution_time": 0.027822494506835938,
+  "success": true,
+  "output": {
+    "tool_name": "general_processor",
+    "description": "通用處理工具",
+    "timestamp": "2025-06-10T00:18:00.304101",
+    "input_data": {},
+    "success": true,
+    "output_data": {
+      "processed": true,
+      "original_keys": [],
+      "processing_time": "2025-06-10T00:18:00.304135"
+    }
+  },
+  "error": null
+}

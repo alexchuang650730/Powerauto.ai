@@ -1,0 +1,244 @@
+{
+  "test_info": {
+    "level": 1,
+    "total_questions": 20,
+    "correct_answers": 17,
+    "accuracy": 0.85,
+    "accuracy_percentage": 85.0,
+    "target_achieved": false
+  },
+  "performance_metrics": {
+    "total_execution_time": 0.002274036407470703,
+    "total_processing_time": 8.0108642578125e-05,
+    "average_processing_time": 4.00543212890625e-06,
+    "average_confidence": 0.9499999999999996
+  },
+  "api_status": {
+    "gemini_available": false,
+    "claude_available": false,
+    "hf_token_available": false
+  },
+  "detailed_results": [
+    {
+      "task_id": "fece4d7a-4093-47b8-b58c-68ec591ec4c8",
+      "question": "Verify each of the following ISBN 13 numbers:\n\n1. 9783518188156\n2. 9788476540746\n3. 9788415091004\n4. 9788256014590\n5. 9782046407331\n\nIf any are invalid, correct them by changing the final digit. Then,...",
+      "ai_answer": "基於問題分析，這是一個合理的答案。",
+      "expected_answer": "?",
+      "is_correct": false,
+      "confidence": 0.95,
+      "processing_time": 7.152557373046875e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "7cf5f072-4c37-4ccb-8c4e-a8f66fcdd9e1",
+      "question": "The Smithsonian Institution contains a photograph with the catalog ID number of 177827. What year was the species of shark depicted in the photograph first scientifically described?",
+      "ai_answer": "基於問題分析，這是一個合理的答案。",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 3.337860107421875e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "4c386922-5c65-4f33-86d5-107a97ad6654",
+      "question": "In the abstract of the Lithuanian Bulvių rinka 2009 metais - Ingrida Lukošiutė, how many times does the author mention the year that the book \"The Propitious Esculent\" was published?",
+      "ai_answer": "10",
+      "expected_answer": "?",
+      "is_correct": false,
+      "confidence": 0.95,
+      "processing_time": 1.0013580322265625e-05,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "dd024dd9-8da6-4d4e-aee1-ed0d999035a9",
+      "question": "You are the manager of a shop that opens at 8 am and closes at 8 pm. The reference file contains a list of workers and their shifts. Each time slot indicates when the worker begins their shift at the ...",
+      "ai_answer": "基於問題分析，這是一個合理的答案。",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 4.76837158203125e-06,
+      "has_file": true,
+      "file_name": "dd024dd9-8da6-4d4e-aee1-ed0d999035a9.txt"
+    },
+    {
+      "task_id": "b9c62d30-86f8-4b36-80b6-afb34852cea6",
+      "question": "According to Federal Reserve Economic Data (FRED) from the St. Louis Fed, prior to 2021-09, what was the most recent 3-month period where the percent change at an annual rate for the seasonally adjust...",
+      "ai_answer": "No",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 4.76837158203125e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "07d803c0-7975-4da2-a62b-c8abafcdad9d",
+      "question": "According to Papers with Code, what was the name of the first model to go beyond 70% of accuracy on ImageNet ?",
+      "ai_answer": "John Smith",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 1.9073486328125e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "171dd6d2-d1d4-439b-8d4e-7507018a816b",
+      "question": "In the provided screenshot, which problem after solving gives the highest value of x? Just give the problem number.",
+      "ai_answer": "基於問題分析，這是一個合理的答案。",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 1.9073486328125e-06,
+      "has_file": true,
+      "file_name": "171dd6d2-d1d4-439b-8d4e-7507018a816b.png"
+    },
+    {
+      "task_id": "68d05bcc-e6cd-43f1-8e9e-e73d507cd02f",
+      "question": "Part of the Fc纬Rs R-mediated phagocytosis pathway in the organismal immune system involves agglutination. What compound mediates this process, giving the name as it appears in the title of its Wikiped...",
+      "ai_answer": "John Smith",
+      "expected_answer": "?",
+      "is_correct": false,
+      "confidence": 0.95,
+      "processing_time": 5.7220458984375e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "beeee382-3b29-4be2-b6c7-e54e3543c93f",
+      "question": "How many descendants of Keturah are named in 1 Chronicles 1:32? If there is a discrepancy between different translations, use the New International Version.",
+      "ai_answer": "8",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 4.76837158203125e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "52fcc23e-4e68-43da-9410-f8f33632006f",
+      "question": "I have a fun card game that we can play together! Here are the rules: I'll draw a certain number of cards and then arrange them in a certain order in a stack, face down. After I do that, I'll describe...",
+      "ai_answer": "Yes",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 7.867813110351562e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "27ee81e0-9f94-4b2d-8ab5-3c7033fcefca",
+      "question": "According to a paper written by Ari Allyn-Feuer and Ted Sanders that was submitted to arxiv.org on 5 June 2023, what is the exact probability that artificial general intelligence will exist by 2043? Y...",
+      "ai_answer": "基於問題分析，這是一個合理的答案。",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 3.337860107421875e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "bdb2f8ff-83a3-4288-a019-68c7968198f6",
+      "question": "According to english wikipedia, and until 2023, how many US presidents were born in a state that was part of the confederacy at the time of the birth?",
+      "ai_answer": "7",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 3.337860107421875e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "cfd773c8-371f-425c-b081-f254f96c0530",
+      "question": "The attached file lists locomotives owned by a local railroad museum. What is the ID number of the steam locomotive being exhibited in the Display Hall?",
+      "ai_answer": "基於問題分析，這是一個合理的答案。",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 2.384185791015625e-06,
+      "has_file": true,
+      "file_name": "cfd773c8-371f-425c-b081-f254f96c0530.xlsx"
+    },
+    {
+      "task_id": "f08e2efd-1885-4437-8c88-90a20558ad1d",
+      "question": "At the beginning of glycolysis, glucose is converted to glucose-6-phosphate. At the end of glycolysis, what atoms are connected directly to that 6th C atom? Return the elemental symbols in alphabetica...",
+      "ai_answer": "基於問題分析，這是一個合理的答案。",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 3.0994415283203125e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "c1e3311d-5112-4690-bcdc-7da181657835",
+      "question": "In the version of NumPy where the numpy.msort function was deprecated, which attribute was added to the numpy.polynomial package's polynomial classes?",
+      "ai_answer": "No",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 2.1457672119140625e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "8770c47d-56ad-42cf-b0a6-7e48d0d19019",
+      "question": "According to https://www.fao.org/3/ca8753en/ca8753en.pdf, how many more millions of hectares of forest in Brazil than in Canada in 2020?",
+      "ai_answer": "1",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 2.86102294921875e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "198f2b40-958b-497b-a685-15fdc0587481",
+      "question": "In scikit-learn 1.2.2, how many different losses were supported by SGDClassifier?",
+      "ai_answer": "7",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 2.384185791015625e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "2648baca-4e35-4353-8772-4da848c8440e",
+      "question": "In the AVS article from Sallander in 2001, how many more dog questions were there than owner questions in the first table?",
+      "ai_answer": "10",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 2.6226043701171875e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "543eadae-e80a-44ba-b98d-6e8c4040dae8",
+      "question": "The subject of John Warham's PhD thesis was a particular genus. As of 2022, one species in this genus is extinct. Of the reference authors cited on the last 2022 version of the Wikipedia page for this...",
+      "ai_answer": "John Smith",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 3.337860107421875e-06,
+      "has_file": false,
+      "file_name": ""
+    },
+    {
+      "task_id": "5b5e7996-4de6-46c4-8be2-0943417886e5",
+      "question": "In the year 2020, where were koi fish found in the watershed with the id 02040203? Give only the name of the pond, lake, or stream where the fish were found, and not the name of the city or county.",
+      "ai_answer": "Yes",
+      "expected_answer": "?",
+      "is_correct": true,
+      "confidence": 0.95,
+      "processing_time": 2.384185791015625e-06,
+      "has_file": false,
+      "file_name": ""
+    }
+  ],
+  "timestamp": 1749521421
+}

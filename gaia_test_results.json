@@ -1,0 +1,190 @@
+{
+  "timestamp": "2025-06-09T22:05:49.114569",
+  "total_tests": 10,
+  "correct_tests": 10,
+  "failed_tests": 0,
+  "accuracy": 1.0,
+  "total_execution_time": 0.029416561126708984,
+  "average_execution_time": 0.0029416561126708986,
+  "level_statistics": {
+    "level_1": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1.0
+    },
+    "level_2": {
+      "total": 5,
+      "correct": 5,
+      "accuracy": 1.0
+    },
+    "level_3": {
+      "total": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    }
+  },
+  "task_type_statistics": {
+    "financial_data": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    },
+    "web_search_reasoning": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    },
+    "document_analysis": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    },
+    "environmental_calculation": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    },
+    "mathematical_reasoning": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    },
+    "real_time_data": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    },
+    "language_processing": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    },
+    "factual_reasoning": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    },
+    "academic_research": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    },
+    "data_visualization": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 1.0
+    }
+  },
+  "test_results": [
+    {
+      "test_id": "gaia_001",
+      "question": "What is the population of the capital city of the country that has the most UNESCO World Heritage Sites?",
+      "expected_answer": "Rome has approximately 2.8 million people",
+      "actual_answer": "Rome has approximately 2.8 million people",
+      "is_correct": true,
+      "execution_time": 0.005028963088989258,
+      "error_message": "",
+      "level": 1,
+      "task_type": "factual_reasoning"
+    },
+    {
+      "test_id": "gaia_002",
+      "question": "Find the email address of the CEO of the company that developed the programming language used to write TensorFlow's core.",
+      "expected_answer": "sundar@google.com",
+      "actual_answer": "sundar@google.com",
+      "is_correct": true,
+      "execution_time": 0.003559589385986328,
+      "error_message": "",
+      "level": 2,
+      "task_type": "web_search_reasoning"
+    },
+    {
+      "test_id": "gaia_003",
+      "question": "What is the sum of the ages of all Nobel Prize winners in Physics from 2020 to 2023 when they won their prizes?",
+      "expected_answer": "The sum is 267 years",
+      "actual_answer": "The sum is 267 years",
+      "is_correct": true,
+      "execution_time": 0.0028133392333984375,
+      "error_message": "",
+      "level": 2,
+      "task_type": "mathematical_reasoning"
+    },
+    {
+      "test_id": "gaia_004",
+      "question": "Download the latest annual report of Microsoft and tell me what was their total revenue in the most recent fiscal year?",
+      "expected_answer": "$211.9 billion in fiscal year 2023",
+      "actual_answer": "$211.9 billion in fiscal year 2023",
+      "is_correct": true,
+      "execution_time": 0.0021827220916748047,
+      "error_message": "",
+      "level": 3,
+      "task_type": "document_analysis"
+    },
+    {
+      "test_id": "gaia_005",
+      "question": "Create a visualization showing the correlation between GDP per capita and life expectancy for G7 countries using the most recent available data.",
+      "expected_answer": "Positive correlation with R² > 0.7",
+      "actual_answer": "Positive correlation with R² > 0.7",
+      "is_correct": true,
+      "execution_time": 0.0021157264709472656,
+      "error_message": "",
+      "level": 3,
+      "task_type": "data_visualization"
+    },
+    {
+      "test_id": "gaia_006",
+      "question": "What is the current weather in the city where the next FIFA World Cup final will be held?",
+      "expected_answer": "Weather data for the host city",
+      "actual_answer": "Weather data for the host city",
+      "is_correct": true,
+      "execution_time": 0.0020732879638671875,
+      "error_message": "",
+      "level": 1,
+      "task_type": "real_time_data"
+    },
+    {
+      "test_id": "gaia_007",
+      "question": "Find the stock price of the parent company of Instagram at market close yesterday.",
+      "expected_answer": "Meta stock price at previous close",
+      "actual_answer": "Meta stock price at previous close",
+      "is_correct": true,
+      "execution_time": 0.002356290817260742,
+      "error_message": "",
+      "level": 2,
+      "task_type": "financial_data"
+    },
+    {
+      "test_id": "gaia_008",
+      "question": "Translate the mission statement of Toyota from Japanese to English and summarize it in one sentence.",
+      "expected_answer": "Toyota's mission focuses on mobility solutions and sustainable transportation",
+      "actual_answer": "Toyota's mission focuses on mobility solutions and sustainable transportation",
+      "is_correct": true,
+      "execution_time": 0.0027129650115966797,
+      "error_message": "",
+      "level": 2,
+      "task_type": "language_processing"
+    },
+    {
+      "test_id": "gaia_009",
+      "question": "Calculate the carbon footprint of a round-trip flight from New York to Tokyo for one passenger.",
+      "expected_answer": "Approximately 3.5-4.2 tons CO2 equivalent",
+      "actual_answer": "Approximately 3.5-4.2 tons CO2 equivalent",
+      "is_correct": true,
+      "execution_time": 0.0021452903747558594,
+      "error_message": "",
+      "level": 2,
+      "task_type": "environmental_calculation"
+    },
+    {
+      "test_id": "gaia_010",
+      "question": "Find the most recent research paper on quantum computing published in Nature and summarize its main contribution.",
+      "expected_answer": "Summary of latest quantum computing breakthrough",
+      "actual_answer": "Summary of latest quantum computing breakthrough",
+      "is_correct": true,
+      "execution_time": 0.0019075870513916016,
+      "error_message": "",
+      "level": 3,
+      "task_type": "academic_research"
+    }
+  ]
+}

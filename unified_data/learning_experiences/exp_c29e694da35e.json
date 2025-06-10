@@ -1,0 +1,30 @@
+{
+  "experience_id": "exp_c29e694da35e",
+  "timestamp": "2025-06-10T01:47:46.807391",
+  "state": {
+    "user_request": "創建一個Python函數來計算斐波那契數列，並生成相應的測試用例",
+    "context": {
+      "ide": "vscode",
+      "language": "python",
+      "project_type": "algorithm",
+      "user_level": "intermediate"
+    },
+    "source": "manus_gui"
+  },
+  "action": {
+    "response": {},
+    "deliverables": [],
+    "tools_used": []
+  },
+  "reward": 0.2,
+  "next_state": {
+    "task_completed": false,
+    "deliverable_quality": 0.0,
+    "performance_metrics": {}
+  },
+  "source_interaction_log_id": "log_575f21741819",
+  "metadata": {
+    "tags": [],
+    "source": "manus_gui"
+  }
+}

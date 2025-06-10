@@ -1,0 +1,454 @@
+{
+  "timestamp": "2025-06-09T21:55:08.456285",
+  "summary": {
+    "total_tests": 55,
+    "passed_tests": 0,
+    "failed_tests": 55,
+    "error_tests": 0,
+    "skipped_tests": 0,
+    "success_rate": 0.0,
+    "total_duration": 14.986845254898071
+  },
+  "test_results": [
+    {
+      "test_file": "test/level1/configuration/test_config_loader_real.py",
+      "test_class": "config_loader",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.3838200569152832,
+      "error_message": "test_real_config_loader_basic_functionality (__main__.TestConfigLoaderReal.test_real_config_loader_basic_functionality)\n測試真實config_loader基本功能 ... ok\ntest_real_config_loader_concurrent_operations (__main__.TestConfigLoaderReal.test_real_config_loader_concurrent_operations)\n測試真實config_loader並發操作 ... ERROR\ntest_real_config_loader_error_handling (__main__.TestConfigLoaderReal.test_real_config_loader_error_handling)\n測試真實config_loader錯誤處理 ... ok\ntest_real_config_loader_performance (__main__.TestConfig"
+    },
+    {
+      "test_file": "test/level1/configuration/test_config_updater_real.py",
+      "test_class": "config_updater",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2832787036895752,
+      "error_message": "test_real_config_updater_basic_functionality (__main__.TestConfigUpdaterReal.test_real_config_updater_basic_functionality)\n測試真實config_updater基本功能 ... ok\ntest_real_config_updater_concurrent_operations (__main__.TestConfigUpdaterReal.test_real_config_updater_concurrent_operations)\n測試真實config_updater並發操作 ... ERROR\ntest_real_config_updater_error_handling (__main__.TestConfigUpdaterReal.test_real_config_updater_error_handling)\n測試真實config_updater錯誤處理 ... ok\ntest_real_config_updater_performance (__main"
+    },
+    {
+      "test_file": "test/level1/configuration/test_config_validator_real.py",
+      "test_class": "config_validator",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2788197994232178,
+      "error_message": "test_real_config_validator_basic_functionality (__main__.TestConfigValidatorReal.test_real_config_validator_basic_functionality)\n測試真實config_validator基本功能 ... ok\ntest_real_config_validator_concurrent_operations (__main__.TestConfigValidatorReal.test_real_config_validator_concurrent_operations)\n測試真實config_validator並發操作 ... ERROR\ntest_real_config_validator_error_handling (__main__.TestConfigValidatorReal.test_real_config_validator_error_handling)\n測試真實config_validator錯誤處理 ... ok\ntest_real_config_val"
+    },
+    {
+      "test_file": "test/level1/core_tools/test_config_manager_real.py",
+      "test_class": "config_manager",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2950470447540283,
+      "error_message": "test_real_config_manager_basic_functionality (__main__.TestConfigManagerReal.test_real_config_manager_basic_functionality)\n測試真實config_manager基本功能 ... ok\ntest_real_config_manager_concurrent_operations (__main__.TestConfigManagerReal.test_real_config_manager_concurrent_operations)\n測試真實config_manager並發操作 ... ERROR\ntest_real_config_manager_error_handling (__main__.TestConfigManagerReal.test_real_config_manager_error_handling)\n測試真實config_manager錯誤處理 ... ok\ntest_real_config_manager_performance (__main"
+    },
+    {
+      "test_file": "test/level1/core_tools/test_data_flow_manager_real.py",
+      "test_class": "data_flow_manager",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.30114245414733887,
+      "error_message": "test_real_data_flow_manager_basic_functionality (__main__.TestDataFlowManagerReal.test_real_data_flow_manager_basic_functionality)\n測試真實data_flow_manager基本功能 ... ok\ntest_real_data_flow_manager_concurrent_operations (__main__.TestDataFlowManagerReal.test_real_data_flow_manager_concurrent_operations)\n測試真實data_flow_manager並發操作 ... ERROR\ntest_real_data_flow_manager_error_handling (__main__.TestDataFlowManagerReal.test_real_data_flow_manager_error_handling)\n測試真實data_flow_manager錯誤處理 ... ok\ntest_real_d"
+    },
+    {
+      "test_file": "test/level1/core_tools/test_error_handler_real.py",
+      "test_class": "error_handler",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2848031520843506,
+      "error_message": "test_real_error_handler_basic_functionality (__main__.TestErrorHandlerReal.test_real_error_handler_basic_functionality)\n測試真實error_handler基本功能 ... ok\ntest_real_error_handler_concurrent_operations (__main__.TestErrorHandlerReal.test_real_error_handler_concurrent_operations)\n測試真實error_handler並發操作 ... ERROR\ntest_real_error_handler_error_handling (__main__.TestErrorHandlerReal.test_real_error_handler_error_handling)\n測試真實error_handler錯誤處理 ... ok\ntest_real_error_handler_performance (__main__.TestErrorH"
+    },
+    {
+      "test_file": "test/level1/core_tools/test_event_dispatcher_real.py",
+      "test_class": "event_dispatcher",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.28655171394348145,
+      "error_message": "test_real_event_dispatcher_basic_functionality (__main__.TestEventDispatcherReal.test_real_event_dispatcher_basic_functionality)\n測試真實event_dispatcher基本功能 ... ok\ntest_real_event_dispatcher_concurrent_operations (__main__.TestEventDispatcherReal.test_real_event_dispatcher_concurrent_operations)\n測試真實event_dispatcher並發操作 ... ERROR\ntest_real_event_dispatcher_error_handling (__main__.TestEventDispatcherReal.test_real_event_dispatcher_error_handling)\n測試真實event_dispatcher錯誤處理 ... ok\ntest_real_event_disp"
+    },
+    {
+      "test_file": "test/level1/core_tools/test_intelligent_mcp_selector_real.py",
+      "test_class": "intelligent_mcp_selector",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2706880569458008,
+      "error_message": "test_real_intelligent_mcp_selector_basic_functionality (__main__.TestIntelligentMcpSelectorReal.test_real_intelligent_mcp_selector_basic_functionality)\n測試真實intelligent_mcp_selector基本功能 ... ok\ntest_real_intelligent_mcp_selector_concurrent_operations (__main__.TestIntelligentMcpSelectorReal.test_real_intelligent_mcp_selector_concurrent_operations)\n測試真實intelligent_mcp_selector並發操作 ... ERROR\ntest_real_intelligent_mcp_selector_error_handling (__main__.TestIntelligentMcpSelectorReal.test_real_intellig"
+    },
+    {
+      "test_file": "test/level1/core_tools/test_performance_monitor_real.py",
+      "test_class": "performance_monitor",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.279834508895874,
+      "error_message": "test_real_performance_monitor_basic_functionality (__main__.TestPerformanceMonitorReal.test_real_performance_monitor_basic_functionality)\n測試真實performance_monitor基本功能 ... ok\ntest_real_performance_monitor_concurrent_operations (__main__.TestPerformanceMonitorReal.test_real_performance_monitor_concurrent_operations)\n測試真實performance_monitor並發操作 ... ERROR\ntest_real_performance_monitor_error_handling (__main__.TestPerformanceMonitorReal.test_real_performance_monitor_error_handling)\n測試真實performance_mon"
+    },
+    {
+      "test_file": "test/level1/core_tools/test_resource_manager_real.py",
+      "test_class": "resource_manager",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.29094505310058594,
+      "error_message": "test_real_resource_manager_basic_functionality (__main__.TestResourceManagerReal.test_real_resource_manager_basic_functionality)\n測試真實resource_manager基本功能 ... ok\ntest_real_resource_manager_concurrent_operations (__main__.TestResourceManagerReal.test_real_resource_manager_concurrent_operations)\n測試真實resource_manager並發操作 ... ERROR\ntest_real_resource_manager_error_handling (__main__.TestResourceManagerReal.test_real_resource_manager_error_handling)\n測試真實resource_manager錯誤處理 ... ok\ntest_real_resource_m"
+    },
+    {
+      "test_file": "test/level1/core_tools/test_security_manager_real.py",
+      "test_class": "security_manager",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.3014674186706543,
+      "error_message": "test_real_security_manager_basic_functionality (__main__.TestSecurityManagerReal.test_real_security_manager_basic_functionality)\n測試真實security_manager基本功能 ... ok\ntest_real_security_manager_concurrent_operations (__main__.TestSecurityManagerReal.test_real_security_manager_concurrent_operations)\n測試真實security_manager並發操作 ... ERROR\ntest_real_security_manager_error_handling (__main__.TestSecurityManagerReal.test_real_security_manager_error_handling)\n測試真實security_manager錯誤處理 ... ok\ntest_real_security_m"
+    },
+    {
+      "test_file": "test/level1/core_tools/test_standardized_logging_system_real.py",
+      "test_class": "standardized_logging_system",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2574729919433594,
+      "error_message": "test_real_standardized_logging_system_basic_functionality (__main__.TestStandardizedLoggingSystemReal.test_real_standardized_logging_system_basic_functionality)\n測試真實standardized_logging_system基本功能 ... ok\ntest_real_standardized_logging_system_concurrent_operations (__main__.TestStandardizedLoggingSystemReal.test_real_standardized_logging_system_concurrent_operations)\n測試真實standardized_logging_system並發操作 ... ERROR\ntest_real_standardized_logging_system_error_handling (__main__.TestStandardizedLoggin"
+    },
+    {
+      "test_file": "test/level1/core_tools/test_task_scheduler_real.py",
+      "test_class": "task_scheduler",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2716333866119385,
+      "error_message": "test_real_task_scheduler_basic_functionality (__main__.TestTaskSchedulerReal.test_real_task_scheduler_basic_functionality)\n測試真實task_scheduler基本功能 ... ok\ntest_real_task_scheduler_concurrent_operations (__main__.TestTaskSchedulerReal.test_real_task_scheduler_concurrent_operations)\n測試真實task_scheduler並發操作 ... ERROR\ntest_real_task_scheduler_error_handling (__main__.TestTaskSchedulerReal.test_real_task_scheduler_error_handling)\n測試真實task_scheduler錯誤處理 ... ok\ntest_real_task_scheduler_performance (__main"
+    },
+    {
+      "test_file": "test/level1/data_processing/test_data_backup_manager_real.py",
+      "test_class": "data_backup_manager",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2520284652709961,
+      "error_message": "test_real_data_backup_manager_basic_functionality (__main__.TestDataBackupManagerReal.test_real_data_backup_manager_basic_functionality)\n測試真實data_backup_manager基本功能 ... ok\ntest_real_data_backup_manager_concurrent_operations (__main__.TestDataBackupManagerReal.test_real_data_backup_manager_concurrent_operations)\n測試真實data_backup_manager並發操作 ... ERROR\ntest_real_data_backup_manager_error_handling (__main__.TestDataBackupManagerReal.test_real_data_backup_manager_error_handling)\n測試真實data_backup_manage"
+    },
+    {
+      "test_file": "test/level1/data_processing/test_data_compressor_real.py",
+      "test_class": "data_compressor",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2523941993713379,
+      "error_message": "test_real_data_compressor_basic_functionality (__main__.TestDataCompressorReal.test_real_data_compressor_basic_functionality)\n測試真實data_compressor基本功能 ... ok\ntest_real_data_compressor_concurrent_operations (__main__.TestDataCompressorReal.test_real_data_compressor_concurrent_operations)\n測試真實data_compressor並發操作 ... ERROR\ntest_real_data_compressor_error_handling (__main__.TestDataCompressorReal.test_real_data_compressor_error_handling)\n測試真實data_compressor錯誤處理 ... ok\ntest_real_data_compressor_perfor"
+    },
+    {
+      "test_file": "test/level1/data_processing/test_data_encryptor_real.py",
+      "test_class": "data_encryptor",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.293271541595459,
+      "error_message": "test_real_data_encryptor_basic_functionality (__main__.TestDataEncryptorReal.test_real_data_encryptor_basic_functionality)\n測試真實data_encryptor基本功能 ... ok\ntest_real_data_encryptor_concurrent_operations (__main__.TestDataEncryptorReal.test_real_data_encryptor_concurrent_operations)\n測試真實data_encryptor並發操作 ... ERROR\ntest_real_data_encryptor_error_handling (__main__.TestDataEncryptorReal.test_real_data_encryptor_error_handling)\n測試真實data_encryptor錯誤處理 ... ok\ntest_real_data_encryptor_performance (__main"
+    },
+    {
+      "test_file": "test/level1/data_processing/test_data_migration_tool_real.py",
+      "test_class": "data_migration_tool",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2759208679199219,
+      "error_message": "test_real_data_migration_tool_basic_functionality (__main__.TestDataMigrationToolReal.test_real_data_migration_tool_basic_functionality)\n測試真實data_migration_tool基本功能 ... ok\ntest_real_data_migration_tool_concurrent_operations (__main__.TestDataMigrationToolReal.test_real_data_migration_tool_concurrent_operations)\n測試真實data_migration_tool並發操作 ... ERROR\ntest_real_data_migration_tool_error_handling (__main__.TestDataMigrationToolReal.test_real_data_migration_tool_error_handling)\n測試真實data_migration_too"
+    },
+    {
+      "test_file": "test/level1/data_processing/test_data_quality_checker_real.py",
+      "test_class": "data_quality_checker",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2801547050476074,
+      "error_message": "test_real_data_quality_checker_basic_functionality (__main__.TestDataQualityCheckerReal.test_real_data_quality_checker_basic_functionality)\n測試真實data_quality_checker基本功能 ... ok\ntest_real_data_quality_checker_concurrent_operations (__main__.TestDataQualityCheckerReal.test_real_data_quality_checker_concurrent_operations)\n測試真實data_quality_checker並發操作 ... ERROR\ntest_real_data_quality_checker_error_handling (__main__.TestDataQualityCheckerReal.test_real_data_quality_checker_error_handling)\n測試真實data_qu"
+    },
+    {
+      "test_file": "test/level1/data_processing/test_data_serializer_real.py",
+      "test_class": "data_serializer",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.283890962600708,
+      "error_message": "test_real_data_serializer_basic_functionality (__main__.TestDataSerializerReal.test_real_data_serializer_basic_functionality)\n測試真實data_serializer基本功能 ... ok\ntest_real_data_serializer_concurrent_operations (__main__.TestDataSerializerReal.test_real_data_serializer_concurrent_operations)\n測試真實data_serializer並發操作 ... ERROR\ntest_real_data_serializer_error_handling (__main__.TestDataSerializerReal.test_real_data_serializer_error_handling)\n測試真實data_serializer錯誤處理 ... ok\ntest_real_data_serializer_perfor"
+    },
+    {
+      "test_file": "test/level1/data_processing/test_data_transformer_real.py",
+      "test_class": "data_transformer",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.27991652488708496,
+      "error_message": "test_real_data_transformer_basic_functionality (__main__.TestDataTransformerReal.test_real_data_transformer_basic_functionality)\n測試真實data_transformer基本功能 ... ok\ntest_real_data_transformer_concurrent_operations (__main__.TestDataTransformerReal.test_real_data_transformer_concurrent_operations)\n測試真實data_transformer並發操作 ... ERROR\ntest_real_data_transformer_error_handling (__main__.TestDataTransformerReal.test_real_data_transformer_error_handling)\n測試真實data_transformer錯誤處理 ... ok\ntest_real_data_trans"
+    },
+    {
+      "test_file": "test/level1/data_processing/test_data_validator_real.py",
+      "test_class": "data_validator",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.28534936904907227,
+      "error_message": "test_real_data_validator_basic_functionality (__main__.TestDataValidatorReal.test_real_data_validator_basic_functionality)\n測試真實data_validator基本功能 ... ok\ntest_real_data_validator_concurrent_operations (__main__.TestDataValidatorReal.test_real_data_validator_concurrent_operations)\n測試真實data_validator並發操作 ... ERROR\ntest_real_data_validator_error_handling (__main__.TestDataValidatorReal.test_real_data_validator_error_handling)\n測試真實data_validator錯誤處理 ... ok\ntest_real_data_validator_performance (__main"
+    },
+    {
+      "test_file": "test/level1/error_handling/test_error_analytics_real.py",
+      "test_class": "error_analytics",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.30095434188842773,
+      "error_message": "test_real_error_analytics_basic_functionality (__main__.TestErrorAnalyticsReal.test_real_error_analytics_basic_functionality)\n測試真實error_analytics基本功能 ... ok\ntest_real_error_analytics_concurrent_operations (__main__.TestErrorAnalyticsReal.test_real_error_analytics_concurrent_operations)\n測試真實error_analytics並發操作 ... ERROR\ntest_real_error_analytics_error_handling (__main__.TestErrorAnalyticsReal.test_real_error_analytics_error_handling)\n測試真實error_analytics錯誤處理 ... ok\ntest_real_error_analytics_perfor"
+    },
+    {
+      "test_file": "test/level1/error_handling/test_error_prevention_real.py",
+      "test_class": "error_prevention",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2625300884246826,
+      "error_message": "test_real_error_prevention_basic_functionality (__main__.TestErrorPreventionReal.test_real_error_prevention_basic_functionality)\n測試真實error_prevention基本功能 ... ok\ntest_real_error_prevention_concurrent_operations (__main__.TestErrorPreventionReal.test_real_error_prevention_concurrent_operations)\n測試真實error_prevention並發操作 ... ERROR\ntest_real_error_prevention_error_handling (__main__.TestErrorPreventionReal.test_real_error_prevention_error_handling)\n測試真實error_prevention錯誤處理 ... ok\ntest_real_error_prev"
+    },
+    {
+      "test_file": "test/level1/error_handling/test_error_recovery_real.py",
+      "test_class": "error_recovery",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2827799320220947,
+      "error_message": "test_real_error_recovery_basic_functionality (__main__.TestErrorRecoveryReal.test_real_error_recovery_basic_functionality)\n測試真實error_recovery基本功能 ... ok\ntest_real_error_recovery_concurrent_operations (__main__.TestErrorRecoveryReal.test_real_error_recovery_concurrent_operations)\n測試真實error_recovery並發操作 ... ERROR\ntest_real_error_recovery_error_handling (__main__.TestErrorRecoveryReal.test_real_error_recovery_error_handling)\n測試真實error_recovery錯誤處理 ... ok\ntest_real_error_recovery_performance (__main"
+    },
+    {
+      "test_file": "test/level1/error_handling/test_error_reporter_real.py",
+      "test_class": "error_reporter",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2767772674560547,
+      "error_message": "test_real_error_reporter_basic_functionality (__main__.TestErrorReporterReal.test_real_error_reporter_basic_functionality)\n測試真實error_reporter基本功能 ... ok\ntest_real_error_reporter_concurrent_operations (__main__.TestErrorReporterReal.test_real_error_reporter_concurrent_operations)\n測試真實error_reporter並發操作 ... ERROR\ntest_real_error_reporter_error_handling (__main__.TestErrorReporterReal.test_real_error_reporter_error_handling)\n測試真實error_reporter錯誤處理 ... ok\ntest_real_error_reporter_performance (__main"
+    },
+    {
+      "test_file": "test/level1/error_handling/test_exception_handler_real.py",
+      "test_class": "exception_handler",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.26624250411987305,
+      "error_message": "test_real_exception_handler_basic_functionality (__main__.TestExceptionHandlerReal.test_real_exception_handler_basic_functionality)\n測試真實exception_handler基本功能 ... ok\ntest_real_exception_handler_concurrent_operations (__main__.TestExceptionHandlerReal.test_real_exception_handler_concurrent_operations)\n測試真實exception_handler並發操作 ... ERROR\ntest_real_exception_handler_error_handling (__main__.TestExceptionHandlerReal.test_real_exception_handler_error_handling)\n測試真實exception_handler錯誤處理 ... ok\ntest_rea"
+    },
+    {
+      "test_file": "test/level1/logging/test_log_aggregator_real.py",
+      "test_class": "log_aggregator",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2761952877044678,
+      "error_message": "test_real_log_aggregator_basic_functionality (__main__.TestLogAggregatorReal.test_real_log_aggregator_basic_functionality)\n測試真實log_aggregator基本功能 ... ok\ntest_real_log_aggregator_concurrent_operations (__main__.TestLogAggregatorReal.test_real_log_aggregator_concurrent_operations)\n測試真實log_aggregator並發操作 ... ERROR\ntest_real_log_aggregator_error_handling (__main__.TestLogAggregatorReal.test_real_log_aggregator_error_handling)\n測試真實log_aggregator錯誤處理 ... ok\ntest_real_log_aggregator_performance (__main"
+    },
+    {
+      "test_file": "test/level1/logging/test_log_formatter_real.py",
+      "test_class": "log_formatter",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.27104663848876953,
+      "error_message": "test_real_log_formatter_basic_functionality (__main__.TestLogFormatterReal.test_real_log_formatter_basic_functionality)\n測試真實log_formatter基本功能 ... ok\ntest_real_log_formatter_concurrent_operations (__main__.TestLogFormatterReal.test_real_log_formatter_concurrent_operations)\n測試真實log_formatter並發操作 ... ERROR\ntest_real_log_formatter_error_handling (__main__.TestLogFormatterReal.test_real_log_formatter_error_handling)\n測試真實log_formatter錯誤處理 ... ok\ntest_real_log_formatter_performance (__main__.TestLogFor"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_adapter_interface_real.py",
+      "test_class": "adapter_interface",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.27242588996887207,
+      "error_message": "test_real_adapter_interface_basic_functionality (__main__.TestAdapterInterfaceReal.test_real_adapter_interface_basic_functionality)\n測試真實adapter_interface基本功能 ... ok\ntest_real_adapter_interface_concurrent_operations (__main__.TestAdapterInterfaceReal.test_real_adapter_interface_concurrent_operations)\n測試真實adapter_interface並發操作 ... ERROR\ntest_real_adapter_interface_error_handling (__main__.TestAdapterInterfaceReal.test_real_adapter_interface_error_handling)\n測試真實adapter_interface錯誤處理 ... ok\ntest_rea"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_cloud_edge_data_mcp_real.py",
+      "test_class": "cloud_edge_data_mcp",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2781186103820801,
+      "error_message": "test_real_cloud_edge_data_mcp_basic_functionality (__main__.TestCloudEdgeDataMcpReal.test_real_cloud_edge_data_mcp_basic_functionality)\n測試真實cloud_edge_data_mcp基本功能 ... ok\ntest_real_cloud_edge_data_mcp_concurrent_operations (__main__.TestCloudEdgeDataMcpReal.test_real_cloud_edge_data_mcp_concurrent_operations)\n測試真實cloud_edge_data_mcp並發操作 ... ERROR\ntest_real_cloud_edge_data_mcp_error_handling (__main__.TestCloudEdgeDataMcpReal.test_real_cloud_edge_data_mcp_error_handling)\n測試真實cloud_edge_data_mcp錯誤"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_dev_deploy_loop_coordinator_real.py",
+      "test_class": "dev_deploy_loop_coordinator",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2779421806335449,
+      "error_message": "test_real_dev_deploy_loop_coordinator_basic_functionality (__main__.TestDevDeployLoopCoordinatorReal.test_real_dev_deploy_loop_coordinator_basic_functionality)\n測試真實dev_deploy_loop_coordinator基本功能 ... ok\ntest_real_dev_deploy_loop_coordinator_concurrent_operations (__main__.TestDevDeployLoopCoordinatorReal.test_real_dev_deploy_loop_coordinator_concurrent_operations)\n測試真實dev_deploy_loop_coordinator並發操作 ... ERROR\ntest_real_dev_deploy_loop_coordinator_error_handling (__main__.TestDevDeployLoopCoordin"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_kilocode_adapter_real.py",
+      "test_class": "kilocode_adapter",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2716851234436035,
+      "error_message": "test_real_kilocode_adapter_basic_functionality (__main__.TestKilocodeAdapterReal.test_real_kilocode_adapter_basic_functionality)\n測試真實kilocode_adapter基本功能 ... ok\ntest_real_kilocode_adapter_concurrent_operations (__main__.TestKilocodeAdapterReal.test_real_kilocode_adapter_concurrent_operations)\n測試真實kilocode_adapter並發操作 ... ERROR\ntest_real_kilocode_adapter_error_handling (__main__.TestKilocodeAdapterReal.test_real_kilocode_adapter_error_handling)\n測試真實kilocode_adapter錯誤處理 ... ok\ntest_real_kilocode_a"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_manus_interaction_collector_real.py",
+      "test_class": "manus_interaction_collector",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.25925660133361816,
+      "error_message": "test_real_manus_interaction_collector_basic_functionality (__main__.TestManusInteractionCollectorReal.test_real_manus_interaction_collector_basic_functionality)\n測試真實manus_interaction_collector基本功能 ... ok\ntest_real_manus_interaction_collector_concurrent_operations (__main__.TestManusInteractionCollectorReal.test_real_manus_interaction_collector_concurrent_operations)\n測試真實manus_interaction_collector並發操作 ... ERROR\ntest_real_manus_interaction_collector_error_handling (__main__.TestManusInteractionCo"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_mcp_cache_manager_real.py",
+      "test_class": "mcp_cache_manager",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2797541618347168,
+      "error_message": "test_real_mcp_cache_manager_basic_functionality (__main__.TestMcpCacheManagerReal.test_real_mcp_cache_manager_basic_functionality)\n測試真實mcp_cache_manager基本功能 ... ok\ntest_real_mcp_cache_manager_concurrent_operations (__main__.TestMcpCacheManagerReal.test_real_mcp_cache_manager_concurrent_operations)\n測試真實mcp_cache_manager並發操作 ... ERROR\ntest_real_mcp_cache_manager_error_handling (__main__.TestMcpCacheManagerReal.test_real_mcp_cache_manager_error_handling)\n測試真實mcp_cache_manager錯誤處理 ... ok\ntest_real_m"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_mcp_circuit_breaker_real.py",
+      "test_class": "mcp_circuit_breaker",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.27466702461242676,
+      "error_message": "test_real_mcp_circuit_breaker_basic_functionality (__main__.TestMcpCircuitBreakerReal.test_real_mcp_circuit_breaker_basic_functionality)\n測試真實mcp_circuit_breaker基本功能 ... ok\ntest_real_mcp_circuit_breaker_concurrent_operations (__main__.TestMcpCircuitBreakerReal.test_real_mcp_circuit_breaker_concurrent_operations)\n測試真實mcp_circuit_breaker並發操作 ... ERROR\ntest_real_mcp_circuit_breaker_error_handling (__main__.TestMcpCircuitBreakerReal.test_real_mcp_circuit_breaker_error_handling)\n測試真實mcp_circuit_breake"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_mcp_load_balancer_real.py",
+      "test_class": "mcp_load_balancer",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.30289244651794434,
+      "error_message": "test_real_mcp_load_balancer_basic_functionality (__main__.TestMcpLoadBalancerReal.test_real_mcp_load_balancer_basic_functionality)\n測試真實mcp_load_balancer基本功能 ... ok\ntest_real_mcp_load_balancer_concurrent_operations (__main__.TestMcpLoadBalancerReal.test_real_mcp_load_balancer_concurrent_operations)\n測試真實mcp_load_balancer並發操作 ... ERROR\ntest_real_mcp_load_balancer_error_handling (__main__.TestMcpLoadBalancerReal.test_real_mcp_load_balancer_error_handling)\n測試真實mcp_load_balancer錯誤處理 ... ok\ntest_real_m"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_mcp_metrics_collector_real.py",
+      "test_class": "mcp_metrics_collector",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.26598310470581055,
+      "error_message": "test_real_mcp_metrics_collector_basic_functionality (__main__.TestMcpMetricsCollectorReal.test_real_mcp_metrics_collector_basic_functionality)\n測試真實mcp_metrics_collector基本功能 ... ok\ntest_real_mcp_metrics_collector_concurrent_operations (__main__.TestMcpMetricsCollectorReal.test_real_mcp_metrics_collector_concurrent_operations)\n測試真實mcp_metrics_collector並發操作 ... ERROR\ntest_real_mcp_metrics_collector_error_handling (__main__.TestMcpMetricsCollectorReal.test_real_mcp_metrics_collector_error_handling)\n"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_mcp_node_health_monitor_real.py",
+      "test_class": "mcp_node_health_monitor",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2546961307525635,
+      "error_message": "test_real_mcp_node_health_monitor_basic_functionality (__main__.TestMcpNodeHealthMonitorReal.test_real_mcp_node_health_monitor_basic_functionality)\n測試真實mcp_node_health_monitor基本功能 ... ok\ntest_real_mcp_node_health_monitor_concurrent_operations (__main__.TestMcpNodeHealthMonitorReal.test_real_mcp_node_health_monitor_concurrent_operations)\n測試真實mcp_node_health_monitor並發操作 ... ERROR\ntest_real_mcp_node_health_monitor_error_handling (__main__.TestMcpNodeHealthMonitorReal.test_real_mcp_node_health_monit"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_mcp_registry_integration_real.py",
+      "test_class": "mcp_registry_integration",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2578248977661133,
+      "error_message": "test_real_mcp_registry_integration_basic_functionality (__main__.TestMcpRegistryIntegrationReal.test_real_mcp_registry_integration_basic_functionality)\n測試真實mcp_registry_integration基本功能 ... ok\ntest_real_mcp_registry_integration_concurrent_operations (__main__.TestMcpRegistryIntegrationReal.test_real_mcp_registry_integration_concurrent_operations)\n測試真實mcp_registry_integration並發操作 ... ERROR\ntest_real_mcp_registry_integration_error_handling (__main__.TestMcpRegistryIntegrationReal.test_real_mcp_regi"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_mcp_retry_mechanism_real.py",
+      "test_class": "mcp_retry_mechanism",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2653167247772217,
+      "error_message": "test_real_mcp_retry_mechanism_basic_functionality (__main__.TestMcpRetryMechanismReal.test_real_mcp_retry_mechanism_basic_functionality)\n測試真實mcp_retry_mechanism基本功能 ... ok\ntest_real_mcp_retry_mechanism_concurrent_operations (__main__.TestMcpRetryMechanismReal.test_real_mcp_retry_mechanism_concurrent_operations)\n測試真實mcp_retry_mechanism並發操作 ... ERROR\ntest_real_mcp_retry_mechanism_error_handling (__main__.TestMcpRetryMechanismReal.test_real_mcp_retry_mechanism_error_handling)\n測試真實mcp_retry_mechanis"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_mcp_security_validator_real.py",
+      "test_class": "mcp_security_validator",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.26204991340637207,
+      "error_message": "test_real_mcp_security_validator_basic_functionality (__main__.TestMcpSecurityValidatorReal.test_real_mcp_security_validator_basic_functionality)\n測試真實mcp_security_validator基本功能 ... ok\ntest_real_mcp_security_validator_concurrent_operations (__main__.TestMcpSecurityValidatorReal.test_real_mcp_security_validator_concurrent_operations)\n測試真實mcp_security_validator並發操作 ... ERROR\ntest_real_mcp_security_validator_error_handling (__main__.TestMcpSecurityValidatorReal.test_real_mcp_security_validator_error"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_mcp_timeout_handler_real.py",
+      "test_class": "mcp_timeout_handler",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2584571838378906,
+      "error_message": "test_real_mcp_timeout_handler_basic_functionality (__main__.TestMcpTimeoutHandlerReal.test_real_mcp_timeout_handler_basic_functionality)\n測試真實mcp_timeout_handler基本功能 ... ok\ntest_real_mcp_timeout_handler_concurrent_operations (__main__.TestMcpTimeoutHandlerReal.test_real_mcp_timeout_handler_concurrent_operations)\n測試真實mcp_timeout_handler並發操作 ... ERROR\ntest_real_mcp_timeout_handler_error_handling (__main__.TestMcpTimeoutHandlerReal.test_real_mcp_timeout_handler_error_handling)\n測試真實mcp_timeout_handle"
+    },
+    {
+      "test_file": "test/level1/mcp_adapters/test_smart_routing_mcp_real.py",
+      "test_class": "smart_routing_mcp",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.24444890022277832,
+      "error_message": "test_real_smart_routing_mcp_basic_functionality (__main__.TestSmartRoutingMcpReal.test_real_smart_routing_mcp_basic_functionality)\n測試真實smart_routing_mcp基本功能 ... ok\ntest_real_smart_routing_mcp_concurrent_operations (__main__.TestSmartRoutingMcpReal.test_real_smart_routing_mcp_concurrent_operations)\n測試真實smart_routing_mcp並發操作 ... ERROR\ntest_real_smart_routing_mcp_error_handling (__main__.TestSmartRoutingMcpReal.test_real_smart_routing_mcp_error_handling)\n測試真實smart_routing_mcp錯誤處理 ... ok\ntest_real_s"
+    },
+    {
+      "test_file": "test/level1/performance_monitoring/test_latency_tracker_real.py",
+      "test_class": "latency_tracker",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.24827146530151367,
+      "error_message": "test_real_latency_tracker_basic_functionality (__main__.TestLatencyTrackerReal.test_real_latency_tracker_basic_functionality)\n測試真實latency_tracker基本功能 ... ok\ntest_real_latency_tracker_concurrent_operations (__main__.TestLatencyTrackerReal.test_real_latency_tracker_concurrent_operations)\n測試真實latency_tracker並發操作 ... ERROR\ntest_real_latency_tracker_error_handling (__main__.TestLatencyTrackerReal.test_real_latency_tracker_error_handling)\n測試真實latency_tracker錯誤處理 ... ok\ntest_real_latency_tracker_perfor"
+    },
+    {
+      "test_file": "test/level1/performance_monitoring/test_performance_alerter_real.py",
+      "test_class": "performance_alerter",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.24904394149780273,
+      "error_message": "test_real_performance_alerter_basic_functionality (__main__.TestPerformanceAlerterReal.test_real_performance_alerter_basic_functionality)\n測試真實performance_alerter基本功能 ... ok\ntest_real_performance_alerter_concurrent_operations (__main__.TestPerformanceAlerterReal.test_real_performance_alerter_concurrent_operations)\n測試真實performance_alerter並發操作 ... ERROR\ntest_real_performance_alerter_error_handling (__main__.TestPerformanceAlerterReal.test_real_performance_alerter_error_handling)\n測試真實performance_ale"
+    },
+    {
+      "test_file": "test/level1/performance_monitoring/test_performance_reporter_real.py",
+      "test_class": "performance_reporter",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.25167179107666016,
+      "error_message": "test_real_performance_reporter_basic_functionality (__main__.TestPerformanceReporterReal.test_real_performance_reporter_basic_functionality)\n測試真實performance_reporter基本功能 ... ok\ntest_real_performance_reporter_concurrent_operations (__main__.TestPerformanceReporterReal.test_real_performance_reporter_concurrent_operations)\n測試真實performance_reporter並發操作 ... ERROR\ntest_real_performance_reporter_error_handling (__main__.TestPerformanceReporterReal.test_real_performance_reporter_error_handling)\n測試真實perf"
+    },
+    {
+      "test_file": "test/level1/performance_monitoring/test_resource_usage_tracker_real.py",
+      "test_class": "resource_usage_tracker",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2521977424621582,
+      "error_message": "test_real_resource_usage_tracker_basic_functionality (__main__.TestResourceUsageTrackerReal.test_real_resource_usage_tracker_basic_functionality)\n測試真實resource_usage_tracker基本功能 ... ok\ntest_real_resource_usage_tracker_concurrent_operations (__main__.TestResourceUsageTrackerReal.test_real_resource_usage_tracker_concurrent_operations)\n測試真實resource_usage_tracker並發操作 ... ERROR\ntest_real_resource_usage_tracker_error_handling (__main__.TestResourceUsageTrackerReal.test_real_resource_usage_tracker_error"
+    },
+    {
+      "test_file": "test/level1/performance_monitoring/test_throughput_monitor_real.py",
+      "test_class": "throughput_monitor",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2522895336151123,
+      "error_message": "test_real_throughput_monitor_basic_functionality (__main__.TestThroughputMonitorReal.test_real_throughput_monitor_basic_functionality)\n測試真實throughput_monitor基本功能 ... ok\ntest_real_throughput_monitor_concurrent_operations (__main__.TestThroughputMonitorReal.test_real_throughput_monitor_concurrent_operations)\n測試真實throughput_monitor並發操作 ... ERROR\ntest_real_throughput_monitor_error_handling (__main__.TestThroughputMonitorReal.test_real_throughput_monitor_error_handling)\n測試真實throughput_monitor錯誤處理 ..."
+    },
+    {
+      "test_file": "test/level1/routing_intelligence/test_capability_matcher_real.py",
+      "test_class": "capability_matcher",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.25058722496032715,
+      "error_message": "test_real_capability_matcher_basic_functionality (__main__.TestCapabilityMatcherReal.test_real_capability_matcher_basic_functionality)\n測試真實capability_matcher基本功能 ... ok\ntest_real_capability_matcher_concurrent_operations (__main__.TestCapabilityMatcherReal.test_real_capability_matcher_concurrent_operations)\n測試真實capability_matcher並發操作 ... ERROR\ntest_real_capability_matcher_error_handling (__main__.TestCapabilityMatcherReal.test_real_capability_matcher_error_handling)\n測試真實capability_matcher錯誤處理 ..."
+    },
+    {
+      "test_file": "test/level1/routing_intelligence/test_fallback_router_real.py",
+      "test_class": "fallback_router",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.24958467483520508,
+      "error_message": "test_real_fallback_router_basic_functionality (__main__.TestFallbackRouterReal.test_real_fallback_router_basic_functionality)\n測試真實fallback_router基本功能 ... ok\ntest_real_fallback_router_concurrent_operations (__main__.TestFallbackRouterReal.test_real_fallback_router_concurrent_operations)\n測試真實fallback_router並發操作 ... ERROR\ntest_real_fallback_router_error_handling (__main__.TestFallbackRouterReal.test_real_fallback_router_error_handling)\n測試真實fallback_router錯誤處理 ... ok\ntest_real_fallback_router_perfor"
+    },
+    {
+      "test_file": "test/level1/routing_intelligence/test_intent_classifier_real.py",
+      "test_class": "intent_classifier",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.24657630920410156,
+      "error_message": "test_real_intent_classifier_basic_functionality (__main__.TestIntentClassifierReal.test_real_intent_classifier_basic_functionality)\n測試真實intent_classifier基本功能 ... ok\ntest_real_intent_classifier_concurrent_operations (__main__.TestIntentClassifierReal.test_real_intent_classifier_concurrent_operations)\n測試真實intent_classifier並發操作 ... ERROR\ntest_real_intent_classifier_error_handling (__main__.TestIntentClassifierReal.test_real_intent_classifier_error_handling)\n測試真實intent_classifier錯誤處理 ... ok\ntest_rea"
+    },
+    {
+      "test_file": "test/level1/routing_intelligence/test_load_predictor_real.py",
+      "test_class": "load_predictor",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2729194164276123,
+      "error_message": "test_real_load_predictor_basic_functionality (__main__.TestLoadPredictorReal.test_real_load_predictor_basic_functionality)\n測試真實load_predictor基本功能 ... ok\ntest_real_load_predictor_concurrent_operations (__main__.TestLoadPredictorReal.test_real_load_predictor_concurrent_operations)\n測試真實load_predictor並發操作 ... ERROR\ntest_real_load_predictor_error_handling (__main__.TestLoadPredictorReal.test_real_load_predictor_error_handling)\n測試真實load_predictor錯誤處理 ... ok\ntest_real_load_predictor_performance (__main"
+    },
+    {
+      "test_file": "test/level1/routing_intelligence/test_route_optimizer_real.py",
+      "test_class": "route_optimizer",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.25550246238708496,
+      "error_message": "test_real_route_optimizer_basic_functionality (__main__.TestRouteOptimizerReal.test_real_route_optimizer_basic_functionality)\n測試真實route_optimizer基本功能 ... ok\ntest_real_route_optimizer_concurrent_operations (__main__.TestRouteOptimizerReal.test_real_route_optimizer_concurrent_operations)\n測試真實route_optimizer並發操作 ... ERROR\ntest_real_route_optimizer_error_handling (__main__.TestRouteOptimizerReal.test_real_route_optimizer_error_handling)\n測試真實route_optimizer錯誤處理 ... ok\ntest_real_route_optimizer_perfor"
+    },
+    {
+      "test_file": "test/level1/routing_intelligence/test_routing_analytics_real.py",
+      "test_class": "routing_analytics",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.2518031597137451,
+      "error_message": "test_real_routing_analytics_basic_functionality (__main__.TestRoutingAnalyticsReal.test_real_routing_analytics_basic_functionality)\n測試真實routing_analytics基本功能 ... ok\ntest_real_routing_analytics_concurrent_operations (__main__.TestRoutingAnalyticsReal.test_real_routing_analytics_concurrent_operations)\n測試真實routing_analytics並發操作 ... ERROR\ntest_real_routing_analytics_error_handling (__main__.TestRoutingAnalyticsReal.test_real_routing_analytics_error_handling)\n測試真實routing_analytics錯誤處理 ... ok\ntest_rea"
+    },
+    {
+      "test_file": "test/level1/routing_intelligence/test_routing_cache_real.py",
+      "test_class": "routing_cache",
+      "test_method": "failed_test",
+      "status": "FAIL",
+      "duration": 0.24709248542785645,
+      "error_message": "test_real_routing_cache_basic_functionality (__main__.TestRoutingCacheReal.test_real_routing_cache_basic_functionality)\n測試真實routing_cache基本功能 ... ok\ntest_real_routing_cache_concurrent_operations (__main__.TestRoutingCacheReal.test_real_routing_cache_concurrent_operations)\n測試真實routing_cache並發操作 ... ERROR\ntest_real_routing_cache_error_handling (__main__.TestRoutingCacheReal.test_real_routing_cache_error_handling)\n測試真實routing_cache錯誤處理 ... ok\ntest_real_routing_cache_performance (__main__.TestRoutin"
+    }
+  ]
+}

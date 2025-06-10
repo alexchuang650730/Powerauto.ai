@@ -1,0 +1,55 @@
+{
+  "experience_id": "exp_ff69e8062f91",
+  "timestamp": "2025-06-10T01:25:03.810648",
+  "state": {
+    "user_request": {
+      "text": "創建一個Python函數來計算斐波那契數列",
+      "type": "code_generation"
+    },
+    "context": {
+      "session_type": "coding_assistance"
+    },
+    "source": "manus_gui"
+  },
+  "action": {
+    "response": {
+      "text": "我將為您創建一個計算斐波那契數列的Python函數",
+      "thought_process": "<thought>用戶需要一個斐波那契函數</thought>"
+    },
+    "deliverables": [
+      {
+        "deliverable_id": "python_code_e2abd1d4",
+        "deliverable_type": "python_code",
+        "name": "fibonacci.py",
+        "content": "def fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n-1) + fibonacci(n-2)",
+        "file_path": "/tmp/fibonacci.py",
+        "metadata": {
+          "lines": 4,
+          "functions": 1
+        },
+        "template_potential_score": 0.2,
+        "quality_assessment_score": 0.5,
+        "created_at": "2025-06-10T01:25:03.810037"
+      }
+    ],
+    "tools_used": [
+      "code_generator"
+    ]
+  },
+  "reward": 0.55,
+  "next_state": {
+    "task_completed": true,
+    "deliverable_quality": 0.5,
+    "performance_metrics": {
+      "response_time": 2.5
+    }
+  },
+  "source_interaction_log_id": "log_d1a3b976e8d9",
+  "metadata": {
+    "tags": [
+      "python_code",
+      "code"
+    ],
+    "source": "manus_gui"
+  }
+}

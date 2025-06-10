@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高難度貪吃蛇遊戲 - KiloCode增強版</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .game-container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+        }
+        
+        #gameCanvas {
+            border: 3px solid #00ffff;
+            border-radius: 10px;
+            background: #000;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+        
+        .ui-panel {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        
+        .score-display {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .controls {
+            margin-top: 15px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .difficulty-selector {
+            margin: 15px 0;
+        }
+        
+        select {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid #00ffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        
+        .power-up-indicator {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 0, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            display: none;
+        }
+        
+        @keyframes glow {
+            0% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); }
+            50% { box-shadow: 0 0 30px rgba(0, 255, 255, 0.8); }
+            100% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); }
+        }
+        
+        .glow-effect {
+            animation: glow 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>🐍 高難度貪吃蛇遊戲</h1>
+        
+        <div class="difficulty-selector">
+            <label for="difficulty">難度選擇: </label>
+            <select id="difficulty">
+                <option value="easy">簡單</option>
+                <option value="medium" selected>中等</option>
+                <option value="hard">困難</option>
+                <option value="nightmare">噩夢</option>
+            </select>
+        </div>
+        
+        <div class="ui-panel">
+            <div class="score-display">
+                <div>分數: <span id="score">0</span></div>
+                <div>最高分: <span id="highScore">0</span></div>
+            </div>
+            <div class="score-display">
+                <div>長度: <span id="length">1</span></div>
+                <div>速度: <span id="speed">1</span></div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        
+        <div class="controls">
+            <p>🎮 使用方向鍵控制移動 | 空白鍵暫停 | R鍵重新開始</p>
+            <p>🎁 收集道具獲得特殊能力 | 🚧 避開障礙物</p>
+        </div>
+        
+        <div id="powerUpIndicator" class="power-up-indicator"></div>
+    </div>
+
+    <script>
+        class AdvancedSnakeGame {
+            constructor() {
+                this.canvas = document.getElementById('gameCanvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.gridSize = 20;
+                
+                // 遊戲狀態
+                this.gameRunning = false;
+                this.gamePaused = false;
+                this.gameOver = false;
+                
+                // 難度設置
+                this.difficulty = 'medium';
+                this.difficultySettings = {
+                    easy: { speed: 150, obstacles: 0, powerUpChance: 0.15 },
+                    medium: { speed: 120, obstacles: 3, powerUpChance: 0.10 },
+                    hard: { speed: 90, obstacles: 5, powerUpChance: 0.08 },
+                    nightmare: { speed: 60, obstacles: 8, powerUpChance: 0.05 }
+                };
+                
+                // 遊戲元素
+                this.snake = [{x: 10, y: 10}];
+                this.direction = {x: 1, y: 0};
+                this.nextDirection = {x: 1, y: 0};
+                this.food = this.generateFood();
+                this.obstacles = [];
+                this.powerUps = [];
+                this.particles = [];
+                
+                // 遊戲狀態
+                this.score = 0;
+                this.highScore = this.loadHighScore();
+                this.speed = 1;
+                this.activePowerUps = new Map();
+                
+                // 視覺效果
+                this.screenShake = 0;
+                this.glowEffect = false;
+                
+                // 初始化
+                this.setupEventListeners();
+                this.generateObstacles();
+                this.updateUI();
+                this.startGame();
+            }
+            
+            setupEventListeners() {
+                document.addEventListener('keydown', (e) => this.handleKeyPress(e));
+                document.getElementById('difficulty').addEventListener('change', (e) => {
+                    this.difficulty = e.target.value;
+                    this.restart();
+                });
+            }
+            
+            handleKeyPress(e) {
+                switch(e.code) {
+                    case 'ArrowUp':
+                        if (this.direction.y === 0) this.nextDirection = {x: 0, y: -1};
+                        break;
+                    case 'ArrowDown':
+                        if (this.direction.y === 0) this.nextDirection = {x: 0, y: 1};
+                        break;
+                    case 'ArrowLeft':
+                        if (this.direction.x === 0) this.nextDirection = {x: -1, y: 0};
+                        break;
+                    case 'ArrowRight':
+                        if (this.direction.x === 0) this.nextDirection = {x: 1, y: 0};
+                        break;
+                    case 'Space':
+                        e.preventDefault();
+                        this.togglePause();
+                        break;
+                    case 'KeyR':
+                        this.restart();
+                        break;
+                }
+            }
+            
+            generateFood() {
+                let food;
+                do {
+                    food = {
+                        x: Math.floor(Math.random() * (this.canvas.width / this.gridSize)),
+                        y: Math.floor(Math.random() * (this.canvas.height / this.gridSize))
+                    };
+                } while (this.isPositionOccupied(food.x, food.y));
+                return food;
+            }
+            
+            generateObstacles() {
+                this.obstacles = [];
+                const obstacleCount = this.difficultySettings[this.difficulty].obstacles;
+                
+                for (let i = 0; i < obstacleCount; i++) {
+                    let obstacle;
+                    do {
+                        obstacle = {
+                            x: Math.floor(Math.random() * (this.canvas.width / this.gridSize - 2)) + 1,
+                            y: Math.floor(Math.random() * (this.canvas.height / this.gridSize - 2)) + 1,
+                            width: Math.floor(Math.random() * 3) + 2,
+                            height: Math.floor(Math.random() * 3) + 2
+                        };
+                    } while (this.isObstacleOverlapping(obstacle));
+                    
+                    this.obstacles.push(obstacle);
+                }
+            }
+            
+            isObstacleOverlapping(newObstacle) {
+                // 檢查是否與蛇、食物或其他障礙物重疊
+                for (let x = newObstacle.x; x < newObstacle.x + newObstacle.width; x++) {
+                    for (let y = newObstacle.y; y < newObstacle.y + newObstacle.height; y++) {
+                        if (this.isPositionOccupied(x, y)) return true;
+                    }
+                }
+                return false;
+            }
+            
+            isPositionOccupied(x, y) {
+                // 檢查蛇身
+                if (this.snake.some(segment => segment.x === x && segment.y === y)) return true;
+                
+                // 檢查食物
+                if (this.food.x === x && this.food.y === y) return true;
+                
+                // 檢查障礙物
+                for (let obstacle of this.obstacles) {
+                    if (x >= obstacle.x && x < obstacle.x + obstacle.width &&
+                        y >= obstacle.y && y < obstacle.y + obstacle.height) {
+                        return true;
+                    }
+                }
+                
+                return false;
+            }
+            
+            generatePowerUp() {
+                if (Math.random() < this.difficultySettings[this.difficulty].powerUpChance) {
+                    const types = ['speed', 'slow', 'double', 'invincible', 'shrink'];
+                    const type = types[Math.floor(Math.random() * types.length)];
+                    
+                    let powerUp;
+                    do {
+                        powerUp = {
+                            x: Math.floor(Math.random() * (this.canvas.width / this.gridSize)),
+                            y: Math.floor(Math.random() * (this.canvas.height / this.gridSize)),
+                            type: type,
+                            duration: 300 // 5秒
+                        };
+                    } while (this.isPositionOccupied(powerUp.x, powerUp.y));
+                    
+                    this.powerUps.push(powerUp);
+                }
+            }
+            
+            update() {
+                if (!this.gameRunning || this.gamePaused || this.gameOver) return;
+                
+                // 更新方向
+                this.direction = {...this.nextDirection};
+                
+                // 計算新頭部位置
+                const head = {...this.snake[0]};
+                head.x += this.direction.x;
+                head.y += this.direction.y;
+                
+                // 邊界檢測
+                if (head.x < 0 || head.x >= this.canvas.width / this.gridSize ||
+                    head.y < 0 || head.y >= this.canvas.height / this.gridSize) {
+                    if (!this.activePowerUps.has('invincible')) {
+                        this.endGame();
+                        return;
+                    }
+                }
+                
+                // 自身碰撞檢測
+                if (this.snake.some(segment => segment.x === head.x && segment.y === head.y)) {
+                    if (!this.activePowerUps.has('invincible')) {
+                        this.endGame();
+                        return;
+                    }
+                }
+                
+                // 障礙物碰撞檢測
+                for (let obstacle of this.obstacles) {
+                    if (head.x >= obstacle.x && head.x < obstacle.x + obstacle.width &&
+                        head.y >= obstacle.y && head.y < obstacle.y + obstacle.height) {
+                        if (!this.activePowerUps.has('invincible')) {
+                            this.endGame();
+                            return;
+                        }
+                    }
+                }
+                
+                // 添加新頭部
+                this.snake.unshift(head);
+                
+                // 檢查食物碰撞
+                if (head.x === this.food.x && head.y === this.food.y) {
+                    this.eatFood();
+                } else {
+                    this.snake.pop();
+                }
+                
+                // 檢查道具碰撞
+                this.checkPowerUpCollision(head);
+                
+                // 更新活躍道具
+                this.updateActivePowerUps();
+                
+                // 更新粒子效果
+                this.updateParticles();
+            }
+            
+            eatFood() {
+                let scoreIncrease = 10;
+                if (this.activePowerUps.has('double')) {
+                    scoreIncrease *= 2;
+                }
+                
+                this.score += scoreIncrease;
+                this.food = this.generateFood();
+                this.generatePowerUp();
+                
+                // 增加速度
+                if (this.snake.length % 5 === 0) {
+                    this.speed++;
+                }
+                
+                // 添加粒子效果
+                this.addParticles(this.snake[0].x, this.snake[0].y, '#00ff00');
+                
+                this.updateUI();
+            }
+            
+            checkPowerUpCollision(head) {
+                for (let i = this.powerUps.length - 1; i >= 0; i--) {
+                    const powerUp = this.powerUps[i];
+                    if (head.x === powerUp.x && head.y === powerUp.y) {
+                        this.activatePowerUp(powerUp);
+                        this.powerUps.splice(i, 1);
+                    }
+                }
+            }
+            
+            activatePowerUp(powerUp) {
+                const duration = 180; // 3秒
+                
+                switch(powerUp.type) {
+                    case 'speed':
+                        this.activePowerUps.set('speed', duration);
+                        break;
+                    case 'slow':
+                        this.activePowerUps.set('slow', duration);
+                        break;
+                    case 'double':
+                        this.activePowerUps.set('double', duration);
+                        break;
+                    case 'invincible':
+                        this.activePowerUps.set('invincible', duration);
+                        break;
+                    case 'shrink':
+                        if (this.snake.length > 3) {
+                            this.snake = this.snake.slice(0, Math.floor(this.snake.length / 2));
+                        }
+                        break;
+                }
+                
+                this.addParticles(powerUp.x, powerUp.y, '#ffff00');
+                this.updatePowerUpIndicator();
+            }
+            
+            updateActivePowerUps() {
+                for (let [type, duration] of this.activePowerUps) {
+                    this.activePowerUps.set(type, duration - 1);
+                    if (duration <= 1) {
+                        this.activePowerUps.delete(type);
+                    }
+                }
+                this.updatePowerUpIndicator();
+            }
+            
+            updatePowerUpIndicator() {
+                const indicator = document.getElementById('powerUpIndicator');
+                if (this.activePowerUps.size > 0) {
+                    const effects = Array.from(this.activePowerUps.keys()).join(', ');
+                    indicator.textContent = `活躍效果: ${effects}`;
+                    indicator.style.display = 'block';
+                } else {
+                    indicator.style.display = 'none';
+                }
+            }
+            
+            addParticles(x, y, color) {
+                for (let i = 0; i < 10; i++) {
+                    this.particles.push({
+                        x: x * this.gridSize + this.gridSize / 2,
+                        y: y * this.gridSize + this.gridSize / 2,
+                        vx: (Math.random() - 0.5) * 6,
+                        vy: (Math.random() - 0.5) * 6,
+                        life: 30,
+                        color: color
+                    });
+                }
+            }
+            
+            updateParticles() {
+                for (let i = this.particles.length - 1; i >= 0; i--) {
+                    const particle = this.particles[i];
+                    particle.x += particle.vx;
+                    particle.y += particle.vy;
+                    particle.life--;
+                    
+                    if (particle.life <= 0) {
+                        this.particles.splice(i, 1);
+                    }
+                }
+            }
+            
+            render() {
+                // 清除畫布
+                this.ctx.fillStyle = '#000';
+                this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                
+                // 螢幕震動效果
+                let offsetX = 0, offsetY = 0;
+                if (this.screenShake > 0) {
+                    offsetX = (Math.random() - 0.5) * this.screenShake;
+                    offsetY = (Math.random() - 0.5) * this.screenShake;
+                    this.screenShake--;
+                }
+                
+                this.ctx.save();
+                this.ctx.translate(offsetX, offsetY);
+                
+                // 繪製障礙物
+                this.ctx.fillStyle = '#666';
+                for (let obstacle of this.obstacles) {
+                    this.ctx.fillRect(
+                        obstacle.x * this.gridSize,
+                        obstacle.y * this.gridSize,
+                        obstacle.width * this.gridSize,
+                        obstacle.height * this.gridSize
+                    );
+                }
+                
+                // 繪製蛇
+                for (let i = 0; i < this.snake.length; i++) {
+                    const segment = this.snake[i];
+                    
+                    if (this.activePowerUps.has('invincible')) {
+                        this.ctx.fillStyle = i === 0 ? '#ffff00' : '#ffaa00';
+                    } else {
+                        this.ctx.fillStyle = i === 0 ? '#00ff00' : '#008800';
+                    }
+                    
+                    this.ctx.fillRect(
+                        segment.x * this.gridSize,
+                        segment.y * this.gridSize,
+                        this.gridSize,
+                        this.gridSize
+                    );
+                }
+                
+                // 繪製食物
+                this.ctx.fillStyle = '#ff0000';
+                this.ctx.fillRect(
+                    this.food.x * this.gridSize,
+                    this.food.y * this.gridSize,
+                    this.gridSize,
+                    this.gridSize
+                );
+                
+                // 繪製道具
+                for (let powerUp of this.powerUps) {
+                    const colors = {
+                        speed: '#ffff00',
+                        slow: '#0000ff',
+                        double: '#ff00ff',
+                        invincible: '#ffa500',
+                        shrink: '#ffffff'
+                    };
+                    
+                    this.ctx.fillStyle = colors[powerUp.type];
+                    this.ctx.beginPath();
+                    this.ctx.arc(
+                        powerUp.x * this.gridSize + this.gridSize / 2,
+                        powerUp.y * this.gridSize + this.gridSize / 2,
+                        this.gridSize / 2,
+                        0,
+                        2 * Math.PI
+                    );
+                    this.ctx.fill();
+                }
+                
+                // 繪製粒子效果
+                for (let particle of this.particles) {
+                    this.ctx.fillStyle = particle.color;
+                    this.ctx.globalAlpha = particle.life / 30;
+                    this.ctx.fillRect(particle.x - 2, particle.y - 2, 4, 4);
+                }
+                this.ctx.globalAlpha = 1;
+                
+                this.ctx.restore();
+                
+                // 遊戲結束畫面
+                if (this.gameOver) {
+                    this.ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                    
+                    this.ctx.fillStyle = '#ff0000';
+                    this.ctx.font = '48px Arial';
+                    this.ctx.textAlign = 'center';
+                    this.ctx.fillText('遊戲結束!', this.canvas.width / 2, this.canvas.height / 2 - 50);
+                    
+                    this.ctx.fillStyle = '#ffffff';
+                    this.ctx.font = '24px Arial';
+                    this.ctx.fillText(`最終分數: ${this.score}`, this.canvas.width / 2, this.canvas.height / 2);
+                    this.ctx.fillText('按 R 重新開始', this.canvas.width / 2, this.canvas.height / 2 + 50);
+                }
+                
+                // 暫停畫面
+                if (this.gamePaused) {
+                    this.ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+                    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                    
+                    this.ctx.fillStyle = '#ffffff';
+                    this.ctx.font = '36px Arial';
+                    this.ctx.textAlign = 'center';
+                    this.ctx.fillText('遊戲暫停', this.canvas.width / 2, this.canvas.height / 2);
+                }
+            }
+            
+            updateUI() {
+                document.getElementById('score').textContent = this.score;
+                document.getElementById('highScore').textContent = this.highScore;
+                document.getElementById('length').textContent = this.snake.length;
+                document.getElementById('speed').textContent = this.speed;
+            }
+            
+            togglePause() {
+                if (!this.gameOver) {
+                    this.gamePaused = !this.gamePaused;
+                }
+            }
+            
+            endGame() {
+                this.gameOver = true;
+                this.screenShake = 10;
+                
+                if (this.score > this.highScore) {
+                    this.highScore = this.score;
+                    this.saveHighScore();
+                    this.updateUI();
+                }
+            }
+            
+            restart() {
+                this.snake = [{x: 10, y: 10}];
+                this.direction = {x: 1, y: 0};
+                this.nextDirection = {x: 1, y: 0};
+                this.food = this.generateFood();
+                this.obstacles = [];
+                this.powerUps = [];
+                this.particles = [];
+                this.score = 0;
+                this.speed = 1;
+                this.activePowerUps.clear();
+                this.gameOver = false;
+                this.gamePaused = false;
+                this.screenShake = 0;
+                
+                this.generateObstacles();
+                this.updateUI();
+                this.updatePowerUpIndicator();
+            }
+            
+            startGame() {
+                this.gameRunning = true;
+                this.gameLoop();
+            }
+            
+            gameLoop() {
+                this.update();
+                this.render();
+                
+                if (this.gameRunning) {
+                    let gameSpeed = this.difficultySettings[this.difficulty].speed;
+                    
+                    if (this.activePowerUps.has('speed')) {
+                        gameSpeed *= 0.7;
+                    } else if (this.activePowerUps.has('slow')) {
+                        gameSpeed *= 1.5;
+                    }
+                    
+                    setTimeout(() => this.gameLoop(), gameSpeed);
+                }
+            }
+            
+            loadHighScore() {
+                return parseInt(localStorage.getItem('snakeHighScore') || '0');
+            }
+            
+            saveHighScore() {
+                localStorage.setItem('snakeHighScore', this.highScore.toString());
+            }
+        }
+        
+        // 啟動遊戲
+        window.addEventListener('load', () => {
+            new AdvancedSnakeGame();
+        });
+    </script>
+</body>
+</html>

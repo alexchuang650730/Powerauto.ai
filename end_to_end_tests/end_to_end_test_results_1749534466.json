@@ -1,0 +1,102 @@
+[
+  {
+    "request_id": "manus_frontend_001",
+    "success": true,
+    "processing_time": 0.000982522964477539,
+    "data_flow_steps": [
+      {
+        "step": "frontend_data_reception",
+        "timestamp": "2025-06-10T01:47:46.806794",
+        "details": {
+          "source": "manus_gui",
+          "dialogue_length": 32,
+          "files_count": 1,
+          "history_length": 2
+        },
+        "success": true
+      },
+      {
+        "step": "edge_admin_processing",
+        "timestamp": "2025-06-10T01:47:46.806811",
+        "details": {
+          "data_received": true,
+          "context_parsed": true,
+          "files_processed": 1
+        },
+        "success": true
+      },
+      {
+        "step": "intelligent_routing",
+        "timestamp": "2025-06-10T01:47:46.806816",
+        "details": {
+          "route_to": "cloud_processing",
+          "reasoning": "複雜請求需要雲端處理",
+          "estimated_time": 2.5,
+          "confidence": 0.85,
+          "fallback_available": true
+        },
+        "success": true
+      },
+      {
+        "step": "cloud_processing_processing",
+        "timestamp": "2025-06-10T01:47:46.807706",
+        "details": {
+          "processing_success": true,
+          "interaction_log_id": "log_575f21741819"
+        },
+        "success": true
+      },
+      {
+        "step": "rl_srt_learning",
+        "timestamp": "2025-06-10T01:47:46.807718",
+        "details": {
+          "learning_triggered": true,
+          "experience_quality": 0.8,
+          "policy_update": {
+            "strategy_improvement": 0.15,
+            "response_quality": 0.12
+          },
+          "async_processing": true,
+          "learning_time": 0.05
+        },
+        "success": true
+      },
+      {
+        "step": "kilocode_processing",
+        "timestamp": "2025-06-10T01:47:46.807756",
+        "details": {
+          "deliverables_generated": 2,
+          "types": [
+            "python_code",
+            "test_suite"
+          ]
+        },
+        "success": true
+      },
+      {
+        "step": "fallback_check",
+        "timestamp": "2025-06-10T01:47:46.807765",
+        "details": {
+          "quality_check_passed": false,
+          "average_quality": 0.491,
+          "fallback_triggered": true,
+          "kilocode_intervention": true,
+          "one_step_completion": false
+        },
+        "success": true
+      },
+      {
+        "step": "release_manager_deployment",
+        "timestamp": "2025-06-10T01:47:46.807767",
+        "details": {
+          "deployment_ready": true,
+          "deliverables_packaged": 2,
+          "one_step_delivery": false
+        },
+        "success": true
+      }
+    ],
+    "deliverables": [
+      {
+        "deliverable_id": "python_code_31754678",
+        "deliverable_type": 

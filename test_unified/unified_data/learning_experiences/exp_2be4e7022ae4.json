@@ -1,0 +1,31 @@
+{
+  "experience_id": "exp_2be4e7022ae4",
+  "timestamp": "2025-06-10T01:27:10.227458",
+  "state": {
+    "user_request": {
+      "text": "簡單任務 8"
+    },
+    "context": {
+      "batch_test": true
+    },
+    "source": "system_internal"
+  },
+  "action": {
+    "response": {
+      "text": "簡單響應 8"
+    },
+    "deliverables": [],
+    "tools_used": []
+  },
+  "reward": 0.2,
+  "next_state": {
+    "task_completed": false,
+    "deliverable_quality": 0.0,
+    "performance_metrics": {}
+  },
+  "source_interaction_log_id": "log_3dd2f5c1d7ce",
+  "metadata": {
+    "tags": [],
+    "source": "system_internal"
+  }
+}

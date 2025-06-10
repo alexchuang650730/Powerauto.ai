@@ -1,0 +1,23 @@
+{
+  "tool_id": "5c7f0e925d92",
+  "tool_name": "document_analyzer",
+  "execution_time": 0.026108503341674805,
+  "success": true,
+  "output": {
+    "tool_name": "document_analyzer",
+    "description": "分析文檔內容",
+    "timestamp": "2025-06-10T00:17:58.930755",
+    "input_data": {
+      "document_path": "/home/ubuntu/Powerauto.ai/linux_closed_loop/documents/sample_business_plan.json"
+    },
+    "success": true,
+    "output_data": {
+      "processed": true,
+      "original_keys": [
+        "document_path"
+      ],
+      "processing_time": "2025-06-10T00:17:58.930788"
+    }
+  },
+  "error": null
+}

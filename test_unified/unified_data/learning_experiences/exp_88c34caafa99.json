@@ -1,0 +1,47 @@
+{
+  "experience_id": "exp_88c34caafa99",
+  "timestamp": "2025-06-10T01:27:10.210639",
+  "state": {
+    "user_request": {
+      "text": "性能測試 0",
+      "type": "performance_test"
+    },
+    "context": {},
+    "source": "system_internal"
+  },
+  "action": {
+    "response": {
+      "text": "響應 0"
+    },
+    "deliverables": [
+      {
+        "deliverable_id": "test_suite_bf90e392",
+        "deliverable_type": "test_suite",
+        "name": "perf_test_0.py",
+        "content": "# Performance test 0\nprint(\"test 0\")",
+        "file_path": null,
+        "metadata": {
+          "iteration": 0
+        },
+        "template_potential_score": 0.0,
+        "quality_assessment_score": 0.5,
+        "created_at": "2025-06-10T01:27:10.210340"
+      }
+    ],
+    "tools_used": []
+  },
+  "reward": 0.55,
+  "next_state": {
+    "task_completed": true,
+    "deliverable_quality": 0.5,
+    "performance_metrics": {}
+  },
+  "source_interaction_log_id": "log_61432679823b",
+  "metadata": {
+    "tags": [
+      "test_suite",
+      "test"
+    ],
+    "source": "system_internal"
+  }
+}

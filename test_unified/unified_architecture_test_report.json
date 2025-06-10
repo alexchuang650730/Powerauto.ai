@@ -1,0 +1,100 @@
+{
+  "test_summary": {
+    "timestamp": "2025-06-10T01:27:10.237475",
+    "overall_score": 87.0,
+    "test_environment": {
+      "base_dir": "/home/ubuntu/Powerauto.ai/test_unified",
+      "test_data_count": 10,
+      "performance_iterations": 5,
+      "timeout_seconds": 30
+    },
+    "status": "PASSED"
+  },
+  "detailed_results": {
+    "functionality_tests": {
+      "data_collection": {
+        "passed": true,
+        "score": 20,
+        "details": "數據收集功能正常"
+      },
+      "data_storage": {
+        "passed": true,
+        "score": 20,
+        "details": "數據存儲功能正常"
+      },
+      "learning_generation": {
+        "passed": true,
+        "score": 20,
+        "details": "學習經驗生成正常"
+      },
+      "template_generation": {
+        "passed": false,
+        "score": 0,
+        "details": "未生成模板"
+      },
+      "component_coordination": {
+        "passed": true,
+        "score": 20,
+        "details": "組件協調功能正常"
+      }
+    },
+    "performance_tests": {
+      "processing_speed": {
+        "score": 25,
+        "details": "平均處理時間: 0.001秒"
+      },
+      "memory_usage": {
+        "score": 25,
+        "details": "內存使用: 24.8MB"
+      },
+      "concurrent_processing": {
+        "score": 25,
+        "details": "並發成功率: 3/3, 時間: 0.002秒"
+      },
+      "scalability": {
+        "score": 25,
+        "details": "處理20個任務時間: 0.008秒"
+      }
+    },
+    "integration_tests": {
+      "component_communication": {
+        "score": 25,
+        "details": "組件間通信正常"
+      },
+      "data_flow_integrity": {
+        "score": 25,
+        "details": "數據流完整性正常"
+      },
+      "error_handling": {
+        "score": 0,
+        "details": "錯誤處理機制異常"
+      },
+      "configuration_management": {
+        "score": 25,
+        "details": "配置管理正常"
+      }
+    },
+    "data_consistency_tests": {
+      "data_format_consistency": {
+        "score": 25,
+        "details": "數據格式一致性正常"
+      },
+      "storage_integrity": {
+        "score": 25,
+        "details": "存儲完整性正常"
+      },
+      "retrieval_accuracy": {
+        "score": 25,
+        "details": "檢索準確性正常"
+      },
+      "cross_component_consistency": {
+        "score": 25,
+        "details": "跨組件一致性正常"
+      }
+    },
+    "overall_score": 87.0
+  },
+  "recommendations": [
+    "需要修復template_generation功能: 未生成模板"
+  ]
+}

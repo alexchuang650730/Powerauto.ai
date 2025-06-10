@@ -1,0 +1,11 @@
+{
+  "tool_id": "2fab21297e28",
+  "name": "general_processor",
+  "description": "通用處理工具",
+  "generated_code": "#!/usr/bin/env python3\n\"\"\"\ngeneral_processor - 自動生成的工具\n描述: 通用處理工具\n需求: 評估競爭優勢並提供改進建議\n\"\"\"\n\nimport json\nfrom datetime import datetime\n\ndef execute_tool(input_data: dict) -> dict:\n    \"\"\"執行工具\"\"\"\n    results = {\n        \"tool_name\": \"general_processor\",\n        \"description\": \"通用處理工具\",\n        \"timestamp\": datetime.now().isoformat(),\n        \"input_data\": input_data,\n        \"success\": False\n    }\n    \n    try:\n        # 工具邏輯\n        processed_data = process_input(input_data)\n        results[\"output_data\"] = processed_data\n        results[\"success\"] = True\n        \n    except Exception as e:\n        results[\"error\"] = str(e)\n    \n    return results\n\ndef process_input(data: dict) -> dict:\n    \"\"\"處理輸入數據\"\"\"\n    # 基本處理邏輯\n    return {\n        \"processed\": True,\n        \"original_keys\": list(data.keys()),\n        \"processing_time\": datetime.now().isoformat()\n    }\n\nif __name__ == \"__main__\":\n    import sys\n    if len(sys.argv) > 1:\n        with open(sys.argv[1], 'r') as f:\n            input_data = json.load(f)\n        result = execute_tool(input_data)\n        print(json.dumps(result, indent=2, ensure_ascii=False))\n    else:\n        print(\"使用方法: python {} <input_file>\".format(sys.argv[0]))\n",
+  "input_parameters": {},
+  "output_format": "json",
+  "execution_count": 0,
+  "success_rate": 0.0,
+  "created_at": "2025-06-10T00:18:00.280408"
+}

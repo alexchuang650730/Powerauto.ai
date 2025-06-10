@@ -1,0 +1,19 @@
+{
+  "company": "PowerAutomation",
+  "market_size": "10B USD",
+  "revenue_projection": [
+    1000000,
+    5000000,
+    15000000
+  ],
+  "key_features": [
+    "KiloCode MCP",
+    "RL-SRT Learning",
+    "Cross-platform Testing"
+  ],
+  "competitive_advantages": [
+    "Dynamic tool creation",
+    "Self-learning AI",
+    "Real-time adaptation"
+  ]
+}

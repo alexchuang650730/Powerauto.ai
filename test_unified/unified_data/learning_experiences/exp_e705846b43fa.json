@@ -1,0 +1,53 @@
+{
+  "experience_id": "exp_e705846b43fa",
+  "timestamp": "2025-06-10T01:27:10.209843",
+  "state": {
+    "user_request": {
+      "text": "創建高質量代碼",
+      "type": "code_generation"
+    },
+    "context": {
+      "quality_focus": true
+    },
+    "source": "system_internal"
+  },
+  "action": {
+    "response": {
+      "text": "創建高質量Python類"
+    },
+    "deliverables": [
+      {
+        "deliverable_id": "python_code_6abf6367",
+        "deliverable_type": "python_code",
+        "name": "high_quality.py",
+        "content": "\nclass HighQualityClass:\n    \"\"\"高質量的Python類示例\"\"\"\n    \n    def __init__(self, name: str):\n        self.name = name\n    \n    def process(self, data: dict) -> dict:\n        \"\"\"處理數據的方法\"\"\"\n        try:\n            result = {\"processed\": True, \"data\": data}\n            return result\n        except Exception as e:\n            return {\"error\": str(e)}\n    \n    def __str__(self) -> str:\n        return f\"HighQualityClass({self.name})\"\n                    ",
+        "file_path": null,
+        "metadata": {
+          "lines": 20,
+          "functions": 3,
+          "classes": 1
+        },
+        "template_potential_score": 0.5,
+        "quality_assessment_score": 0.7999999999999999,
+        "created_at": "2025-06-10T01:27:10.209484"
+      }
+    ],
+    "tools_used": [
+      "code_generator"
+    ]
+  },
+  "reward": 0.6399999999999999,
+  "next_state": {
+    "task_completed": true,
+    "deliverable_quality": 0.7999999999999999,
+    "performance_metrics": {}
+  },
+  "source_interaction_log_id": "log_2bfbdd2e56e8",
+  "metadata": {
+    "tags": [
+      "python_code",
+      "code"
+    ],
+    "source": "system_internal"
+  }
+}

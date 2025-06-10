@@ -1,0 +1,18 @@
+{
+  "name": "財務分析",
+  "description": "分析財務報表、投資回報、成本效益",
+  "analysis_points": [
+    "收入分析",
+    "成本結構分析",
+    "盈利能力評估",
+    "現金流分析",
+    "投資回報率",
+    "財務風險評估"
+  ],
+  "output_format": "financial_dashboard",
+  "kilocode_tools": [
+    "financial_calculator",
+    "trend_analyzer",
+    "risk_assessor"
+  ]
+}

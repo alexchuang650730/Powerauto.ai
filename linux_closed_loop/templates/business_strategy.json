@@ -1,0 +1,18 @@
+{
+  "name": "商業策略分析",
+  "description": "分析商業計劃、市場策略、競爭優勢",
+  "analysis_points": [
+    "市場機會評估",
+    "競爭優勢分析",
+    "商業模式評估",
+    "風險因素識別",
+    "財務可行性",
+    "執行計劃評估"
+  ],
+  "output_format": "structured_report",
+  "kilocode_tools": [
+    "document_parser",
+    "data_analyzer",
+    "report_generator"
+  ]
+}

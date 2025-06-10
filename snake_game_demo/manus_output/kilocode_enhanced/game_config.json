@@ -1,0 +1,52 @@
+{
+  "game_settings": {
+    "window_width": 800,
+    "window_height": 600,
+    "cell_size": 20,
+    "fps": 60
+  },
+  "difficulty_levels": {
+    "easy": {
+      "speed": 8,
+      "obstacles": 0,
+      "power_up_chance": 0.15
+    },
+    "medium": {
+      "speed": 12,
+      "obstacles": 4,
+      "power_up_chance": 0.10
+    },
+    "hard": {
+      "speed": 16,
+      "obstacles": 6,
+      "power_up_chance": 0.08
+    },
+    "nightmare": {
+      "speed": 20,
+      "obstacles": 8,
+      "power_up_chance": 0.05
+    }
+  },
+  "power_ups": {
+    "speed_boost": {
+      "duration": 3,
+      "effect": "increase_speed",
+      "color": [255, 255, 0]
+    },
+    "slow_time": {
+      "duration": 3,
+      "effect": "decrease_speed",
+      "color": [0, 0, 255]
+    },
+    "double_score": {
+      "duration": 5,
+      "effect": "multiply_score",
+      "color": [128, 0, 128]
+    },
+    "invincible": {
+      "duration": 3,
+      "effect": "ignore_collision",
+      "color": [255, 165, 0]
+    }
+  }
+}

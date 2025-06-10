@@ -1,0 +1,47 @@
+{
+  "experience_id": "exp_8794a2b86c86",
+  "timestamp": "2025-06-10T01:27:10.234375",
+  "state": {
+    "user_request": {
+      "text": "一致性測試 0",
+      "type": "consistency_test"
+    },
+    "context": {},
+    "source": "system_internal"
+  },
+  "action": {
+    "response": {
+      "text": "一致性響應 0"
+    },
+    "deliverables": [
+      {
+        "deliverable_id": "test_suite_0cddfc4c",
+        "deliverable_type": "test_suite",
+        "name": "consistency_0.py",
+        "content": "# Consistency test 0",
+        "file_path": null,
+        "metadata": {
+          "test_id": 0
+        },
+        "template_potential_score": 0.0,
+        "quality_assessment_score": 0.5,
+        "created_at": "2025-06-10T01:27:10.234049"
+      }
+    ],
+    "tools_used": []
+  },
+  "reward": 0.55,
+  "next_state": {
+    "task_completed": true,
+    "deliverable_quality": 0.5,
+    "performance_metrics": {}
+  },
+  "source_interaction_log_id": "log_5f6b5d468725",
+  "metadata": {
+    "tags": [
+      "test_suite",
+      "test"
+    ],
+    "source": "system_internal"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "技術文檔審查",
+  "description": "審查技術架構、代碼質量、系統設計",
+  "analysis_points": [
+    "架構設計評估",
+    "技術選型分析",
+    "性能指標評估",
+    "安全性審查",
+    "可擴展性分析",
+    "維護性評估"
+  ],
+  "output_format": "technical_report",
+  "kilocode_tools": [
+    "code_analyzer",
+    "architecture_reviewer",
+    "security_scanner"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "tool_id": "584b8d79ebe9",
+  "name": "data_analyzer",
+  "description": "數據分析",
+  "generated_code": "#!/usr/bin/env python3\n\"\"\"\ndata_analyzer - 自動生成的數據分析工具\n需求: 數據分析: 分析收入預測數據並生成趨勢報告\n\"\"\"\n\nimport json\nimport pandas as pd\nimport numpy as np\nfrom datetime import datetime\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\ndef analyze_data(data_source: str, analysis_type: str = \"descriptive\") -> dict:\n    \"\"\"分析數據\"\"\"\n    results = {\n        \"tool_name\": \"data_analyzer\",\n        \"data_source\": data_source,\n        \"analysis_type\": analysis_type,\n        \"timestamp\": datetime.now().isoformat(),\n        \"analysis_results\": {},\n        \"success\": False\n    }\n    \n    try:\n        # 加載數據\n        if data_source.endswith('.csv'):\n            df = pd.read_csv(data_source)\n        elif data_source.endswith('.json'):\n            df = pd.read_json(data_source)\n        else:\n            results[\"error\"] = \"不支持的數據格式\"\n            return results\n        \n        # 基本統計分析\n        results[\"analysis_results\"][\"basic_stats\"] = {\n            \"shape\": df.shape,\n            \"columns\": df.columns.tolist(),\n            \"data_types\": df.dtypes.to_dict(),\n            \"missing_values\": df.isnull().sum().to_dict(),\n            \"memory_usage\": df.memory_usage(deep=True).sum()\n        }\n        \n        # 數值列統計\n        numeric_columns = df.select_dtypes(include=[np.number]).columns\n        if len(numeric_columns) > 0:\n            results[\"analysis_results\"][\"numeric_analysis\"] = {\n                \"descriptive_stats\": df[numeric_columns].describe().to_dict(),\n                \"correlation_matrix\": df[numeric_columns].corr().to_dict()\n            }\n        \n        # 分類列分析\n        categorical_columns = df.select_dtypes(include=['object']).columns\n        if len(categorical_columns) > 0:\n            results[\"analysis_results\"][\"categorical_analysis\"] = {}\n            for col in categorical_columns[:5]:  # 限制前5列\n                results[\"analysis_results\"][\"categorical_analysis\"][col] = {\n                    \"unique_count\": df[col].nunique(),\n                    \"top_values\": df[col].value_counts().head().to_dict()\n                }\n        \n        results[\"success\"] = True\n        \n    except Exception as e:\n        results[\"error\"] = str(e)\n    \n    return results\n\nif __name__ == \"__main__\":\n    import sys\n    if len(sys.argv) > 1:\n        result = analyze_data(sys.argv[1])\n        print(json.dumps(result, indent=2, ensure_ascii=False))\n    else:\n        print(\"使用方法: python {} <data_file>\".format(sys.argv[0]))\n",
+  "input_parameters": {
+    "data_source": {
+      "type": "string",
+      "description": "數據源路徑"
+    },
+    "analysis_type": {
+      "type": "string",
+      "description": "分析類型"
+    }
+  },
+  "output_format": "json",
+  "execution_count": 0,
+  "success_rate": 0.0,
+  "created_at": "2025-06-10T00:17:58.908345"
+}

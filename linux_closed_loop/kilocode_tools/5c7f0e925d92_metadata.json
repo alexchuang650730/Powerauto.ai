@@ -1,0 +1,11 @@
+{
+  "tool_id": "5c7f0e925d92",
+  "name": "document_analyzer",
+  "description": "分析文檔內容",
+  "generated_code": "#!/usr/bin/env python3\n\"\"\"\ndocument_analyzer - 自動生成的工具\n描述: 分析文檔內容\n需求: 分析文檔: 分析收入預測數據並生成趨勢報告\n\"\"\"\n\nimport json\nfrom datetime import datetime\n\ndef execute_tool(input_data: dict) -> dict:\n    \"\"\"執行工具\"\"\"\n    results = {\n        \"tool_name\": \"document_analyzer\",\n        \"description\": \"分析文檔內容\",\n        \"timestamp\": datetime.now().isoformat(),\n        \"input_data\": input_data,\n        \"success\": False\n    }\n    \n    try:\n        # 工具邏輯\n        processed_data = process_input(input_data)\n        results[\"output_data\"] = processed_data\n        results[\"success\"] = True\n        \n    except Exception as e:\n        results[\"error\"] = str(e)\n    \n    return results\n\ndef process_input(data: dict) -> dict:\n    \"\"\"處理輸入數據\"\"\"\n    # 基本處理邏輯\n    return {\n        \"processed\": True,\n        \"original_keys\": list(data.keys()),\n        \"processing_time\": datetime.now().isoformat()\n    }\n\nif __name__ == \"__main__\":\n    import sys\n    if len(sys.argv) > 1:\n        with open(sys.argv[1], 'r') as f:\n            input_data = json.load(f)\n        result = execute_tool(input_data)\n        print(json.dumps(result, indent=2, ensure_ascii=False))\n    else:\n        print(\"使用方法: python {} <input_file>\".format(sys.argv[0]))\n",
+  "input_parameters": {},
+  "output_format": "json",
+  "execution_count": 0,
+  "success_rate": 0.0,
+  "created_at": "2025-06-10T00:17:58.907869"
+}

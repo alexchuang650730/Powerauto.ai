@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-06-09T23:58:07.834866",
+  "total_experiences": 1,
+  "synchronous_results": {
+    "mode": "synchronous",
+    "total_experiences": 0,
+    "processed_experiences": 0,
+    "learning_time": 1.430511474609375e-06,
+    "performance_improvement": 0.1180256196037944
+  },
+  "asynchronous_results": {
+    "mode": "asynchronous",
+    "total_experiences": 1,
+    "processed_experiences": 1,
+    "learning_time": 0.021705150604248047,
+    "performance_improvement": 0.12158771713910102,
+    "parallel_workers": 1
+  },
+  "comparison_analysis": {
+    "efficiency_improvement": {
+      "time_saved_percentage": -1517200.0,
+      "sync_time": 1.430511474609375e-06,
+      "async_time": 0.021705150604248047,
+      "speedup_factor": 6.590654451987082e-05
+    },
+    "quality_improvement": {
+      "sync_performance_gain": 0.1180256196037944,
+      "async_performance_gain": 0.12158771713910102,
+      "quality_difference": 0.0035620975353066187
+    },
+    "resource_usage": {
+      "sync_experiences_per_second": 0.0,
+      "async_experiences_per_second": 46.07201388431204,
+      "parallel_workers": 1
+    },
+    "recommendations": [
+      "異步RL提供更好的學習質量",
+      "異步RL提供更高的處理吞吐量"
+    ]
+  }
+}

@@ -1,0 +1,465 @@
+[
+  {
+    "request_id": "manus_frontend_001",
+    "success": true,
+    "processing_time": 0.0011832714080810547,
+    "data_flow_steps": [
+      {
+        "step": "frontend_data_reception",
+        "timestamp": "2025-06-10T01:47:59.629342",
+        "details": {
+          "source": "manus_gui",
+          "dialogue_length": 32,
+          "files_count": 1,
+          "history_length": 2
+        },
+        "success": true
+      },
+      {
+        "step": "edge_admin_processing",
+        "timestamp": "2025-06-10T01:47:59.629358",
+        "details": {
+          "data_received": true,
+          "context_parsed": true,
+          "files_processed": 1
+        },
+        "success": true
+      },
+      {
+        "step": "intelligent_routing",
+        "timestamp": "2025-06-10T01:47:59.629363",
+        "details": {
+          "route_to": "cloud_processing",
+          "reasoning": "複雜請求需要雲端處理",
+          "estimated_time": 2.5,
+          "confidence": 0.85,
+          "fallback_available": true
+        },
+        "success": true
+      },
+      {
+        "step": "cloud_processing_processing",
+        "timestamp": "2025-06-10T01:47:59.630455",
+        "details": {
+          "processing_success": true,
+          "interaction_log_id": "log_388376afd25e"
+        },
+        "success": true
+      },
+      {
+        "step": "rl_srt_learning",
+        "timestamp": "2025-06-10T01:47:59.630466",
+        "details": {
+          "learning_triggered": true,
+          "experience_quality": 0.8,
+          "policy_update": {
+            "strategy_improvement": 0.15,
+            "response_quality": 0.12
+          },
+          "async_processing": true,
+          "learning_time": 0.05
+        },
+        "success": true
+      },
+      {
+        "step": "kilocode_processing",
+        "timestamp": "2025-06-10T01:47:59.630505",
+        "details": {
+          "deliverables_generated": 2,
+          "types": [
+            "python_code",
+            "test_suite"
+          ]
+        },
+        "success": true
+      },
+      {
+        "step": "fallback_check",
+        "timestamp": "2025-06-10T01:47:59.630515",
+        "details": {
+          "quality_check_passed": false,
+          "average_quality": 0.491,
+          "fallback_triggered": true,
+          "kilocode_intervention": true,
+          "one_step_completion": false
+        },
+        "success": true
+      },
+      {
+        "step": "release_manager_deployment",
+        "timestamp": "2025-06-10T01:47:59.630517",
+        "details": {
+          "deployment_ready": true,
+          "deliverables_packaged": 2,
+          "one_step_delivery": false
+        },
+        "success": true
+      }
+    ],
+    "deliverables": [
+      {
+        "deliverable_id": "python_code_db1b23f3",
+        "deliverable_type": "python_code",
+        "name": "fibonacci_function.py",
+        "content": "def fibonacci(n):\n    \"\"\"計算斐波那契數列的第n項\"\"\"\n    if n <= 0:\n        raise ValueError(\"n必須是正整數\")\n    elif n == 1 or n == 2:\n        return 1\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\ndef fibonacci_optimized(n):\n    \"\"\"優化版本的斐波那契函數\"\"\"\n    if n <= 0:\n        raise ValueError(\"n必須是正整數\")\n    elif n == 1 or n == 2:\n        return 1\n    \n    a, b = 1, 1\n    for _ in range(3, n + 1):\n        a, b = b, a + b\n    return b\n",
+        "file_path": null,
+        "metadata": {
+          "language": "python",
+          "complexity": "medium",
+          "performance_optimized": true
+        },
+        "template_potential_score": 0.75,
+        "quality_assessment_score": 0.85,
+        "created_at": "2025-06-10T01:47:59.630474"
+      },
+      {
+        "deliverable_id": "test_suite_947dadee",
+        "deliverable_type": "test_suite",
+        "name": "test_fibonacci.py",
+        "content": "import pytest\nfrom fibonacci_function import fibonacci, fibonacci_optimized\n\ndef test_fibonacci_basic():\n    assert fibonacci(1) == 1\n    assert fibonacci(2) == 1\n    assert fibonacci(3) == 2\n    assert fibonacci(4) == 3\n    assert fibonacci(5) == 5\n\ndef test_fibonacci_optimized():\n    assert fibonacci_optimized(1) == 1\n    assert fibonacci_optimized(2) == 1\n    assert fibonacci_optimized(10) == 55\n\ndef test_fibonacci_error_handling():\n    with pytest.raises(ValueError):\n        fibonacci(0)\n    with pytest.raises(ValueError):\n        fibonacci(-1)\n",
+        "file_path": null,
+        "metadata": {
+          "test_framework": "pytest",
+          "coverage": "high"
+        },
+        "template_potential_score": 0.75,
+        "quality_assessment_score": 0.85,
+        "created_at": "2025-06-10T01:47:59.630492"
+      }
+    ],
+    "quality_score": 0.491,
+    "one_step_completion": false,
+    "error_details": null
+  },
+  {
+    "request_id": "tarae_plugin_001",
+    "success": true,
+    "processing_time": 0.0006663799285888672,
+    "data_flow_steps": [
+      {
+        "step": "frontend_data_reception",
+        "timestamp": "2025-06-10T01:47:59.630561",
+        "details": {
+          "source": "tarae_plugin",
+          "dialogue_length": 16,
+          "files_count": 1,
+          "history_length": 0
+        },
+        "success": true
+      },
+      {
+        "step": "edge_admin_processing",
+        "timestamp": "2025-06-10T01:47:59.630565",
+        "details": {
+          "data_received": true,
+          "context_parsed": true,
+          "files_processed": 1
+        },
+        "success": true
+      },
+      {
+        "step": "intelligent_routing",
+        "timestamp": "2025-06-10T01:47:59.630569",
+        "details": {
+          "route_to": "cloud_processing",
+          "reasoning": "複雜請求需要雲端處理",
+          "estimated_time": 2.5,
+          "confidence": 0.85,
+          "fallback_available": true
+        },
+        "success": true
+      },
+      {
+        "step": "cloud_processing_processing",
+        "timestamp": "2025-06-10T01:47:59.631198",
+        "details": {
+          "processing_success": true,
+          "interaction_log_id": "log_f9cee25c2298"
+        },
+        "success": true
+      },
+      {
+        "step": "rl_srt_learning",
+        "timestamp": "2025-06-10T01:47:59.631208",
+        "details": {
+          "learning_triggered": true,
+          "experience_quality": 0.8,
+          "policy_update": {
+            "strategy_improvement": 0.15,
+            "response_quality": 0.12
+          },
+          "async_processing": true,
+          "learning_time": 0.05
+        },
+        "success": true
+      },
+      {
+        "step": "kilocode_processing",
+        "timestamp": "2025-06-10T01:47:59.631214",
+        "details": {
+          "deliverables_generated": 0,
+          "types": []
+        },
+        "success": true
+      },
+      {
+        "step": "fallback_check",
+        "timestamp": "2025-06-10T01:47:59.631221",
+        "details": {
+          "quality_check_passed": false,
+          "average_quality": 0,
+          "fallback_triggered": true,
+          "kilocode_intervention": true,
+          "one_step_completion": false
+        },
+        "success": true
+      },
+      {
+        "step": "release_manager_deployment",
+        "timestamp": "2025-06-10T01:47:59.631224",
+        "details": {
+          "deployment_ready": true,
+          "deliverables_packaged": 0,
+          "one_step_delivery": false
+        },
+        "success": true
+      }
+    ],
+    "deliverables": [],
+    "quality_score": 0,
+    "one_step_completion": false,
+    "error_details": null
+  },
+  {
+    "request_id": "codebuddy_plugin_001",
+    "success": true,
+    "processing_time": 0.0007860660552978516,
+    "data_flow_steps": [
+      {
+        "step": "frontend_data_reception",
+        "timestamp": "2025-06-10T01:47:59.631268",
+        "details": {
+          "source": "code_buddy_plugin",
+          "dialogue_length": 16,
+          "files_count": 1,
+          "history_length": 1
+        },
+        "success": true
+      },
+      {
+        "step": "edge_admin_processing",
+        "timestamp": "2025-06-10T01:47:59.631275",
+        "details": {
+          "data_received": true,
+          "context_parsed": true,
+          "files_processed": 1
+        },
+        "success": true
+      },
+      {
+        "step": "intelligent_routing",
+        "timestamp": "2025-06-10T01:47:59.631280",
+        "details": {
+          "route_to": "cloud_processing",
+          "reasoning": "複雜請求需要雲端處理",
+          "estimated_time": 2.5,
+          "confidence": 0.85,
+          "fallback_available": true
+        },
+        "success": true
+      },
+      {
+        "step": "cloud_processing_processing",
+        "timestamp": "2025-06-10T01:47:59.632014",
+        "details": {
+          "processing_success": true,
+          "interaction_log_id": "log_cf2d3cf6f552"
+        },
+        "success": true
+      },
+      {
+        "step": "rl_srt_learning",
+        "timestamp": "2025-06-10T01:47:59.632023",
+        "details": {
+          "learning_triggered": true,
+          "experience_quality": 0.8,
+          "policy_update": {
+            "strategy_improvement": 0.15,
+            "response_quality": 0.12
+          },
+          "async_processing": true,
+          "learning_time": 0.05
+        },
+        "success": true
+      },
+      {
+        "step": "kilocode_processing",
+        "timestamp": "2025-06-10T01:47:59.632043",
+        "details": {
+          "deliverables_generated": 1,
+          "types": [
+            "api_specification"
+          ]
+        },
+        "success": true
+      },
+      {
+        "step": "fallback_check",
+        "timestamp": "2025-06-10T01:47:59.632050",
+        "details": {
+          "quality_check_passed": false,
+          "average_quality": 0.594,
+          "fallback_triggered": true,
+          "kilocode_intervention": false,
+          "one_step_completion": false
+        },
+        "success": true
+      },
+      {
+        "step": "release_manager_deployment",
+        "timestamp": "2025-06-10T01:47:59.632052",
+        "details": {
+          "deployment_ready": true,
+          "deliverables_packaged": 1,
+          "one_step_delivery": false
+        },
+        "success": true
+      }
+    ],
+    "deliverables": [
+      {
+        "deliverable_id": "api_specification_4295212d",
+        "deliverable_type": "api_specification",
+        "name": "api_specification.json",
+        "content": "{\n  \"openapi\": \"3.0.0\",\n  \"info\": {\n    \"title\": \"User Management API\",\n    \"version\": \"1.0.0\"\n  },\n  \"paths\": {\n    \"/users\": {\n      \"get\": {\n        \"summary\": \"獲取用戶列表\",\n        \"parameters\": [\n          {\n            \"name\": \"page\",\n            \"in\": \"query\",\n            \"schema\": {\"type\": \"integer\", \"default\": 1}\n          }\n        ]\n      },\n      \"post\": {\n        \"summary\": \"創建新用戶\",\n        \"requestBody\": {\n          \"content\": {\n            \"application/json\": {\n              \"schema\": {\"$ref\": \"#/components/schemas/User\"}\n            }\n          }\n        }\n      }\n    }\n  }\n}",
+        "file_path": null,
+        "metadata": {
+          "format": "openapi",
+          "version": "3.0.0"
+        },
+        "template_potential_score": 0.75,
+        "quality_assessment_score": 0.85,
+        "created_at": "2025-06-10T01:47:59.632030"
+      }
+    ],
+    "quality_score": 0.594,
+    "one_step_completion": false,
+    "error_details": null
+  },
+  {
+    "request_id": "tongyi_plugin_001",
+    "success": true,
+    "processing_time": 0.000606536865234375,
+    "data_flow_steps": [
+      {
+        "step": "frontend_data_reception",
+        "timestamp": "2025-06-10T01:47:59.632085",
+        "details": {
+          "source": "tongyi_plugin",
+          "dialogue_length": 14,
+          "files_count": 1,
+          "history_length": 1
+        },
+        "success": true
+      },
+      {
+        "step": "edge_admin_processing",
+        "timestamp": "2025-06-10T01:47:59.632089",
+        "details": {
+          "data_received": true,
+          "context_parsed": true,
+          "files_processed": 1
+        },
+        "success": true
+      },
+      {
+        "step": "intelligent_routing",
+        "timestamp": "2025-06-10T01:47:59.632092",
+        "details": {
+          "route_to": "cloud_processing",
+          "reasoning": "複雜請求需要雲端處理",
+          "estimated_time": 2.5,
+          "confidence": 0.85,
+          "fallback_available": true
+        },
+        "success": true
+      },
+      {
+        "step": "cloud_processing_processing",
+        "timestamp": "2025-06-10T01:47:59.632634",
+        "details": {
+          "processing_success": true,
+          "interaction_log_id": "log_fba7486c8a94"
+        },
+        "success": true
+      },
+      {
+        "step": "rl_srt_learning",
+        "timestamp": "2025-06-10T01:47:59.632644",
+        "details": {
+          "learning_triggered": true,
+          "experience_quality": 0.8,
+          "policy_update": {
+            "strategy_improvement": 0.15,
+            "response_quality": 0.12
+          },
+          "async_processing": true,
+          "learning_time": 0.05
+        },
+        "success": true
+      },
+      {
+        "step": "kilocode_processing",
+        "timestamp": "2025-06-10T01:47:59.632679",
+        "details": {
+          "deliverables_generated": 1,
+          "types": [
+            "system_architecture"
+          ]
+        },
+        "success": true
+      },
+      {
+        "step": "fallback_check",
+        "timestamp": "2025-06-10T01:47:59.632688",
+        "details": {
+          "quality_check_passed": false,
+          "average_quality": 0.349,
+          "fallback_triggered": true,
+          "kilocode_intervention": true,
+          "one_step_completion": false
+        },
+        "success": true
+      },
+      {
+        "step": "release_manager_deployment",
+        "timestamp": "2025-06-10T01:47:59.632689",
+        "details": {
+          "deployment_ready": true,
+          "deliverables_packaged": 1,
+          "one_step_delivery": false
+        },
+        "success": true
+      }
+    ],
+    "deliverables": [
+      {
+        "deliverable_id": "system_architecture_b3f06eb3",
+        "deliverable_type": "system_architecture",
+        "name": "microservices_architecture.md",
+        "content": "# 微服務架構設計\n\n## 服務拆分\n- **用戶服務**: 用戶註冊、登錄、資料管理\n- **訂單服務**: 訂單創建、狀態管理、歷史查詢\n- **支付服務**: 支付處理、退款、對賬\n- **通知服務**: 郵件、短信、推送通知\n\n## 技術選型\n- **API網關**: Kong/Nginx\n- **服務註冊**: Consul/Eureka\n- **數據庫**: PostgreSQL + Redis\n- **消息隊列**: RabbitMQ\n- **監控**: Prometheus + Grafana\n\n## 部署方案\n- **容器化**: Docker + Kubernetes\n- **CI/CD**: GitLab CI + ArgoCD\n- **雲平台**: AWS EKS\n",
+        "file_path": null,
+        "metadata": {
+          "architecture_type": "microservices",
+          "complexity": "high"
+        },
+        "template_potential_score": 0.75,
+        "quality_assessment_score": 0.85,
+        "created_at": "2025-06-10T01:47:59.632652"
+      }
+    ],
+    "quality_score": 0.349,
+    "one_step_completion": false,
+    "error_details": null
+  }
+]

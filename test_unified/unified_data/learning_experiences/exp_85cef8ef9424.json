@@ -1,0 +1,27 @@
+{
+  "experience_id": "exp_85cef8ef9424",
+  "timestamp": "2025-06-10T01:27:10.233590",
+  "state": {
+    "user_request": {},
+    "context": {},
+    "source": "system_internal"
+  },
+  "action": {
+    "response": {
+      "text": "錯誤測試"
+    },
+    "deliverables": [],
+    "tools_used": []
+  },
+  "reward": 0.2,
+  "next_state": {
+    "task_completed": false,
+    "deliverable_quality": 0.0,
+    "performance_metrics": {}
+  },
+  "source_interaction_log_id": "log_4a06b8732177",
+  "metadata": {
+    "tags": [],
+    "source": "system_internal"
+  }
+}

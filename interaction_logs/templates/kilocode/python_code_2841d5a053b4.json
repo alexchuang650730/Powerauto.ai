@@ -1,0 +1,282 @@
+{
+  "template_id": "kilocode_2841d5a053b4",
+  "name": "python_code Template",
+  "description": "Auto-generated template from interaction_log_manager.py",
+  "type": "python_code",
+  "template_potential": 0.9,
+  "parameters": [
+    {
+      "name": "__init___params",
+      "type": "function_parameters",
+      "value": "self, base_dir: str = \"/home/ubuntu/Powerauto.ai/interaction_logs\"",
+      "description": "Parameters for function __init__"
+    },
+    {
+      "name": "setup_directory_structure_params",
+      "type": "function_parameters",
+      "value": "self",
+      "description": "Parameters for function setup_directory_structure"
+    },
+    {
+      "name": "setup_logging_params",
+      "type": "function_parameters",
+      "value": "self",
+      "description": "Parameters for function setup_logging"
+    },
+    {
+      "name": "save_deliverables_params",
+      "type": "function_parameters",
+      "value": "self, deliverables: List[Dict]",
+      "description": "Parameters for function save_deliverables"
+    },
+    {
+      "name": "generate_templates_params",
+      "type": "function_parameters",
+      "value": "self, deliverables: List[Dict]",
+      "description": "Parameters for function generate_templates"
+    },
+    {
+      "name": "__init___params",
+      "type": "function_parameters",
+      "value": "self, log_manager: InteractionLogManager",
+      "description": "Parameters for function __init__"
+    },
+    {
+      "name": "setup_rag_system_params",
+      "type": "function_parameters",
+      "value": "self",
+      "description": "Parameters for function setup_rag_system"
+    },
+    {
+      "name": "index_interactions_params",
+      "type": "function_parameters",
+      "value": "self",
+      "description": "Parameters for function index_interactions"
+    },
+    {
+      "name": "__init___params",
+      "type": "function_parameters",
+      "value": "self, log_manager: InteractionLogManager",
+      "description": "Parameters for function __init__"
+    },
+    {
+      "name": "main_params",
+      "type": "function_parameters",
+      "value": "",
+      "description": "Parameters for function main"
+    },
+    {
+      "name": "TECHNICAL_ANALYSIS",
+      "type": "string_variable",
+      "value": "technical_analysis",
+      "description": "Configurable variable TECHNICAL_ANALYSIS"
+    },
+    {
+      "name": "CODE_GENERATION",
+      "type": "string_variable",
+      "value": "code_generation",
+      "description": "Configurable variable CODE_GENERATION"
+    },
+    {
+      "name": "TESTING",
+      "type": "string_variable",
+      "value": "testing",
+      "description": "Configurable variable TESTING"
+    },
+    {
+      "name": "DOCUMENTATION",
+      "type": "string_variable",
+      "value": "documentation",
+      "description": "Configurable variable DOCUMENTATION"
+    },
+    {
+      "name": "PRESENTATION",
+      "type": "string_variable",
+      "value": "presentation",
+      "description": "Configurable variable PRESENTATION"
+    },
+    {
+      "name": "DATA_ANALYSIS",
+      "type": "string_variable",
+      "value": "data_analysis",
+      "description": "Configurable variable DATA_ANALYSIS"
+    },
+    {
+      "name": "SYSTEM_DESIGN",
+      "type": "string_variable",
+      "value": "system_design",
+      "description": "Configurable variable SYSTEM_DESIGN"
+    },
+    {
+      "name": "RESEARCH",
+      "type": "string_variable",
+      "value": "research",
+      "description": "Configurable variable RESEARCH"
+    },
+    {
+      "name": "DEBUGGING",
+      "type": "string_variable",
+      "value": "debugging",
+      "description": "Configurable variable DEBUGGING"
+    },
+    {
+      "name": "OPTIMIZATION",
+      "type": "string_variable",
+      "value": "optimization",
+      "description": "Configurable variable OPTIMIZATION"
+    },
+    {
+      "name": "PYTHON_CODE",
+      "type": "string_variable",
+      "value": "python_code",
+      "description": "Configurable variable PYTHON_CODE"
+    },
+    {
+      "name": "MARKDOWN_DOC",
+      "type": "string_variable",
+      "value": "markdown_doc",
+      "description": "Configurable variable MARKDOWN_DOC"
+    },
+    {
+      "name": "JSON_DATA",
+      "type": "string_variable",
+      "value": "json_data",
+      "description": "Configurable variable JSON_DATA"
+    },
+    {
+      "name": "HTML_SLIDES",
+      "type": "string_variable",
+      "value": "html_slides",
+      "description": "Configurable variable HTML_SLIDES"
+    },
+    {
+      "name": "TEST_SUITE",
+      "type": "string_variable",
+      "value": "test_suite",
+      "description": "Configurable variable TEST_SUITE"
+    },
+    {
+      "name": "CONFIG_FILE",
+      "type": "string_variable",
+      "value": "config_file",
+      "description": "Configurable variable CONFIG_FILE"
+    },
+    {
+      "name": "ANALYSIS_REPORT",
+      "type": "string_variable",
+      "value": "analysis_report",
+      "description": "Configurable variable ANALYSIS_REPORT"
+    },
+    {
+      "name": "SYSTEM_ARCHITECTURE",
+      "type": "string_variable",
+      "value": "system_architecture",
+      "description": "Configurable variable SYSTEM_ARCHITECTURE"
+    },
+    {
+      "name": "API_SPECIFICATION",
+      "type": "string_variable",
+      "value": "api_specification",
+      "description": "Configurable variable API_SPECIFICATION"
+    },
+    {
+      "name": "DATABASE_SCHEMA",
+      "type": "string_variable",
+      "value": "database_schema",
+      "description": "Configurable variable DATABASE_SCHEMA"
+    },
+    {
+      "name": "str",
+      "type": "string_variable",
+      "value": "/home/ubuntu/Powerauto.ai/interaction_logs",
+      "description": "Configurable variable str"
+    },
+    {
+      "name": "format",
+      "type": "string_variable",
+      "value": "%(asctime)s - %(levelname)s - %(message)s",
+      "description": "Configurable variable format"
+    },
+    {
+      "name": "encoding",
+      "type": "string_variable",
+      "value": "utf-8",
+      "description": "Configurable variable encoding"
+    },
+    {
+      "name": "encoding",
+      "type": "string_variable",
+      "value": "utf-8",
+      "description": "Configurable variable encoding"
+    },
+    {
+      "name": "encoding",
+      "type": "string_variable",
+      "value": "utf-8",
+      "description": "Configurable variable encoding"
+    },
+    {
+      "name": "encoding",
+      "type": "string_variable",
+      "value": "utf-8",
+      "description": "Configurable variable encoding"
+    },
+    {
+      "name": "encoding",
+      "type": "string_variable",
+      "value": "utf-8",
+      "description": "Configurable variable encoding"
+    },
+    {
+      "name": "encoding",
+      "type": "string_variable",
+      "value": "utf-8",
+      "description": "Configurable variable encoding"
+    },
+    {
+      "name": "user_request",
+      "type": "string_variable",
+      "value": "設計交互日誌管理系統，包括分類存儲、KiloCode RAG整合、交付件模板化",
+      "description": "Configurable variable user_request"
+    },
+    {
+      "name": "agent_response",
+      "type": "string_variable",
+      "value": "已設計完整的交互日誌管理系統架構，包含分類存儲、模板化和RAG整合功能",
+      "description": "Configurable variable agent_response"
+    },
+    {
+      "name": "encoding",
+      "type": "string_variable",
+      "value": "utf-8",
+      "description": "Configurable variable encoding"
+    }
+  ],
+  "structure": {
+    "total_lines": 702,
+    "total_chars": 25815,
+    "sections": [
+      {
+        "level": 1,
+        "title": "!/usr/bin/env python3",
+        "line_number": 1
+      }
+    ],
+    "code_blocks": 0,
+    "functions": 30,
+    "classes": 7
+  },
+  "content_template": "#!/usr/bin/env python3\n\"\"\"\nPowerAutomation 交互日誌管理系統\n\n實現交互日誌的分類存儲、KiloCode RAG整合、交付件模板化和Readiness檢查\n\"\"\"\n\nimport os\nimport json\nimport time\nimport hashlib\nfrom datetime import datetime\nfrom pathlib import Path\nfrom typing import Dict, List, Any, Optional\nfrom dataclasses import dataclass, asdict\nfrom enum import Enum\nimport logging\n\nclass InteractionType(Enum):\n    \"\"\"交互類型枚舉\"\"\"\n    TECHNICAL_ANALYSIS = \"technical_analysis\"\n    CODE_GENERATION = \"code_generation\"\n    TESTING = \"testing\"\n    DOCUMENTATION = \"documentation\"\n    PRESENTATION = \"presentation\"\n    DATA_ANALYSIS = \"data_analysis\"\n    SYSTEM_DESIGN = \"system_design\"\n    RESEARCH = \"research\"\n    DEBUGGING = \"debugging\"\n    OPTIMIZATION = \"optimization\"\n\nclass DeliverableType(Enum):\n    \"\"\"交付件類型枚舉\"\"\"\n    PYTHON_CODE = \"python_code\"\n    MARKDOWN_DOC = \"markdown_doc\"\n    JSON_DATA = \"json_data\"\n    HTML_SLIDES = \"html_slides\"\n    TEST_SUITE = \"test_suite\"\n    CONFIG_FILE = \"config_file\"\n    ANALYSIS_REPORT = \"analysis_report\"\n    SYSTEM_ARCHITECTURE = \"system_architecture\"\n    API_SPECIFICATION = \"api_specification\"\n    DATABASE_SCHEMA = \"database_schema\"\n\n@dataclass\nclass InteractionLog:\n    \"\"\"交互日誌數據結構\"\"\"\n    session_id: str\n    timestamp: str\n    interaction_type: InteractionType\n    user_request: str\n    agent_response: str\n    deliverables: List[Dict[str, Any]]\n    context: Dict[str, Any]\n    performance_metrics: Dict[str, Any]\n    tags: List[str]\n\n@dataclass\nclass Deliverable:\n    \"\"\"交付件數據結構\"\"\"\n    id: str\n    type: DeliverableType\n    name: str\n    content: str\n    file_path: str\n    metadata: Dict[str, Any]\n    template_potential: float  # 模板化潛力評分\n\nclass InteractionLogManager:\n    \"\"\"交互日誌管理器\"\"\"\n    \n    def __init__(self, base_dir: str = \"/home/ubuntu/Powerauto.ai/interaction_logs\"):\n        self.base_dir = Path(base_dir)\n        self.setup_logging()\n        self.setup_directory_structure()\n        self.current_session_id = self.generate_session_id()\n        \n    def setup_directory_structure(self):\n        \"\"\"設置目錄結構\"\"\"\n        directories = [\n            \"logs/technical_analysis\",\n            \"logs/code_generation\", \n            \"logs/testing\",\n            \"logs/documentation\",\n            \"logs/presentation\",\n            \"logs/data_analysis\",\n            \"logs/system_design\",\n            \"logs/research\",\n            \"logs/debugging\",\n            \"logs/optimization\",\n            \"deliverables/python_code\",\n            \"deliverables/markdown_doc\",\n            \"deliverables/json_data\",\n            \"deliverables/html_slides\",\n            \"deliverables/test_suite\",\n            \"deliverables/config_file\",\n            \"deliverables/analysis_report\",\n            \"deliverables/system_architecture\",\n            \"deliverables/api_specification\",\n            \"deliverables/database_schema\",\n            \"templates/kilocode\",\n            \"rag/embeddings\",\n            \"rag/index\",\n            \"readiness/checks\",\n            \"readiness/reports\"\n        ]\n        \n        for directory in directories:\n            (self.base_dir / directory).mkdir(parents=True, exist_ok=True)\n            \n        self.logger.info(f\"✅ 目錄結構已設置: {self.base_dir}\")\n    \n    def setup_logging(self):\n        \"\"\"設置日誌\"\"\"\n        logging.basicConfig(\n            level=logging.INFO,\n            format='%(asctime)s - %(levelname)s - %(message)s'\n        )\n        self.logger = logging.getLogger(__name__)\n    \n    def generate_session_id(self) -> str:\n        \"\"\"生成會話ID\"\"\"\n        timestamp = datetime.now().strftime(\"%Y%m%d_%H%M%S\")\n        random_hash = hashlib.md5(str(time.time()).encode()).hexdigest()[:{{INTEGER_VALUE}}]\n        return f\"session_{timestamp}_{random_hash}\"\n    \n    def classify_interaction(self, user_request: str, agent_response: str) -> InteractionType:\n        \"\"\"分類交互類型\"\"\"\n        request_lower = user_request.lower()\n        response_lower = agent_response.lower()\n        \n        # 基於關鍵詞的分類邏輯\n        if any(keyword in request_lower for keyword in ['分析', 'analysis', '技術', 'technical']):\n            return InteractionType.TECHNICAL_ANALYSIS\n        elif any(keyword in request_lower for keyword in ['代碼', 'code', '編程', 'programming']):\n            return InteractionType.CODE_GENERATION\n        elif any(keyword in request_lower for keyword in ['測試', 'test', '驗證', 'validation']):\n            return InteractionType.TESTING\n        elif any(keyword in request_lower for keyword in ['文檔', 'document', '報告', 'report']):\n            return InteractionType.DOCUMENTATION\n        elif any(keyword in request_lower for keyword in ['演示', 'presentation', '幻燈片', 'slides']):\n            return InteractionType.PRESENTATION\n        elif any(keyword in request_lower for keyword in ['數據', 'data', '統計', 'statistics']):\n            return InteractionType.DATA_ANALYSIS\n        elif any(keyword in request_lower for keyword in ['設計', 'design', '架構', 'architecture']):\n            return InteractionType.SYSTEM_DESIGN\n        elif any(keyword in request_lower for keyword in ['研究', 'research', '調查', 'investigation']):\n            return InteractionType.RESEARCH\n        elif any(keyword in request_lower for keyword in ['調試', 'debug', '修復', 'fix']):\n            return InteractionType.DEBUGGING\n        elif any(keyword in request_lower for keyword in ['優化', 'optimize', '改進', 'improve']):\n            return InteractionType.OPTIMIZATION\n        else:\n            return InteractionType.TECHNICAL_ANALYSIS  # 默認分類\n    \n    def classify_deliverable(self, file_path: str, content: str) -> DeliverableType:\n        \"\"\"分類交付件類型\"\"\"\n        file_ext = Path(file_path).suffix.lower()\n        content_sample = content[:{{INTEGER_VALUE}}].lower()\n        \n        if file_ext == '.py' or 'python' in content_sample:\n            return DeliverableType.PYTHON_CODE\n        elif file_ext == '.md' or 'markdown' in content_sample:\n            return DeliverableType.MARKDOWN_DOC\n        elif file_ext == '.json' or content_sample.strip().startswith('{'):\n            return DeliverableType.JSON_DATA\n        elif file_ext == '.html' or 'slides' in content_sample:\n            return DeliverableType.HTML_SLIDES\n        elif 'test' in file_path.lower() or 'unittest' in content_sample:\n            return DeliverableType.TEST_SUITE\n        elif file_ext in ['.yaml', '.yml', '.conf', '.ini']:\n            return DeliverableType.CONFIG_FILE\n        elif 'analysis' in content_sample or 'report' in content_sample:\n            return DeliverableType.ANALYSIS_REPORT\n        elif 'architecture' in content_sample or 'design' in content_sample:\n            return DeliverableType.SYSTEM_ARCHITECTURE\n        elif 'api' in content_sample or 'endpoint' in content_sample:\n            return DeliverableType.API_SPECIFICATION\n        elif 'schema' in content_sample or 'database' in content_sample:\n            return DeliverableType.DATABASE_SCHEMA\n        else:\n            return DeliverableType.MARKDOWN_DOC  # 默認類型\n    \n    def calculate_template_potential(self, deliverable: Dict[str, Any]) -> float:\n        \"\"\"計算交付件的模板化潛力\"\"\"\n        content = deliverable.get('content', '')\n        file_path = deliverable.get('file_path', '')\n        \n        score = {{FLOAT_VALUE}}\n        \n        # 代碼結構化程度\n        if deliverable['type'] == DeliverableType.PYTHON_CODE:\n            if 'class ' in content:\n                score += {{FLOAT_VALUE}}\n            if 'def ' in content:\n                score += {{FLOAT_VALUE}}\n            if 'import ' in content:\n                score += {{FLOAT_VALUE}}\n        \n        # 文檔結構化程度\n        elif deliverable['type'] == DeliverableType.MARKDOWN_DOC:\n            if content.count('#') >= {{INTEGER_VALUE}}:  # 多級標題\n                score += {{FLOAT_VALUE}}\n            if '```' in content:  # 代碼塊\n                score += {{FLOAT_VALUE}}\n            if '|' in content:  # 表格\n                score += {{FLOAT_VALUE}}\n        \n        # 配置文件結構\n        elif deliverable['type'] == DeliverableType.JSON_DATA:\n            try:\n                data = json.loads(content)\n                if isinstance(data, dict) and len(data) > {{INTEGER_VALUE}}:\n                    score += {{FLOAT_VALUE}}\n            except:\n                pass\n        \n        # 通用評分因素\n        if len(content) > {{INTEGER_VALUE}}:  # 內容豐富度\n            score += {{FLOAT_VALUE}}\n        if len(content.split('\\n')) > {{INTEGER_VALUE}}:  # 行數\n            score += {{FLOAT_VALUE}}\n        \n        return min(score, {{FLOAT_VALUE}})\n    \n    def log_interaction(self, user_request: str, agent_response: str, \n                       deliverables: List[str] = None, context: Dict = None) -> str:\n        \"\"\"記錄交互日誌\"\"\"\n        \n        # 分類交互類型\n        interaction_type = self.classify_interaction(user_request, agent_response)\n        \n        # 處理交付件\n        processed_deliverables = []\n        if deliverables:\n            for file_path in deliverables:\n                if os.path.exists(file_path):\n                    with open(file_path, 'r', encoding='utf-{{INTEGER_VALUE}}') as f:\n                        content = f.read()\n                    \n                    deliverable_type = self.classify_deliverable(file_path, content)\n                    template_potential = self.calculate_template_potential({\n                        'type': deliverable_type,\n                        'content': content,\n                        'file_path': file_path\n                    })\n                    \n                    deliverable = {\n                        'id': hashlib.md5(f\"{file_path}{time.time()}\".encode()).hexdigest()[:{{INTEGER_VALUE}}],\n                        'type': deliverable_type.value,\n                        'name': Path(file_path).name,\n                        'content': content,\n                        'file_path': file_path,\n                        'template_potential': template_potential,\n                        'metadata': {\n                            'size': len(content),\n                            'lines': len(content.split('\\n')),\n                            'created_at': datetime.now().isoformat()\n                        }\n                    }\n                    processed_deliverables.append(deliverable)\n        \n        # 創建交互日誌\n        log_entry = InteractionLog(\n            session_id=self.current_session_id,\n            timestamp=datetime.now().isoformat(),\n            interaction_type=interaction_type,\n            user_request=user_request,\n            agent_response=agent_response,\n            deliverables=processed_deliverables,\n            context=context or {},\n            performance_metrics={\n                'response_time': time.time(),\n                'deliverable_count': len(processed_deliverables),\n                'total_content_size': sum(len(d['content']) for d in processed_deliverables)\n            },\n            tags=self.generate_tags(user_request, agent_response, processed_deliverables)\n        )\n        \n        # 保存日誌\n        log_id = self.save_interaction_log(log_entry)\n        \n        # 保存交付件\n        self.save_deliverables(processed_deliverables)\n        \n        # 生成模板\n        self.generate_templates(processed_deliverables)\n        \n        self.logger.info(f\"✅ 交互日誌已記錄: {log_id}\")\n        return log_id\n    \n    def generate_tags(self, user_request: str, agent_response: str, \n                     deliverables: List[Dict]) -> List[str]:\n        \"\"\"生成標籤\"\"\"\n        tags = []\n        \n        # 基於請求內容的標籤\n        request_words = user_request.lower().split()\n        common_tags = ['gaia', 'test', 'analysis', 'code', 'mcp', 'ai', 'automation']\n        tags.extend([tag for tag in common_tags if tag in ' '.join(request_words)])\n        \n        # 基於交付件類型的標籤\n        for deliverable in deliverables:\n            tags.append(deliverable['type'])\n            if deliverable['template_potential'] > {{FLOAT_VALUE}}:\n                tags.append('high_template_potential')\n        \n        return list(set(tags))\n    \n    def save_interaction_log(self, log_entry: InteractionLog) -> str:\n        \"\"\"保存交互日誌\"\"\"\n        log_id = hashlib.md5(f\"{log_entry.session_id}{log_entry.timestamp}\".encode()).hexdigest()[:{{INTEGER_VALUE}}]\n        \n        # 按類型分類保存\n        log_dir = self.base_dir / \"logs\" / log_entry.interaction_type.value\n        log_file = log_dir / f\"{log_id}.json\"\n        \n        # 轉換為可序列化的字典\n        log_dict = asdict(log_entry)\n        log_dict['interaction_type'] = log_entry.interaction_type.value\n        \n        with open(log_file, 'w', encoding='utf-{{INTEGER_VALUE}}') as f:\n            json.dump(log_dict, f, indent={{INTEGER_VALUE}}, ensure_ascii=False)\n        \n        return log_id\n    \n    def save_deliverables(self, deliverables: List[Dict]):\n        \"\"\"保存交付件\"\"\"\n        for deliverable in deliverables:\n            # 按類型分類保存\n            deliverable_dir = self.base_dir / \"deliverables\" / deliverable['type']\n            deliverable_file = deliverable_dir / f\"{deliverable['id']}_{deliverable['name']}\"\n            \n            with open(deliverable_file, 'w', encoding='utf-{{INTEGER_VALUE}}') as f:\n                f.write(deliverable['content'])\n            \n            # 保存元數據\n            metadata_file = deliverable_dir / f\"{deliverable['id']}_metadata.json\"\n            with open(metadata_file, 'w', encoding='utf-{{INTEGER_VALUE}}') as f:\n                json.dump({\n                    'id': deliverable['id'],\n                    'type': deliverable['type'],\n                    'name': deliverable['name'],\n                    'template_potential': deliverable['template_potential'],\n                    'metadata': deliverable['metadata']\n                }, f, indent={{INTEGER_VALUE}}, ensure_ascii=False)\n    \n    def generate_templates(self, deliverables: List[Dict]):\n        \"\"\"生成KiloCode模板\"\"\"\n        for deliverable in deliverables:\n            if deliverable['template_potential'] > {{FLOAT_VALUE}}:  # 高潛力交付件\n                template = self.create_kilocode_template(deliverable)\n                \n                template_dir = self.base_dir / \"templates\" / \"kilocode\"\n                template_file = template_dir / f\"{deliverable['type']}_{deliverable['id']}.json\"\n                \n                with open(template_file, 'w', encoding='utf-{{INTEGER_VALUE}}') as f:\n                    json.dump(template, f, indent={{INTEGER_VALUE}}, ensure_ascii=False)\n                \n                self.logger.info(f\"✅ KiloCode模板已生成: {template_file}\")\n    \n    def create_kilocode_template(self, deliverable: Dict) -> Dict:\n        \"\"\"創建KiloCode模板\"\"\"\n        template = {\n            'template_id': f\"kilocode_{deliverable['id']}\",\n            'name': f\"{deliverable['type']} Template\",\n            'description': f\"Auto-generated template from {deliverable['name']}\",\n            'type': deliverable['type'],\n            'template_potential': deliverable['template_potential'],\n            'parameters': self.extract_parameters(deliverable['content']),\n            'structure': self.analyze_structure(deliverable['content']),\n            'content_template': self.create_content_template(deliverable['content']),\n            'usage_examples': self.generate_usage_examples(deliverable),\n            'metadata': {\n                'source_deliverable_id': deliverable['id'],\n                'created_at': datetime.now().isoformat(),\n                'version': '{{FLOAT_VALUE}}'\n            }\n        }\n        return template\n    \n    def extract_parameters(self, content: str) -> List[Dict]:\n        \"\"\"提取可參數化的部分\"\"\"\n        parameters = []\n        \n        # 提取Python變量\n        if 'def ' in content:\n            import re\n            functions = re.findall(r'def\\s+(\\w+)\\s*\\((.*?)\\):', content)\n            for func_name, params in functions:\n                parameters.append({\n                    'name': f\"{func_name}_params\",\n                    'type': 'function_parameters',\n                    'value': params,\n                    'description': f\"Parameters for function {func_name}\"\n                })\n        \n        # 提取配置值\n        if '=' in content:\n            import re\n            assignments = re.findall(r'(\\w+)\\s*=\\s*[\"\\']([^\"\\']+)[\"\\']', content)\n            for var_name, value in assignments:\n                parameters.append({\n                    'name': var_name,\n                    'type': 'string_variable',\n                    'value': value,\n                    'description': f\"Configurable variable {var_name}\"\n                })\n        \n        return parameters\n    \n    def analyze_structure(self, content: str) -> Dict:\n        \"\"\"分析內容結構\"\"\"\n        structure = {\n            'total_lines': len(content.split('\\n')),\n            'total_chars': len(content),\n            'sections': [],\n            'code_blocks': {{INTEGER_VALUE}},\n            'functions': {{INTEGER_VALUE}},\n            'classes': {{INTEGER_VALUE}}\n        }\n        \n        lines = content.split('\\n')\n        \n        # 分析Markdown結構\n        for i, line in enumerate(lines):\n            if line.startswith('#'):\n                structure['sections'].append({\n                    'level': len(line) - len(line.lstrip('#')),\n                    'title': line.strip('#').strip(),\n                    'line_number': i + {{INTEGER_VALUE}}\n                })\n            elif line.strip().startswith('```'):\n                structure['code_blocks'] += {{INTEGER_VALUE}}\n            elif line.strip().startswith('def '):\n                structure['functions'] += {{INTEGER_VALUE}}\n            elif line.strip().startswith('class '):\n                structure['classes'] += {{INTEGER_VALUE}}\n        \n        return structure\n    \n    def create_content_template(self, content: str) -> str:\n        \"\"\"創建內容模板\"\"\"\n        # 簡單的模板化：將具體值替換為佔位符\n        template = content\n        \n        # 替換常見的可變部分\n        import re\n        \n        # 替換日期\n        template = re.sub(r'\\d{{{INTEGER_VALUE}}}-\\d{{{INTEGER_VALUE}}}-\\d{{{INTEGER_VALUE}}}', '{{DATE}}', template)\n        \n        # 替換時間戳\n        template = re.sub(r'\\d{{{INTEGER_VALUE}},}', '{{TIMESTAMP}}', template)\n        \n        # 替換文件路徑\n        template = re.sub(r'/[a-zA-Z0-9_/.-]+\\.(py|md|json|html)', '{{FILE_PATH}}', template)\n        \n        # 替換數字\n        template = re.sub(r'\\b\\d+\\.\\d+\\b', '{{FLOAT_VALUE}}', template)\n        template = re.sub(r'\\b\\d+\\b', '{{INTEGER_VALUE}}', template)\n        \n        return template\n    \n    def generate_usage_examples(self, deliverable: Dict) -> List[Dict]:\n        \"\"\"生成使用示例\"\"\"\n        examples = []\n        \n        if deliverable['type'] == 'python_code':\n            examples.append({\n                'title': 'Basic Usage',\n                'description': 'How to use this Python code template',\n                'code': f\"# Import and use the generated code\\n# from {deliverable['name']} import *\"\n            })\n        \n        elif deliverable['type'] == 'markdown_doc':\n            examples.append({\n                'title': 'Documentation Template',\n                'description': 'How to customize this documentation template',\n                'code': f\"# Customize the sections and content\\n# Replace {{PLACEHOLDERS}} with actual values\"\n            })\n        \n        return examples\n\nclass KiloCodeRAGIntegration:\n    \"\"\"KiloCode RAG整合系統\"\"\"\n    \n    def __init__(self, log_manager: InteractionLogManager):\n        self.log_manager = log_manager\n        self.rag_dir = log_manager.base_dir / \"rag\"\n        self.setup_rag_system()\n    \n    def setup_rag_system(self):\n        \"\"\"設置RAG系統\"\"\"\n        self.logger = logging.getLogger(__name__)\n        self.logger.info(\"🔍 設置KiloCode RAG系統...\")\n    \n    def index_interactions(self):\n        \"\"\"索引所有交互日誌\"\"\"\n        # 實現RAG索引邏輯\n        pass\n    \n    def search_similar_interactions(self, query: str) -> List[Dict]:\n        \"\"\"搜索相似交互\"\"\"\n        # 實現相似性搜索\n        pass\n\nclass ReadinessChecker:\n    \"\"\"系統準備狀態檢查器\"\"\"\n    \n    def __init__(self, log_manager: InteractionLogManager):\n        self.log_manager = log_manager\n        self.readiness_dir = log_manager.base_dir / \"readiness\"\n    \n    def check_system_readiness(self) -> Dict[str, Any]:\n        \"\"\"檢查系統準備狀態\"\"\"\n        readiness_report = {\n            'timestamp': datetime.now().isoformat(),\n            'overall_status': 'checking',\n            'components': {},\n            'recommendations': []\n        }\n        \n        # 檢查目錄結構\n        readiness_report['components']['directory_structure'] = self.check_directory_structure()\n        \n        # 檢查日誌數量\n        readiness_report['components']['log_coverage'] = self.check_log_coverage()\n        \n        # 檢查模板質量\n        readiness_report['components']['template_quality'] = self.check_template_quality()\n        \n        # 檢查RAG準備狀態\n        readiness_report['components']['rag_readiness'] = self.check_rag_readiness()\n        \n        # 計算總體狀態\n        readiness_report['overall_status'] = self.calculate_overall_status(readiness_report['components'])\n        \n        # 生成建議\n        readiness_report['recommendations'] = self.generate_recommendations(readiness_report['components'])\n        \n        return readiness_report\n    \n    def check_directory_structure(self) -> Dict[str, Any]:\n        \"\"\"檢查目錄結構\"\"\"\n        required_dirs = [\n            \"logs\", \"deliverables\", \"templates\", \"rag\", \"readiness\"\n        ]\n        \n        status = {\n            'status': 'pass',\n            'missing_dirs': [],\n            'existing_dirs': []\n        }\n        \n        for dir_name in required_dirs:\n            dir_path = self.log_manager.base_dir / dir_name\n            if dir_path.exists():\n                status['existing_dirs'].append(dir_name)\n            else:\n                status['missing_dirs'].append(dir_name)\n        \n        if status['missing_dirs']:\n            status['status'] = 'fail'\n        \n        return status\n    \n    def check_log_coverage(self) -> Dict[str, Any]:\n        \"\"\"檢查日誌覆蓋度\"\"\"\n        log_types = [t.value for t in InteractionType]\n        coverage = {}\n        \n        for log_type in log_types:\n            log_dir = self.log_manager.base_dir / \"logs\" / log_type\n            if log_dir.exists():\n                log_count = len(list(log_dir.glob(\"*.json\")))\n                coverage[log_type] = log_count\n            else:\n                coverage[log_type] = {{INTEGER_VALUE}}\n        \n        total_logs = sum(coverage.values())\n        covered_types = len([t for t, count in coverage.items() if count > {{INTEGER_VALUE}}])\n        \n        return {\n            'status': 'pass' if covered_types >= len(log_types) * {{FLOAT_VALUE}} else 'warning',\n            'total_logs': total_logs,\n            'covered_types': covered_types,\n            'total_types': len(log_types),\n            'coverage_percentage': (covered_types / len(log_types)) * {{INTEGER_VALUE}},\n            'details': coverage\n        }\n    \n    def check_template_quality(self) -> Dict[str, Any]:\n        \"\"\"檢查模板質量\"\"\"\n        template_dir = self.log_manager.base_dir / \"templates\" / \"kilocode\"\n        \n        if not template_dir.exists():\n            return {'status': 'fail', 'reason': 'Template directory not found'}\n        \n        templates = list(template_dir.glob(\"*.json\"))\n        high_quality_templates = {{INTEGER_VALUE}}\n        \n        for template_file in templates:\n            try:\n                with open(template_file, 'r', encoding='utf-{{INTEGER_VALUE}}') as f:\n                    template = json.load(f)\n                \n                if template.get('template_potential', {{INTEGER_VALUE}}) > {{FLOAT_VALUE}}:\n                    high_quality_templates += {{INTEGER_VALUE}}\n            except:\n                continue\n        \n        quality_ratio = high_quality_templates / len(templates) if templates else {{INTEGER_VALUE}}\n        \n        return {\n            'status': 'pass' if quality_ratio > {{FLOAT_VALUE}} else 'warning',\n            'total_templates': len(templates),\n            'high_quality_templates': high_quality_templates,\n            'quality_ratio': quality_ratio\n        }\n    \n    def check_rag_readiness(self) -> Dict[str, Any]:\n        \"\"\"檢查RAG準備狀態\"\"\"\n        rag_dir = self.log_manager.base_dir / \"rag\"\n        \n        return {\n            'status': 'pass' if rag_dir.exists() else 'warning',\n            'embeddings_ready': (rag_dir / \"embeddings\").exists(),\n            'index_ready': (rag_dir / \"index\").exists()\n        }\n    \n    def calculate_overall_status(self, components: Dict[str, Any]) -> str:\n        \"\"\"計算總體狀態\"\"\"\n        statuses = [comp.get('status', 'unknown') for comp in components.values()]\n        \n        if all(status == 'pass' for status in statuses):\n            return 'ready'\n        elif any(status == 'fail' for status in statuses):\n            return 'not_ready'\n        else:\n            return 'partially_ready'\n    \n    def generate_recommendations(self, components: Dict[str, Any]) -> List[str]:\n        \"\"\"生成改進建議\"\"\"\n        recommendations = []\n        \n        if components['directory_structure']['status'] == 'fail':\n            recommendations.append(\"創建缺失的目錄結構\")\n        \n        if components['log_coverage']['coverage_percentage'] < {{INTEGER_VALUE}}:\n            recommendations.append(\"增加更多類型的交互日誌\")\n        \n        if components['template_quality']['quality_ratio'] < {{FLOAT_VALUE}}:\n            recommendations.append(\"提高模板質量，增加高潛力交付件\")\n        \n        if not components['rag_readiness']['embeddings_ready']:\n            recommendations.append(\"設置RAG嵌入系統\")\n        \n        return recommendations\n\ndef main():\n    \"\"\"主函數 - 演示系統使用\"\"\"\n    \n    # 初始化交互日誌管理器\n    log_manager = InteractionLogManager()\n    \n    # 模擬記錄當前交互\n    user_request = \"設計交互日誌管理系統，包括分類存儲、KiloCode RAG整合、交付件模板化\"\n    agent_response = \"已設計完整的交互日誌管理系統架構，包含分類存儲、模板化和RAG整合功能\"\n    \n    # 記錄交互（假設有交付件）\n    deliverables = [\n        \"{{FILE_PATH}}\"  # 當前文件\n    ]\n    \n    log_id = log_manager.log_interaction(\n        user_request=user_request,\n        agent_response=agent_response,\n        deliverables=deliverables,\n        context={'task': 'system_design', 'priority': 'high'}\n    )\n    \n    # 檢查系統準備狀態\n    readiness_checker = ReadinessChecker(log_manager)\n    readiness_report = readiness_checker.check_system_readiness()\n    \n    # 保存準備狀態報告\n    report_file = log_manager.base_dir / \"readiness\" / \"reports\" / f\"readiness_report_{int(time.time())}.json\"\n    with open(report_file, 'w', encoding='utf-{{INTEGER_VALUE}}') as f:\n        json.dump(readiness_report, f, indent={{INTEGER_VALUE}}, ensure_ascii=False)\n    \n    print(\"🎯 交互日誌管理系統演示完成\")\n    print(f\"📝 交互日誌ID: {log_id}\")\n    print(f\"📊 系統狀態: {readiness_report['overall_status']}\")\n    print(f\"📋 準備狀態報告: {report_file}\")\n    \n    return log_manager, readiness_report\n\nif __name__ == \"__main__\":\n    main()\n\n",
+  "usage_examples": [
+    {
+      "title": "Basic Usage",
+      "description": "How to use this Python code template",
+      "code": "# Import and use the generated code\n# from interaction_log_manager.py import *"
+    }
+  ],
+  "metadata": {
+    "source_deliverable_id": "2841d5a053b4",
+    "created_at": "2025-06-09T23:48:56.948623",
+    "version": "1.0"
+  }
+}
