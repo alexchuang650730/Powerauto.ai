@@ -1,0 +1,31 @@
+{
+  "session_id": "edge_session_001",
+  "timestamp": "2025-06-09T13:23:48.502429",
+  "user_id": "edge_user_001",
+  "interaction_type": "code_completion",
+  "context": {
+    "platform": "windows_wsl",
+    "file_path": "/mnt/c/projects/test.py",
+    "gpu_available": true,
+    "local_model": "qwen3-8b"
+  },
+  "user_action": {
+    "trigger": "edge_completion",
+    "input": "def process_data"
+  },
+  "ai_response": {
+    "model_used": "local_qwen3_8b",
+    "suggestions": [
+      "def process_data_async()",
+      "def process_data_batch()"
+    ],
+    "selected": "def process_data_async()",
+    "execution_time": 0.05
+  },
+  "outcome": {
+    "accepted": true,
+    "edge_execution": true,
+    "privacy_preserved": true
+  },
+  "metadata": {}
+}

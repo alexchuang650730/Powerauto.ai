@@ -1,0 +1,33 @@
+{
+  "input": {
+    "context": {
+      "test_mode": true,
+      "load_level": "extreme"
+    },
+    "user_action": {
+      "trigger": "extreme_load_test"
+    },
+    "features": {
+      "interaction_type": "extreme_load_test",
+      "code_length": 0,
+      "response_time": 0,
+      "confidence_score": 0,
+      "user_accepted": true,
+      "user_modified": false,
+      "feedback_score": 0.5
+    }
+  },
+  "output": {
+    "ai_response": {
+      "model_used": "test_model"
+    },
+    "outcome": {
+      "accepted": true
+    }
+  },
+  "metadata": {
+    "timestamp": "2025-06-09T13:50:23.297596",
+    "interaction_type": "extreme_load_test",
+    "quality_score": 0.5
+  }
+}

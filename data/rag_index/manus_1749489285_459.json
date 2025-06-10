@@ -1,0 +1,24 @@
+{
+  "id": "manus_1749489285_459",
+  "content": {
+    "code_snippet": "def fibonacci(n): return n if n <= 1 else fibonacci(n-1) + fibonacci(n-2)",
+    "description": "Recursive Fibonacci function implementation",
+    "language": "python",
+    "tags": [
+      "algorithm",
+      "recursion",
+      "fibonacci"
+    ],
+    "complexity": "O(2^n)",
+    "use_case": "Mathematical sequence generation"
+  },
+  "metadata": {
+    "target": "kilocode_rag",
+    "test_mode": true,
+    "plugin_name": "manus",
+    "collection_time": "2025-06-09T13:14:45.887028",
+    "environment": "sandbox"
+  },
+  "timestamp": "2025-06-09T13:14:45.887054",
+  "source": "manus_plugin"
+}

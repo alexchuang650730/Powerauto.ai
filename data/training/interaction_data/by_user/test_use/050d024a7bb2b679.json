@@ -1,0 +1,11 @@
+{
+  "session_id": "test_001",
+  "timestamp": "2025-06-09T13:38:40.080715",
+  "user_id": "test_user",
+  "interaction_type": "test",
+  "context": {},
+  "user_action": {},
+  "ai_response": {},
+  "outcome": {},
+  "metadata": {}
+}

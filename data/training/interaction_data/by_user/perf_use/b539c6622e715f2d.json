@@ -1,0 +1,19 @@
+{
+  "session_id": "perf_test_001",
+  "timestamp": "2025-06-09T13:48:59.380078",
+  "user_id": "perf_user_001",
+  "interaction_type": "performance_test",
+  "context": {
+    "test_mode": true
+  },
+  "user_action": {
+    "trigger": "baseline_test"
+  },
+  "ai_response": {
+    "model_used": "test_model"
+  },
+  "outcome": {
+    "accepted": true
+  },
+  "metadata": {}
+}

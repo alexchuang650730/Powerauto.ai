@@ -1,0 +1,20 @@
+{
+  "session_id": "test_concurrent_41",
+  "timestamp": "2025-06-09T13:46:29.985672",
+  "user_id": "test_user_41",
+  "interaction_type": "code_completion",
+  "context": {
+    "test_mode": true,
+    "request_id": 41
+  },
+  "user_action": {
+    "trigger": "concurrent_test"
+  },
+  "ai_response": {
+    "model_used": "test_model"
+  },
+  "outcome": {
+    "accepted": true
+  },
+  "metadata": {}
+}

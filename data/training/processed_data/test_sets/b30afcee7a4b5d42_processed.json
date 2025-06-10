@@ -1,0 +1,32 @@
+{
+  "input": {
+    "context": {
+      "test_mode": true
+    },
+    "user_action": {
+      "trigger": "baseline_test"
+    },
+    "features": {
+      "interaction_type": "performance_test",
+      "code_length": 0,
+      "response_time": 0,
+      "confidence_score": 0,
+      "user_accepted": true,
+      "user_modified": false,
+      "feedback_score": 0.5
+    }
+  },
+  "output": {
+    "ai_response": {
+      "model_used": "test_model"
+    },
+    "outcome": {
+      "accepted": true
+    }
+  },
+  "metadata": {
+    "timestamp": "2025-06-09T13:48:45.083817",
+    "interaction_type": "performance_test",
+    "quality_score": 0.5
+  }
+}

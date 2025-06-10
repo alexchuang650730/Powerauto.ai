@@ -1,0 +1,44 @@
+{
+  "input": {
+    "context": {
+      "platform": "windows_wsl",
+      "file_path": "/mnt/c/projects/test.py",
+      "gpu_available": true,
+      "local_model": "qwen3-8b"
+    },
+    "user_action": {
+      "trigger": "edge_completion",
+      "input": "def process_data"
+    },
+    "features": {
+      "interaction_type": "code_completion",
+      "code_length": 0,
+      "response_time": 0,
+      "confidence_score": 0,
+      "user_accepted": true,
+      "user_modified": false,
+      "feedback_score": 0.5
+    }
+  },
+  "output": {
+    "ai_response": {
+      "model_used": "local_qwen3_8b",
+      "suggestions": [
+        "def process_data_async()",
+        "def process_data_batch()"
+      ],
+      "selected": "def process_data_async()",
+      "execution_time": 0.05
+    },
+    "outcome": {
+      "accepted": true,
+      "edge_execution": true,
+      "privacy_preserved": true
+    }
+  },
+  "metadata": {
+    "timestamp": "2025-06-09T13:23:48.502429",
+    "interaction_type": "code_completion",
+    "quality_score": 0.5
+  }
+}

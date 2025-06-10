@@ -1,0 +1,20 @@
+{
+  "session_id": "perf_test_normal",
+  "timestamp": "2025-06-09T13:52:13.750825",
+  "user_id": "perf_user_normal",
+  "interaction_type": "normal_load_test",
+  "context": {
+    "test_mode": true,
+    "load_level": "normal"
+  },
+  "user_action": {
+    "trigger": "normal_load_test"
+  },
+  "ai_response": {
+    "model_used": "test_model"
+  },
+  "outcome": {
+    "accepted": true
+  },
+  "metadata": {}
+}

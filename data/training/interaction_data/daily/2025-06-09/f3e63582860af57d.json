@@ -1,0 +1,20 @@
+{
+  "session_id": "perf_test_high",
+  "timestamp": "2025-06-09T13:49:27.382544",
+  "user_id": "perf_user_high",
+  "interaction_type": "high_load_test",
+  "context": {
+    "test_mode": true,
+    "load_level": "high"
+  },
+  "user_action": {
+    "trigger": "high_load_test"
+  },
+  "ai_response": {
+    "model_used": "test_model"
+  },
+  "outcome": {
+    "accepted": true
+  },
+  "metadata": {}
+}

@@ -1,0 +1,20 @@
+{
+  "session_id": "perf_test_extreme",
+  "timestamp": "2025-06-09T13:49:53.054903",
+  "user_id": "perf_user_extreme",
+  "interaction_type": "extreme_load_test",
+  "context": {
+    "test_mode": true,
+    "load_level": "extreme"
+  },
+  "user_action": {
+    "trigger": "extreme_load_test"
+  },
+  "ai_response": {
+    "model_used": "test_model"
+  },
+  "outcome": {
+    "accepted": true
+  },
+  "metadata": {}
+}

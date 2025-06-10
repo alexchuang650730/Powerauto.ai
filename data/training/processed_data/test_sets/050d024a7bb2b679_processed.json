@@ -1,0 +1,24 @@
+{
+  "input": {
+    "context": {},
+    "user_action": {},
+    "features": {
+      "interaction_type": "test",
+      "code_length": 0,
+      "response_time": 0,
+      "confidence_score": 0,
+      "user_accepted": false,
+      "user_modified": false,
+      "feedback_score": 0.5
+    }
+  },
+  "output": {
+    "ai_response": {},
+    "outcome": {}
+  },
+  "metadata": {
+    "timestamp": "2025-06-09T13:38:40.080715",
+    "interaction_type": "test",
+    "quality_score": 0.5
+  }
+}
